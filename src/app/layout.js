@@ -1,7 +1,7 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { EB_Garamond, Work_Sans } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = EB_Garamond({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Create Next App',
