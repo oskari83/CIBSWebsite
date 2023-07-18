@@ -1,5 +1,5 @@
 import './globals.css'
-import { EB_Garamond, Work_Sans } from 'next/font/google'
+import { EB_Garamond } from 'next/font/google'
 
 const inter = EB_Garamond({ subsets: ['latin'] })
 
