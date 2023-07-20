@@ -165,6 +165,43 @@ a {
 	z-index: 10;
 }
 
+.first-banner-button-outer{
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	width: 900px;
+	margin-top: 14px;
+}
+
+.first-banner-join-button{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 34px;
+	width: 150px;
+	color: rgba(255, 255, 255, 0.9);
+	border: 1px solid rgba(255, 255, 255, 0.9);
+	z-index: 10;
+	cursor: pointer;
+	transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+}
+
+.first-banner-join-button:hover{
+	color: rgba(0, 0, 0, 1);
+	background-color: rgba(255, 255, 255, 1.0);
+}
+
+.first-banner-button-text{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 14px;
+	font-family: "WorkSansRegular";
+	z-index: 10;
+}
+
 .second-banner-container{
 	position: relative;
 	display: flex;
@@ -573,7 +610,7 @@ a {
 	width: 32%;
 	height: 400px;
 	flex-direction: column;
-	margin-bottom: 30px;
+	margin-bottom: 50px;
 	background-color: rgb(241, 241, 241);
 	transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
@@ -779,6 +816,7 @@ a {
 	width: 100%;
 	display: flex;
 	margin-top: 30px;
+	justify-content: space-between;
 }
 
 .footer-logo-container{
@@ -798,5 +836,49 @@ a {
 	position: relative;
 	overflow: hidden;
 	object-fit: cover;
+	cursor: pointer;
+}
+
+.footer-links-container{
+	display: flex;
+	flex-direction: column;
+	width: 200px;
+	height: 100%;
+	align-items: flex-end;
+	justify-content: center;
+}
+
+.footer-link{
+	display: flex;
+	height: 30px;
+	width: 200px;
+	text-align: right;
+	align-items: center;
+	justify-content: flex-end;
+	font-family: "WorkSansRegular";
+	font-size: 12px;
+	color: rgb(0, 0, 0);
+	cursor: pointer;
+}
+
+.footer-link:hover{
+	color: var(--dark-purple);
+}
+
+.socials-outer-container{
+	display: flex;
+	flex-direction: row;
+	width: 300px;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+}
+
+.socials-button-container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 4px;
+	margin-right: 4px;
 	cursor: pointer;
 }

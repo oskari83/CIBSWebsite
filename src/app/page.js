@@ -6,6 +6,8 @@ import background_img from '../../resources/background2.jpg'
 import initiatives_img from '../../resources/initiatives1.png'
 import events_img from '../../resources/events6.jpg'
 
+import JoinButton from '@/components/joinbutton'
+
 //committee photos
 import vanessa_img from '../../resources/committee/Vanessa-min.JPG'
 import juhyun_img from '../../resources/committee/Juhyun-min.JPG'
@@ -30,49 +32,15 @@ import flow_img from '../../resources/sponsors/flowtraders.png'
 import houlihan_img from '../../resources/sponsors/houlihan.png'
 import jefferies_img from '../../resources/sponsors/jefferies.png'
 
-//footer
-import logo2_img from '../../resources/cibs_logo2.png'
 
 export default function Home() {
   return (
 	<>
-	<div className='navbar'>
-		<div className='navbar-inner'>
-			<div className='identity-outer-container'>
-				<div className='logo-outer-container'>
-					<Image
-						src={img}
-						width={28}
-						height={28}
-						alt="cibs logo"
-					/>
-				</div>
-				<div className='logo-outer-container'>
-				<p className='logotext'>CIBS</p>
-				</div>
-			</div>
-			<div className='navbarlinks-outer-container'>
-				<div className='navbar-link'>
-					<Link href={`/`}>Home</Link>
-				</div>
-				<div className='navbar-link'>
-					<Link href={`/sponsors`}>What we do</Link>
-				</div>
-				<div className='navbar-link'>
-					<Link href={`/sponsors`}>Sponsors</Link>
-				</div>
-				<div className='navbar-link'>
-					<Link href={`/researchgroup`}>Research Group</Link>
-				</div>
-				<div className='navbar-link'>
-					<Link href={`/members`}>Members</Link>
-				</div>
-			</div>
-		</div>
-	</div>
+	
 	<div className='first-banner-container'>
 		<Image
 			src={background_img}
+			style={{objectFit: 'cover'}}
 			fill={true}
 			alt="background image"
 		/>
@@ -82,6 +50,7 @@ export default function Home() {
 		<div className='first-banner-text-minor'>
 			<p>Connecting Cambridge students with careers in finance</p>
 		</div>
+		<JoinButton></JoinButton>
 	</div>
     <div className='second-banner-container'>
 		<div className='about-outer'>
@@ -434,7 +403,7 @@ export default function Home() {
 						/>
 					</div>
 					<div className='committee-box-text-container'>
-						<div className='committee-text-name'>Richard lin</div>
+						<div className='committee-text-name'>Richard Lin</div>
 						<div className='committee-text-role'>Research Group Director</div>
 						<div className='committee-text-college'>Trinity College</div>
 					</div>
@@ -533,27 +502,6 @@ export default function Home() {
 		</div>
 	</div>
 
-	<div className='footer-container'>
-		<div className='footer-outer'>
-			<div className='footer-above-container'>
-				<div className='footer-logo-container'>
-					<div className='footer-logo-image'>
-						<Image
-							src={logo2_img}
-							style={{objectFit: 'cover'}}
-							fill={true}
-							alt="logo pic"
-						/>
-					</div>
-				</div>
-			</div>
-			<div className='footer-line'></div>
-			<div className='footer-copyright-outer'>
-			<div className='footer-privacy-text'>Privacy Policy</div>
-				<div className='footer-copyright-text'>Copyright © 2023 Cambridge Investment Banking Society. All rights reserved.</div>
-			</div>
-		</div>
-	</div>
 	</>
   )
 }

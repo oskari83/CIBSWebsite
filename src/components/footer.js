@@ -1,0 +1,58 @@
+'use client'
+
+import '../app/globals.css'
+import Image from 'next/image'
+import { useRouter } from 'next/navigation'
+
+import logo2_img from '../../resources/cibs_logo2.png'
+import { FacebookIcon, LinkedinIcon, EmailIcon, InstagramIcon } from 'next-share'
+
+export default function Footer() {
+	const router = useRouter()
+
+	return (
+		<>
+		<div className='footer-container'>
+			<div className='footer-outer'>
+				<div className='footer-above-container'>
+					<div className='footer-logo-container'>
+						<div className='footer-logo-image'>
+							<Image
+								src={logo2_img}
+								style={{objectFit: 'cover'}}
+								fill={true}
+								alt="logo pic"
+							/>
+						</div>
+					</div>
+					<div className='socials-outer-container'>
+						<div className='socials-button-container'>
+							<FacebookIcon size={48} round />
+						</div>
+						<div className='socials-button-container'>
+							<InstagramIcon size={48} round />
+						</div>
+						<div className='socials-button-container'>
+							<LinkedinIcon size={48} round />
+						</div>
+						<div className='socials-button-container'>
+							<EmailIcon size={48} round />
+						</div>
+					</div>
+					<div className='footer-links-container'>
+						<div className='footer-link' onClick={() => router.push('/')}>What we do</div>
+						<div className='footer-link' onClick={() => router.push('/sponsors')}>Sponsors</div>
+						<div className='footer-link' onClick={() => router.push('/sponsors')}>Research Group</div>
+						<div className='footer-link' onClick={() => router.push('/sponsors')}>Members</div>
+					</div>
+				</div>
+				<div className='footer-line'></div>
+				<div className='footer-copyright-outer'>
+				<div className='footer-privacy-text'>Privacy Policy</div>
+					<div className='footer-copyright-text'>Copyright © 2023 Cambridge Investment Banking Society. All rights reserved.</div>
+				</div>
+			</div>
+		</div>
+		</>
+	)
+}
