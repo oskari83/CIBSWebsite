@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import img from '../../resources/Logo_Icon.png'
+import key_icon from '../../resources/key.png'
 
 export default function Navbar() {
 	const router = useRouter()
@@ -27,7 +28,7 @@ export default function Navbar() {
 					</div>
 				</div>
 				<div className='navbarlinks-outer-container'>
-					<div className='navbar-link' onClick={() => router.push('/sponsors')}>
+					<div className='navbar-link' onClick={() => router.push('/events')}>
 						<p>What we do</p>
 					</div>
 					<div className='navbar-link' onClick={() => router.push('/sponsors')}>
@@ -40,6 +41,14 @@ export default function Navbar() {
 						<p>Join us</p>
 					</div>
 					<div className='navbar-link' onClick={() => router.push('/sponsors')}>
+						<div className='icon-container'>
+							<Image
+								src={key_icon}
+								width={10}
+								height={10}
+								alt="key icon"
+							/>
+						</div>
 						<p>Members</p>
 					</div>
 				</div>

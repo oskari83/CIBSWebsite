@@ -1,6 +1,6 @@
 'use client'
 
-import '../app/globals.css'
+import './joinform.css'
 import { useRouter } from 'next/navigation'
 import { useState } from 'react'
 
@@ -76,12 +76,12 @@ export default function JoinForm() {
 					></input>
 				</div>
 
-				<div className='noncambridgeemail-text-container'>Non-Cambridge email</div>
-				<div className='noncambridgeemail-container'>
+				<div className='cambridgeemail-text-container'>Non-Cambridge email</div>
+				<div className='cambridgeemail-container'>
 					<input 
 						type="text" 
 						value={nonCambridgeEmail} 
-						className='noncambridgeemailInput'  
+						className='cambridgeemailInput'  
 						placeholder=""
 						onChange={handleNonCambridgeEmailChange}
 					></input>
@@ -199,7 +199,7 @@ export default function JoinForm() {
 					</select>
 				</div>
 
-				<button className='joinButton' type='submit'>Join</button>
+				<button className='join-button' type='submit'>Join</button>
 			</form>
 		</div>
 		</>

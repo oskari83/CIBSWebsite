@@ -1,19 +1,20 @@
-.join-banner-container{
+.eventspage-banner-container{
 	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	top: 0px;
 	width: 100%;
+	height: 800px;
 	background-color: rgb(255, 255, 255);
 	z-index: 4;
 }
 
-.join-outer{
+.eventspage-outer{
 	width: clamp(200px,900px,900px);
 }
 
-.join-header-container {
+.eventspage-header-container {
 	margin-top: 100px;
 	margin-bottom: 0px;
 	display: flex;
@@ -33,7 +34,7 @@
 	margin-bottom: 40px;
 }
 
-.join-minor-container {
+.eventspage-minor-container {
 	display: flex;
 	flex-direction: column;
 	font-size: 18x;
@@ -41,10 +42,4 @@
 	line-height: 1.6;
 	text-align: justify;
 	margin-bottom: 20px;
-}
-
-.join-minor-text{
-	width: 60%;
-	margin: auto;
-	padding-top: 20px;
 }
