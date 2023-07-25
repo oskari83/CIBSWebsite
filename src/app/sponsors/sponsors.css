@@ -5,7 +5,6 @@
 	align-items: center;
 	top: 0px;
 	width: 100%;
-	height: 800px;
 	background-color: rgb(255, 255, 255);
 	z-index: 4;
 }
@@ -27,6 +26,19 @@
 	color: var(--dark-purple);
 }
 
+.sponsorspage-header-container-services{
+	margin-top: 60px;
+	margin-bottom: 0px;
+	display: flex;
+	font-size: 28px;
+	font-family: "PlayfairBold";
+	width: 100%;
+	height: 60px;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+
 .thinLine{
 	width: 100%;
 	height: 1px;
@@ -42,4 +54,139 @@
 	line-height: 1.6;
 	text-align: justify;
 	margin-bottom: 20px;
+}
+
+.reasons-sponsor-outer-container{
+	width: 100%;
+	height: 860px;
+	margin: auto;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	overflow: hidden;
+	object-fit: cover;
+	position: relative;
+	background-color: rgba(0, 0, 0, 0.457);
+	margin-bottom: 60px;
+	margin-top: 20px;
+}
+
+.reasons-box-outer-container{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	position: relative;
+}
+
+.reason-box-outer{
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-direction: column;
+	background-color: white;
+	width: 40%;
+	height: 340px;
+	z-index: 10;
+	margin-left: 40px;
+	margin-top: 40px;
+	margin-right: 40px;
+	margin-bottom: 40px;
+}
+
+.reason-box-outer2{
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-direction: column;
+	background-color: white;
+	width: 40%;
+	height: 340px;
+	z-index: 10;
+	margin-left: 40px;
+	margin-top: 60px;
+	margin-right: 40px;
+	margin-bottom: 40px;
+}
+
+.sponsor-white-box-line{
+	background-color: white;
+	position: absolute;
+	width: 20px;
+	height: 100%;
+	left: 49%;
+}
+
+.sponsor-white-box-line2{
+	background-color: white;
+	position: absolute;
+	width: 100%;
+	height: 20px;
+	top: 49%;
+}
+
+.reason-box-header-container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 22px;
+	font-family: "PlayfairBold";
+	color: var(--dark-purple);
+	margin-top: 40px;
+	margin-bottom: 16px;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.reason-box-header-container2{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 24px;
+	font-family: "PlayfairBold";
+	color: var(--dark-purple);
+	margin-top: 40px;
+	margin-bottom: 16px;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.reason-box-body-container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 14px;
+	font-family: "WorkSansRegular";
+	color: black;
+	padding-left: 40px;
+	padding-right: 40px;
+	margin-top: 10px;
+}
+
+
+.services-banner-container{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	top: 0px;
+	width: 100%;
+	background-color: #412f53;
+	z-index: 4;
+}
+
+.services-banner-outer{
+	width: clamp(200px,900px,900px);
+}
+
+.ad-campaign-container{
+	margin-top: 80px;
+	width: 100%;
+	height: 300px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 80px;
 }

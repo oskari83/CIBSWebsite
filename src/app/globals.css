@@ -58,6 +58,16 @@ a {
 	color: inherit;
 }
 
+ul {
+	list-style-type:square;
+	list-style-position: outside;
+}
+
+li {
+	list-style-type:square;
+	list-style-position: outside;
+}
+
 .logotext{
 	color: var(--dark-purple);
 	font-size: 28px;
