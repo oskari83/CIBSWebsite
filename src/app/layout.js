@@ -1,7 +1,7 @@
 import './globals.css'
 import { EB_Garamond } from 'next/font/google'
-import Navbar from '@/components/navbar'
-import Footer from '@/components/footer'
+import Navbar from '../components/navbar.js'
+import Footer from '../components/footer.js'
 
 const inter = EB_Garamond({ subsets: ['latin'] })
 
@@ -14,9 +14,9 @@ export default function RootLayout({ children }) {
   	return (
     <html lang="en">
       	<body className={inter.className}>
-			<Navbar></Navbar>
+			<Navbar />
 			{children}
-			<Footer></Footer>
+			<Footer />
 		</body>
     </html>
   	)

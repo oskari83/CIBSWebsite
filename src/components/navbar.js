@@ -2,7 +2,6 @@
 
 import '../app/globals.css'
 import Image from 'next/image'
-import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import img from '../../resources/Logo_Icon.png'
 import key_icon from '../../resources/key.png'
@@ -29,16 +28,13 @@ export default function Navbar() {
 				</div>
 				<div className='navbarlinks-outer-container'>
 					<div className='navbar-link' onClick={() => router.push('/events')}>
-						<p>What we do</p>
+						<p>Events</p>
 					</div>
 					<div className='navbar-link' onClick={() => router.push('/sponsors')}>
 						<p>Sponsors</p>
 					</div>
 					<div className='navbar-link' onClick={() => router.push('/sponsors')}>
 						<p>Research Group</p>
-					</div>
-					<div className='navbar-link' onClick={() => router.push('/join')}>
-						<p>Join us</p>
 					</div>
 					<div className='navbar-link' onClick={() => router.push('/sponsors')}>
 						<div className='icon-container'>
@@ -50,6 +46,9 @@ export default function Navbar() {
 							/>
 						</div>
 						<p>Members</p>
+					</div>
+					<div className='navbar-link-join' onClick={() => router.push('/join')}>
+						<p>Join us</p>
 					</div>
 				</div>
 			</div>

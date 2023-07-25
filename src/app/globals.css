@@ -128,6 +128,29 @@ a {
 	color: var(--dark-purple) !important;
 }
 
+.navbar-link-join{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "WorkSansRegular";
+	color: rgb(69, 69, 69) !important;
+	font-size: 13px;
+	width: 120px;
+	height: 35px;
+	margin-left: 10px;
+	margin-right: 10px;
+	cursor: pointer;
+	border: 1px solid var(--dark-purple);
+	transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+}
+
+.navbar-link-join:hover {
+	color: white !important;
+	background-color: var(--dark-purple);
+}
+
 .icon-container{
 	display: flex;
 	align-items: center;

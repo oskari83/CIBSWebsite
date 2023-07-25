@@ -10,6 +10,22 @@ import { FacebookIcon, LinkedinIcon, EmailIcon, InstagramIcon } from 'next-share
 export default function Footer() {
 	const router = useRouter()
 
+	const clickFacebook = () => {
+		window.open("https://www.facebook.com/CIBSoc/", "_blank");
+	}
+
+	const clickInstagram = () => {
+		window.open("https://www.instagram.com/cibsoc/", "_blank");
+	}
+
+	const clickLinkedin = () => {
+		window.open("https://www.linkedin.com/company/cibsoc/mycompany/", "_blank");
+	}
+
+	const clickEmail = () => {
+		window.open("mailto:presidents@cibsoc.co.uk", "_blank");
+	}
+
 	return (
 		<>
 		<div className='footer-container'>
@@ -26,16 +42,16 @@ export default function Footer() {
 						</div>
 					</div>
 					<div className='socials-outer-container'>
-						<div className='socials-button-container'>
+						<div onClick={clickFacebook} className='socials-button-container'>
 							<FacebookIcon size={48} round />
 						</div>
-						<div className='socials-button-container'>
+						<div onClick={clickInstagram} className='socials-button-container'>
 							<InstagramIcon size={48} round />
 						</div>
-						<div className='socials-button-container'>
+						<div onClick={clickLinkedin} className='socials-button-container'>
 							<LinkedinIcon size={48} round />
 						</div>
-						<div className='socials-button-container'>
+						<div onClick={clickEmail} className='socials-button-container'>
 							<EmailIcon size={48} round />
 						</div>
 					</div>

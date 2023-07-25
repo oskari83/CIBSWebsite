@@ -8,7 +8,7 @@ export default function Page(){
 		<div className='sponsorspage-banner-container'>
 			<div className='sponsorspage-outer'>
 				<div className='sponsorspage-header-container'>
-					<p>SPONSORS</p>
+					<p>WHY SPONSOR US</p>
 				</div>
 				<div className='thinLine'></div>
 				<div className='sponsorspage-minor-container'>
