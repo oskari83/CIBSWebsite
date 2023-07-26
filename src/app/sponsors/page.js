@@ -4,6 +4,15 @@ import './sponsors.css'
 
 import hands_img from '../../../resources/hands2.jpg'
 
+//pics
+import sponsor1_img from '../../../resources/sponsorpage/sponsorpage1.png'
+import sponsor2_img from '../../../resources/sponsorpage/sponsorpage2.png'
+import sponsor3_img from '../../../resources/sponsorpage/sponsorpage3.png'
+
+import events1_img from '../../../resources/events1.jpg'
+import events2_img from '../../../resources/events2.jpg'
+import events3_img from '../../../resources/events3.jpg'
+
 export default function Page(){
 	return(
 		<>
@@ -102,30 +111,265 @@ export default function Page(){
 					<div className='sponsorspage-header-container-services'>
 						<p>OUR SERVICES</p>
 					</div>
-					<div className='thinLine'></div>
+					<div className='adcampaign-thinLine'></div>
 
 					<div className='ad-campaign-container'>
 
-						<div className='initiatives-text-container-outer'>
-							<div className='initiatives-header-container'>
+						<div className='sponsorpage-adcampaign-text-container-outer'>
+							<div className='sponsorpage-adcampaign-header-container'>
 								<p>ADVERTISING CAMPAIGN</p>
 							</div>
-							<div className='initiatives-detail-container'>
-								From a deep and wide ranging alumni network, member-exclusive guides, mentourship schemes, to email roundups and much more, CIBS supports its members in achieving their dreams and goals.
+							<div className='sponsorpage-adcampaign-detail-container2'>
+								Every sponsor receives at least one advertising campaign, consisting of:
 							</div>
-							<div className='initiatives-button-outer'>
-								<div className='initiatives-button-container'>
-									<p>Learn more</p>
+
+							<div className='sponsorpage-adcampaign-text-align-container-outer1'>
+								<div className='sponsorpage-eventpartner-text-align-container-outer2'>
+									<div className='sponsorpage-eventpartner-detail-container'>
+										<li>{"Advertising across all distribution channels (LinkedIn, Instagram, Facebook, newsletter), totalling over 5000 followers"}</li>
+									</div>
+
+									<div className='sponsorpage-eventpartner-detail-container'>
+										<li>{"Ongoing firm opportunities collated and regularly distributed via our Sponsor Opportunities spreadsheet"}</li>
+									</div>
+								</div>
+								<div className='sponsorpage-eventpartner-text-align-container-outer3'>
+									<div className='sponsorpage-eventpartner-detail-container'>
+										<li>{"Strategically timed pre-event marking and post-event recap"}</li>
+									</div>
+
+									<div className='sponsorpage-eventpartner-detail-container'>
+										<li>{"Beautiful graphics designed in-house"}</li>
+									</div>
+
+									<div className='sponsorpage-eventpartner-detail-container'>
+									<li>{"12 ambassadors promote across college and subject networks"}</li>
+									</div>
 								</div>
 							</div>
+
 						</div>
-						<div className='initiatives-image-container'>
-							
+						<div className='sponsorpage-adcampaign-images-outer'>
+							<div className='sponsorpage-image-container'>
+								<Image
+									src={sponsor1_img}
+									style={{objectFit: 'cover'}}
+									fill={true}
+									alt="sponsorpage1 pic"
+								/>
+							</div>
+							<div className='sponsorpage-image-container'>
+								<Image
+									src={sponsor2_img}
+									style={{objectFit: 'cover'}}
+									fill={true}
+									alt="sponsorpage2 pic"
+								/>
+							</div>
+							<div className='sponsorpage-image-container'>
+								<Image
+									src={sponsor3_img}
+									style={{objectFit: 'cover'}}
+									fill={true}
+									alt="sponsorpage3 pic"
+								/>
+							</div>
+						</div>
+						
+					</div>
+
+					<div className='event-partnership-container'>
+
+						<div className='sponsorpage-eventpartner-text-container-outer'>
+							<div className='sponsorpage-eventpartner-header-container'>
+								<p>EVENT PARTNERSHIP</p>
+							</div>
+							<div className='sponsorpage-eventpartner-detail-container2'>
+								Gold and Platinum sponsors receive our event partnership service, with end-to-end event organisation from us. We have experience hosting events for a variety of firms with various objectives. Examples include:
+							</div>
+
+							<div className='sponsorpage-eventpartner-text-align-container-outer1'>
+								<div className='sponsorpage-eventpartner-text-align-container-outer2'>
+									<div className='sponsorpage-eventpartner-detail-container'>
+										<li>{"Coffee chats and dinners, to create real relationships between our members and your firm"}</li>
+									</div>
+
+									<div className='sponsorpage-eventpartner-detail-container'>
+										<li>{"Workshops, to learn about the industry and skills needed"}</li>
+									</div>
+								</div>
+								<div className='sponsorpage-eventpartner-text-align-container-outer3'>
+									<div className='sponsorpage-eventpartner-detail-container'>
+										<li>{"Presentations and panel events, to get to know your firm's business and work"}</li>
+									</div>
+
+									<div className='sponsorpage-eventpartner-detail-container'>
+										<li>{"Networking events, to understand your firm's culture and people"}</li>
+									</div>
+								</div>
+							</div>
+
+							<div className='sponsorpage-eventpartner-detail-container3'>
+								We can advise on the best event solution for your objectives, and all events are avenues to directly promote programmes to our members.
+							</div>
+
 						</div>
 
+						<div className='sponsorpage-eventpartner-images-outer'>
+							<div className='sponsorpage-image-container'>
+								<Image
+									src={events1_img}
+									style={{objectFit: 'cover'}}
+									fill={true}
+									alt="events1 pic"
+								/>
+							</div>
+							<div className='sponsorpage-image-container'>
+								<Image
+									src={events2_img}
+									style={{objectFit: 'cover'}}
+									fill={true}
+									alt="events2 pic"
+								/>
+							</div>
+							<div className='sponsorpage-image-container'>
+								<Image
+									src={events3_img}
+									style={{objectFit: 'cover'}}
+									fill={true}
+									alt="events3 pic"
+								/>
+							</div>
+						</div>
+						
+					</div>
+
+				</div>
+			</div>
+
+			<div className='packages-banner-container'>
+				<div className='packages-banner-outer'>
+					<div className='sponsorspage-packages-header-container'>
+						<p>SPONSORSHIP PACKAGES</p>
+					</div>
+					<div className='thinLine'></div>
+
+					<div className='sponsor-packages-outer-box'>
+						<div className='sponsor-packages-box'>
+							<div className='sponsor-packages-box-banner1'></div>
+							<div className='sponsor-packages-box-header'>
+								Bronze
+							</div>
+							<div className='sponsor-packages-box-detail'>
+								Advertising campaigns:
+							</div>
+							<div className='sponsor-packages-box-detail-number'>
+								1
+							</div>
+							<div className='sponsor-packages-box-detail'>
+								Event partnerships:
+							</div>
+							<div className='sponsor-packages-box-detail-number'>
+								-
+							</div>
+							<div className='sponsor-packages-box-detail'>
+								Firm logo on CIBS merchandise and Social media cover page:
+							</div>
+							<div className='sponsor-packages-box-detail-number'>
+								-
+							</div>
+						</div>
+						<div className='sponsor-packages-box'>
+							<div className='sponsor-packages-box-banner2'></div>
+							<div className='sponsor-packages-box-header'>
+								Silver
+							</div>
+							<div className='sponsor-packages-box-detail'>
+								Advertising campaigns:
+							</div>
+							<div className='sponsor-packages-box-detail-number'>
+								3
+							</div>
+							<div className='sponsor-packages-box-detail'>
+								Event partnerships:
+							</div>
+							<div className='sponsor-packages-box-detail-number'>
+								-
+							</div>
+							<div className='sponsor-packages-box-detail'>
+								Firm logo on CIBS merchandise and Social media cover page:
+							</div>
+							<div className='sponsor-packages-box-detail-number'>
+								-
+							</div>
+						</div>
+						<div className='sponsor-packages-box'>
+							<div className='sponsor-packages-box-banner3'></div>
+							<div className='sponsor-packages-box-header'>
+								Gold
+							</div>
+							<div className='sponsor-packages-box-detail'>
+								Advertising campaigns:
+							</div>
+							<div className='sponsor-packages-box-detail-number'>
+								4
+							</div>
+							<div className='sponsor-packages-box-detail'>
+								Event partnerships:
+							</div>
+							<div className='sponsor-packages-box-detail-number'>
+								1
+							</div>
+							<div className='sponsor-packages-box-detail'>
+								Firm logo on CIBS merchandise and Social media cover page:
+							</div>
+							<div className='sponsor-packages-box-detail-number'>
+								Yes
+							</div>
+						</div>
+						<div className='sponsor-packages-box'>
+							<div className='sponsor-packages-box-banner4'></div>
+							<div className='sponsor-packages-box-header'>
+								Platinum
+							</div>
+							<div className='sponsor-packages-box-detail'>
+								Advertising campaigns:
+							</div>
+							<div className='sponsor-packages-box-detail-number'>
+								6
+							</div>
+							<div className='sponsor-packages-box-detail'>
+								Event partnerships:
+							</div>
+							<div className='sponsor-packages-box-detail-number'>
+								2
+							</div>
+							<div className='sponsor-packages-box-detail'>
+								Firm logo on CIBS merchandise and Social media cover page:
+							</div>
+							<div className='sponsor-packages-box-detail-number'>
+								Yes
+							</div>
+						</div>
+					</div>
+
+					<div className='sponsorspage-minor-container2'>
+						<p>
+							CIBS would love to partner with you as a sponsor. We hope that our collaboration would allow members of CIBS to learn more about your firm's programs and events, and your firm will be able to reach the many talented students in Cambridge.
+						</p>
+					</div>
+
+					<div className='sponsorspage-minor-container-highlighted'>
+						<p>
+							To find out more, please contact us at:
+						</p>
+						<p className='email-text-bold'>
+							sponsorship@cibsoc.co.uk
+						</p>
 					</div>
 				</div>
 			</div>
+
 		</div>
 		</>
 	)

@@ -26,11 +26,11 @@
 	color: var(--dark-purple);
 }
 
-.thinLine{
+.events-thinLine{
 	width: 100%;
 	height: 1px;
 	background-color: rgb(203, 203, 203);
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 }
 
 .eventspage-minor-container {

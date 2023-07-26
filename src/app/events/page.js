@@ -13,14 +13,9 @@ export default function Page(){
 		<div className='eventspage-banner-container'>
 			<div className='eventspage-outer'>
 				<div className='eventspage-header-container'>
-					<p>EVENTS AND INITIATIVES</p>
+					<p>EVENTS</p>
 				</div>
-				<div className='thinLine'></div>
-				<div className='eventspage-minor-container'>
-					<p>
-						Text here...
-					</p>
-				</div>
+				<div className='events-thinLine'></div>
 
 				<div className='events-list-outer'>
 					<div className='events-list-header'>
