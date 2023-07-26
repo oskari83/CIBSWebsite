@@ -36,7 +36,7 @@ export default function Navbar() {
 					<div className='navbar-link' onClick={() => router.push('/sponsors')}>
 						<p>Research Group</p>
 					</div>
-					<div className='navbar-link' onClick={() => router.push('/sponsors')}>
+					<div className='navbar-link' onClick={() => router.push('/members')}>
 						<div className='icon-container'>
 							<Image
 								src={key_icon}

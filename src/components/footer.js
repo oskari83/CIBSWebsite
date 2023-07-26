@@ -59,7 +59,7 @@ export default function Footer() {
 						<div className='footer-link' onClick={() => router.push('/events')}>What we do</div>
 						<div className='footer-link' onClick={() => router.push('/sponsors')}>Sponsors</div>
 						<div className='footer-link' onClick={() => router.push('/')}>Research Group</div>
-						<div className='footer-link' onClick={() => router.push('/')}>Members</div>
+						<div className='footer-link' onClick={() => router.push('/members')}>Members</div>
 					</div>
 				</div>
 				<div className='footer-line'></div>

@@ -25,6 +25,20 @@ import anson_img from '../../resources/committee/Anson-min.JPG'
 import alan_img from '../../resources/committee/Alan-min.JPG'
 import richard_img from '../../resources/committee/Shen-min.JPG'
 
+//ambassador photos
+import alan2_img from '../../resources/ambassadors/alan2.jpg'
+import arindam2_img from '../../resources/ambassadors/arindam2.jpg'
+import avneet2_img from '../../resources/ambassadors/avneet2.png'
+import ayushmannath2_img from '../../resources/ambassadors/ayushmannath2.png'
+import cherry2_img from '../../resources/ambassadors/cherry2.JPG'
+import divy2_img from '../../resources/ambassadors/divy2.png'
+import edric2_img from '../../resources/ambassadors/edric2.jpeg'
+import kenneth2_img from '../../resources/ambassadors/kenneth2.jpg'
+import muhammad2_img from '../../resources/ambassadors/muhammad2.jpg'
+import olivia2_img from '../../resources/ambassadors/olivia2.png'
+import tom2_img from '../../resources/ambassadors/tom2.png'
+import vimal2_img from '../../resources/ambassadors/vimal2.jpg'
+
 //sponsors photos
 import credit_img from '../../resources/sponsors/creditsuisse.png'
 import dragon_img from '../../resources/sponsors/dragonfly.png'
@@ -419,6 +433,236 @@ export default function Home() {
 				<p>AMBASSADORS</p>
 			</div>
 			<div className='thinLine'></div>
+
+			<div className='ambassador-boxes-outer'>
+				<div class="responsive-am-block">
+					<div class="am-card-empty">
+						<div class="am-card-wrapper">
+							<div className='am-image-outer-container'>
+								<Image
+									src={ayushmannath2_img}
+									style={{objectFit: 'cover'}}
+									fill={true}
+									alt="alan pic"
+								/>
+							</div>
+						</div>
+						<div class="am-content">
+							<p class="am-text-name">Ayushman Nath</p>
+							<p class="am-text-college">Churchill College</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="responsive-am-block">
+					<div class="am-card-empty">
+						<div class="am-card-wrapper">
+							<div className='am-image-outer-container'>
+								<Image
+									src={vimal2_img}
+									style={{objectFit: 'cover'}}
+									fill={true}
+									alt="alan pic"
+								/>
+							</div>
+						</div>
+						<div class="am-content">
+							<p class="am-text-name">Vimal Kamath</p>
+							<p class="am-text-college">Trinity College</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="responsive-am-block">
+					<div class="am-card-empty">
+						<div class="am-card-wrapper">
+							<div className='am-image-outer-container'>
+								<Image
+									src={cherry2_img}
+									style={{objectFit: 'cover'}}
+									fill={true}
+									alt="alan pic"
+								/>
+							</div>
+						</div>
+						<div class="am-content">
+							<p class="am-text-name">Cherry Yang</p>
+							<p class="am-text-college">Girton College</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="responsive-am-block">
+					<div class="am-card-empty">
+						<div class="am-card-wrapper">
+							<div className='am-image-outer-container'>
+								<Image
+									src={avneet2_img}
+									style={{objectFit: 'cover'}}
+									fill={true}
+									alt="alan pic"
+								/>
+							</div>
+						</div>
+						<div class="am-content">
+							<p class="am-text-name">Avneet Sekhon</p>
+							<p class="am-text-college">Corpus Christi College</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="responsive-am-block">
+					<div class="am-card-empty">
+						<div class="am-card-wrapper">
+							<div className='am-image-outer-container'>
+								<Image
+									src={tom2_img}
+									style={{objectFit: 'cover'}}
+									fill={true}
+									alt="alan pic"
+								/>
+							</div>
+						</div>
+						<div class="am-content">
+							<p class="am-text-name">Tom Beales</p>
+							<p class="am-text-college">Magdalene College</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="responsive-am-block">
+					<div class="am-card-empty">
+						<div class="am-card-wrapper">
+							<div className='am-image-outer-container'>
+								<Image
+									src={divy2_img}
+									style={{objectFit: 'cover'}}
+									fill={true}
+									alt="alan pic"
+								/>
+							</div>
+						</div>
+						<div class="am-content">
+							<p class="am-text-name">Divy Dayal</p>
+							<p class="am-text-college">Trinity College</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="responsive-am-block">
+					<div class="am-card-empty">
+						<div class="am-card-wrapper">
+							<div className='am-image-outer-container'>
+								<Image
+									src={kenneth2_img}
+									style={{objectFit: 'cover'}}
+									fill={true}
+									alt="alan pic"
+								/>
+							</div>
+						</div>
+						<div class="am-content">
+							<p class="am-text-name">Kenneth Weng</p>
+							<p class="am-text-college">Christ's College</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="responsive-am-block">
+					<div class="am-card-empty">
+						<div class="am-card-wrapper">
+							<div className='am-image-outer-container'>
+								<Image
+									src={muhammad2_img}
+									style={{objectFit: 'cover'}}
+									fill={true}
+									alt="alan pic"
+								/>
+							</div>
+						</div>
+						<div class="am-content">
+							<p class="am-text-name">Muhammad Khalil</p>
+							<p class="am-text-college">Homerton College</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="responsive-am-block">
+					<div class="am-card-empty">
+						<div class="am-card-wrapper">
+							<div className='am-image-outer-container'>
+								<Image
+									src={olivia2_img}
+									style={{objectFit: 'cover'}}
+									fill={true}
+									alt="alan pic"
+								/>
+							</div>
+						</div>
+						<div class="am-content">
+							<p class="am-text-name">Olivia Moynihan</p>
+							<p class="am-text-college">Christ's College</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="responsive-am-block">
+					<div class="am-card-empty">
+						<div class="am-card-wrapper">
+							<div className='am-image-outer-container'>
+								<Image
+									src={alan2_img}
+									style={{objectFit: 'cover'}}
+									fill={true}
+									alt="alan pic"
+								/>
+							</div>
+						</div>
+						<div class="am-content">
+							<p class="am-text-name">Alan Tan</p>
+							<p class="am-text-college">St Edmund's College</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="responsive-am-block">
+					<div class="am-card-empty">
+						<div class="am-card-wrapper">
+							<div className='am-image-outer-container'>
+								<Image
+									src={edric2_img}
+									style={{objectFit: 'cover'}}
+									fill={true}
+									alt="alan pic"
+								/>
+							</div>
+						</div>
+						<div class="am-content">
+							<p class="am-text-name">Edric Wong</p>
+							<p class="am-text-college">Peterhouse College</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="responsive-am-block">
+					<div class="am-card-empty">
+						<div class="am-card-wrapper">
+							<div className='am-image-outer-container'>
+								<Image
+									src={arindam2_img}
+									style={{objectFit: 'cover'}}
+									fill={true}
+									alt="alan pic"
+								/>
+							</div>
+						</div>
+						<div class="am-content">
+							<p class="am-text-name">Arindam Singh</p>
+							<p class="am-text-college">Selwyn College</p>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 
@@ -499,6 +743,15 @@ export default function Home() {
 					</div>
 				</div>
 			</div>
+		</div>
+	</div>
+
+	<div className='alumni-destinations-banner-container'>
+		<div className='alumni-destinations-outer'>
+			<div className='sponsors-header-container'>
+				<p>ALUMNI DESTINATIONS</p>
+			</div>
+			<div className='thinLine'></div>
 		</div>
 	</div>
 
