@@ -7,6 +7,7 @@ import initiatives_img from '../../resources/initiatives1.png'
 import events_img from '../../resources/events6.jpg'
 
 import JoinButton from '@/components/joinbutton'
+import JoinButton2 from '@/components/joinbutton2'
 
 //committee photos
 import vanessa_img from '../../resources/committee/Vanessa-min.JPG'
@@ -45,6 +46,26 @@ import dragon_img from '../../resources/sponsors/dragonfly.png'
 import flow_img from '../../resources/sponsors/flowtraders.png'
 import houlihan_img from '../../resources/sponsors/houlihan.png'
 import jefferies_img from '../../resources/sponsors/jefferies.png'
+
+//alumni destinations logos
+import barclays_alumni_img from '../../resources/alumniDestinations/barclaysLogo.png'
+import blackrock_alumni_img from '../../resources/alumniDestinations/blackrockLogo.png'
+import blackstone_alumni_img from '../../resources/alumniDestinations/blackstoneLogo.png'
+import bofa_alumni_img from '../../resources/alumniDestinations/bofaLogo.png'
+import citadel_alumni_img from '../../resources/alumniDestinations/citadelLogo.jpeg'
+import citi_alumni_img from '../../resources/alumniDestinations/citiLogo.png'
+import evercore_alumni_img from '../../resources/alumniDestinations/evercoreLogo.png'
+import goldman_alumni_img from '../../resources/alumniDestinations/goldmanLogo.png'
+import houlihan_alumni_img from '../../resources/alumniDestinations/houlihanLogo.png'
+import hsbc_alumni_img from '../../resources/alumniDestinations/hsbcLogo.png'
+import jefferies_alumni_img from '../../resources/alumniDestinations/jefferiesLogo.png'
+import jpm_alumni_img from '../../resources/alumniDestinations/jpmLogo.jpeg'
+import lazard_alumni_img from '../../resources/alumniDestinations/lazardLogo.png'
+import ms_alumni_img from '../../resources/alumniDestinations/msLogo.png'
+import pimco_alumni_img from '../../resources/alumniDestinations/pimcoLogo.jpeg'
+import pwp_alumni_img from '../../resources/alumniDestinations/pwpLogo.png'
+import roths_alumni_img from '../../resources/alumniDestinations/rothsLogo.png'
+import ubs_alumni_img from '../../resources/alumniDestinations/ubsLogo.png'
 
 
 export default function Home() {
@@ -752,6 +773,155 @@ export default function Home() {
 				<p>ALUMNI DESTINATIONS</p>
 			</div>
 			<div className='thinLine'></div>
+			<div className='alumni-destinations-outer-container'>
+
+				<div className='alumni-destinations-box-container'>
+					<Image
+						src={ubs_alumni_img}
+						style={{objectFit: 'cover'}}
+						fill={true}
+						alt="alumni destination logo"
+					/>
+				</div>
+
+				<div className='alumni-destinations-box-container'>
+					<Image
+						src={blackrock_alumni_img}
+						style={{objectFit: 'cover'}}
+						fill={true}
+						alt="alumni destination logo"
+					/>
+				</div>
+
+				<div className='alumni-destinations-box-container'>
+					<Image
+						src={roths_alumni_img}
+						style={{objectFit: 'cover'}}
+						fill={true}
+						alt="alumni destination logo"
+					/>
+				</div>
+
+				<div className='alumni-destinations-box-container'>
+					<Image
+						src={blackstone_alumni_img}
+						style={{objectFit: 'cover'}}
+						fill={true}
+						alt="alumni destination logo"
+					/>
+				</div>
+
+				<div className='alumni-destinations-box-container'>
+					<Image
+						src={pwp_alumni_img}
+						style={{objectFit: 'cover'}}
+						fill={true}
+						alt="alumni destination logo"
+					/>
+				</div>
+
+				<div className='alumni-destinations-box-container'>
+					<Image
+						src={bofa_alumni_img}
+						style={{objectFit: 'cover'}}
+						fill={true}
+						alt="alumni destination logo"
+					/>
+				</div>
+
+				<div className='alumni-destinations-box-container'>
+					<Image
+						src={pimco_alumni_img}
+						style={{objectFit: 'cover'}}
+						fill={true}
+						alt="alumni destination logo"
+					/>
+				</div>
+
+				<div className='alumni-destinations-box-container'>
+					<Image
+						src={citadel_alumni_img}
+						style={{objectFit: 'cover'}}
+						fill={true}
+						alt="alumni destination logo"
+					/>
+				</div>
+
+				<div className='alumni-destinations-box-container'>
+					<Image
+						src={ms_alumni_img}
+						style={{objectFit: 'cover'}}
+						fill={true}
+						alt="alumni destination logo"
+					/>
+				</div>
+
+				<div className='alumni-destinations-box-container'>
+					<Image
+						src={lazard_alumni_img}
+						style={{objectFit: 'cover'}}
+						fill={true}
+						alt="alumni destination logo"
+					/>
+				</div>
+
+				<div className='alumni-destinations-box-container'>
+					<Image
+						src={evercore_alumni_img}
+						style={{objectFit: 'cover'}}
+						fill={true}
+						alt="alumni destination logo"
+					/>
+				</div>
+
+				<div className='alumni-destinations-box-container'>
+					<Image
+						src={jpm_alumni_img}
+						style={{objectFit: 'cover'}}
+						fill={true}
+						alt="alumni destination logo"
+					/>
+				</div>
+
+				<div className='alumni-destinations-box-container'>
+					<Image
+						src={goldman_alumni_img}
+						style={{objectFit: 'cover'}}
+						fill={true}
+						alt="alumni destination logo"
+					/>
+				</div>
+
+				<div className='alumni-destinations-box-container'>
+					<Image
+						src={houlihan_alumni_img}
+						style={{objectFit: 'cover'}}
+						fill={true}
+						alt="alumni destination logo"
+					/>
+				</div>
+
+				<div className='alumni-destinations-box-container'>
+					<Image
+						src={hsbc_alumni_img}
+						style={{objectFit: 'cover'}}
+						fill={true}
+						alt="alumni destination logo"
+					/>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div className='joining-end-banner-container'>
+		<div className='joining-end-outer'>
+			<div className='joining-end-text-outer'>
+				<p>Sign up to Cambridge Investment Banking Society now</p>
+			</div>
+			<div className='joining-end-text-minor'>
+				<p>Membership is free and open to everyone from all backgrounds and disciplines at the University of Cambridge</p>
+			</div>
+			<JoinButton2></JoinButton2>
 		</div>
 	</div>
 

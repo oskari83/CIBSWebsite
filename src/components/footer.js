@@ -26,6 +26,10 @@ export default function Footer() {
 		window.open("mailto:presidents@cibsoc.co.uk", "_blank");
 	}
 
+	const clickResearchGroup = () => {
+		document.location.href = "https://cibsoc.co.uk/researchgroup/";
+	}
+
 	return (
 		<>
 		<div className='footer-container'>
@@ -58,7 +62,7 @@ export default function Footer() {
 					<div className='footer-links-container'>
 						<div className='footer-link' onClick={() => router.push('/events')}>What we do</div>
 						<div className='footer-link' onClick={() => router.push('/sponsors')}>Sponsors</div>
-						<div className='footer-link' onClick={() => router.push('/')}>Research Group</div>
+						<div className='footer-link' onClick={clickResearchGroup}>Research Group</div>
 						<div className='footer-link' onClick={() => router.push('/members')}>Members</div>
 					</div>
 				</div>

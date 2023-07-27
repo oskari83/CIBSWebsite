@@ -9,6 +9,10 @@ import key_icon from '../../resources/key.png'
 export default function Navbar() {
 	const router = useRouter()
 
+	const clickResearchGroup = () => {
+		document.location.href = "https://cibsoc.co.uk/researchgroup/";
+	}
+
 	return (
 		<>
 		<div className='navbar'>
@@ -33,7 +37,7 @@ export default function Navbar() {
 					<div className='navbar-link' onClick={() => router.push('/sponsors')}>
 						<p>Sponsors</p>
 					</div>
-					<div className='navbar-link' onClick={() => router.push('/sponsors')}>
+					<div className='navbar-link' onClick={clickResearchGroup}>
 						<p>Research Group</p>
 					</div>
 					<div className='navbar-link' onClick={() => router.push('/members')}>
