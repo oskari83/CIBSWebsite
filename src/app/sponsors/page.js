@@ -22,11 +22,6 @@ export default function Page(){
 					<p>WHY SPONSOR US</p>
 				</div>
 				<div className='thinLine'></div>
-				<div className='sponsorspage-minor-container'>
-					<p>
-						Text...
-					</p>
-				</div>
 
 				<div className='reasons-sponsor-outer-container'>
 					<Image
@@ -108,41 +103,36 @@ export default function Page(){
 			<div className='services-banner-container'>
 				<div className='services-banner-outer'>
 
-					<div className='sponsorspage-header-container-services'>
-						<p>OUR SERVICES</p>
-					</div>
-					<div className='adcampaign-thinLine'></div>
-
 					<div className='ad-campaign-container'>
 
 						<div className='sponsorpage-adcampaign-text-container-outer'>
 							<div className='sponsorpage-adcampaign-header-container'>
-								<p>ADVERTISING CAMPAIGN</p>
+								<p>ADVERTISING CAMPAIGNS</p>
 							</div>
 							<div className='sponsorpage-adcampaign-detail-container2'>
-								Every sponsor receives at least one advertising campaign, consisting of:
+								In addition to everything else, every sponsor receives at least one advertising campaign, consisting of:
 							</div>
 
 							<div className='sponsorpage-adcampaign-text-align-container-outer1'>
 								<div className='sponsorpage-eventpartner-text-align-container-outer2'>
-									<div className='sponsorpage-eventpartner-detail-container'>
+									<div className='sponsorpage-ad-campaign-detail-container'>
 										<li>{"Advertising across all distribution channels (LinkedIn, Instagram, Facebook, newsletter), totalling over 5000 followers"}</li>
 									</div>
 
-									<div className='sponsorpage-eventpartner-detail-container'>
+									<div className='sponsorpage-ad-campaign-detail-container'>
 										<li>{"Ongoing firm opportunities collated and regularly distributed via our Sponsor Opportunities spreadsheet"}</li>
 									</div>
 								</div>
 								<div className='sponsorpage-eventpartner-text-align-container-outer3'>
-									<div className='sponsorpage-eventpartner-detail-container'>
+									<div className='sponsorpage-ad-campaign-detail-container2'>
 										<li>{"Strategically timed pre-event marking and post-event recap"}</li>
 									</div>
 
-									<div className='sponsorpage-eventpartner-detail-container'>
+									<div className='sponsorpage-ad-campaign-detail-container2'>
 										<li>{"Beautiful graphics designed in-house"}</li>
 									</div>
 
-									<div className='sponsorpage-eventpartner-detail-container'>
+									<div className='sponsorpage-ad-campaign-detail-container2'>
 									<li>{"12 ambassadors promote across college and subject networks"}</li>
 									</div>
 								</div>
@@ -178,11 +168,16 @@ export default function Page(){
 						
 					</div>
 
+				</div>
+			</div>
+
+			<div className='services-banner-container2'>
+				<div className='services-banner-outer2'>
 					<div className='event-partnership-container'>
 
 						<div className='sponsorpage-eventpartner-text-container-outer'>
 							<div className='sponsorpage-eventpartner-header-container'>
-								<p>EVENT PARTNERSHIP</p>
+								<p>EVENT PARTNERSHIPS</p>
 							</div>
 							<div className='sponsorpage-eventpartner-detail-container2'>
 								Gold and Platinum sponsors receive our event partnership service, with end-to-end event organisation from us. We have experience hosting events for a variety of firms with various objectives. Examples include:
@@ -243,7 +238,6 @@ export default function Page(){
 						</div>
 						
 					</div>
-
 				</div>
 			</div>
 

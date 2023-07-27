@@ -1,6 +1,6 @@
 'use client'
 
-import '../app/globals.css'
+import './footer.css'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 

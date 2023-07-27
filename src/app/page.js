@@ -456,9 +456,9 @@ export default function Home() {
 			<div className='thinLine'></div>
 
 			<div className='ambassador-boxes-outer'>
-				<div class="responsive-am-block">
-					<div class="am-card-empty">
-						<div class="am-card-wrapper">
+				<div className="responsive-am-block">
+					<div className="am-card-empty">
+						<div className="am-card-wrapper">
 							<div className='am-image-outer-container'>
 								<Image
 									src={ayushmannath2_img}
@@ -468,16 +468,16 @@ export default function Home() {
 								/>
 							</div>
 						</div>
-						<div class="am-content">
-							<p class="am-text-name">Ayushman Nath</p>
-							<p class="am-text-college">Churchill College</p>
+						<div className="am-content">
+							<p className="am-text-name">Ayushman Nath</p>
+							<p className="am-text-college">Churchill College</p>
 						</div>
 					</div>
 				</div>
 
-				<div class="responsive-am-block">
-					<div class="am-card-empty">
-						<div class="am-card-wrapper">
+				<div className="responsive-am-block">
+					<div className="am-card-empty">
+						<div className="am-card-wrapper">
 							<div className='am-image-outer-container'>
 								<Image
 									src={vimal2_img}
@@ -487,16 +487,16 @@ export default function Home() {
 								/>
 							</div>
 						</div>
-						<div class="am-content">
-							<p class="am-text-name">Vimal Kamath</p>
-							<p class="am-text-college">Trinity College</p>
+						<div className="am-content">
+							<p className="am-text-name">Vimal Kamath</p>
+							<p className="am-text-college">Trinity College</p>
 						</div>
 					</div>
 				</div>
 
-				<div class="responsive-am-block">
-					<div class="am-card-empty">
-						<div class="am-card-wrapper">
+				<div className="responsive-am-block">
+					<div className="am-card-empty">
+						<div className="am-card-wrapper">
 							<div className='am-image-outer-container'>
 								<Image
 									src={cherry2_img}
@@ -506,16 +506,16 @@ export default function Home() {
 								/>
 							</div>
 						</div>
-						<div class="am-content">
-							<p class="am-text-name">Cherry Yang</p>
-							<p class="am-text-college">Girton College</p>
+						<div className="am-content">
+							<p className="am-text-name">Cherry Yang</p>
+							<p className="am-text-college">Girton College</p>
 						</div>
 					</div>
 				</div>
 
-				<div class="responsive-am-block">
-					<div class="am-card-empty">
-						<div class="am-card-wrapper">
+				<div className="responsive-am-block">
+					<div className="am-card-empty">
+						<div className="am-card-wrapper">
 							<div className='am-image-outer-container'>
 								<Image
 									src={avneet2_img}
@@ -525,16 +525,16 @@ export default function Home() {
 								/>
 							</div>
 						</div>
-						<div class="am-content">
-							<p class="am-text-name">Avneet Sekhon</p>
-							<p class="am-text-college">Corpus Christi College</p>
+						<div className="am-content">
+							<p className="am-text-name">Avneet Sekhon</p>
+							<p className="am-text-college">Corpus Christi College</p>
 						</div>
 					</div>
 				</div>
 
-				<div class="responsive-am-block">
-					<div class="am-card-empty">
-						<div class="am-card-wrapper">
+				<div className="responsive-am-block">
+					<div className="am-card-empty">
+						<div className="am-card-wrapper">
 							<div className='am-image-outer-container'>
 								<Image
 									src={tom2_img}
@@ -544,16 +544,16 @@ export default function Home() {
 								/>
 							</div>
 						</div>
-						<div class="am-content">
-							<p class="am-text-name">Tom Beales</p>
-							<p class="am-text-college">Magdalene College</p>
+						<div className="am-content">
+							<p className="am-text-name">Tom Beales</p>
+							<p className="am-text-college">Magdalene College</p>
 						</div>
 					</div>
 				</div>
 
-				<div class="responsive-am-block">
-					<div class="am-card-empty">
-						<div class="am-card-wrapper">
+				<div className="responsive-am-block">
+					<div className="am-card-empty">
+						<div className="am-card-wrapper">
 							<div className='am-image-outer-container'>
 								<Image
 									src={divy2_img}
@@ -563,16 +563,16 @@ export default function Home() {
 								/>
 							</div>
 						</div>
-						<div class="am-content">
-							<p class="am-text-name">Divy Dayal</p>
-							<p class="am-text-college">Trinity College</p>
+						<div className="am-content">
+							<p className="am-text-name">Divy Dayal</p>
+							<p className="am-text-college">Trinity College</p>
 						</div>
 					</div>
 				</div>
 
-				<div class="responsive-am-block">
-					<div class="am-card-empty">
-						<div class="am-card-wrapper">
+				<div className="responsive-am-block">
+					<div className="am-card-empty">
+						<div className="am-card-wrapper">
 							<div className='am-image-outer-container'>
 								<Image
 									src={kenneth2_img}
@@ -582,16 +582,16 @@ export default function Home() {
 								/>
 							</div>
 						</div>
-						<div class="am-content">
-							<p class="am-text-name">Kenneth Weng</p>
-							<p class="am-text-college">Christ's College</p>
+						<div className="am-content">
+							<p className="am-text-name">Kenneth Weng</p>
+							<p className="am-text-college">Christ's College</p>
 						</div>
 					</div>
 				</div>
 
-				<div class="responsive-am-block">
-					<div class="am-card-empty">
-						<div class="am-card-wrapper">
+				<div className="responsive-am-block">
+					<div className="am-card-empty">
+						<div className="am-card-wrapper">
 							<div className='am-image-outer-container'>
 								<Image
 									src={muhammad2_img}
@@ -601,16 +601,16 @@ export default function Home() {
 								/>
 							</div>
 						</div>
-						<div class="am-content">
-							<p class="am-text-name">Muhammad Khalil</p>
-							<p class="am-text-college">Homerton College</p>
+						<div className="am-content">
+							<p className="am-text-name">Muhammad Khalil</p>
+							<p className="am-text-college">Homerton College</p>
 						</div>
 					</div>
 				</div>
 
-				<div class="responsive-am-block">
-					<div class="am-card-empty">
-						<div class="am-card-wrapper">
+				<div className="responsive-am-block">
+					<div className="am-card-empty">
+						<div className="am-card-wrapper">
 							<div className='am-image-outer-container'>
 								<Image
 									src={olivia2_img}
@@ -620,16 +620,16 @@ export default function Home() {
 								/>
 							</div>
 						</div>
-						<div class="am-content">
-							<p class="am-text-name">Olivia Moynihan</p>
-							<p class="am-text-college">Christ's College</p>
+						<div className="am-content">
+							<p className="am-text-name">Olivia Moynihan</p>
+							<p className="am-text-college">Christ's College</p>
 						</div>
 					</div>
 				</div>
 
-				<div class="responsive-am-block">
-					<div class="am-card-empty">
-						<div class="am-card-wrapper">
+				<div className="responsive-am-block">
+					<div className="am-card-empty">
+						<div className="am-card-wrapper">
 							<div className='am-image-outer-container'>
 								<Image
 									src={alan2_img}
@@ -639,16 +639,16 @@ export default function Home() {
 								/>
 							</div>
 						</div>
-						<div class="am-content">
-							<p class="am-text-name">Alan Tan</p>
-							<p class="am-text-college">St Edmund's College</p>
+						<div className="am-content">
+							<p className="am-text-name">Alan Tan</p>
+							<p className="am-text-college">St Edmund's College</p>
 						</div>
 					</div>
 				</div>
 
-				<div class="responsive-am-block">
-					<div class="am-card-empty">
-						<div class="am-card-wrapper">
+				<div className="responsive-am-block">
+					<div className="am-card-empty">
+						<div className="am-card-wrapper">
 							<div className='am-image-outer-container'>
 								<Image
 									src={edric2_img}
@@ -658,16 +658,16 @@ export default function Home() {
 								/>
 							</div>
 						</div>
-						<div class="am-content">
-							<p class="am-text-name">Edric Wong</p>
-							<p class="am-text-college">Peterhouse College</p>
+						<div className="am-content">
+							<p className="am-text-name">Edric Wong</p>
+							<p className="am-text-college">Peterhouse College</p>
 						</div>
 					</div>
 				</div>
 
-				<div class="responsive-am-block">
-					<div class="am-card-empty">
-						<div class="am-card-wrapper">
+				<div className="responsive-am-block">
+					<div className="am-card-empty">
+						<div className="am-card-wrapper">
 							<div className='am-image-outer-container'>
 								<Image
 									src={arindam2_img}
@@ -677,9 +677,9 @@ export default function Home() {
 								/>
 							</div>
 						</div>
-						<div class="am-content">
-							<p class="am-text-name">Arindam Singh</p>
-							<p class="am-text-college">Selwyn College</p>
+						<div className="am-content">
+							<p className="am-text-name">Arindam Singh</p>
+							<p className="am-text-college">Selwyn College</p>
 						</div>
 					</div>
 				</div>
