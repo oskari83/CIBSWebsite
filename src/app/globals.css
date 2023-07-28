@@ -32,7 +32,7 @@
 	--light-purple: #5D3C90;
 	--orange: #F57300;
 	--dark-purple: #4E35A0;
-	--gray-purple: #CECADB;
+	--gray-purple: #dad6e9;
 	--light-gray: rgb(244, 244, 244);
 }
 
@@ -972,3 +972,4 @@ li {
 	font-family: "WorkSansRegular";
 	z-index: 10;
 }
+

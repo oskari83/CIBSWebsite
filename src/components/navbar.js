@@ -32,14 +32,12 @@ export default function Navbar() {
 				</div>
 				<div className='navbarlinks-outer-container'>
 					<div className='navbar-link' onClick={() => router.push('/events')}>
-						<p>Events</p>
+						<p>About Us</p>
 					</div>
 					<div className='navbar-link' onClick={() => router.push('/sponsors')}>
 						<p>Sponsors</p>
 					</div>
-					<div className='navbar-link' onClick={clickResearchGroup}>
-						<p>Research Group</p>
-					</div>
+
 					<div className='navbar-link' onClick={() => router.push('/members')}>
 						<div className='icon-container'>
 							<Image
@@ -60,3 +58,9 @@ export default function Navbar() {
 		</>
 	)
 }
+
+/*
+	<div className='navbar-link' onClick={clickResearchGroup}>
+		<p>Research Group</p>
+	</div>
+*/

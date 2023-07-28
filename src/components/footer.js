@@ -35,7 +35,7 @@ export default function Footer() {
 		<div className='footer-container'>
 			<div className='footer-outer'>
 				<div className='footer-above-container'>
-					<div className='footer-logo-container'>
+					<div className='footer-logo-container' onClick={() => router.push('/')}>
 						<div className='footer-logo-image'>
 							<Image
 								src={logo2_img}

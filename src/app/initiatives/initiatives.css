@@ -1,0 +1,235 @@
+.initiatives-banner-container{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	top: 0px;
+	width: 100%;
+	background-color: rgb(255, 255, 255);
+	z-index: 4;
+}
+
+.initiativespage-outer{
+	width: clamp(200px,900px,900px);
+}
+
+.initiativespage-header-container {
+	margin-top: 100px;
+	margin-bottom: 0px;
+	display: flex;
+	font-size: 28px;
+	font-family: "PlayfairBold";
+	width: 100%;
+	height: 60px;
+	align-items: center;
+	justify-content: center;
+	color: var(--dark-purple);
+}
+
+.thinLine{
+	width: 100%;
+	height: 1px;
+	background-color: rgb(203, 203, 203);
+	margin-bottom: 40px;
+}
+
+.initiatives-boxes-outer-container{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	margin-bottom: 60px;
+	justify-content: space-between;
+}
+
+.initiatives-box-container{
+	display: flex;
+	flex-direction: column;
+	background-color: rgb(240, 240, 240);
+	height: 250px;
+	width: 45%;
+	margin-top: 15px;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+}
+
+.initiatives-box-container2{
+	display: flex;
+	flex-direction: column;
+	background-color: var(--gray-purple);
+	height: 250px;
+	width: 45%;
+	margin-top: 15px;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+}
+
+.initiatives-box-container-image{
+	display: flex;
+	flex-direction: column;
+	height: 250px;
+	width: 45%;
+	margin-top: 15px;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	position: relative;
+}
+
+.initiatives-box-container-header{
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	font-family: "PlayfairBold";
+	font-size: 22px;
+	color: var(--orange);
+	width: calc(100% - 80px);
+	height: 40px;
+	padding-left: 40px;
+	padding-right: 40px;
+	margin-top: 25px;
+	margin-bottom: 10px;
+}
+
+.initiatives-box-container-header2{
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	font-family: "PlayfairBold";
+	font-size: 22px;
+	color: var(--dark-purple);
+	width: calc(100% - 80px);
+	height: 40px;
+	padding-left: 40px;
+	padding-right: 40px;
+	margin-top: 25px;
+	margin-bottom: 10px;
+}
+
+.initiatives-box-container-text{
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	font-family: "WorkSansLight";
+	font-size: 16px;
+	color: black;
+	width: calc(100% - 80px);
+	padding-left: 40px;
+	padding-right: 40px;
+	flex-direction: column;
+}
+
+.initiatives-box-container-text-list{
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.initiatives-events-banner-container{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	top: 0px;
+	width: 100%;
+	height: 600px;
+	background-color: rgb(235, 235, 235);
+	z-index: 4;
+}
+
+.initiativespage-events-outer{
+	width: clamp(200px,900px,900px);
+}
+
+.initiativespage-events-header-container {
+	margin-top: 40px;
+	margin-bottom: 0px;
+	display: flex;
+	font-size: 28px;
+	font-family: "PlayfairBold";
+	width: 100%;
+	height: 60px;
+	align-items: center;
+	justify-content: center;
+	color: var(--dark-purple);
+}
+
+
+
+
+
+
+
+.joining-end-banner-container{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	top: 0px;
+	width: 100%;
+	background-color: rgb(255, 255, 255);
+	z-index: 4;
+}
+
+.joining-end-destinations-outer {
+    width: clamp(200px,900px,900px);
+}
+
+.joining-end-text-outer {
+	margin-top: 60px;
+	height: 80px;
+	width: 900px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	color: rgb(54, 54, 54);
+	font-size: 38px;
+	font-family: "Garamond";
+	z-index: 10;
+}
+
+.joining-end-text-minor {
+	height: 40px;
+	width: 900px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	color: rgba(36, 36, 36, 0.747);
+	font-size: 16px;
+	font-family: "WorkSansRegular";
+	z-index: 10;
+}
+
+.joining-end-join-button{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+	margin-bottom: 60px;
+	height: 37px;
+	width: 220px;
+	color: rgba(36, 36, 36, 0.9);
+	border: 1px solid var(--dark-purple);
+	z-index: 10;
+	cursor: pointer;
+	transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+}
+
+.joining-end-join-button:hover{
+	color: rgb(255, 255, 255);
+	background-color: var(--dark-purple);
+}
+
+.joining-end-button-text{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 14px;
+	font-family: "WorkSansRegular";
+	z-index: 10;
+}
