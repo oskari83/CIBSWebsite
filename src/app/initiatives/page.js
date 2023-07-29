@@ -146,10 +146,10 @@ export default function Page(){
 			</div>
 		</div>
 
-		<div className='fourth-banner-container'>
-			<div className='events-outer'>
-				<div className='events-container'>
-					<div className='events-image-container'>
+		<div className='career-guidance-banner-container'>
+			<div className='career-guidance-outer'>
+				<div className='career-guidance-container'>
+					<div className='career-guidance-image-container'>
 						<Image
 							src={event1_img}
 							style={{objectFit: 'cover'}}
@@ -157,18 +157,18 @@ export default function Page(){
 							alt="initiatives pic"
 						/>
 					</div>
-					<div className='events-text-container-outer'>
-						<div className='events-header-container'>
+					<div className='career-guidance-text-container-outer'>
+						<div className='career-guidance-header-container'>
 							<p>CAREER GUIDANCE</p>
 						</div>
-						<div className='events-detail-container'>
-							Previous successful applicants share their experience of programmes across wide variety of divisions
+						<div className='career-guidance-detail-container'>
+							<li>Previous successful applicants share their experience of programmes across wide variety of divisions</li>
 						</div>
-						<div className='events-detail-container'>
-							Provide members a comprehensive understanding of recruitment process, tips and tricks
+						<div className='career-guidance-detail-container'>
+							<li>Provide members a comprehensive understanding of recruitment process, tips and tricks</li>
 						</div>
-						<div className='events-detail-container'>
-							CV and cover letter workshops
+						<div className='career-guidance-detail-container'>
+							<li>CV and cover letter workshops</li>
 						</div>
 						
 					</div>
@@ -176,22 +176,22 @@ export default function Page(){
 			</div>
 		</div>
 
-		<div className='third-banner-container'>
-			<div className='events-outer'>
-				<div className='initiatives-container'>
-					<div className='initiatives-text-container-outer'>
-						<div className='initiatives-header-container'>
+		<div className='networking-events-banner-container'>
+			<div className='networking-events-outer'>
+				<div className='networking-events-container'>
+					<div className='networking-events-text-container-outer'>
+						<div className='networking-events-header-container'>
 							<p>NETWORKING EVENTS</p>
 						</div>
-						<div className='initiatives-detail-container'>
-							Members build relationships with firm representatives, getting to know the firm culture and open opportunities
+						<div className='networking-events-detail-container'>
+							<li>Members build relationships with firm representatives, getting to know the firm culture and open opportunities</li>
 						</div>
-						<div className='initiatives-detail-container'>
-							Strong networks across the membership base, where members support each other in application processes
+						<div className='networking-events-detail-container'>
+							<li>Strong networks across the membership base, where members support each other in application processes</li>
 						</div>
 						
 					</div>
-					<div className='initiatives-image-container'>
+					<div className='networking-events-image-container'>
 						<Image
 							src={event3_img}
 							style={{objectFit: 'cover'}}
@@ -203,10 +203,10 @@ export default function Page(){
 			</div>
 		</div>
 
-		<div className='fourth-banner-container'>
-			<div className='events-outer'>
-				<div className='events-container'>
-					<div className='events-image-container'>
+		<div className='industry-insights-banner-container'>
+			<div className='industry-insights-outer'>
+				<div className='industry-insights-container'>
+					<div className='industry-insights-image-container'>
 						<Image
 							src={event6_img}
 							style={{objectFit: 'cover'}}
@@ -214,18 +214,18 @@ export default function Page(){
 							alt="initiatives pic"
 						/>
 					</div>
-					<div className='events-text-container-outer'>
-						<div className='events-header-container'>
+					<div className='industry-insights-text-container-outer'>
+						<div className='industry-insights-header-container'>
 							<p>INDUSTRY INSIGHTS</p>
 						</div>
-						<div className='events-detail-container'>
-							Technical workshops, insight talks and panels, explaining trends in finance
+						<div className='industry-insights-detail-container'>
+							<li>Technical workshops, insight talks and panels, explaining trends in finance</li>
 						</div>
-						<div className='events-detail-container'>
-							Platform for firms to demonstrate thought leadership and share unique insights
+						<div className='industry-insights-detail-container'>
+							<li>Platform for firms to demonstrate thought leadership and share unique insights</li>
 						</div>
-						<div className='events-detail-container'>
-							Introduce students to non-mainstream divisions in finance
+						<div className='industry-insights-detail-container'>
+							<li>Introduce students to non-mainstream divisions in finance</li>
 						</div>
 						
 					</div>
