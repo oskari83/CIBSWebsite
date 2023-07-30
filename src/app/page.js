@@ -79,13 +79,15 @@ export default function Home() {
 			fill={true}
 			alt="background image"
 		/>
-		<div className='first-banner-text-outer'>
-			<p>Cambridge Investment Banking Society</p>
+		<div className='first-outer'>
+			<div className='first-banner-text-outer'>
+				<p>Cambridge Investment Banking Society</p>
+			</div>
+			<div className='first-banner-text-minor'>
+				<p>Connecting Cambridge students with careers in finance</p>
+			</div>
+			<JoinButton></JoinButton>
 		</div>
-		<div className='first-banner-text-minor'>
-			<p>Connecting Cambridge students with careers in finance</p>
-		</div>
-		<JoinButton></JoinButton>
 	</div>
     <div className='second-banner-container'>
 		<div className='about-outer'>

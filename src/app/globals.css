@@ -68,6 +68,10 @@ li {
 	list-style-position: outside;
 }
 
+/*
+	-----     FIRST BANNER      -----
+*/
+
 .first-banner-container{
 	position: relative;
 	display: flex;
@@ -80,10 +84,17 @@ li {
 	z-index: 4;
 }
 
+.first-outer{
+	width: clamp(200px,100%,980px);
+	z-index: 1;
+}
+
 .first-banner-text-outer {
 	margin-top: 210px;
 	height: 80px;
-	width: 900px;
+	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
@@ -95,7 +106,9 @@ li {
 
 .first-banner-text-minor {
 	height: 40px;
-	width: 900px;
+	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
@@ -109,7 +122,9 @@ li {
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
-	width: 900px;
+	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
 	margin-top: 14px;
 }
 
@@ -142,6 +157,10 @@ li {
 	z-index: 10;
 }
 
+/*
+	-----     SECOND BANNER      -----
+*/
+
 .second-banner-container{
 	position: relative;
 	display: flex;
@@ -154,7 +173,7 @@ li {
 }
 
 .about-outer{
-	width: clamp(200px,900px,900px);
+	width: clamp(200px,100%,980px);
 }
 
 .about-header-container {
@@ -163,7 +182,9 @@ li {
 	display: flex;
 	font-size: 28px;
 	font-family: "PlayfairBold";
-	width: 100%;
+	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
 	height: 60px;
 	align-items: center;
 	justify-content: center;
@@ -171,7 +192,9 @@ li {
 }
 
 .thinLine{
-	width: 100%;
+	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
 	height: 1px;
 	background-color: rgb(203, 203, 203);
 	margin-bottom: 40px;
@@ -179,7 +202,10 @@ li {
 
 .about-minor-container {
 	display: flex;
-	font-size: 18x;
+	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
+	font-size: 16px;
 	font-family: "WorkSansLight";
 	line-height: 1.6;
 	text-align: justify;
@@ -191,7 +217,9 @@ li {
 	display: flex;
 	font-size: 28px;
 	font-family: "PlayfairBold";
-	width: 100%;
+	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
 	height: 60px;
 	align-items: center;
 	justify-content: center;
@@ -201,11 +229,13 @@ li {
 .values-outer-box{
 	display: flex;
 	height: 300px;
-	width: 100%;
+	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	margin-bottom: 100px;
+	margin-bottom: 90px;
 	margin-top: 50px;
 }
 
@@ -279,6 +309,10 @@ li {
 	height: 24px;
 	background-color: var(--dark-purple);
 }
+
+/*
+	-----     THIRD BANNER      -----
+*/
 
 .third-banner-container{
 	position: relative;
@@ -489,6 +523,10 @@ li {
     -moz-transition: all 0.2s ease-in-out;
 }
 
+/*
+	-----     COMMITTEE BANNER      -----
+*/
+
 .fifth-banner-container{
 	position: relative;
 	display: flex;
@@ -501,7 +539,7 @@ li {
 }
 
 .committee-outer {
-    width: clamp(200px,900px,900px);
+    width: clamp(200px,100%,980px);
 }
 
 .committee-header-container{
@@ -520,11 +558,14 @@ li {
 .committee-message-container{
 	display: flex;
 	flex-direction: column;
-	font-size: 18x;
+	font-size: 16px;
 	font-family: "WorkSansLight";
 	line-height: 1.6;
 	text-align: justify;
 	margin-bottom: 20px;
+	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
 }
 
 .committee-text-right-pos{
@@ -543,6 +584,9 @@ li {
 	margin-top: 40px;
 	flex-wrap: wrap;
 	margin-bottom: 50px;
+	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
 }
 
 .committee-box {
@@ -602,6 +646,10 @@ li {
 	margin-top: 2px;
 }
 
+/*
+	-----     AMBASSADORS BANNER      -----
+*/
+
 .seventh-banner-container{
 	position: relative;
 	display: flex;
@@ -614,12 +662,14 @@ li {
 }
 
 .ambassadors-outer {
-    width: clamp(200px,900px,900px);
+    width: clamp(200px,100%,980px);
 }
 
 .ambassador-boxes-outer{
 	max-width: 900px !important;
-    width: 100% !important;
+    width: calc(100% - 80px) !important;
+	margin-left: 40px;
+	margin-right: 40px;
     min-height: 75px;
     height: fit-content;
     display: flex;
@@ -628,6 +678,7 @@ li {
     margin-top: 50px;
 	margin-bottom: 40px;
     justify-content: space-between;
+	align-items: center;
 }
 
 .responsive-am-block {
@@ -687,6 +738,10 @@ li {
 	position: relative;
 }
 
+/*
+	-----     SPONSORS BANNER      -----
+*/
+
 .sixth-banner-container{
 	position: relative;
 	display: flex;
@@ -699,7 +754,7 @@ li {
 }
 
 .sponsors-outer {
-    width: clamp(200px,900px,900px);
+    width: clamp(200px,100%,980px);
 }
 
 .sponsors-header-container {
@@ -708,7 +763,9 @@ li {
 	display: flex;
 	font-size: 28px;
 	font-family: "PlayfairBold";
-	width: 100%;
+	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
 	height: 60px;
 	align-items: center;
 	justify-content: center;
@@ -717,7 +774,9 @@ li {
 
 .sponsors-box-outer {
     display: flex;
-	width: 100%;
+	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	margin-bottom: 50px;
@@ -765,6 +824,10 @@ li {
 	color: rgb(40, 40, 40);
 }
 
+/*
+	-----     ALUMNI-DESTINATIONS BANNER      -----
+*/
+
 .alumni-destinations-banner-container{
 	position: relative;
 	display: flex;
@@ -777,14 +840,16 @@ li {
 }
 
 .alumni-destinations-outer {
-    width: clamp(200px,900px,900px);
+    width: clamp(200px,100%,980px);
 }
 
 .alumni-destinations-outer-container{
 	display: flex;
 	align-items: flex-start;
 	justify-content: space-between;
-	width: 100%;
+	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
 	flex-wrap: wrap;
 	margin-bottom: 60px;
 }
@@ -802,6 +867,10 @@ li {
 	margin-bottom: 10px;
 }
 
+/*
+	-----     JOINING-END BANNER      -----
+*/
+
 .joining-end-banner-container{
 	position: relative;
 	display: flex;
@@ -813,14 +882,16 @@ li {
 	z-index: 4;
 }
 
-.joining-end-destinations-outer {
-    width: clamp(200px,900px,900px);
+.joining-end-outer {
+    width: clamp(200px,100%, 980px);
 }
 
 .joining-end-text-outer {
 	margin-top: 60px;
 	height: 80px;
-	width: 900px;
+	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
@@ -832,7 +903,9 @@ li {
 
 .joining-end-text-minor {
 	height: 40px;
-	width: 900px;
+	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
@@ -873,3 +946,250 @@ li {
 	z-index: 10;
 }
 
+.joining-end-button-outer{
+	display: flex;
+	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+@media (max-width: 900px) {
+
+	.joining-end-text-outer {
+		height: 60px;
+		font-size: 35px;
+	}
+	
+	.joining-end-text-minor {
+		height: 30px;
+		font-size: 14px;
+	}
+
+	.alumni-destinations-box-container {
+		width: 110px;
+    	height: 110px;
+	}
+}
+
+@media (max-width: 850px) {
+	.first-banner-text-outer {
+		height: 60px;
+		font-size: 35px;
+	}
+	
+	.first-banner-text-minor {
+		height: 30px;
+		font-size: 14px;
+	}
+
+	.joining-end-text-outer {
+		height: 60px;
+		font-size: 30px;
+	}
+	
+	.joining-end-text-minor {
+		height: 30px;
+		font-size: 13px;
+	}
+}
+
+@media (max-width: 770px) {
+	.sponsors-box-outer {
+		flex-direction: column;
+	}
+
+	.sponsor-box{
+		width: 100%;
+	}
+
+	.sponsor-image {
+		height: 100px;
+	}
+
+	.responsive-am-block {
+		width: 142px;
+	}
+
+	.am-image-outer-container{
+		width: 142px;
+		height: 142px;
+	}
+
+	.am-text-name {
+		font-size: 16px !important;
+	}
+	
+	.am-text-college {
+		font-size: 10px !important;
+	}
+}
+
+@media (max-width: 714px) {
+	.joining-end-text-outer {
+		height: 120px;
+		font-size: 30px;
+		width: 80%;
+	}
+	
+	.joining-end-text-minor {
+		height: 40px;
+		font-size: 13px;
+		width: 80%;
+	}
+
+	.alumni-destinations-box-container {
+		width: 70px;
+    	height: 70px;
+	}
+
+	.sponsor-image {
+		height: 90px;
+	}
+}
+
+@media (max-width: 610px) {
+	.first-banner-text-outer {
+		height: 120px;
+		width: 60%;
+		font-size: 35px;
+		margin-top: 100px;
+	}
+	
+	.first-banner-text-minor {
+		height: 30px;
+		font-size: 14px;
+	}
+	
+	.first-banner-container {
+		height: 500px;
+	}
+
+	.about-minor-container {
+		font-size: 14px;
+	}
+
+	.about-header-container {
+		font-size: 22px;
+	}
+
+	.about-values-container {
+		font-size: 22px;
+	}
+	
+	.values-outer-box{
+		margin-bottom: 70px;
+	}
+
+	.committee-message-container{
+		font-size: 14px;
+	}
+
+	.sponsors-header-container {
+		font-size: 22px;
+	}
+
+	.sponsor-image {
+		height: 80px;
+	}
+
+	.sponsor-text2 {
+		font-size: 10px;
+	}
+
+	.sponsor-text {
+		font-size: 10px;
+	}
+}
+
+@media (max-width: 514px) {
+	.first-banner-text-outer {
+		height: 120px;
+		width: calc(90% - 80px);
+		font-size: 35px;
+		margin-top: 100px;
+	}
+
+	.joining-end-text-outer {
+		font-size: 25px;
+		height: 100px;
+	}
+
+	.joining-end-text-minor {
+		font-size: 11px;
+		height: 30px;
+	}
+	
+	.values-outer-box{
+		height: auto;
+		flex-direction: column;
+		margin-bottom: 40px;
+	}
+	
+	.values-box{
+		width: 100%;
+		height: 220px;
+		margin-bottom: 20px;
+	}
+
+	.values-box-detail2{
+		margin-top: 2px;
+	}
+
+	.sponsor-image {
+		height: 60px;
+	}
+}
+
+@media (max-width: 432px) {
+	.first-banner-text-outer {
+		height: 100px;
+		width: calc(90% - 80px);
+		font-size: 28px;
+		margin-top: 110px;
+	}
+	
+	.first-banner-text-minor {
+		height: 30px;
+		font-size: 12px;
+	}
+
+	.joining-end-text-outer {
+		font-size: 22px;
+	}
+	
+	.joining-end-text-minor {
+		font-size: 10px;
+	}
+
+	.values-box-detail2{
+		font-size: 12px;
+	}
+
+	.sponsor-image {
+		height: 50px;
+	}
+
+	.responsive-am-block {
+		width: 132px;
+	}
+
+	.am-image-outer-container{
+		width: 132px;
+		height: 132px;
+	}
+
+	.am-text-name {
+		font-size: 14px !important;
+	}
+}
+
+@media (max-width: 404px) {
+	.responsive-am-block {
+		width: 112px;
+	}
+
+	.am-image-outer-container{
+		width: 112px;
+		height: 112px;
+	}
+}

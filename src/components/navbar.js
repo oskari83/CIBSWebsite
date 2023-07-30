@@ -9,6 +9,9 @@ import img from '../../resources/Logo_Icon.png'
 import key_icon from '../../resources/key.png'
 import arrow_icon from '../../resources/down-arrow.png'
 
+import { FiMenu } from 'react-icons/fi';
+import { IoCloseSharp } from 'react-icons/io5'
+
 const ExpandedNavBarMenu = () => {
 	const router = useRouter();
 
@@ -29,10 +32,47 @@ const ExpandedNavBarMenu = () => {
 	)
 }
 
+const NavMenuMobile = ({CloseFunction}) => {
+	const router = useRouter();
+
+	const mobileClick = (a) => {
+		CloseFunction();
+		router.push(a);
+	}
+
+    return(
+        <div className='nav-mobile'>
+            <li className="nav-item" onClick={() => mobileClick('/initiatives')}>
+				Initiatives
+            </li>
+            <li className="nav-item" onClick={() => mobileClick('/events')}>
+				Events
+            </li>
+            <li className="nav-item" onClick={() => mobileClick('/')}>
+				Research Group
+            </li>
+            <li className="nav-item" onClick={() => mobileClick('/members')}>
+				Members
+            </li>
+			<li className="nav-item"onClick={() => mobileClick('/join')}>
+				Join Us
+            </li>
+        </div>
+    )
+}
+
 export default function Navbar() {
 	const router = useRouter();
 
 	const [menuExpand, setMenuExpand] = useState(false);
+	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+	const hamburgerIcon = <FiMenu size='20px' color='rgb(78, 53, 160)' onClick={() => setMobileMenuOpen(!mobileMenuOpen)}/>
+    const closeIcon = <IoCloseSharp size='20px' color='rgb(78, 53, 160)' onClick={() => setMobileMenuOpen(!mobileMenuOpen)}/>
+
+	const closeMobileMenu = () => {
+        setMobileMenuOpen(false);
+    }
 
 	const clickResearchGroup = () => {
 		document.location.href = "https://cibsoc.co.uk/researchgroup/";
@@ -43,11 +83,16 @@ export default function Navbar() {
 		setMenuExpand(!curVal);
 	}
 
+	const clickLogo = () => {
+		closeMobileMenu();
+		router.push('/');
+	}
+
 	return (
 		<>
 		<div className='navbar'>
 			<div className='navbar-inner'>
-				<div className='identity-outer-container' onClick={() => router.push('/')}>
+				<div className='identity-outer-container' onClick={() => clickLogo()}>
 					<div className='logo-outer-container'>
 						<Image
 							src={img}
@@ -92,6 +137,13 @@ export default function Navbar() {
 						<p>Join us</p>
 					</div>
 				</div>
+
+				<div className='hamburger'>
+					{mobileMenuOpen ? closeIcon : hamburgerIcon}
+				</div>
+
+				{mobileMenuOpen && <NavMenuMobile CloseFunction={closeMobileMenu}/>}
+				
 			</div>
 		</div>
 		</>
