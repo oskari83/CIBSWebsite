@@ -5,7 +5,7 @@ import img from '../../resources/Logo_Icon.png'
 
 
 import background_img from '../../resources/background2.jpg'
-import cibsBackground_img from '../../resources/cibsBackground2.png'
+import cibsBackground_img from '../../resources/cibsBackground3.png'
 
 import initiatives_img from '../../resources/initiatives1.png'
 import events_img from '../../resources/events6.jpg'
@@ -19,6 +19,7 @@ import dragon_img from '../../resources/sponsors/dragonfly.png'
 import flow_img from '../../resources/sponsors/flowtraders.png'
 import houlihan_img from '../../resources/sponsors/houlihan.png'
 import jefferies_img from '../../resources/sponsors/jefferies.png'
+import nomura_img from '../../resources/sponsors/nomura.png'
 
 //alumni destinations logos
 import barclays_alumni_img from '../../resources/alumniDestinations/barclaysLogo.png'
@@ -238,6 +239,20 @@ export default function Home() {
 					</div>
 					<div className='sponsor-text'>
 						Since 2004, Flow Traders has been a principal trading firm and one of the world’s largest liquidity providers, specialised in Exchange Traded Products (ETPs).
+					</div>
+				</div>
+
+				<div className='sponsor-box'>
+					<div className='sponsor-image'>
+						<Image
+							src={nomura_img}
+							style={{objectFit: 'cover'}}
+							fill={true}
+							alt="flow pic"
+						/>
+					</div>
+					<div className='sponsor-text'>
+						Nomura is a leading global financial services group and investment bank with an integrated network spanning over 30 countries and regions.
 					</div>
 				</div>
 			</div>

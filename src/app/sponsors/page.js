@@ -19,6 +19,7 @@ import dragon_img from '../../../resources/sponsors/dragonfly.png'
 import flow_img from '../../../resources/sponsors/flowtraders.png'
 import houlihan_img from '../../../resources/sponsors/houlihan.png'
 import jefferies_img from '../../../resources/sponsors/jefferies.png'
+import nomura_img from '../../../resources/sponsors/nomura.png'
 
 export default function Page(){
 	return(
@@ -239,6 +240,20 @@ export default function Page(){
 							</div>
 							<div className='sponsor-text'>
 								Since 2004, Flow Traders has been a principal trading firm and one of the world’s largest liquidity providers, specialised in Exchange Traded Products (ETPs).
+							</div>
+						</div>
+
+						<div className='sponsor-box'>
+							<div className='sponsor-image'>
+								<Image
+									src={nomura_img}
+									style={{objectFit: 'cover'}}
+									fill={true}
+									alt="flow pic"
+								/>
+							</div>
+							<div className='sponsor-text'>
+								Nomura is a leading global financial services group and investment bank with an integrated network spanning over 30 countries and regions.
 							</div>
 						</div>
 					</div>
