@@ -39,7 +39,7 @@ export default function Page(){
 		<div className='fifth-banner-container'>
 			<div className='committee-outer'>
 				<div className='committee-header-container'>
-					<p>OUR TEAM - COMMITTEE</p>
+					<p>COMMITTEE</p>
 				</div>
 				<div className='thinLine'></div>
 				<div className='committee-message-container'>
@@ -299,7 +299,7 @@ export default function Page(){
 		<div className='seventh-banner-container'>
 			<div className='ambassadors-outer'>
 				<div className='sponsors-header-container'>
-					<p>OUR TEAM - AMBASSADORS</p>
+					<p>AMBASSADORS</p>
 				</div>
 				<div className='thinLine'></div>
 

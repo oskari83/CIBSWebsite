@@ -752,6 +752,10 @@ li {
 		height: 30px;
 		font-size: 13px;
 	}
+	
+	.values-box-detail2{
+		font-size: 12px;
+	}
 }
 
 @media (max-width: 770px) {
@@ -795,6 +799,14 @@ li {
 	.committee-box {
 		width: 49%;
 	}
+
+	.values-box-detail{
+		font-size: 13px;
+	}
+	
+	.values-box-detail2{
+		font-size: 11px;
+	}
 }
 
 @media (max-width: 714px) {
@@ -825,6 +837,18 @@ li {
 
 	.sponsor-image {
 		height: 90px;
+	}
+
+	.values-box-header{
+		height: 50px;
+	}
+
+	.values-box-detail{
+		font-size: 12px;
+	}
+	
+	.values-box-detail2{
+		font-size: 10px;
 	}
 }
 
@@ -904,6 +928,22 @@ li {
 	.events-detail-container{
 		font-size: 14px;
 	}
+
+	.values-box-header{
+		font-size: 17px;
+	}
+
+	.values-box-header2{
+		font-size: 17px;
+	}
+
+	.values-box-detail{
+		font-size: 11px;
+	}
+	
+	.values-box-detail2{
+		font-size: 9px;
+	}
 }
 
 @media (max-width: 514px) {
@@ -978,6 +1018,23 @@ li {
 	.committee-box {
 		width: 100%;
 	}
+
+	.values-box-header{
+		font-size: 20px;
+		height: 30px;
+	}
+
+	.values-box-header2{
+		font-size: 20px;
+	}
+
+	.values-box-detail{
+		font-size: 14px;
+	}
+	
+	.values-box-detail2{
+		font-size: 13px;
+	}
 }
 
 @media (max-width: 432px) {
@@ -1001,8 +1058,12 @@ li {
 		font-size: 10px;
 	}
 
-	.values-box-detail2{
+	.values-box-detail{
 		font-size: 12px;
+	}
+	
+	.values-box-detail2{
+		font-size: 11px;
 	}
 
 	.sponsor-image {

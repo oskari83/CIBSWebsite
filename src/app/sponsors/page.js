@@ -25,7 +25,7 @@ export default function Page(){
 				</div>
 				<div className='thinLine'></div>
 				<div className='sponsorspage-minor-container'>
-					We offer two primary services to our sponsors, advertising campaigns and event partnerships, however, the committee seeks to cater to the bespoke recruiting needs of our partners.
+					We offer two primary services to our sponsors, advertising campaigns and event partnerships, however, the committee also seeks to cater to the bespoke recruiting needs of our partners and can provide individual solutions.
 				</div>
 			</div>
 
