@@ -5,13 +5,20 @@ import './sponsors.css'
 import hands_img from '../../../resources/hands2.jpg'
 
 //pics
-import sponsor1_img from '../../../resources/sponsorpage/sponsorpage1.png'
-import sponsor2_img from '../../../resources/sponsorpage/sponsorpage2.png'
+import sponsor1_img from '../../../resources/sponsorpage/adPic1.png'
+import sponsor2_img from '../../../resources/sponsorpage/adPic2.png'
 import sponsor3_img from '../../../resources/sponsorpage/sponsorpage3.png'
 
 import events1_img from '../../../resources/events1.jpg'
 import events2_img from '../../../resources/events2.jpg'
 import events3_img from '../../../resources/events3.jpg'
+
+//sponsors photos
+import credit_img from '../../../resources/sponsors/creditsuisse.png'
+import dragon_img from '../../../resources/sponsors/dragonfly.png'
+import flow_img from '../../../resources/sponsors/flowtraders.png'
+import houlihan_img from '../../../resources/sponsors/houlihan.png'
+import jefferies_img from '../../../resources/sponsors/jefferies.png'
 
 export default function Page(){
 	return(
@@ -19,84 +26,11 @@ export default function Page(){
 		<div className='sponsorspage-banner-container'>
 			<div className='sponsorspage-outer'>
 				<div className='sponsorspage-header-container'>
-					<p>WHY SPONSOR US</p>
+					<p>SERVICES WE OFFER</p>
 				</div>
 				<div className='thinLine'></div>
-
-				<div className='reasons-sponsor-outer-container'>
-					<Image
-						src={hands_img}
-						style={{objectFit: 'cover'}}
-						fill={true}
-						alt="hands pic"
-					/>
-					<div className='reasons-box-outer-container'>
-						<div className='reason-box-outer'>
-							<div className='reason-box-header-container2'>
-								<p>EFFECTIVE MARKETING</p>
-							</div>
-							<div className='reason-box-body-container'>
-								<li>{"Effective email campaigns with  > 65% open rates"}</li>
-							</div>
-							<div className='reason-box-body-container'>
-								<li>{"3200+ followers accross all social media platforms"}</li>
-							</div>
-							<div className='reason-box-body-container'>
-								<li>{"Network of 12 ambassadords, extending word-of-mouth publicity"}</li>
-							</div>
-							<div className='reason-box-body-container'>
-								<li>{"Diversified social media content retains followers' engagement"}</li>
-							</div>
-						</div>
-
-						<div className='reason-box-outer'>
-							<div className='reason-box-header-container'>
-								SINGLE POINT OF INFORMATION
-							</div>
-							<div className='reason-box-body-container'>
-								<li>{"CIBS is often the first place Cambridge students learn about the finance industry, in a career path where information is crowded and overwhelming"}</li>
-							</div>
-							<div className='reason-box-body-container'>
-								<li>{"Among hundreds of finance firms, sponsors leave a lasting impression among our members"}</li>
-							</div>
-						</div>
-
-						<div className='reason-box-outer2'>
-							<div className='reason-box-header-container'>
-								HIGH ENGAGEMENT & WIDE AUDIENCE
-							</div>
-							<div className='reason-box-body-container'>
-								<li>{"Consistently oversubscribed events"}</li>
-							</div>
-							<div className='reason-box-body-container'>
-								<li>{"High viewership of Research Group articles"}</li>
-							</div>
-							<div className='reason-box-body-container'>
-								<li>{"Strong partnerships with other student organizations worldwide"}</li>
-							</div>
-							<div className='reason-box-body-container'>
-								<li>{"Wide and diverse audience across different ethnicities, subjects, and degrees"}</li>
-							</div>
-						</div>
-
-						<div className='reason-box-outer2'>
-							<div className='reason-box-header-container'>
-								EFFECTIVE CAREER GUIDANCE
-							</div>
-							<div className='reason-box-body-container'>
-								<li>{"Disaggregated information about finance careers restricts students' ability to make effective decisions"}</li>
-							</div>
-							<div className='reason-box-body-container'>
-								<li>{"Cambridge students feel particularly detached when London is less accessible"}</li>
-							</div>
-							<div className='reason-box-body-container'>
-								<li>{"By bringing firms to members, CIBS provides the most direct career knowledge"}</li>
-							</div>
-						</div>
-
-						<div className='sponsor-white-box-line'></div>
-						<div className='sponsor-white-box-line2'></div>
-					</div>
+				<div className='sponsorspage-minor-container'>
+					We offer two primary services to our sponsors, advertising campaigns and event partnerships, however, the committee seeks to cater to the bespoke recruiting needs of our partners.
 				</div>
 			</div>
 
@@ -110,30 +44,15 @@ export default function Page(){
 								<p>ADVERTISING CAMPAIGNS</p>
 							</div>
 							<div className='sponsorpage-adcampaign-detail-container2'>
-								In addition to everything else, every sponsor receives at least one advertising campaign, consisting of:
+								If you decide to partner with us, the society will promote your firm in several ways.
 							</div>
 
 							<div className='sponsorpage-adcampaign-text-align-container-outer1'>
 								<div className='sponsorpage-eventpartner-text-align-container-outer2'>
 									<div className='sponsorpage-ad-campaign-detail-container'>
-										<li>{"Advertising across all distribution channels (LinkedIn, Instagram, Facebook, newsletter), totalling over 5000 followers"}</li>
-									</div>
-
-									<div className='sponsorpage-ad-campaign-detail-container'>
-										<li>{"Ongoing firm opportunities collated and regularly distributed via our Sponsor Opportunities spreadsheet"}</li>
-									</div>
-								</div>
-								<div className='sponsorpage-eventpartner-text-align-container-outer3'>
-									<div className='sponsorpage-ad-campaign-detail-container2'>
-										<li>{"Strategically timed pre-event marking and post-event recap"}</li>
-									</div>
-
-									<div className='sponsorpage-ad-campaign-detail-container2'>
-										<li>{"Beautiful graphics designed in-house"}</li>
-									</div>
-
-									<div className='sponsorpage-ad-campaign-detail-container2'>
-									<li>{"12 ambassadors promote across college and subject networks"}</li>
+										Partners gain advertising visibility across all of our distribution channels (LinkedIn, Instagram, Facebook, newsletter), which together have over 5000 followers. 
+										Any ongoing partner firm opportunities are regularly collated and distributed via our Sponsor Opportunities spreadsheet. Moreover, we provide strategically timed pre-event marketing
+										and post-event recaps for partner events with beautiful graphics designed in-house, and 12 ambassadors who promote our partners across college and subject networks.
 									</div>
 								</div>
 							</div>
@@ -168,49 +87,27 @@ export default function Page(){
 						
 					</div>
 
-				</div>
-			</div>
+					<div className='ad-campaign-container'>
 
-			<div className='services-banner-container2'>
-				<div className='services-banner-outer2'>
-					<div className='event-partnership-container'>
-
-						<div className='sponsorpage-eventpartner-text-container-outer'>
-							<div className='sponsorpage-eventpartner-header-container'>
+						<div className='sponsorpage-adcampaign-text-container-outer'>
+							<div className='sponsorpage-adcampaign-header-container'>
 								<p>EVENT PARTNERSHIPS</p>
 							</div>
-							<div className='sponsorpage-eventpartner-detail-container2'>
-								Gold and Platinum sponsors receive our event partnership service, with end-to-end event organisation from us. We have experience hosting events for a variety of firms with various objectives. Examples include:
+							<div className='sponsorpage-adcampaign-detail-container2'>
+								Gold and Platinum sponsors receive our event partnership service, with end-to-end event organisation from us. We have experience hosting events for a variety of firms with various objectives.
 							</div>
 
-							<div className='sponsorpage-eventpartner-text-align-container-outer1'>
+							<div className='sponsorpage-adcampaign-text-align-container-outer1'>
 								<div className='sponsorpage-eventpartner-text-align-container-outer2'>
-									<div className='sponsorpage-eventpartner-detail-container'>
-										<li>{"Coffee chats and dinners, to create real relationships between our members and your firm"}</li>
-									</div>
-
-									<div className='sponsorpage-eventpartner-detail-container'>
-										<li>{"Workshops, to learn about the industry and skills needed"}</li>
+									<div className='sponsorpage-ad-campaign-detail-container'>
+										Examples include: coffee chats and dinners, to create real relationships between our members and your firm; workshops, to learn about the industry and skills needed;
+										presentations and panel events, to get to know your firm's business and work; networking events, to understand your firm's culture and people.
 									</div>
 								</div>
-								<div className='sponsorpage-eventpartner-text-align-container-outer3'>
-									<div className='sponsorpage-eventpartner-detail-container'>
-										<li>{"Presentations and panel events, to get to know your firm's business and work"}</li>
-									</div>
-
-									<div className='sponsorpage-eventpartner-detail-container'>
-										<li>{"Networking events, to understand your firm's culture and people"}</li>
-									</div>
-								</div>
-							</div>
-
-							<div className='sponsorpage-eventpartner-detail-container3'>
-								We can advise on the best event solution for your objectives, and all events are avenues to directly promote programmes to our members.
 							</div>
 
 						</div>
-
-						<div className='sponsorpage-eventpartner-images-outer'>
+						<div className='sponsorpage-adcampaign-images-outer'>
 							<div className='sponsorpage-image-container'>
 								<Image
 									src={events1_img}
@@ -238,114 +135,18 @@ export default function Page(){
 						</div>
 						
 					</div>
+
 				</div>
 			</div>
 
 			<div className='packages-banner-container'>
 				<div className='packages-banner-outer'>
 					<div className='sponsorspage-packages-header-container'>
-						<p>SPONSORSHIP PACKAGES</p>
+						<p>GET IN TOUCH</p>
 					</div>
 					<div className='thinLine'></div>
 
-					<div className='sponsor-packages-outer-box'>
-						<div className='sponsor-packages-box'>
-							<div className='sponsor-packages-box-banner1'></div>
-							<div className='sponsor-packages-box-header'>
-								Bronze
-							</div>
-							<div className='sponsor-packages-box-detail'>
-								Advertising campaigns:
-							</div>
-							<div className='sponsor-packages-box-detail-number'>
-								1
-							</div>
-							<div className='sponsor-packages-box-detail'>
-								Event partnerships:
-							</div>
-							<div className='sponsor-packages-box-detail-number'>
-								-
-							</div>
-							<div className='sponsor-packages-box-detail'>
-								Firm logo on CIBS merchandise and Social media cover page:
-							</div>
-							<div className='sponsor-packages-box-detail-number'>
-								-
-							</div>
-						</div>
-						<div className='sponsor-packages-box'>
-							<div className='sponsor-packages-box-banner2'></div>
-							<div className='sponsor-packages-box-header'>
-								Silver
-							</div>
-							<div className='sponsor-packages-box-detail'>
-								Advertising campaigns:
-							</div>
-							<div className='sponsor-packages-box-detail-number'>
-								3
-							</div>
-							<div className='sponsor-packages-box-detail'>
-								Event partnerships:
-							</div>
-							<div className='sponsor-packages-box-detail-number'>
-								-
-							</div>
-							<div className='sponsor-packages-box-detail'>
-								Firm logo on CIBS merchandise and Social media cover page:
-							</div>
-							<div className='sponsor-packages-box-detail-number'>
-								-
-							</div>
-						</div>
-						<div className='sponsor-packages-box'>
-							<div className='sponsor-packages-box-banner3'></div>
-							<div className='sponsor-packages-box-header'>
-								Gold
-							</div>
-							<div className='sponsor-packages-box-detail'>
-								Advertising campaigns:
-							</div>
-							<div className='sponsor-packages-box-detail-number'>
-								4
-							</div>
-							<div className='sponsor-packages-box-detail'>
-								Event partnerships:
-							</div>
-							<div className='sponsor-packages-box-detail-number'>
-								1
-							</div>
-							<div className='sponsor-packages-box-detail'>
-								Firm logo on CIBS merchandise and Social media cover page:
-							</div>
-							<div className='sponsor-packages-box-detail-number'>
-								Yes
-							</div>
-						</div>
-						<div className='sponsor-packages-box'>
-							<div className='sponsor-packages-box-banner4'></div>
-							<div className='sponsor-packages-box-header'>
-								Platinum
-							</div>
-							<div className='sponsor-packages-box-detail'>
-								Advertising campaigns:
-							</div>
-							<div className='sponsor-packages-box-detail-number'>
-								6
-							</div>
-							<div className='sponsor-packages-box-detail'>
-								Event partnerships:
-							</div>
-							<div className='sponsor-packages-box-detail-number'>
-								2
-							</div>
-							<div className='sponsor-packages-box-detail'>
-								Firm logo on CIBS merchandise and Social media cover page:
-							</div>
-							<div className='sponsor-packages-box-detail-number'>
-								Yes
-							</div>
-						</div>
-					</div>
+					
 
 					<div className='sponsorspage-minor-container2'>
 						<p>
@@ -360,6 +161,86 @@ export default function Page(){
 						<p className='email-text-bold'>
 							sponsorship@cibsoc.co.uk
 						</p>
+					</div>
+				</div>
+			</div>
+
+			<div className='sixth-banner-container'>
+				<div className='sponsors-outer'>
+					<div className='sponsors-header-container'>
+						<p>OUR SPONSORS</p>
+					</div>
+					<div className='thinLine'></div>
+					<div className='sponsors-box-outer'>
+						<div className='sponsor-box'>
+							<div className='sponsor-image'>
+								<Image
+									src={dragon_img}
+									style={{objectFit: 'cover'}}
+									fill={true}
+									alt="dragon pic"
+								/>
+							</div>
+							<div className='sponsor-text2'>
+								Dragonfly invests in top blockchain digital assets, combining years of traditional investment experience with blockchain expertise to find attractive investment opportunities in the digital asset market.
+							</div>
+						</div>
+
+						<div className='sponsor-box'>
+							<div className='sponsor-image'>
+								<Image
+									src={houlihan_img}
+									style={{objectFit: 'cover'}}
+									fill={true}
+									alt="houlihan pic"
+								/>
+							</div>
+							<div className='sponsor-text'>
+								Houlihan Lokey is a leading global investment bank with expertise in mergers and acquisitions, capital markets, financial restructuring and valuation.
+							</div>
+						</div>
+
+						<div className='sponsor-box'>
+							<div className='sponsor-image'>
+								<Image
+									src={jefferies_img}
+									style={{objectFit: 'cover'}}
+									fill={true}
+									alt="jefferies pic"
+								/>
+							</div>
+							<div className='sponsor-text'>
+								Jefferies is a diversified financial services company, a global leader in investment banking, and the largest independent, global, full-service IB firm in the US.
+							</div>
+						</div>
+
+						<div className='sponsor-box'>
+							<div className='sponsor-image'>
+								<Image
+									src={credit_img}
+									style={{objectFit: 'cover'}}
+									fill={true}
+									alt="cs pic"
+								/>
+							</div>
+							<div className='sponsor-text'>
+								Credit Suisse Group is a leading financial services company, advising clients in all aspects of finance, across the globe and around the clock.
+							</div>
+						</div>
+
+						<div className='sponsor-box'>
+							<div className='sponsor-image'>
+								<Image
+									src={flow_img}
+									style={{objectFit: 'cover'}}
+									fill={true}
+									alt="flow pic"
+								/>
+							</div>
+							<div className='sponsor-text'>
+								Since 2004, Flow Traders has been a principal trading firm and one of the world’s largest liquidity providers, specialised in Exchange Traded Products (ETPs).
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

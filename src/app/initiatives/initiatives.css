@@ -10,7 +10,7 @@
 }
 
 .initiativespage-outer{
-	width: clamp(200px,900px,900px);
+	width: clamp(200px,100%,980px);
 }
 
 .initiativespage-header-container {
@@ -19,7 +19,9 @@
 	display: flex;
 	font-size: 28px;
 	font-family: "PlayfairBold";
-	width: 100%;
+	width: calc(100% - 80px);
+    margin-left: 40px;
+    margin-right: 40px;
 	height: 60px;
 	align-items: center;
 	justify-content: center;
@@ -28,6 +30,8 @@
 
 .thinLine{
 	width: calc(100% - 80px);
+    margin-left: 40px;
+    margin-right: 40px;
 	height: 1px;
 	background-color: rgb(203, 203, 203);
 	margin-bottom: 40px;
@@ -36,7 +40,9 @@
 .initiatives-boxes-outer-container{
 	display: flex;
 	flex-wrap: wrap;
-	width: 100%;
+	width: calc(100% - 80px);
+    margin-left: 40px;
+    margin-right: 40px;
 	margin-bottom: 60px;
 	justify-content: space-between;
 }
@@ -141,7 +147,7 @@
 }
 
 .initiativespage-events-outer{
-	width: clamp(200px,900px,900px);
+	width: clamp(200px,100%,980px);
 }
 
 .initiativespage-events-header-container {
@@ -171,7 +177,9 @@
 
 .career-guidance-container{
 	margin-top: 80px;
-	width: 100%;
+	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
 	height: 300px;
 	display: flex;
 	flex-direction: row;
@@ -181,7 +189,7 @@
 }
 
 .career-guidance-outer {
-    width: clamp(200px,900px,900px);
+    width: clamp(200px,100%,980px);
 }
 
 .career-guidance-text-container-outer{
@@ -243,7 +251,9 @@
 
 .networking-events-container{
 	margin-top: 80px;
-	width: 100%;
+	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
 	height: 300px;
 	display: flex;
 	flex-direction: row;
@@ -253,7 +263,7 @@
 }
 
 .networking-events-outer {
-    width: clamp(200px,900px,900px);
+	width: clamp(200px,100%,980px);
 }
 
 .networking-events-text-container-outer{
@@ -314,7 +324,9 @@
 
 .industry-insights-container{
 	margin-top: 80px;
-	width: 100%;
+	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
 	height: 300px;
 	display: flex;
 	flex-direction: row;
@@ -324,7 +336,7 @@
 }
 
 .industry-insights-outer {
-    width: clamp(200px,900px,900px);
+    width: clamp(200px,100%,980px);
 }
 
 .industry-insights-text-container-outer{
@@ -386,13 +398,15 @@
 }
 
 .joining-end-destinations-outer {
-    width: clamp(200px,900px,900px);
+    width: clamp(200px,100%,980px);
 }
 
 .joining-end-text-outer {
 	margin-top: 60px;
 	height: 80px;
-	width: 900px;
+	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
@@ -404,7 +418,9 @@
 
 .joining-end-text-minor {
 	height: 40px;
-	width: 900px;
+	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;

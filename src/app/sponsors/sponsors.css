@@ -10,7 +10,7 @@
 }
 
 .sponsorspage-outer{
-	width: clamp(200px,900px,900px);
+	width: clamp(200px,100%,980px);
 }
 
 .sponsorspage-header-container {
@@ -32,7 +32,9 @@
 	display: flex;
 	font-size: 28px;
 	font-family: "PlayfairBold";
-	width: 100%;
+	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
 	height: 60px;
 	align-items: center;
 	justify-content: center;
@@ -41,6 +43,8 @@
 
 .thinLine{
 	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
 	height: 1px;
 	background-color: rgb(203, 203, 203);
 	margin-bottom: 40px;
@@ -49,11 +53,14 @@
 .sponsorspage-minor-container {
 	display: flex;
 	flex-direction: column;
-	font-size: 18x;
+	font-size: 16px;
 	font-family: "WorkSansLight";
 	line-height: 1.6;
 	text-align: justify;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
+	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
 }
 
 .reasons-sponsor-outer-container{
@@ -172,12 +179,12 @@
 	align-items: center;
 	top: 0px;
 	width: 100%;
-	background-color: #412f53;
+	background-color: white;
 	z-index: 4;
 }
 
 .services-banner-outer{
-	width: clamp(200px,900px,900px);
+	width: clamp(200px,100%,980px);
 }
 
 .services-banner-container2{
@@ -187,7 +194,7 @@
 	align-items: center;
 	top: 0px;
 	width: 100%;
-	background-color: rgb(230, 230, 230);
+	background-color: rgb(255, 255, 255);
 	z-index: 4;
 }
 
@@ -196,13 +203,21 @@
 }
 
 .ad-campaign-container{
-	margin-top: 40px;
-	width: 100%;
+	margin-top: 0px;
+	width: calc(100% - 160px);
+	margin-left: 40px;
+	margin-right: 40px;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 20px;
+	padding-bottom: 40px;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: space-between;
-	margin-bottom: 80px;
+	margin-bottom: 40px;
+
+	border: 1px solid rgb(235, 235, 235);
 }
 
 .adcampaign-thinLine{
@@ -245,11 +260,11 @@
 	display: flex;
 	width: 100%;
 	align-items: center;
-	justify-content: center;
+	justify-content: flex-start;
 	height: 60px;
 	font-size: 28px;
 	font-family: "PlayfairBold";
-	color: white;
+	color: rgb(69, 69, 69);
 }
 
 .sponsorpage-adcampaign-detail-container{
@@ -260,31 +275,30 @@
 	justify-content: flex-start;
 	font-size: 16px;
 	font-family: "WorkSansLight";
-	color: rgb(214, 214, 214);
+	color: black;
 	line-height: 1.6;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 
 .sponsorpage-adcampaign-detail-container2{
-	margin-top: 30px;
+	margin-top: 10px;
 	display: flex;
 	width: 100%;
 	align-items: center;
 	justify-content: flex-start;
 	font-size: 16px;
 	font-family: "WorkSansRegular";
-	color: rgb(255, 255, 255);
-	margin-bottom: 30px;
+	color: black;
+	margin-bottom: 10px;
 }
 
 .sponsorpage-adcampaign-text-align-container-outer1{
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	width: 100%;
 	align-items: center;
 	justify-content: center;
-	height: 220px;
-	margin-bottom: 20px;
+	margin-bottom: 24px;
 }
 
 .event-partnership-container{
@@ -317,16 +331,16 @@
 }
 
 .sponsorpage-ad-campaign-detail-container{
-	margin-top: 15px;
+	margin-top: 0px;
 	display: flex;
 	width: 100%;
 	align-items: center;
 	justify-content: flex-start;
 	font-size: 16px;
 	font-family: "WorkSansLight";
-	color: rgb(255, 255, 255);
+	color: black;
 	line-height: 1.6;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 }
 
 .sponsorpage-ad-campaign-detail-container2{
@@ -337,7 +351,7 @@
 	justify-content: flex-start;
 	font-size: 16px;
 	font-family: "WorkSansLight";
-	color: rgb(255, 255, 255);
+	color: black;
 	line-height: 1.6;
 	margin-bottom: 10px;
 }
@@ -399,17 +413,16 @@
 
 .sponsorpage-eventpartner-text-align-container-outer2{
 	display: flex;
-	width: 50%;
+	width: 100%;
 	height: 100%;
 	align-items: flex-start;
 	flex-direction: column;
 	justify-content: flex-start;
-	padding-right: 40px;
 }
 
 .sponsorpage-eventpartner-text-align-container-outer3{
 	display: flex;
-	width: 50%;
+	width: 100%;
 	height: 100%;
 	align-items: flex-start;
 	flex-direction: column;
@@ -428,16 +441,18 @@
 }
 
 .packages-banner-outer{
-	width: clamp(200px,900px,900px);
+	width: clamp(200px,100%,980px);
 }
 
 .sponsorspage-packages-header-container{
-	margin-top: 60px;
+	margin-top: 20px;
 	margin-bottom: 0px;
 	display: flex;
 	font-size: 28px;
 	font-family: "PlayfairBold";
-	width: 100%;
+	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
 	height: 60px;
 	align-items: center;
 	justify-content: center;
@@ -546,11 +561,14 @@
 .sponsorspage-minor-container2{
 	display: flex;
 	flex-direction: column;
-	font-size: 18x;
+	font-size: 16px;
 	font-family: "WorkSansLight";
 	line-height: 1.6;
 	text-align: justify;
 	margin-bottom: 40px;
+	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
 }
 
 .sponsorspage-minor-container-highlighted{
@@ -562,12 +580,168 @@
 	font-size: 18px;
 	font-family: "WorkSansLight";
 	line-height: 1.6;
-	margin-bottom: 60px;
+	margin-bottom: 20px;
 	border: 1px solid var(--dark-purple);
+	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
 }
 
 .email-text-bold{
 	color: black;
 	font-family: "WorkSansRegular";
 	font-size: 22px;
+}
+
+
+/*
+	-----     SPONSORS BANNER      -----
+*/
+
+.sixth-banner-container{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	top: 0px;
+	width: 100%;
+	background-color: rgb(255, 255, 255);
+	z-index: 4;
+}
+
+.sponsors-outer {
+    width: clamp(200px,100%,980px);
+}
+
+.sponsors-header-container {
+	margin-top: 40px;
+	margin-bottom: 0px;
+	display: flex;
+	font-size: 28px;
+	font-family: "PlayfairBold";
+	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
+	height: 60px;
+	align-items: center;
+	justify-content: center;
+	color: var(--dark-purple);
+}
+
+.sponsors-box-outer {
+    display: flex;
+	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+
+.sponsor-box{
+	display: flex;
+	width: 48%;
+	height: 150px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.sponsor-image{
+	width: 40%;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	overflow: hidden;
+	object-fit: cover;
+	cursor: pointer;
+}
+
+.sponsor-text{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50%;
+	height: 100%;
+	font-family: "WorkSansRegular";
+	font-size: 13px;
+	color: rgb(40, 40, 40);
+}
+
+.sponsor-text2{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50%;
+	height: 100%;
+	font-family: "WorkSansRegular";
+	font-size: 12px;
+	color: rgb(40, 40, 40);
+}
+
+@media (max-width: 770px) {
+	.sponsors-box-outer {
+		flex-direction: column;
+	}
+
+	.sponsor-box{
+		width: 100%;
+	}
+
+	.sponsor-image {
+		height: 100px;
+	}
+}
+
+@media (max-width: 714px) {
+	.sponsor-image {
+		height: 90px;
+	}
+}
+
+@media (max-width: 610px) {
+	.sponsorspage-header-container {
+		font-size: 22px;
+	}
+
+	.sponsorspage-minor-container {
+		font-size: 14px;
+	}
+
+	.sponsors-header-container{
+		font-size: 22px;
+	}
+
+	.sponsorspage-packages-header-container {
+		font-size: 22px;
+	}
+
+	.sponsorspage-minor-container2 {
+		font-size: 14px;
+	}
+
+	.sponsor-image {
+		height: 80px;
+	}
+
+	.sponsor-text2 {
+		font-size: 10px;
+	}
+
+	.sponsor-text {
+		font-size: 10px;
+	}
+}
+
+@media (max-width: 514px) {
+	.sponsor-image {
+		height: 60px;
+	}
+}
+
+@media (max-width: 432px) {
+	.sponsor-image {
+		height: 50px;
+	}
 }

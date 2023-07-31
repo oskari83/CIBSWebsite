@@ -1,11 +1,13 @@
 .form-outer-container{
 	display: flex;
-	width: 100%;
+	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
 	justify-content: center;
 }
 
 .join-form{
-	width: 60%;
+	width: 540px;
 	height: 100%;
 	display: flex;
 	align-items: center;
@@ -422,4 +424,14 @@
 
 .join-button:hover{
     background-color: var(--light-purple);
+}
+
+@media (max-width: 946px) {
+    .join-form{
+        width: 540px;
+    }
+}
+
+@media (max-width: 610px) {
+
 }

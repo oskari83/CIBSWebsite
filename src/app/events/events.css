@@ -10,7 +10,7 @@
 }
 
 .eventspage-outer{
-	width: clamp(200px,900px,900px);
+	width: clamp(200px,100%,980px);
 }
 
 .eventspage-header-container {
@@ -19,7 +19,9 @@
 	display: flex;
 	font-size: 28px;
 	font-family: "PlayfairBold";
-	width: 100%;
+	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
 	height: 60px;
 	align-items: center;
 	justify-content: center;
@@ -27,7 +29,9 @@
 }
 
 .events-thinLine{
-	width: 100%;
+	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
 	height: 1px;
 	background-color: rgb(203, 203, 203);
 	margin-bottom: 20px;
@@ -41,4 +45,10 @@
 	line-height: 1.6;
 	text-align: justify;
 	margin-bottom: 20px;
+}
+
+@media (max-width: 610px) {
+	.eventspage-header-container {
+		font-size: 22px;
+	}
 }

@@ -1,0 +1,289 @@
+/*
+	-----     COMMITTEE BANNER      -----
+*/
+
+.fifth-banner-container{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	top: 0px;
+	width: 100%;
+	background-color: rgb(255, 255, 255);
+	z-index: 4;
+}
+
+.committee-outer {
+    width: clamp(200px,100%,980px);
+}
+
+.committee-header-container{
+	margin-top: 100px;
+	margin-bottom: 0px;
+	display: flex;
+	font-size: 28px;
+	font-family: "PlayfairBold";
+	width: 100%;
+	height: 60px;
+	align-items: center;
+	justify-content: center;
+	color: var(--dark-purple);
+}
+
+.committee-message-container{
+	display: flex;
+	flex-direction: column;
+	font-size: 16px;
+	font-family: "WorkSansLight";
+	line-height: 1.6;
+	text-align: justify;
+	margin-bottom: 20px;
+	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+.committee-text-right-pos{
+	text-align: right;
+}
+
+.space-10px{
+	height: 10px;
+	width: 100%;
+}
+
+.committee-boxes-outer{
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	margin-top: 40px;
+	flex-wrap: wrap;
+	margin-bottom: 50px;
+	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+.committee-box {
+	display: flex;
+	width: 32%;
+	height: 400px;
+	flex-direction: column;
+	margin-bottom: 50px;
+	background-color: rgb(241, 241, 241);
+	transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+}
+
+.committee-box:hover{
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	background-color: white;
+}
+
+.committee-box-image-container{
+	width: 100%;
+	height: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	overflow: hidden;
+	object-fit: cover;
+}
+
+.committee-box-text-container{
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	width: 100%;
+	flex-direction: column;
+	height: 100px;
+}
+
+.committee-text-name{
+	font-family: "Garamond";
+	font-size: 24px;
+	color: var(--dark-purple);
+	margin-top: 16px;
+}
+
+.committee-text-role{
+	font-family: "WorkSansRegular";
+	font-size: 15px;
+	color: black;
+}
+
+.committee-text-college{
+	font-family: "WorkSansLight";
+	font-size: 12px;
+	color: black;
+	margin-top: 2px;
+}
+
+/*
+	-----     AMBASSADORS BANNER      -----
+*/
+
+.seventh-banner-container{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	top: 0px;
+	width: 100%;
+	background-color: rgb(235, 235, 235);
+	z-index: 4;
+}
+
+.ambassadors-outer {
+    width: clamp(200px,100%,980px);
+}
+
+.ambassador-boxes-outer{
+	max-width: 900px !important;
+    width: calc(100% - 80px) !important;
+	margin-left: 40px;
+	margin-right: 40px;
+    min-height: 75px;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 50px;
+	margin-bottom: 40px;
+    justify-content: space-between;
+	align-items: center;
+}
+
+.responsive-am-block {
+    display: block;
+    min-height: 75px;
+    width: 192px;
+    margin-top: 0px;
+    margin-right: 15px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+}
+
+.am-card-empty {
+    display: block;
+}
+
+.am-card-wrapper {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.am-content {
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.am-text-name {
+    font-size: 20px !important;
+    margin-top: 11px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    line-height: 25px;
+    font-family: "Garamond";
+}
+
+.am-text-college {
+    font-size: 12px !important;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    line-height: 25px;
+	font-family: "WorkSansLight";
+}
+
+.am-image-outer-container{
+	width: 192px;
+	height: 192px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+
+@media (max-width: 770px) {
+	.responsive-am-block {
+		width: 142px;
+	}
+
+	.am-image-outer-container{
+		width: 142px;
+		height: 142px;
+	}
+
+	.am-text-name {
+		font-size: 16px !important;
+	}
+	
+	.am-text-college {
+		font-size: 10px !important;
+	}
+
+	.committee-box {
+		width: 49%;
+	}
+}
+
+
+@media (max-width: 610px) {
+	.committee-message-container{
+		font-size: 14px;
+	}
+
+	.committee-header-container {
+		font-size: 22px;
+	}
+
+	.committee-text-name{
+		font-size: 20px;
+	}
+
+	.committee-text-role{
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 514px) {
+	.committee-box {
+		width: 100%;
+	}
+}
+
+@media (max-width: 432px) {
+	.responsive-am-block {
+		width: 132px;
+	}
+
+	.am-image-outer-container{
+		width: 132px;
+		height: 132px;
+	}
+
+	.am-text-name {
+		font-size: 14px !important;
+	}
+}
+
+@media (max-width: 404px) {
+	.responsive-am-block {
+		width: 112px;
+	}
+
+	.am-image-outer-container{
+		width: 112px;
+		height: 112px;
+	}
+}

@@ -59,12 +59,12 @@
 }
 
 .members-outer{
-	width: clamp(200px,900px,900px);
+	width: clamp(200px,100%,980px);
 	margin-bottom: 40px;
 }
 
 .members-outer2{
-	width: clamp(200px,900px,900px);
+	width: clamp(200px,100%,980px);
 }
 
 .members-header-container {
@@ -187,7 +187,9 @@
 }
 
 .resources-list-outer {
-    width: 100%;
+    width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -299,4 +301,108 @@
 
 .events-box-text-button-container:hover{
 	background-color: var(--light-purple);
+}
+
+@media (max-width: 940px) {
+	.events-box-text-header-container{
+		font-size: 22px;
+	}
+
+	.events-box-text-body-container{
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 870px) {
+	.events-box-text-header-container{
+		font-size: 19px;
+		height: 80px;
+	}
+
+	.events-box-text-body-container{
+		font-size: 11px;
+	}
+}
+
+@media (max-width: 870px) {
+	.events-box-text-body-container{
+		font-size: 10px;
+	}
+}
+
+@media (max-width: 760px) {
+	.resources-box-container{
+		flex-direction: column;
+		align-items: center;
+		height: auto;
+	}
+
+	.image-events-outer-container{
+		width: 420px;
+		height: 420px;
+	}
+
+	.events-box-text-outer-container{
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-start;
+		flex-direction: column;
+		width: 85%;
+		margin-bottom: 40px;
+	}
+
+	.events-box-text-header-container{
+		font-size: 22px;
+		height: 60px;
+	}
+
+	.events-box-text-body-container{
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 610px) {
+	.events-list-upcoming-contS{
+		font-size: 12px;
+	}
+	
+	.events-list-upcoming-contR{
+		font-size: 12px;
+	}
+
+	.events-list-past-contS{
+		font-size: 12px;
+	}
+	
+	.events-list-past-contR{
+		font-size: 12px;
+	}
+
+	.events-box-text-outer-container{
+		width: 90%;
+	}
+
+	.events-box-text-header-container{
+		font-size: 20px;
+		height: 80px;
+	}
+}
+
+@media (max-width: 520px) {
+	.image-events-outer-container{
+		width: 300px;
+		height: 300px;
+	}
+
+	.events-box-text-outer-container{
+		width: 100%;
+	}
+
+	.events-box-text-header-container{
+		font-size: 18px;
+	}
+
+	.events-box-text-body-container{
+		font-size: 11px;
+	}
 }

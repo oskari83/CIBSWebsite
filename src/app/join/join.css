@@ -10,7 +10,7 @@
 }
 
 .join-outer{
-	width: clamp(200px,900px,900px);
+	width: clamp(200px,100%,980px);
 }
 
 .join-header-container {
@@ -19,7 +19,9 @@
 	display: flex;
 	font-size: 28px;
 	font-family: "PlayfairBold";
-	width: 100%;
+	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
 	height: 60px;
 	align-items: center;
 	justify-content: center;
@@ -28,6 +30,8 @@
 
 .thinLine{
 	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
 	height: 1px;
 	background-color: rgb(203, 203, 203);
 	margin-bottom: 40px;
@@ -36,15 +40,34 @@
 .join-minor-container {
 	display: flex;
 	flex-direction: column;
-	font-size: 18x;
+	font-size: 16px;
 	font-family: "WorkSansLight";
 	line-height: 1.6;
 	text-align: justify;
 	margin-bottom: 20px;
+	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
 }
 
 .join-minor-text{
-	width: 60%;
+	width: 540px;
 	margin: auto;
 	padding-top: 20px;
+}
+
+@media (max-width: 640px) {
+	.join-minor-text{
+		width: 100%;
+	}
+}
+
+@media (max-width: 610px) {
+	.join-header-container{
+		font-size: 22px;
+	}
+
+	.join-minor-container{
+		font-size: 14px;
+	}
 }

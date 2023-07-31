@@ -99,7 +99,7 @@ li {
 	align-items: center;
 	justify-content: flex-start;
 	color: white;
-	font-size: 50px;
+	font-size: 55px;
 	font-family: "Garamond";
 	z-index: 10;
 }
@@ -112,8 +112,8 @@ li {
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
-	color: rgba(255, 255, 255, 0.747);
-	font-size: 20px;
+	color: rgba(255, 255, 255, 0.9);
+	font-size: 22px;
 	font-family: "WorkSansRegular";
 	z-index: 10;
 }
@@ -134,8 +134,8 @@ li {
 	justify-content: center;
 	height: 37px;
 	width: 150px;
-	color: rgba(255, 255, 255, 0.9);
-	border: 1px solid rgba(255, 255, 255, 0.9);
+	color: rgba(255, 255, 255, 1);
+	border: 1px solid rgba(255, 255, 255, 1);
 	z-index: 10;
 	cursor: pointer;
 	transition: all 0.4s ease-in-out;
@@ -326,7 +326,7 @@ li {
 }
 
 .events-outer {
-    width: clamp(200px,900px,900px);
+    width: clamp(200px,100%,980px);
 }
 
 .events-header-container2 {
@@ -351,7 +351,9 @@ li {
 
 .initiatives-container{
 	margin-top: 80px;
-	width: 100%;
+	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
 	height: 300px;
 	display: flex;
 	flex-direction: row;
@@ -430,6 +432,10 @@ li {
     -moz-transition: all 0.2s ease-in-out;
 }
 
+/*
+	-----     FOURTH BANNER      -----
+*/
+
 .fourth-banner-container{
 	position: relative;
 	display: flex;
@@ -443,7 +449,9 @@ li {
 
 .events-container{
 	margin-top: 80px;
-	width: 100%;
+	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
 	height: 300px;
 	display: flex;
 	flex-direction: row;
@@ -521,221 +529,6 @@ li {
 	transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
-}
-
-/*
-	-----     COMMITTEE BANNER      -----
-*/
-
-.fifth-banner-container{
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	top: 0px;
-	width: 100%;
-	background-color: rgb(255, 255, 255);
-	z-index: 4;
-}
-
-.committee-outer {
-    width: clamp(200px,100%,980px);
-}
-
-.committee-header-container{
-	margin-top: 60px;
-	margin-bottom: 0px;
-	display: flex;
-	font-size: 28px;
-	font-family: "PlayfairBold";
-	width: 100%;
-	height: 60px;
-	align-items: center;
-	justify-content: center;
-	color: var(--dark-purple);
-}
-
-.committee-message-container{
-	display: flex;
-	flex-direction: column;
-	font-size: 16px;
-	font-family: "WorkSansLight";
-	line-height: 1.6;
-	text-align: justify;
-	margin-bottom: 20px;
-	width: calc(100% - 80px);
-	margin-left: 40px;
-	margin-right: 40px;
-}
-
-.committee-text-right-pos{
-	text-align: right;
-}
-
-.space-10px{
-	height: 10px;
-	width: 100%;
-}
-
-.committee-boxes-outer{
-	display: flex;
-	width: 100%;
-	justify-content: space-between;
-	margin-top: 40px;
-	flex-wrap: wrap;
-	margin-bottom: 50px;
-	width: calc(100% - 80px);
-	margin-left: 40px;
-	margin-right: 40px;
-}
-
-.committee-box {
-	display: flex;
-	width: 32%;
-	height: 400px;
-	flex-direction: column;
-	margin-bottom: 50px;
-	background-color: rgb(241, 241, 241);
-	transition: all 0.2s ease-in-out;
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-}
-
-.committee-box:hover{
-	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-	background-color: white;
-}
-
-.committee-box-image-container{
-	width: 100%;
-	height: 300px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: relative;
-	overflow: hidden;
-	object-fit: cover;
-}
-
-.committee-box-text-container{
-	display: flex;
-	align-items: center;
-	justify-content: flex-start;
-	width: 100%;
-	flex-direction: column;
-	height: 100px;
-}
-
-.committee-text-name{
-	font-family: "Garamond";
-	font-size: 24px;
-	color: var(--dark-purple);
-	margin-top: 16px;
-}
-
-.committee-text-role{
-	font-family: "WorkSansRegular";
-	font-size: 15px;
-	color: black;
-}
-
-.committee-text-college{
-	font-family: "WorkSansLight";
-	font-size: 12px;
-	color: black;
-	margin-top: 2px;
-}
-
-/*
-	-----     AMBASSADORS BANNER      -----
-*/
-
-.seventh-banner-container{
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	top: 0px;
-	width: 100%;
-	background-color: rgb(235, 235, 235);
-	z-index: 4;
-}
-
-.ambassadors-outer {
-    width: clamp(200px,100%,980px);
-}
-
-.ambassador-boxes-outer{
-	max-width: 900px !important;
-    width: calc(100% - 80px) !important;
-	margin-left: 40px;
-	margin-right: 40px;
-    min-height: 75px;
-    height: fit-content;
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-    margin-top: 50px;
-	margin-bottom: 40px;
-    justify-content: space-between;
-	align-items: center;
-}
-
-.responsive-am-block {
-    display: block;
-    min-height: 75px;
-    width: 192px;
-    margin-top: 0px;
-    margin-right: 15px;
-    margin-bottom: 30px;
-    margin-left: 15px;
-}
-
-.am-card-empty {
-    display: block;
-}
-
-.am-card-wrapper {
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
-    border-bottom-right-radius: 6px;
-    border-bottom-left-radius: 6px;
-}
-
-.am-content {
-    display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-}
-
-.am-text-name {
-    font-size: 20px !important;
-    margin-top: 11px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    line-height: 25px;
-    font-family: "Garamond";
-}
-
-.am-text-college {
-    font-size: 12px !important;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    line-height: 25px;
-	font-family: "WorkSansLight";
-}
-
-.am-image-outer-container{
-	width: 192px;
-	height: 192px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: relative;
 }
 
 /*
@@ -953,6 +746,16 @@ li {
 	margin-right: 40px;
 }
 
+@media (max-width: 915px) {
+	.first-banner-text-outer {
+		font-size: 48px;
+	}
+	
+	.first-banner-text-minor {
+		font-size: 20px;
+	}
+}
+
 @media (max-width: 900px) {
 
 	.joining-end-text-outer {
@@ -974,12 +777,12 @@ li {
 @media (max-width: 850px) {
 	.first-banner-text-outer {
 		height: 60px;
-		font-size: 35px;
+		font-size: 44px;
 	}
 	
 	.first-banner-text-minor {
 		height: 30px;
-		font-size: 14px;
+		font-size: 17px;
 	}
 
 	.joining-end-text-outer {
@@ -994,6 +797,14 @@ li {
 }
 
 @media (max-width: 770px) {
+	.first-banner-text-outer {
+		font-size: 40px;
+	}
+	
+	.first-banner-text-minor {
+		font-size: 16px;
+	}
+
 	.sponsors-box-outer {
 		flex-direction: column;
 	}
@@ -1022,9 +833,21 @@ li {
 	.am-text-college {
 		font-size: 10px !important;
 	}
+
+	.committee-box {
+		width: 49%;
+	}
 }
 
 @media (max-width: 714px) {
+	.first-banner-text-outer {
+		font-size: 34px;
+	}
+	
+	.first-banner-text-minor {
+		font-size: 15px;
+	}
+
 	.joining-end-text-outer {
 		height: 120px;
 		font-size: 30px;
@@ -1099,6 +922,30 @@ li {
 	.sponsor-text {
 		font-size: 10px;
 	}
+
+	.committee-text-name{
+		font-size: 20px;
+	}
+
+	.committee-text-role{
+		font-size: 12px;
+	}
+
+	.initiatives-header-container{
+		font-size: 22px;
+	}
+
+	.initiatives-detail-container{
+		font-size: 14px;
+	}
+
+	.events-header-container{
+		font-size: 22px;
+	}
+
+	.events-detail-container{
+		font-size: 14px;
+	}
 }
 
 @media (max-width: 514px) {
@@ -1135,8 +982,43 @@ li {
 		margin-top: 2px;
 	}
 
+	.initiatives-container{
+		flex-direction: column;
+		height: auto;
+	}
+
+	.initiatives-image-container{
+		height: 300px;
+		width: 100%;
+	}
+
+	.initiatives-text-container-outer{
+		height: 300px;
+		width: 100%;
+	}
+
+	.events-container{
+		flex-direction: column;
+		height: auto;
+	}
+
+	.events-image-container{
+		height: 300px;
+		width: 100%;
+	}
+
+	.events-text-container-outer{
+		height: 260px;
+		width: 100%;
+		justify-content: flex-end;
+	}
+
 	.sponsor-image {
 		height: 60px;
+	}
+
+	.committee-box {
+		width: 100%;
 	}
 }
 

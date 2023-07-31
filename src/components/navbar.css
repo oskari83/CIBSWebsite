@@ -17,7 +17,7 @@
 .navbar-inner{
 	min-height: 70px;
     display: flex;
-    width: clamp(200px,1000px,1000px);
+    width: clamp(200px,1020px,1020px);
     justify-content: space-between;
     align-items: stretch;
     padding: 0 12px;
@@ -57,7 +57,7 @@
 	font-family: "WorkSansRegular";
 	color: rgb(69, 69, 69) !important;
 	font-size: 13px;
-	width: 120px;
+	width: 105px;
 	height: 40px;
 	margin-left: 10px;
 	margin-right: 10px;
@@ -158,7 +158,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    height: 220px;
+    height: 260px;
     align-items: center;
     font-family: "Readex";
     font-size: 0.8rem;
@@ -199,7 +199,7 @@
 }
 
 
-@media (max-width: 770px) {
+@media (max-width: 946px) {
     .navbarlinks-outer-container{
         display: none;
     }

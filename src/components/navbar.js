@@ -42,14 +42,17 @@ const NavMenuMobile = ({CloseFunction}) => {
 
     return(
         <div className='nav-mobile'>
-            <li className="nav-item" onClick={() => mobileClick('/initiatives')}>
-				Initiatives
+            <li className="nav-item" onClick={() => mobileClick('/ourteam')}>
+				Our Team
             </li>
             <li className="nav-item" onClick={() => mobileClick('/events')}>
 				Events
             </li>
-            <li className="nav-item" onClick={() => mobileClick('/')}>
+            <li className="nav-item" onClick={() => mobileClick('/researchgroup')}>
 				Research Group
+            </li>
+			<li className="nav-item" onClick={() => mobileClick('/sponsors')}>
+				Sponsorship
             </li>
             <li className="nav-item" onClick={() => mobileClick('/members')}>
 				Members
@@ -85,6 +88,9 @@ export default function Navbar() {
 
 	const clickLogo = () => {
 		closeMobileMenu();
+		if(menuExpand===true){
+			setMenuExpand(false);
+		}
 		router.push('/');
 	}
 
@@ -106,20 +112,17 @@ export default function Navbar() {
 					</div>
 				</div>
 				<div className='navbarlinks-outer-container'>
-					<div className='navbar-link-menu' onClick={() => clickMenuExpand()}>
-						<p>About Us</p>
-						<div className='icon-container2'>
-							<Image
-								src={arrow_icon}
-								width={14}
-								height={14}
-								alt="arrow icon"
-							/>
-						</div>
-						{menuExpand===true && <ExpandedNavBarMenu />}
+					<div className='navbar-link' onClick={() => router.push('/ourteam')}>
+						<p>Our Team</p>
+					</div>
+					<div className='navbar-link' onClick={() => router.push('/events')}>
+						<p>Events</p>
+					</div>
+					<div className='navbar-link' onClick={() => router.push('/researchgroup')}>
+						<p>Research Group</p>
 					</div>
 					<div className='navbar-link' onClick={() => router.push('/sponsors')}>
-						<p>Sponsors</p>
+						<p>Sponsorship</p>
 					</div>
 
 					<div className='navbar-link' onClick={() => router.push('/members')}>
