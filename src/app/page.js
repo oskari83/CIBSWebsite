@@ -12,14 +12,7 @@ import events_img from '../../resources/events6.jpg'
 
 import JoinButton from '@/components/joinbutton'
 import JoinButton2 from '@/components/joinbutton2'
-
-//sponsors photos
-import credit_img from '../../resources/sponsors/creditsuisse.png'
-import dragon_img from '../../resources/sponsors/dragonfly.png'
-import flow_img from '../../resources/sponsors/flowtraders.png'
-import houlihan_img from '../../resources/sponsors/houlihan.png'
-import jefferies_img from '../../resources/sponsors/jefferies.png'
-import nomura_img from '../../resources/sponsors/nomura.png'
+import SponsorsList from '@/components/sponsorsList'
 
 //alumni destinations logos
 import barclays_alumni_img from '../../resources/alumniDestinations/barclaysLogo.png'
@@ -172,89 +165,7 @@ export default function Home() {
 			</div>
 			<div className='thinLine'></div>
 			<div className='sponsors-box-outer'>
-				<div className='sponsor-box'>
-					<div className='sponsor-image'>
-						<Image
-							src={dragon_img}
-							style={{objectFit: 'cover'}}
-							fill={true}
-							alt="dragon pic"
-						/>
-					</div>
-					<div className='sponsor-text2'>
-						Dragonfly invests in top blockchain digital assets, combining years of traditional investment experience with blockchain expertise to find attractive investment opportunities in the digital asset market.
-					</div>
-				</div>
-
-				<div className='sponsor-box'>
-					<div className='sponsor-image'>
-						<Image
-							src={houlihan_img}
-							style={{objectFit: 'cover'}}
-							fill={true}
-							alt="houlihan pic"
-						/>
-					</div>
-					<div className='sponsor-text'>
-						Houlihan Lokey is a leading global investment bank with expertise in mergers and acquisitions, capital markets, financial restructuring and valuation.
-					</div>
-				</div>
-
-				<div className='sponsor-box'>
-					<div className='sponsor-image'>
-						<Image
-							src={jefferies_img}
-							style={{objectFit: 'cover'}}
-							fill={true}
-							alt="jefferies pic"
-						/>
-					</div>
-					<div className='sponsor-text'>
-						Jefferies is a diversified financial services company, a global leader in investment banking, and the largest independent, global, full-service IB firm in the US.
-					</div>
-				</div>
-
-				<div className='sponsor-box'>
-					<div className='sponsor-image'>
-						<Image
-							src={credit_img}
-							style={{objectFit: 'cover'}}
-							fill={true}
-							alt="cs pic"
-						/>
-					</div>
-					<div className='sponsor-text'>
-						Credit Suisse Group is a leading financial services company, advising clients in all aspects of finance, across the globe and around the clock.
-					</div>
-				</div>
-
-				<div className='sponsor-box'>
-					<div className='sponsor-image'>
-						<Image
-							src={flow_img}
-							style={{objectFit: 'cover'}}
-							fill={true}
-							alt="flow pic"
-						/>
-					</div>
-					<div className='sponsor-text'>
-						Since 2004, Flow Traders has been a principal trading firm and one of the world’s largest liquidity providers, specialised in Exchange Traded Products (ETPs).
-					</div>
-				</div>
-
-				<div className='sponsor-box'>
-					<div className='sponsor-image'>
-						<Image
-							src={nomura_img}
-							style={{objectFit: 'cover'}}
-							fill={true}
-							alt="flow pic"
-						/>
-					</div>
-					<div className='sponsor-text'>
-						Nomura is a leading global financial services group and investment bank with an integrated network spanning over 30 countries and regions.
-					</div>
-				</div>
+				<SponsorsList />
 			</div>
 		</div>
 	</div>

@@ -575,48 +575,6 @@ li {
 	margin-bottom: 50px;
 }
 
-.sponsor-box{
-	display: flex;
-	width: 48%;
-	height: 150px;
-	align-items: center;
-	justify-content: space-between;
-}
-
-.sponsor-image{
-	width: 40%;
-	height: 60px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: relative;
-	overflow: hidden;
-	object-fit: cover;
-	cursor: pointer;
-}
-
-.sponsor-text{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 50%;
-	height: 100%;
-	font-family: "WorkSansRegular";
-	font-size: 13px;
-	color: rgb(40, 40, 40);
-}
-
-.sponsor-text2{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 50%;
-	height: 100%;
-	font-family: "WorkSansRegular";
-	font-size: 12px;
-	color: rgb(40, 40, 40);
-}
-
 /*
 	-----     ALUMNI-DESTINATIONS BANNER      -----
 */

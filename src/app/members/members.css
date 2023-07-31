@@ -6,7 +6,6 @@
     position: fixed;
 	top: 70px;
     width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.36) 0px 1px 4px;
     z-index: 6;
 }
 
@@ -22,6 +21,7 @@
 .members-navbarlinks-outer-container {
     display: flex;
     height: 28px;
+	width: auto;
     padding-top: 3px;
     padding-bottom: 3px;
     align-items: center;
@@ -204,4 +204,11 @@
 		font-size: 14px;
 	}
 
+}
+
+@media (max-width: 448px) {
+	.members-navbar-link {
+		font-size: 11px;
+		width: 90px;
+	}
 }
