@@ -68,6 +68,10 @@ li {
 	list-style-position: outside;
 }
 
+select {
+	appearance:inherit;
+}
+
 /*
 	-----     FIRST BANNER      -----
 */
@@ -767,7 +771,7 @@ li {
 }
 
 .alumni-header-container{
-	margin-top: 40px;
+	margin-top: 60px;
 	margin-bottom: 0px;
 	display: flex;
 	font-size: 28px;
@@ -854,7 +858,7 @@ li {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-size: 14px;
+	font-size: 13px;
 	font-family: "WorkSansRegular";
 	z-index: 10;
 }

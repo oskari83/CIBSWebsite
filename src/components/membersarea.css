@@ -450,6 +450,10 @@
 	margin-bottom: 5px;
 }
 
+.form-container-members{
+	width: 200px;
+}
+
 @media (max-width: 940px) {
 	.events-box-text-header-container{
 		font-size: 22px;

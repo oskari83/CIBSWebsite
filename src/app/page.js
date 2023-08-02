@@ -11,6 +11,7 @@ import rgroup_img from '../../resources/rgroup.jpg'
 
 import JoinButton from '@/components/joinbutton'
 import JoinButton2 from '@/components/joinbutton2'
+import SeeButton from '@/components/seebutton'
 import SponsorsList from '@/components/sponsorsList'
 
 //alumni destinations logos
@@ -114,9 +115,7 @@ export default function Home() {
 						From a deep and wide ranging alumni network, member-exclusive guides, mentourship schemes, to email roundups and much more, CIBS supports its members in achieving their dreams and goals.
 					</div>
 					<div className='wedo-button-outer'>
-						<div className='wedo-button-container'>
-							<p>See our events</p>
-						</div>
+						<SeeButton urlString={'/events'} buttonText={'See our events'} />
 					</div>
 				</div>
 				<div className='initiatives-image-container'>
@@ -146,9 +145,7 @@ export default function Home() {
 						From a deep and wide ranging alumni network, member-exclusive guides, mentourship schemes, to email roundups and much more, CIBS supports its members in achieving their dreams and goals.
 					</div>
 					<div className='wedo-button-outer-right'>
-						<div className='wedo-button-container'>
-							<p>See our events</p>
-						</div>
+						<SeeButton urlString={'/events'} buttonText={'See our events'} />
 					</div>
 				</div>
 			</div>
@@ -162,9 +159,7 @@ export default function Home() {
 						From a deep and wide ranging alumni network, member-exclusive guides, mentourship schemes, to email roundups and much more, CIBS supports its members in achieving their dreams and goals.
 					</div>
 					<div className='wedo-button-outer'>
-						<div className='wedo-button-container'>
-							<p>See our events</p>
-						</div>
+						<SeeButton urlString={'/events'} buttonText={'See our events'} />
 					</div>
 				</div>
 				<div className='initiatives-image-container'>
@@ -194,9 +189,7 @@ export default function Home() {
 						From a deep and wide ranging alumni network, member-exclusive guides, mentourship schemes, to email roundups and much more, CIBS supports its members in achieving their dreams and goals.
 					</div>
 					<div className='wedo-button-outer-right'>
-						<div className='wedo-button-container'>
-							<p>Learn more</p>
-						</div>
+						<SeeButton urlString={'/researchgroup'} buttonText={'Learn more'} />
 					</div>
 				</div>
 				
@@ -367,7 +360,7 @@ export default function Home() {
 	<div className='joining-end-banner-container'>
 		<div className='joining-end-outer'>
 			<div className='joining-end-text-outer'>
-				<p>Sign up to Cambridge Investment Banking Society</p>
+				<p>Join Cambridge Investment Banking Society</p>
 			</div>
 			<div className='joining-end-text-minor'>
 				<p>Membership is free and open to everyone from all backgrounds and disciplines at the University of Cambridge</p>

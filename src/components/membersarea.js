@@ -461,7 +461,7 @@ export default function MembersArea() {
 				<div className='members-outer2'>
 					<div className='raven-login-container-outer'>
 
-					<form onSubmit={handleAccessRequest} className=''>
+					<form onSubmit={handleAccessRequest} className='form-container-members'>
 
 						<div className='crsidInput-text-container'>Crsid</div>
 						<div className='crsidInput-container'>
