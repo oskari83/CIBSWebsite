@@ -6,6 +6,8 @@ import cibsBackground_img from '../../resources/cibsBackground3.png'
 
 import initiatives_img from '../../resources/initiatives1.png'
 import events_img from '../../resources/events6.jpg'
+import events2_img from '../../resources/events2.jpg'
+import rgroup_img from '../../resources/rgroup.jpg'
 
 import JoinButton from '@/components/joinbutton'
 import JoinButton2 from '@/components/joinbutton2'
@@ -31,11 +33,9 @@ import pwp_alumni_img from '../../resources/alumniDestinations/pwpLogo.png'
 import roths_alumni_img from '../../resources/alumniDestinations/rothsLogo.png'
 import ubs_alumni_img from '../../resources/alumniDestinations/ubsLogo.png'
 
-
 export default function Home() {
   return (
 	<>
-	
 	<div className='first-banner-container'>
 		<Image
 			src={cibsBackground_img}
@@ -98,19 +98,24 @@ export default function Home() {
 		</div>
 	</div>
 
-	<div className='third-banner-container'>
-		<div className='events-outer'>
-			<div className='initiatives-container'>
+	<div className='wedo-banner-container'>
+		<div className='wedo-outer'>
+			<div className='wedo-header-container'>
+				<p>WHAT WE DO</p>
+			</div>
+			<div className='thinLine'></div>
+
+			<div className='wedo-container'>
 				<div className='initiatives-text-container-outer'>
-					<div className='initiatives-header-container'>
-						<p>OUR INITIATIVES</p>
+					<div className='wedo-header-container-smaller2'>
+						<p>NETWORKING</p>
 					</div>
-					<div className='initiatives-detail-container'>
+					<div className='wedo-detail-container'>
 						From a deep and wide ranging alumni network, member-exclusive guides, mentourship schemes, to email roundups and much more, CIBS supports its members in achieving their dreams and goals.
 					</div>
-					<div className='initiatives-button-outer'>
-						<div className='initiatives-button-container'>
-							<p>Learn more</p>
+					<div className='wedo-button-outer'>
+						<div className='wedo-button-container'>
+							<p>See our events</p>
 						</div>
 					</div>
 				</div>
@@ -123,13 +128,46 @@ export default function Home() {
 					/>
 				</div>
 			</div>
-		</div>
-	</div>
 
-	<div className='fourth-banner-container'>
-		<div className='events-outer'>
-			<div className='events-container'>
-				<div className='events-image-container'>
+			<div className='wedo-container'>
+				<div className='initiatives-image-container'>
+					<Image
+						src={events2_img}
+						style={{objectFit: 'cover'}}
+						fill={true}
+						alt="initiatives pic"
+					/>
+				</div>
+				<div className='initiatives-text-container-outer'>
+					<div className='wedo-header-container-smaller-right'>
+						<p>CAREER GUIDANCE</p>
+					</div>
+					<div className='wedo-detail-container-right'>
+						From a deep and wide ranging alumni network, member-exclusive guides, mentourship schemes, to email roundups and much more, CIBS supports its members in achieving their dreams and goals.
+					</div>
+					<div className='wedo-button-outer-right'>
+						<div className='wedo-button-container'>
+							<p>See our events</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div className='wedo-container'>
+				<div className='initiatives-text-container-outer'>
+					<div className='wedo-header-container-smaller'>
+						<p>INDUSTRY INSIGHTS</p>
+					</div>
+					<div className='wedo-detail-container'>
+						From a deep and wide ranging alumni network, member-exclusive guides, mentourship schemes, to email roundups and much more, CIBS supports its members in achieving their dreams and goals.
+					</div>
+					<div className='wedo-button-outer'>
+						<div className='wedo-button-container'>
+							<p>See our events</p>
+						</div>
+					</div>
+				</div>
+				<div className='initiatives-image-container'>
 					<Image
 						src={events_img}
 						style={{objectFit: 'cover'}}
@@ -137,23 +175,36 @@ export default function Home() {
 						alt="initiatives pic"
 					/>
 				</div>
-				<div className='events-text-container-outer'>
-					<div className='events-header-container'>
-						<p>OUR EVENTS</p>
+			</div>
+
+			<div className='wedo-container'>
+				<div className='initiatives-image-container'>
+					<Image
+						src={rgroup_img}
+						style={{objectFit: 'cover'}}
+						fill={true}
+						alt="initiatives pic"
+					/>
+				</div>
+				<div className='initiatives-text-container-outer'>
+					<div className='wedo-header-container-smaller-right'>
+						<p>RESEARCH GROUP</p>
 					</div>
-					<div className='events-detail-container'>
-						CIBS runs networking and career guidance events in addition to industry insights throughout the year to help students discover and succeed in different paths and areas of finance.
+					<div className='wedo-detail-container-right'>
+						From a deep and wide ranging alumni network, member-exclusive guides, mentourship schemes, to email roundups and much more, CIBS supports its members in achieving their dreams and goals.
 					</div>
-					<div className='events-button-outer'>
-						<div className='events-button-container'>
+					<div className='wedo-button-outer-right'>
+						<div className='wedo-button-container'>
 							<p>Learn more</p>
 						</div>
 					</div>
 				</div>
+				
 			</div>
+
+			<div className='buffer'></div>
 		</div>
 	</div>
-
 
 	<div className='sixth-banner-container'>
 		<div className='sponsors-outer'>
@@ -169,7 +220,7 @@ export default function Home() {
 
 	<div className='alumni-destinations-banner-container'>
 		<div className='alumni-destinations-outer'>
-			<div className='sponsors-header-container'>
+			<div className='alumni-header-container'>
 				<p>ALUMNI DESTINATIONS</p>
 			</div>
 			<div className='thinLine'></div>
@@ -316,7 +367,7 @@ export default function Home() {
 	<div className='joining-end-banner-container'>
 		<div className='joining-end-outer'>
 			<div className='joining-end-text-outer'>
-				<p>Sign up to Cambridge Investment Banking Society now</p>
+				<p>Sign up to Cambridge Investment Banking Society</p>
 			</div>
 			<div className='joining-end-text-minor'>
 				<p>Membership is free and open to everyone from all backgrounds and disciplines at the University of Cambridge</p>
@@ -335,5 +386,62 @@ export default function Home() {
 				<p>EVENTS</p>
 			</div>
 			<div className='thinLine-white'></div>
+
+
+	<div className='third-banner-container'>
+		<div className='events-outer'>
+			<div className='initiatives-container'>
+				<div className='initiatives-text-container-outer'>
+					<div className='initiatives-header-container'>
+						<p>OUR INITIATIVES</p>
+					</div>
+					<div className='initiatives-detail-container'>
+						From a deep and wide ranging alumni network, member-exclusive guides, mentourship schemes, to email roundups and much more, CIBS supports its members in achieving their dreams and goals.
+					</div>
+					<div className='initiatives-button-outer'>
+						<div className='initiatives-button-container'>
+							<p>Learn more</p>
+						</div>
+					</div>
+				</div>
+				<div className='initiatives-image-container'>
+					<Image
+						src={initiatives_img}
+						style={{objectFit: 'cover'}}
+						fill={true}
+						alt="initiatives pic"
+					/>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div className='fourth-banner-container'>
+		<div className='events-outer'>
+			<div className='events-container'>
+				<div className='events-image-container'>
+					<Image
+						src={events_img}
+						style={{objectFit: 'cover'}}
+						fill={true}
+						alt="initiatives pic"
+					/>
+				</div>
+				<div className='events-text-container-outer'>
+					<div className='events-header-container'>
+						<p>OUR EVENTS</p>
+					</div>
+					<div className='events-detail-container'>
+						CIBS runs networking and career guidance events in addition to industry insights throughout the year to help students discover and succeed in different paths and areas of finance.
+					</div>
+					<div className='events-button-outer'>
+						<div className='events-button-container'>
+							<p>Learn more</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 */

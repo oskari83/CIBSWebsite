@@ -121,15 +121,6 @@
 	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-.members-area-header-outer-container{
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	width: 100%;
-	margin-bottom: 12px;
-	margin-top: 10px;
-}
-
 .members-area-header-outer-container2{
 	display: flex;
 	align-items: center;
@@ -139,39 +130,6 @@
 	margin-right: 40px;
 	margin-bottom: 12px;
 	margin-top: 30px;
-}
-
-.members-area-header-container{
-	font-size: 28px;
-	font-family: "Garamond";
-	color: black;
-	height: 60px;
-	width: 50%;
-	display: flex;
-	align-items: center;
-	justify-content: flex-start;
-}
-
-.members-area-minor-text-container{
-	display: flex;
-	flex-direction: column;
-	font-size: 16px;
-	font-family: "WorkSansLight";
-	line-height: 1.6;
-	text-align: justify;
-	margin-bottom: 20px;
-	width: calc(100% - 80px);
-	margin-left: 40px;
-	margin-right: 40px;
-}
-
-.members-area-button-outer-container{
-	display: flex;
-	align-items: flex-end;
-	justify-content: center;
-	flex-direction: column;
-	width: 50%;
-	height: 60px;
 }
 
 .members-area-button-box{

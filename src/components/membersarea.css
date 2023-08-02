@@ -140,7 +140,7 @@
 	font-family: "Garamond";
 	color: black;
 	height: 60px;
-	width: 50%;
+	width: 400px;
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
@@ -156,12 +156,25 @@
 	margin-bottom: 20px;
 }
 
+.members-area-minor-text-container2 {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-family: "WorkSansLight";
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 20px;
+	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
 .members-area-button-outer-container{
 	display: flex;
 	align-items: flex-end;
 	justify-content: center;
 	flex-direction: column;
-	width: 50%;
+	width: 160px;
 	height: 60px;
 }
 
@@ -309,6 +322,7 @@
 	justify-content: center;
 	width: 100%;
 	height: 800px;
+	flex-direction: column;
 }
 
 .raven-login-button{
@@ -324,8 +338,116 @@
 	font-family: "WorkSansRegular";
 }
 
-.raven-login-button:hover{
+.raven-login-button2{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 200px;
+	height: 42px;
+	background-color: var(--dark-purple);
+	color: white;
+	cursor: pointer;
+	font-size: 13px;
+	font-family: "WorkSansRegular";
+    margin-top: 10px;
+    border-radius: 0px;
+	border: none;
+	transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+}
+
+.raven-login-button2:hover{
 	background-color: var(--light-purple);
+}
+
+.raven-take-to-join-button{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 200px;
+	height: 42px;
+	background-color: var(--dark-purple);
+	color: white;
+	cursor: pointer;
+	font-size: 13px;
+	font-family: "WorkSansRegular";
+    margin-top: 10px;
+    border-radius: 0px;
+	border: none;
+	transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+}
+
+.raven-take-to-join-button:hover{
+	background-color: var(--light-purple);
+}
+
+.crsidInput-text-container{
+	margin-top: 14px;
+	display: flex;
+	width: 100%;
+	font-family: "WorkSansRegular";
+	color: rgb(28, 28, 28);
+	font-size: 14px;
+}
+
+.crsidInput-container{
+	height: 40px;
+    width: 100%;
+    margin-top: 4px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.crsidInput{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+	border: 1px solid rgb(236, 236, 236);
+    border-radius: 0px;
+    font-family: "WorkSansRegular";
+    font-size: 14px;
+	padding-left: 16px;
+    padding-right: 16px;
+    color:rgb(70, 70, 70);
+}
+
+.crsidInput:focus{
+    border: none;
+    border: 2px solid var(--dark-purple);
+    outline: none;
+}
+
+.crsidInput::placeholder{
+    font-family: "WorkSansRegular";
+    font-size: 12px;
+    color:rgb(164, 164, 164)
+}
+
+.oops-text-container{
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	width: 200px;
+	font-size: 15px;
+	font-family: "WorkSansRegular";
+	color: black;
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+.login-failed-text-container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 200px;
+	font-size: 13px;
+	font-family: "WorkSansLight";
+	color: black;
+	margin-bottom: 5px;
 }
 
 @media (max-width: 940px) {
@@ -384,6 +506,10 @@
 	.events-box-text-body-container{
 		font-size: 12px;
 	}
+
+	.members-area-header-container{
+		font-size: 23px;
+	}
 }
 
 @media (max-width: 610px) {
@@ -411,6 +537,18 @@
 		font-size: 20px;
 		height: 80px;
 	}
+
+	.members-area-header-container{
+		font-size: 20px;
+	}
+
+	.members-area-minor-text-container{
+		font-size: 14px;
+	}
+
+	.members-area-minor-text-container2 {
+		font-size: 14px;
+	}
 }
 
 @media (max-width: 520px) {
@@ -429,5 +567,18 @@
 
 	.events-box-text-body-container{
 		font-size: 11px;
+	}
+
+	.members-area-header-outer-container {
+		flex-direction: column;
+	}
+
+	.members-area-header-container{
+		width: 100%;
+	}
+
+	.members-area-button-outer-container {
+		align-items: flex-start;
+		width: 100%;
 	}
 }

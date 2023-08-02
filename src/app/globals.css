@@ -235,7 +235,7 @@ li {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	margin-bottom: 90px;
+	margin-bottom: 80px;
 	margin-top: 50px;
 }
 
@@ -308,6 +308,154 @@ li {
 	width: 100%;
 	height: 24px;
 	background-color: var(--dark-purple);
+}
+
+/*
+	-----     WHAT WE DO BANNER      -----
+*/
+
+.wedo-banner-container{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	top: 0px;
+	width: 100%;
+	background-color: rgb(244, 242, 250);
+	z-index: 4;
+}
+
+.wedo-outer {
+    width: clamp(200px,100%,980px);
+}
+
+.wedo-header-container {
+	margin-top: 50px;
+	display: flex;
+	font-size: 28px;
+	font-family: "PlayfairBold";
+	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
+	height: 60px;
+	align-items: center;
+	justify-content: center;
+	color: rgb(0, 0, 0);
+}
+
+.thinLine{
+	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
+	height: 1px;
+	background-color: rgb(203, 203, 203);
+	margin-bottom: 40px;
+}
+
+.wedo-container{
+	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
+	height: 300px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.wedo-header-container-smaller{
+	display: flex;
+	width: calc(100% - 40px);
+	align-items: center;
+	justify-content: flex-start;
+	height: 60px;
+	font-size: 24px;
+	font-family: "PlayfairBold";
+	color: rgb(0, 0, 0);
+	margin-top: 30px;
+}
+
+.wedo-header-container-smaller2{
+	display: flex;
+	width: calc(100% - 40px);
+	align-items: center;
+	justify-content: flex-start;
+	height: 60px;
+	font-size: 24px;
+	font-family: "PlayfairBold";
+	color: rgb(0, 0, 0);
+	margin-top: 30px;
+}
+
+.wedo-detail-container{
+	margin-top: 10px;
+	display: flex;
+	width: calc(90% - 40px);
+	align-items: flex-start;
+	justify-content: flex-start;
+	font-size: 14px;
+	font-family: "WorkSansLight";
+	color: rgb(30, 30, 30);
+}
+
+.wedo-header-container-smaller-right{
+	display: flex;
+	width: calc(100% - 80px);
+	align-items: center;
+	justify-content: flex-start;
+	margin-left: 80px;
+	height: 60px;
+	font-size: 24px;
+	font-family: "PlayfairBold";
+	color: rgb(0, 0, 0);
+	margin-top: 30px;
+}
+
+.wedo-detail-container-right{
+	margin-top: 10px;
+	display: flex;
+	width: calc(90% - 80px);
+	margin-left: 80px;
+	align-items: flex-end;
+	justify-content: flex-start;
+	font-size: 14px;
+	font-family: "WorkSansLight";
+	color: rgb(30, 30, 30);
+}
+
+.wedo-button-outer{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	margin-top: 20px;
+}
+
+.wedo-button-outer-right{
+	width: calc(100% - 80px);
+	margin-left: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	margin-top: 20px;
+}
+
+.wedo-button-container{
+	width: 200px;
+	height: 40px;
+	background-color: var(--dark-purple);
+	color: white;
+	font-family: "WorkSansRegular";
+	display: flex;
+	font-size: 12px;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.buffer{
+	width: 100%;
+	height: 60px;
 }
 
 /*
@@ -586,7 +734,7 @@ li {
 	align-items: center;
 	top: 0px;
 	width: 100%;
-	background-color: rgb(235, 235, 235);
+	background-color: var(--light-gray);
 	z-index: 4;
 }
 
@@ -618,6 +766,21 @@ li {
 	margin-bottom: 10px;
 }
 
+.alumni-header-container{
+	margin-top: 40px;
+	margin-bottom: 0px;
+	display: flex;
+	font-size: 28px;
+	font-family: "PlayfairBold";
+	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
+	height: 60px;
+	align-items: center;
+	justify-content: center;
+	color: black;
+}
+
 /*
 	-----     JOINING-END BANNER      -----
 */
@@ -638,7 +801,7 @@ li {
 }
 
 .joining-end-text-outer {
-	margin-top: 60px;
+	margin-top: 80px;
 	height: 80px;
 	width: calc(100% - 80px);
 	margin-left: 40px;
@@ -646,9 +809,9 @@ li {
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
-	color: rgb(54, 54, 54);
-	font-size: 38px;
-	font-family: "Garamond";
+	color: black;
+	font-size: 32px;
+	font-family: "PlayfairBold";
 	z-index: 10;
 }
 
@@ -671,11 +834,11 @@ li {
 	align-items: center;
 	justify-content: center;
 	margin-top: 20px;
-	margin-bottom: 60px;
+	margin-bottom: 100px;
 	height: 37px;
 	width: 220px;
-	color: rgba(36, 36, 36, 0.9);
-	border: 1px solid var(--dark-purple);
+	background-color: var(--dark-purple);
+	color: white;
 	z-index: 10;
 	cursor: pointer;
 	transition: all 0.4s ease-in-out;
@@ -684,8 +847,7 @@ li {
 }
 
 .joining-end-join-button:hover{
-	color: rgb(255, 255, 255);
-	background-color: var(--dark-purple);
+	background-color: var(--light-purple);
 }
 
 .joining-end-button-text{
@@ -704,6 +866,12 @@ li {
 	margin-right: 40px;
 }
 
+@media (max-width: 952px) {
+	.joining-end-text-outer {
+		font-size: 30px;
+	}
+}
+
 @media (max-width: 915px) {
 	.first-banner-text-outer {
 		font-size: 48px;
@@ -718,7 +886,7 @@ li {
 
 	.joining-end-text-outer {
 		height: 60px;
-		font-size: 35px;
+		font-size: 28px;
 	}
 	
 	.joining-end-text-minor {
@@ -744,8 +912,8 @@ li {
 	}
 
 	.joining-end-text-outer {
-		height: 60px;
-		font-size: 30px;
+		height: 90px;
+		font-size: 26px;
 	}
 	
 	.joining-end-text-minor {
@@ -755,6 +923,14 @@ li {
 	
 	.values-box-detail2{
 		font-size: 12px;
+	}
+
+	.wedo-detail-container{
+		font-size: 13px;
+	}
+
+	.wedo-detail-container-right{
+		font-size: 13px;
 	}
 }
 
@@ -807,6 +983,32 @@ li {
 	.values-box-detail2{
 		font-size: 11px;
 	}
+
+	.wedo-detail-container{
+		font-size: 12px;
+	}
+
+	.wedo-detail-container-right{
+		font-size: 12px;
+		margin-left: 60px;
+	}
+
+	.wedo-header-container-smaller{
+		font-size: 20px;
+	}
+
+	.wedo-header-container-smaller2{
+		font-size: 20px;
+	}
+
+	.wedo-header-container-smaller-right{
+		font-size: 20px;
+		margin-left: 60px;
+	}
+
+	.wedo-button-outer-right {
+		margin-left: 60px;
+	}
 }
 
 @media (max-width: 714px) {
@@ -816,12 +1018,6 @@ li {
 	
 	.first-banner-text-minor {
 		font-size: 15px;
-	}
-
-	.joining-end-text-outer {
-		height: 120px;
-		font-size: 30px;
-		width: 80%;
 	}
 	
 	.joining-end-text-minor {
@@ -853,6 +1049,10 @@ li {
 }
 
 @media (max-width: 610px) {
+	.buffer{
+		height: 10px;
+	}
+	
 	.first-banner-text-outer {
 		height: 120px;
 		width: 60%;
@@ -874,6 +1074,10 @@ li {
 	}
 
 	.about-header-container {
+		font-size: 22px;
+	}
+
+	.alumni-header-container {
 		font-size: 22px;
 	}
 
@@ -944,6 +1148,57 @@ li {
 	.values-box-detail2{
 		font-size: 9px;
 	}
+
+	.wedo-container{
+		flex-direction: column;
+		height: auto;
+	}
+
+	.initiatives-image-container {
+		width: 400px;
+		height: 400px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	.initiatives-text-container-outer {
+		width: 400px;
+		height: auto;
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-start;
+		flex-direction: column;
+		margin-bottom: 40px;
+	}
+
+	.wedo-detail-container{
+		font-size: 14px;
+		width: 100%;
+	}
+
+	.wedo-detail-container-right{
+		font-size: 14px;
+		width: 100%;
+		margin-left: 0px;
+	}
+
+	.wedo-header-container-smaller{
+		font-size: 24px;
+	}
+
+	.wedo-header-container-smaller2{
+		font-size: 24px;
+		margin-top: 0px;
+	}
+
+	.wedo-header-container-smaller-right{
+		font-size: 24px;
+		margin-left: 0px;
+	}
+
+	.wedo-button-outer-right {
+		margin-left: 0px;
+	}
 }
 
 @media (max-width: 514px) {
@@ -991,7 +1246,7 @@ li {
 	}
 
 	.initiatives-text-container-outer{
-		height: 300px;
+		height: 220px;
 		width: 100%;
 	}
 
@@ -1034,6 +1289,11 @@ li {
 	
 	.values-box-detail2{
 		font-size: 13px;
+	}
+
+	.joining-end-text-outer {
+		height: 90px;
+		font-size: 23px;
 	}
 }
 
@@ -1082,6 +1342,11 @@ li {
 	.am-text-name {
 		font-size: 14px !important;
 	}
+
+	.joining-end-text-outer {
+		height: 90px;
+		font-size: 20px;
+	}
 }
 
 @media (max-width: 404px) {
@@ -1092,5 +1357,14 @@ li {
 	.am-image-outer-container{
 		width: 112px;
 		height: 112px;
+	}
+
+	.joining-end-text-outer {
+		height: 90px;
+		font-size: 18px;
+	}
+
+	.buffer{
+		height: 20px;
 	}
 }

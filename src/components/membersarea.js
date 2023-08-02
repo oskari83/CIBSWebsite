@@ -4,7 +4,8 @@ import Image from 'next/image'
 import './membersarea.css'
 import { useState } from 'react'
 import { useEffect } from 'react';
-import { signIn } from "next-auth/react"
+
+import JoinButton3 from './joinbutton3';
 
 import springGuide_img from '../../resources/membersArea/springGuide.png'
 import workshop1_img from '../../resources/membersArea/workshop1.png'
@@ -12,7 +13,10 @@ import workshop2_img from '../../resources/membersArea/workshop2.png'
 import workshop3_img from '../../resources/membersArea/workshop3.png'
 
 import connect_img from '../../resources/membersArea/connect.png'
-import { Router, useRouter } from 'next/router'
+
+import PocketBase from 'pocketbase';
+
+const pb = new PocketBase('http://127.0.0.1:8090');
 
 const MembersOverview = ({selectionFunc}) => {
 	return(
@@ -67,7 +71,7 @@ const MembersOverview = ({selectionFunc}) => {
 							Social Media
 						</div>
 					</div>
-					<div className='members-area-minor-text-container'>
+					<div className='members-area-minor-text-container2'>
 						Follow CIBS on all social media to keep up-to-date with our events and competitions. Our LinkedIn page is also updated with links to the latest articles from our research group, which are a valuable resource in keeping in touch with the latest industry developments. Every week, four commercial awareness quiz questions are posted to our Instagram - a great way to see how much you've retained from this week's news! Finally, on Facebook, you can find all upcoming workshops and socials.
 					</div>
 				</div>
@@ -282,6 +286,11 @@ const MembersCibsConnect = () => {
 export default function MembersArea() {
 	const [currentSelection, setCurrentSelection] = useState(0);
 	const [ravenUser, setRavenUser] = useState(null);
+	const [dbUser, setDbUser] = useState(null);
+	const [failedState, setFailedState] = useState(false);
+
+	const [crsid, setCrsid] = useState('');
+	const [buttonText, setButtonText] = useState('Access');
 
 	const selectionChange = (id) => {
         setCurrentSelection(id);
@@ -289,6 +298,36 @@ export default function MembersArea() {
 
 	const handleSign = () => {
 		trySampleRequest();
+	}
+
+	const handleCrsidChange = (e) => {
+        const val = e.target.value;
+        setCrsid(val);
+    };
+
+	const ResetButton = () => {
+		setButtonText('Access');
+	}
+
+	const handleAccessRequest = async (event) => {
+		event.preventDefault();
+		setButtonText('Loading...');
+
+		try {
+			const user = await getUser(crsid);
+			
+			console.log(user['crsid']);
+			window.localStorage.setItem(
+				'rememberUserAccess', JSON.stringify(user['crsid'])
+			);
+			setDbUser(user['crsid']);
+			ResetButton();
+			
+		} catch (exception) {
+			console.log("failed");
+			setFailedState(true);
+			ResetButton();
+		}
 	}
 
 	const YOUR_CLIENT_ID = '346406713027-mouebsme7n9lacl8s4bcl9inpdg1489v.apps.googleusercontent.com';
@@ -299,7 +338,7 @@ export default function MembersArea() {
 		if (params && params['access_token']) {
 			console.log("user exists")
 
-
+			setRavenUser(params['access_token']);
 			/*
 			var xhr = new XMLHttpRequest();
 			xhr.open('GET',
@@ -352,6 +391,13 @@ export default function MembersArea() {
 		form.submit();
 	}
 
+	async function getUser(uid) {
+		const record = await pb.collection('users').getFirstListItem(`crsid="${uid}"`, {
+			expand: 'relField1,relField2.subRelField',
+		});
+		return record;
+	}
+
 	useEffect(() => {
 		const currentUrl = window.location.href; 
 		const fragmentString = currentUrl;
@@ -382,9 +428,55 @@ export default function MembersArea() {
 			<div className='members-banner-container'>
 				<div className='members-outer2'>
 					<div className='raven-login-container-outer'>
-						<div className='raven-login-button' onClick={handleSign}>
+						<div className='raven-login-button'>
 							Loading...
 						</div>
+					</div>
+				</div>
+			</div>
+			</>
+		)
+	}
+
+	if(ravenUser!==null && failedState===true){
+		return(
+			<>
+			<div className='members-banner-container'>
+				<div className='members-outer2'>
+					<div className='raven-login-container-outer'>
+						<div className='oops-text-container'>Oops...</div>
+						<div className='login-failed-text-container'>Looks like you are not a member. Join us now to access member exclusive resources.</div>
+						<JoinButton3 />
+					</div>
+				</div>
+			</div>
+			</>
+		)
+	}
+
+	if(ravenUser!==null && dbUser===null){
+		return(
+			<>
+			<div className='members-banner-container'>
+				<div className='members-outer2'>
+					<div className='raven-login-container-outer'>
+
+					<form onSubmit={handleAccessRequest} className=''>
+
+						<div className='crsidInput-text-container'>Crsid</div>
+						<div className='crsidInput-container'>
+							<input 
+								type="text" 
+								value={crsid} 
+								className='crsidInput'  
+								placeholder=""
+								onChange={handleCrsidChange}
+							></input>
+						</div>
+
+						<button className='raven-login-button2' type='submit'>{buttonText}</button>
+					</form>
+
 					</div>
 				</div>
 			</div>
