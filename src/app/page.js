@@ -1,8 +1,5 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import './globals.css'
-import img from '../../resources/Logo_Icon.png'
-
 
 import background_img from '../../resources/background2.jpg'
 import cibsBackground_img from '../../resources/cibsBackground3.png'
