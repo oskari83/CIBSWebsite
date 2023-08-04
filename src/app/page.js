@@ -112,7 +112,7 @@ export default function Home() {
 						<p>NETWORKING</p>
 					</div>
 					<div className='wedo-detail-container'>
-						From a deep and wide ranging alumni network, member-exclusive guides, mentourship schemes, to email roundups and much more, CIBS supports its members in achieving their dreams and goals.
+						Members build relationships with firm representatives at networking events, getting to know the firm culture and open opportunities. Moreover, we have strong networks across the membership base, where members support each other in application processes.
 					</div>
 					<div className='wedo-button-outer'>
 						<SeeButton urlString={'/events'} buttonText={'See our events'} />
@@ -142,7 +142,7 @@ export default function Home() {
 						<p>CAREER GUIDANCE</p>
 					</div>
 					<div className='wedo-detail-container-right'>
-						From a deep and wide ranging alumni network, member-exclusive guides, mentourship schemes, to email roundups and much more, CIBS supports its members in achieving their dreams and goals.
+						At our events previous successful applicants share their experiences of programmes across a wide variety of divisions whilst providing members a comprehensive understanding of the recruitment process, tips, and tricks.
 					</div>
 					<div className='wedo-button-outer-right'>
 						<SeeButton urlString={'/events'} buttonText={'See our events'} />
@@ -156,7 +156,7 @@ export default function Home() {
 						<p>INDUSTRY INSIGHTS</p>
 					</div>
 					<div className='wedo-detail-container'>
-						From a deep and wide ranging alumni network, member-exclusive guides, mentourship schemes, to email roundups and much more, CIBS supports its members in achieving their dreams and goals.
+						We give our members insight into a variety of different fields and divisions of finance through technical workshops, insight talks, and panels with alumni and industry professionals.
 					</div>
 					<div className='wedo-button-outer'>
 						<SeeButton urlString={'/events'} buttonText={'See our events'} />
@@ -186,7 +186,7 @@ export default function Home() {
 						<p>RESEARCH GROUP</p>
 					</div>
 					<div className='wedo-detail-container-right'>
-						From a deep and wide ranging alumni network, member-exclusive guides, mentourship schemes, to email roundups and much more, CIBS supports its members in achieving their dreams and goals.
+						The Research Group and its analysts execute thorough research and provide insight into the world of finance through their research reports and articles.
 					</div>
 					<div className='wedo-button-outer-right'>
 						<SeeButton urlString={'/researchgroup'} buttonText={'Learn more'} />

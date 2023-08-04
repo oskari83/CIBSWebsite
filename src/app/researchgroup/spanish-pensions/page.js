@@ -2,6 +2,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import '../researchgroup.css'
 
+import rg3_img from '../../../../resources/researchgroup/rg3.png'
+
 export default function Page(){
 	return(
 		<>
@@ -18,6 +20,15 @@ export default function Page(){
 
 				<div className='article-minor-text'>
 					By Manuel Lara-Aguado on October 20, 2022
+				</div>
+
+				<div className='image-article-container'>
+					<Image
+						src={rg3_img}
+						style={{objectFit: 'cover'}}
+						fill={true}
+						alt="rg3 pic"
+					/>
 				</div>
 
 				<div className='article-text'>

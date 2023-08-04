@@ -1,8 +1,23 @@
 'use client'
 
 import './joinform.css'
+import axios from 'axios';
 import { useRouter } from 'next/navigation'
 import { useState } from 'react'
+
+import PocketBase from 'pocketbase';
+
+const pb = new PocketBase('http://127.0.0.1:8090');
+
+const joinCall = async (credentials) => {
+	const config = {
+		headers: {
+			"Content-Type": "application/json",
+		},
+	};
+	const response = await axios.post("https://cibs.soc.srcf.net/newmember", credentials, config);
+	return response.data;
+}
 
 export default function JoinForm() {
 	const router = useRouter()
@@ -11,8 +26,19 @@ export default function JoinForm() {
 	const [lastname, setLastname] = useState(''); 
 	const [cambridgeEmail, setCambridgeEmail] = useState(''); 
 	const [nonCambridgeEmail, setNonCambridgeEmail] = useState(''); 
-
+	const [college, setCollege] = useState(''); 
+	const [gyear, setGyear] = useState(''); 
+	const [degreeType, setDegreeType] = useState(''); 
 	const [degreeSubject, setDegreeSubject] = useState('');
+	const [gender, setGender] = useState(''); 
+	const [ethnicity, setEthnicity] = useState(''); 
+
+	const [success, setSuccess] = useState(false); 
+	const [buttonText, setButtonText] = useState('Join');
+
+	const ResetButton = () => {
+		setButtonText('Join');
+	}
 
 	const handleFirstnameChange = (e) => {
         const val = e.target.value;
@@ -39,10 +65,118 @@ export default function JoinForm() {
         setDegreeSubject(val);
     };
 
+	const handleCollegeChange = (e) => {
+        const val = e.target.value;
+        setCollege(val);
+    };
+
+	const handleGyearChange = (e) => {
+        const val = e.target.value;
+        setGyear(val);
+    };
+
+	const handleDegreeTypeChange = (e) => {
+        const val = e.target.value;
+        setDegreeType(val);
+    };
+
+	const handleGenderChange = (e) => {
+        const val = e.target.value;
+        setGender(val);
+    };
+
+	const handleEthnicityChange = (e) => {
+        const val = e.target.value;
+        setEthnicity(val);
+    };
+
+	const handleJoin = async (event) => {
+		event.preventDefault();
+		console.log('joining with', firstname, lastname, cambridgeEmail);
+		setButtonText('Loading...');
+
+		//const emailCheck = CheckEmail(email);
+		//const usrnmCheck = CheckUsername(username);
+		//const passwordCheck = CheckPassword(password);
+
+		try {
+
+			if(firstname != "" && lastname != "" && college != "" && gyear != "" && nonCambridgeEmail != "" && degreeType != "" && degreeSubject != "" && gender != "" && ethnicity != ""){
+				if(cambridgeEmail.includes("cam.ac.uk")) { 
+					const my_obj = JSON.stringify({
+						crsid: cambridgeEmail,
+						first_name: firstname,
+						last_name: lastname,
+						college: college,
+						grad_year: gyear,
+						area_of_study: nonCambridgeEmail,
+						degree_type: degreeType,
+						degree_subject: degreeSubject,
+						gender: gender,
+						ethnicity: ethnicity,
+						//ncemail: ncemail
+					});
+
+					// alert(options);
+					//console.log(my_obj);
+
+					const resp = await joinCall(my_obj)
+					console.log(resp);
+	
+				} else {
+					useEffect(() => {
+						window.alert("Please enter a valid Cambridge email");
+					});
+					return;
+				}
+			} else {
+				useEffect(() => {
+					window.alert("Please enter valid information in all boxes");
+				});
+				return;
+			}
+
+			const crsid = cambridgeEmail.substring(0, cambridgeEmail.indexOf("@"));
+
+			const data = {
+				"crsid": crsid,
+			};
+			
+			const record = await pb.collection('users').create(data);
+			console.log(record);
+
+			setFirstname('');
+			setLastname('');
+			setCambridgeEmail('');
+			setNonCambridgeEmail('');
+			setCollege('');
+			setGyear('');
+			setDegreeSubject('');
+			setDegreeType('');
+			setGender('');
+			setEthnicity('');
+			ResetButton();
+			setSuccess(true);
+		} catch (exception) {
+			console.log(exception);
+			ResetButton();
+		}
+	}
+
+	if(success===true){
+		return(
+			<>
+			<div className='asd'>
+				Success!
+			</div>
+			</>
+		)
+	}
+
 	return (
 		<>
 		<div className='form-outer-container'>
-			<form className='join-form'>
+			<form className='join-form' onSubmit={handleJoin}>
 				<div className='firstname-text-container'>First name</div>
 				<div className='firstname-container'>
 					<input 
@@ -89,7 +223,7 @@ export default function JoinForm() {
 
 				<div className='college-text-container'>College</div>
 				<div className='college-container'>
-					<select id="college" name="college" className='collegeInput'>
+					<select id="college" name="college" className='collegeInput' onChange={handleCollegeChange}>
 						<option value=""></option>
 						<option value="Christ's">Christ's</option>
 						<option value="Churchill">Churchill</option>
@@ -127,7 +261,7 @@ export default function JoinForm() {
 
 				<div className='gyear-text-container'>Graduation year</div>
 				<div className='gyear-container'>
-					<select id="gyear" name="gyear" className='gyearInput'>
+					<select id="gyear" name="gyear" className='gyearInput' onChange={handleGyearChange}>
 						<option value=""></option>
 						<option value="2024">2024</option>
 						<option value="2025">2025</option>
@@ -143,7 +277,7 @@ export default function JoinForm() {
 
 				<div className='dtype-text-container'>Degree type</div>
 				<div className='dtype-container'>
-					<select id="dtype" name="dtype" className='dtypeInput'>
+					<select id="dtype" name="dtype" className='dtypeInput' onChange={handleDegreeTypeChange}>
 						<option value=""></option>
 						<option value="Undergraduate">Undergraduate</option>
 						<option value="Undergraduate with integrated masters">Undergraduate with integrated masters</option>
@@ -166,7 +300,7 @@ export default function JoinForm() {
 				</div>
 				
 				<div className='gender-text-container'>Gender</div>
-				<div className='gender-container'>
+				<div className='gender-container' onChange={handleGenderChange}>
 					<select id="gender" name="gender" className='genderInput'>
 						<option value=""></option>
 						<option value="Male">Male</option>
@@ -178,9 +312,8 @@ export default function JoinForm() {
 
 				<div className='ethnicity-text-container'>Ethnicity</div>
 				<div className='ethnicity-container'>
-					<select id="ethnicity" name="ethnicity" className='ethnicityInput'>
+					<select id="ethnicity" name="ethnicity" className='ethnicityInput' onChange={handleEthnicityChange}>
 						<option value=""></option>
-						<option value="Prefer not to say">Prefer not to say</option>
 						<option value="White - English/Welsh/Scottish/Northern Irish/British">White - English/Welsh/Scottish/Northern Irish/British</option>
 						<option value="White - Irish">White - Irish</option>
 						<option value="White - Continental European">White - Continental European</option>
@@ -199,7 +332,7 @@ export default function JoinForm() {
 					</select>
 				</div>
 
-				<button className='join-button' type='submit'>Join</button>
+				<button className='join-button' type='submit'>{buttonText}</button>
 			</form>
 		</div>
 		</>

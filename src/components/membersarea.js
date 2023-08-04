@@ -463,7 +463,7 @@ export default function MembersArea() {
 
 					<form onSubmit={handleAccessRequest} className='form-container-members'>
 
-						<div className='crsidInput-text-container'>Crsid</div>
+						<div className='crsidInput-text-container'>Crsid (without @cam.ac.uk)</div>
 						<div className='crsidInput-container'>
 							<input 
 								type="text" 
