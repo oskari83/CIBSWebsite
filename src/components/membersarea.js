@@ -7,12 +7,12 @@ import { useEffect } from 'react';
 
 import JoinButton3 from './joinbutton3';
 
-import springGuide_img from '../../resources/membersArea/springGuide.png'
-import workshop1_img from '../../resources/membersArea/workshop1.png'
-import workshop2_img from '../../resources/membersArea/workshop2.png'
-import workshop3_img from '../../resources/membersArea/workshop3.png'
+import springGuide_img from '../../public/resources/membersArea/springGuide.png'
+import workshop1_img from '../../public/resources/membersArea/workshop1.png'
+import workshop2_img from '../../public/resources/membersArea/workshop2.png'
+import workshop3_img from '../../public/resources/membersArea/workshop3.png'
 
-import connect_img from '../../resources/membersArea/connect.png'
+import connect_img from '../../public/resources/membersArea/connect.png'
 
 import PocketBase from 'pocketbase';
 
@@ -463,7 +463,7 @@ export default function MembersArea() {
 
 					<form onSubmit={handleAccessRequest} className='form-container-members'>
 
-						<div className='crsidInput-text-container'>Crsid</div>
+						<div className='crsidInput-text-container'>Crsid (without @cam.ac.uk)</div>
 						<div className='crsidInput-container'>
 							<input 
 								type="text" 

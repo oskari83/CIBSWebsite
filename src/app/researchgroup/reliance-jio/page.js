@@ -2,6 +2,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import '../researchgroup.css'
 
+import rg2_img from '../../../../public/resources/researchgroup/rg2.png'
+
 export default function Page(){
 	return(
 		<>
@@ -18,6 +20,15 @@ export default function Page(){
 
 				<div className='article-minor-text'>
 					On October 1, 2022
+				</div>
+
+				<div className='image-article-container'>
+					<Image
+						src={rg2_img}
+						style={{objectFit: 'cover'}}
+						fill={true}
+						alt="rg3 pic"
+					/>
 				</div>
 
 				<div className='article-text'>

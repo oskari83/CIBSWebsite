@@ -5,9 +5,9 @@ import './navbar.css'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 import { useState } from 'react'
-import img from '../../resources/Logo_Icon.png'
-import key_icon from '../../resources/key.png'
-import arrow_icon from '../../resources/down-arrow.png'
+import img from '../../public/resources/Logo_Icon.png'
+import key_icon from '../../public/resources/key.png'
+import arrow_icon from '../../public/resources/down-arrow.png'
 
 import { FiMenu } from 'react-icons/fi';
 import { IoCloseSharp } from 'react-icons/io5'

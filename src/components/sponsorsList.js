@@ -4,12 +4,12 @@ import Image from 'next/image'
 import './sponsorsList.css'
 
 //sponsors photos
-import credit_img from '../../resources/sponsors/creditsuisse.png'
-import dragon_img from '../../resources/sponsors/dragonfly.png'
-import flow_img from '../../resources/sponsors/flowtraders.png'
-import houlihan_img from '../../resources/sponsors/houlihan.png'
-import jefferies_img from '../../resources/sponsors/jefferies.png'
-import nomura_img from '../../resources/sponsors/nomura.png'
+import credit_img from '../../public/resources/sponsors/creditsuisse.png'
+import dragon_img from '../../public/resources/sponsors/dragonfly.png'
+import flow_img from '../../public/resources/sponsors/flowtraders.png'
+import houlihan_img from '../../public/resources/sponsors/houlihan.png'
+import jefferies_img from '../../public/resources/sponsors/jefferies.png'
+import nomura_img from '../../public/resources/sponsors/nomura.png'
 
 import { useRouter } from 'next/navigation'
 

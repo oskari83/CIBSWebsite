@@ -3,9 +3,9 @@ import Link from 'next/link'
 import './researchgroup.css'
 import '../../components/eventslist.css'
 
-import r1_img from '../../../resources/researchgroup/r1.png'
-import r2_img from '../../../resources/researchgroup/r2.png'
-import r3_img from '../../../resources/researchgroup/r3.png'
+import r1_img from '../../../public/resources/researchgroup/r1.png'
+import r2_img from '../../../public/resources/researchgroup/r2.png'
+import r3_img from '../../../public/resources/researchgroup/r3.png'
 
 import ReadButton from '@/components/readbutton'
 

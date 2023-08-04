@@ -2,16 +2,14 @@ import Image from 'next/image'
 import Link from 'next/link'
 import './sponsors.css'
 
-import hands_img from '../../../resources/hands2.jpg'
-
 //pics
-import sponsor1_img from '../../../resources/sponsorpage/adPic1.png'
-import sponsor2_img from '../../../resources/sponsorpage/adPic2.png'
-import sponsor3_img from '../../../resources/sponsorpage/sponsorpage3.png'
+import sponsor1_img from '../../../public/resources/sponsorpage/adPic1.png'
+import sponsor2_img from '../../../public/resources/sponsorpage/adPic2.png'
+import sponsor3_img from '../../../public/resources/sponsorpage/sponsorpage3.png'
 
-import events1_img from '../../../resources/events1.jpg'
-import events2_img from '../../../resources/events2.jpg'
-import events3_img from '../../../resources/events3.jpg'
+import events1_img from '../../../public/resources/events1.jpg'
+import events2_img from '../../../public/resources/events2.jpg'
+import events3_img from '../../../public/resources/events3.jpg'
 
 import SponsorsList from '@/components/sponsorsList'
 

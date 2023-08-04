@@ -1,13 +1,12 @@
 import Image from 'next/image'
 import './globals.css'
 
-import background_img from '../../resources/background2.jpg'
-import cibsBackground_img from '../../resources/cibsBackground3.png'
+import cibsBackground_img from '../../public/resources/cibsBackground3.png'
 
-import initiatives_img from '../../resources/initiatives1.png'
-import events_img from '../../resources/events6.jpg'
-import events2_img from '../../resources/events2.jpg'
-import rgroup_img from '../../resources/rgroup.jpg'
+import initiatives_img from '../../public/resources/initiatives1.png'
+import events_img from '../../public/resources/events6.jpg'
+import events2_img from '../../public/resources/events2.jpg'
+import rgroup_img from '../../public/resources/rgroup.jpg'
 
 import JoinButton from '@/components/joinbutton'
 import JoinButton2 from '@/components/joinbutton2'
@@ -15,24 +14,24 @@ import SeeButton from '@/components/seebutton'
 import SponsorsList from '@/components/sponsorsList'
 
 //alumni destinations logos
-import barclays_alumni_img from '../../resources/alumniDestinations/barclaysLogo.png'
-import blackrock_alumni_img from '../../resources/alumniDestinations/blackrockLogo.png'
-import blackstone_alumni_img from '../../resources/alumniDestinations/blackstoneLogo.png'
-import bofa_alumni_img from '../../resources/alumniDestinations/bofaLogo.png'
-import citadel_alumni_img from '../../resources/alumniDestinations/citadelLogo.jpeg'
-import citi_alumni_img from '../../resources/alumniDestinations/citiLogo.png'
-import evercore_alumni_img from '../../resources/alumniDestinations/evercoreLogo.png'
-import goldman_alumni_img from '../../resources/alumniDestinations/goldmanLogo.png'
-import houlihan_alumni_img from '../../resources/alumniDestinations/houlihanLogo.png'
-import hsbc_alumni_img from '../../resources/alumniDestinations/hsbcLogo.png'
-import jefferies_alumni_img from '../../resources/alumniDestinations/jefferiesLogo.png'
-import jpm_alumni_img from '../../resources/alumniDestinations/jpmLogo.jpeg'
-import lazard_alumni_img from '../../resources/alumniDestinations/lazardLogo.png'
-import ms_alumni_img from '../../resources/alumniDestinations/msLogo.png'
-import pimco_alumni_img from '../../resources/alumniDestinations/pimcoLogo.jpeg'
-import pwp_alumni_img from '../../resources/alumniDestinations/pwpLogo.png'
-import roths_alumni_img from '../../resources/alumniDestinations/rothsLogo.png'
-import ubs_alumni_img from '../../resources/alumniDestinations/ubsLogo.png'
+//import barclays_alumni_img from '../../resources/alumniDestinations/barclaysLogo.png'
+import blackrock_alumni_img from '../../public/resources/alumniDestinations/blackrockLogo.png'
+import blackstone_alumni_img from '../../public/resources/alumniDestinations/blackstoneLogo.png'
+import bofa_alumni_img from '../../public/resources/alumniDestinations/bofaLogo.png'
+import citadel_alumni_img from '../../public/resources/alumniDestinations/citadelLogo.jpeg'
+//import citi_alumni_img from '../../resources/alumniDestinations/citiLogo.png'
+import evercore_alumni_img from '../../public/resources/alumniDestinations/evercoreLogo.png'
+import goldman_alumni_img from '../../public/resources/alumniDestinations/goldmanLogo.png'
+import houlihan_alumni_img from '../../public/resources/alumniDestinations/houlihanLogo.png'
+import hsbc_alumni_img from '../../public/resources/alumniDestinations/hsbcLogo.png'
+//import jefferies_alumni_img from '../../resources/alumniDestinations/jefferiesLogo.png'
+import jpm_alumni_img from '../../public/resources/alumniDestinations/jpmLogo.jpeg'
+import lazard_alumni_img from '../../public/resources/alumniDestinations/lazardLogo.png'
+import ms_alumni_img from '../../public/resources/alumniDestinations/msLogo.png'
+import pimco_alumni_img from '../../public/resources/alumniDestinations/pimcoLogo.jpeg'
+import pwp_alumni_img from '../../public/resources/alumniDestinations/pwpLogo.png'
+import roths_alumni_img from '../../public/resources/alumniDestinations/rothsLogo.png'
+import ubs_alumni_img from '../../public/resources/alumniDestinations/ubsLogo.png'
 
 export default function Home() {
   return (
@@ -112,7 +111,7 @@ export default function Home() {
 						<p>NETWORKING</p>
 					</div>
 					<div className='wedo-detail-container'>
-						From a deep and wide ranging alumni network, member-exclusive guides, mentourship schemes, to email roundups and much more, CIBS supports its members in achieving their dreams and goals.
+						Members build relationships with firm representatives at networking events, getting to know the firm culture and open opportunities. Moreover, we have strong networks across the membership base, where members support each other in application processes.
 					</div>
 					<div className='wedo-button-outer'>
 						<SeeButton urlString={'/events'} buttonText={'See our events'} />
@@ -142,7 +141,7 @@ export default function Home() {
 						<p>CAREER GUIDANCE</p>
 					</div>
 					<div className='wedo-detail-container-right'>
-						From a deep and wide ranging alumni network, member-exclusive guides, mentourship schemes, to email roundups and much more, CIBS supports its members in achieving their dreams and goals.
+						At our events previous successful applicants share their experiences of programmes across a wide variety of divisions whilst providing members a comprehensive understanding of the recruitment process, tips, and tricks.
 					</div>
 					<div className='wedo-button-outer-right'>
 						<SeeButton urlString={'/events'} buttonText={'See our events'} />
@@ -156,7 +155,7 @@ export default function Home() {
 						<p>INDUSTRY INSIGHTS</p>
 					</div>
 					<div className='wedo-detail-container'>
-						From a deep and wide ranging alumni network, member-exclusive guides, mentourship schemes, to email roundups and much more, CIBS supports its members in achieving their dreams and goals.
+						We give our members insight into a variety of different fields and divisions of finance through technical workshops, insight talks, and panels with alumni and industry professionals.
 					</div>
 					<div className='wedo-button-outer'>
 						<SeeButton urlString={'/events'} buttonText={'See our events'} />
@@ -186,7 +185,7 @@ export default function Home() {
 						<p>RESEARCH GROUP</p>
 					</div>
 					<div className='wedo-detail-container-right'>
-						From a deep and wide ranging alumni network, member-exclusive guides, mentourship schemes, to email roundups and much more, CIBS supports its members in achieving their dreams and goals.
+						The Research Group and its analysts execute thorough research and provide insight into the world of finance through their research reports and articles.
 					</div>
 					<div className='wedo-button-outer-right'>
 						<SeeButton urlString={'/researchgroup'} buttonText={'Learn more'} />

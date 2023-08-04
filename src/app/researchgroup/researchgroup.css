@@ -130,6 +130,20 @@
 	height: 60px;
 }
 
+.image-article-container{
+	width: calc(100% - 80px);
+	height: 400px;
+    margin-left: 40px;
+    margin-right: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	overflow: hidden;
+	object-fit: cover;
+	margin-bottom: 40px;
+}
+
 
 @media (max-width: 610px) {
 	.research-header-container{
@@ -147,6 +161,10 @@
 	.research-message-container2{
 		font-size: 14px;
 	}
+
+	.image-article-container{
+		height: 300px;
+	}
 }
 
 @media (max-width: 480px) {
@@ -154,11 +172,27 @@
 	.research-header-container2{
 		font-size: 18px;
 	}
+
+	.image-article-container{
+		height: 250px;
+	}
+
+	.article-heading{
+		font-size: 30px;
+	}
+
+	.article-text{
+		font-size: 14px;
+	}
 }
 
 @media (max-width: 410px) {
 
 	.research-header-container2{
 		font-size: 16px;
+	}
+
+	.image-article-container{
+		height: 200px;
 	}
 }

@@ -4,7 +4,7 @@ import './footer.css'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 
-import logo2_img from '../../resources/cibs_logo2.png'
+import logo2_img from '../../public/resources/cibs_logo2.png'
 import { FacebookIcon, LinkedinIcon, EmailIcon, InstagramIcon } from 'next-share'
 
 export default function Footer() {

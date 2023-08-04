@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import './join.css'
-import img from '../../../resources/Logo_Icon.png'
 import JoinForm from '@/components/joinform'
 
 export default function Page(){

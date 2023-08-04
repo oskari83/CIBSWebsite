@@ -1,9 +1,6 @@
 import './globals.css'
-import { EB_Garamond } from 'next/font/google'
 import Navbar from '../components/navbar.js'
 import Footer from '../components/footer.js'
-
-const inter = EB_Garamond({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'CIBS - Cambridge Investment Banking Society',
@@ -13,7 +10,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   	return (
     <html lang="en">
-      	<body className={inter.className}>
+      	<body>
 			<Navbar />
 			{children}
 			<Footer />

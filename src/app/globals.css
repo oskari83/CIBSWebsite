@@ -1,31 +1,31 @@
 @font-face {
 	font-family: 'WorkSansExtraLight';
-	src: local('WorkSans-ExtraLight'), url(../../fonts/WorkSans-ExtraLight.woff) format('woff');
+	src: local('WorkSans-ExtraLight'), url(../../public/fonts/WorkSans-ExtraLight.woff) format('woff');
 }
   
 @font-face {
 	font-family: 'WorkSansLight';
-	src: local('WorkSans-Light'), url(../../fonts/WorkSans-Light.woff) format('woff');
+	src: local('WorkSans-Light'), url(../../public/fonts/WorkSans-Light.woff) format('woff');
 }
 
 @font-face {
 	font-family: 'WorkSansRegular';
-	src: local('WorkSans-Regular'), url(../../fonts/WorkSans-Regular.woff) format('woff');
+	src: local('WorkSans-Regular'), url(../../public/fonts/WorkSans-Regular.woff) format('woff');
 }	
 
 @font-face {
 	font-family: 'Garamond';
-	src: local('EBGaramond-Regular'), url(../../fonts/EBGaramond-Regular.woff) format('woff');
+	src: local('EBGaramond-Regular'), url(../../public/fonts/EBGaramond-Regular.woff) format('woff');
 }
 
 @font-face {
 	font-family: 'GaramondSemiBold';
-	src: local('EBGaramond-SemiBold'), url(../../fonts/EBGaramond-SemiBold.woff) format('woff');
+	src: local('EBGaramond-SemiBold'), url(../../public/fonts/EBGaramond-SemiBold.woff) format('woff');
 }	
 
 @font-face {
 	font-family: 'PlayfairBold';
-	src: local('PlayfairDisplaySC-Bold'), url(../../fonts/PlayfairDisplaySC-Bold.woff) format('woff');
+	src: local('PlayfairDisplaySC-Bold'), url(../../public/fonts/PlayfairDisplaySC-Bold.woff) format('woff');
 }
 
 :root{
