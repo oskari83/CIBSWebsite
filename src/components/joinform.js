@@ -158,6 +158,7 @@ export default function JoinForm() {
 			ResetButton();
 			setSuccess(true);
 			router.push('/success');
+
 		} catch (exception) {
 			console.log(exception);
 			ResetButton();
