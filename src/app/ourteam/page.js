@@ -5,7 +5,7 @@ import './ourteam.css'
 //committee photos
 import vanessa_img from '../../../public/resources/committee/Vanessa-min.JPG'
 import juhyun_img from '../../../public/resources/committee/Juhyun-min.JPG'
-import matthew_img from '../../../public/resources/committee/Matthew-min.JPG'
+import matthew_img from '../../../public/resources/committee/Matthew-min.jpg'
 import divy_img from '../../../public/resources/committee/Divy-min.JPG'
 import olivia_img from '../../../public/resources/committee/Olivia-min.JPG'
 import amir_img from '../../../public/resources/committee/Amir-min.JPG'
@@ -16,7 +16,7 @@ import oskari_img from '../../../public/resources/committee/Oskari-min.JPG'
 import kenneth_img from '../../../public/resources/committee/Kenneth-min.JPG'
 import vimal_img from '../../../public/resources/committee/Vimal-min.JPG'
 import anson_img from '../../../public/resources/committee/Anson-min.JPG'
-import alan_img from '../../../public/resources/committee/Alan-min.JPG'
+import alan_img from '../../../public/resources/committee/Alan-min.jpg'
 import richard_img from '../../../public/resources/committee/Shen-min.JPG'
 
 //ambassador photos
