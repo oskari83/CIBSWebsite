@@ -331,7 +331,7 @@ export default function MembersArea() {
 	}
 
 	const YOUR_CLIENT_ID = '346406713027-mouebsme7n9lacl8s4bcl9inpdg1489v.apps.googleusercontent.com';
-	const YOUR_REDIRECT_URI = 'http://localhost:3000/members';
+	const YOUR_REDIRECT_URI = 'https://cibs-website-oskari83.vercel.app/members';
 
 	function trySampleRequest() {
 		var params = JSON.parse(localStorage.getItem('oauth2-test-params'));
