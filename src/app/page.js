@@ -43,6 +43,7 @@ export default function Home() {
 			style={{objectFit: 'cover'}}
 			fill={true}
 			alt="background image"
+			priority
 		/>
 		<div className='first-outer'>
 			<div className='first-banner-text-outer'>

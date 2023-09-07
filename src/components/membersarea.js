@@ -322,6 +322,8 @@ export default function MembersArea() {
 
 	const [crsid, setCrsid] = useState('');
 	const [buttonText, setButtonText] = useState('Access');
+	const [loadingText, setLoadingText] = useState('Loading...');
+
 
 	const selectionChange = (id) => {
         setCurrentSelection(id);
@@ -363,14 +365,23 @@ export default function MembersArea() {
 
 	const YOUR_CLIENT_ID = '346406713027-mouebsme7n9lacl8s4bcl9inpdg1489v.apps.googleusercontent.com';
 	const YOUR_REDIRECT_URI = 'https://cibs-website-oskari83.vercel.app/members';
+	//const YOUR_REDIRECT_URI = 'http://localhost:3000/members';
 
 	function trySampleRequest() {
 		var params = JSON.parse(localStorage.getItem('oauth2'));
-		if (params && params['access_token'] && params['hd']==="cam.ac.uk") {
-			console.log("user exists")
+		if (params && params['access_token']) {
+			console.log("some user exists")
 			console.log(params)
 
-			setRavenUser(params['access_token']);
+			if(params['hd']==="cam.ac.uk"){
+				console.log("cam user exists")
+				setRavenUser(params['access_token']);
+			}else{
+				console.log("cam-user does not exist");
+				setLoadingText('Raven login error: please login with @cam.ac.uk email');
+				setTimeout(() => setLoadingText('Loading...'), 4500);
+				setTimeout(() => oauth2SignIn(), 6000);
+			}
 			/*
 			var xhr = new XMLHttpRequest();
 			xhr.open('GET',
@@ -444,7 +455,10 @@ export default function MembersArea() {
 
 		if (Object.keys(params).length > 0) {
 			localStorage.setItem('oauth2', JSON.stringify(params) );
-			setRavenUser(params['access_token']);
+			if(params['hd']==="cam.ac.uk"){
+				setRavenUser(params['access_token']);
+			}
+			
 			/*
 			if (params['state'] && params['state'] == 'try_sample_request') {
 				trySampleRequest();
@@ -462,7 +476,7 @@ export default function MembersArea() {
 				<div className='members-outer2'>
 					<div className='raven-login-container-outer'>
 						<div className='raven-login-button'>
-							Loading...
+							{loadingText}
 						</div>
 					</div>
 				</div>
