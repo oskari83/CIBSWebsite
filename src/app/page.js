@@ -12,6 +12,7 @@ import JoinButton from '@/components/joinbutton'
 import JoinButton2 from '@/components/joinbutton2'
 import SeeButton from '@/components/seebutton'
 import SponsorsList from '@/components/sponsorsList'
+import SocialMediaButtons from '@/components/socialMediaButtons'
 
 //alumni destinations logos
 //import barclays_alumni_img from '../../resources/alumniDestinations/barclaysLogo.png'
@@ -195,6 +196,18 @@ export default function Home() {
 			</div>
 
 			<div className='buffer'></div>
+		</div>
+	</div>
+
+	<div className='social-media-call-banner-container'>
+		<div className='joining-end-outer'>
+			<div className='social-call-text-outer'>
+				<p>Follow us on social media</p>
+			</div>
+			<div className='social-call-text-minor'>
+				<p>Follow us to stay up to date on the latest events, opportunities, and socials</p>
+			</div>
+			<SocialMediaButtons />
 		</div>
 	</div>
 

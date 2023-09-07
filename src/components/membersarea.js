@@ -11,12 +11,16 @@ import springGuide_img from '../../public/resources/membersArea/springGuide.png'
 import workshop1_img from '../../public/resources/membersArea/workshop1.png'
 import workshop2_img from '../../public/resources/membersArea/workshop2.png'
 import workshop3_img from '../../public/resources/membersArea/workshop3.png'
+import spring_pdf from '../../public/resources/membersArea/spring-week-guide.pdf'
 
 import connect_img from '../../public/resources/membersArea/connect.png'
 
 import PocketBase from 'pocketbase';
 
-const pb = new PocketBase('http://127.0.0.1:8090');
+const url = 'https://cibs-website.pockethost.io'
+const url2 = 'http://127.0.0.1:8090'
+
+const pb = new PocketBase(url);
 
 const MembersOverview = ({selectionFunc}) => {
 	return(
@@ -81,6 +85,23 @@ const MembersOverview = ({selectionFunc}) => {
 }
 
 const MembersResources = () => {
+
+	const clickResource1 = () => {
+		window.open("https://www.youtube.com/watch?v=M0F3qX46lhk", "_blank");
+	}
+
+	const clickResource2 = () => {
+		window.open("https://www.youtube.com/watch?v=pImetaaJrcU", "_blank");
+	}
+
+	const clickResource3 = () => {
+		window.open("https://www.youtube.com/watch?v=A5IFsuI1I6w", "_blank");
+	}
+
+	const clickPDF = () => {
+		window.open(spring_pdf, "_blank");
+	}
+
 	return(
 		<>
 			<div className='members-banner-container'>
@@ -117,7 +138,8 @@ const MembersResources = () => {
 								</div>
 								<div className='events-box-text-button-outer-container'>
 									<div className='events-box-text-button-container'>
-										Access
+										<a href='/resources/membersArea/spring-week-guide.pdf' download="spring-week-guide.pdf">Access</a>
+										
 									</div>
 								</div>
 							</div>
@@ -143,7 +165,7 @@ const MembersResources = () => {
 									Grab some drinks and get to know members of the committee! This should be a great opportunity to find out more about what it's like being on the CIBS committee. We'll be ready to answer questions regarding the roles, investment banking and anything else you want to ask!
 								</div>
 								<div className='events-box-text-button-outer-container'>
-									<div className='events-box-text-button-container'>
+									<div className='events-box-text-button-container' onClick={clickResource1}>
 										Watch now
 									</div>
 								</div>
@@ -168,7 +190,7 @@ const MembersResources = () => {
 									Grab some drinks and get to know members of the committee! This should be a great opportunity to find out more about what it's like being on the CIBS committee. We'll be ready to answer questions regarding the roles, investment banking and anything else you want to ask!
 								</div>
 								<div className='events-box-text-button-outer-container'>
-									<div className='events-box-text-button-container'>
+									<div className='events-box-text-button-container' onClick={clickResource2}>
 										Watch now
 									</div>
 								</div>
@@ -193,7 +215,7 @@ const MembersResources = () => {
 									Grab some drinks and get to know members of the committee! This should be a great opportunity to find out more about what it's like being on the CIBS committee. We'll be ready to answer questions regarding the roles, investment banking and anything else you want to ask!
 								</div>
 								<div className='events-box-text-button-outer-container'>
-									<div className='events-box-text-button-container'>
+									<div className='events-box-text-button-container' onClick={clickResource3}>
 										Watch now
 									</div>
 								</div>
@@ -208,6 +230,15 @@ const MembersResources = () => {
 }
 
 const MembersCibsConnect = () => {
+
+	const clickResource1 = () => {
+		window.open("https://www.youtube.com/watch?v=4J7xU8my3LA", "_blank");
+	}
+
+	const clickResource2 = () => {
+		window.open("https://www.youtube.com/watch?v=sNFd43cEL64", "_blank");
+	}
+
 	return(
 		<>
 			<div className='members-banner-container'>
@@ -243,7 +274,7 @@ const MembersCibsConnect = () => {
 									Our first interview is with Matthew Coakes, Managing Director at Royal Bank of Canada (RBC) Capital Markets. Matthew studied Engineering at the University of Cambridge, and discusses why he entered the investment banking industry, managing stress on the job, and his career trajectory. He also discusses the focus on both renewables and non-renewables at RBC, as well as supporting businesses to make the transition to more sustainable energy sources.
 								</div>
 								<div className='events-box-text-button-outer-container'>
-									<div className='events-box-text-button-container'>
+									<div className='events-box-text-button-container' onClick={clickResource1}>
 										Watch now
 									</div>
 								</div>
@@ -268,7 +299,7 @@ const MembersCibsConnect = () => {
 									Next, we chat with Christopher Lipscomb, Managing Director at Morgan Stanley. Christopher studied Philosophy at the University of Cambridge, before pivoting to the investment banking industry. In this episode of CIBS Connect, he discusses how skills gained through his degree were applicable to IB, what the atmosphere is like at work, and how he spends his spare time.
 								</div>
 								<div className='events-box-text-button-outer-container'>
-									<div className='events-box-text-button-container'>
+									<div className='events-box-text-button-container' onClick={clickResource2}>
 										Watch now
 									</div>
 								</div>

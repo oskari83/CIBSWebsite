@@ -693,6 +693,57 @@ select {
     -moz-transition: all 0.2s ease-in-out;
 }
 
+
+/*
+	-----     SOCIAL MEDIA CALL BANNER      -----
+*/
+
+.social-media-call-banner-container{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	top: 0px;
+	width: 100%;
+	background-color: rgb(255, 255, 255);
+	z-index: 4;
+	border: 0px solid rgb(225, 225, 225);
+}
+
+.joining-end-outer {
+    width: clamp(200px,100%, 980px);
+}
+
+.social-call-text-outer {
+	margin-top: 60px;
+	height: 80px;
+	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: black;
+	font-size: 32px;
+	font-family: "PlayfairBold";
+	z-index: 10;
+}
+
+.social-call-text-minor {
+	height: 40px;
+	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: rgba(36, 36, 36, 0.747);
+	font-size: 16px;
+	font-family: "WorkSansRegular";
+	z-index: 10;
+	margin-bottom: 20px;
+}
+
 /*
 	-----     SPONSORS BANNER      -----
 */

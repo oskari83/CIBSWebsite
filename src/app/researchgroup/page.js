@@ -8,6 +8,7 @@ import r2_img from '../../../public/resources/researchgroup/r2.png'
 import r3_img from '../../../public/resources/researchgroup/r3.png'
 
 import ReadButton from '@/components/readbutton'
+import ApplyLink from '@/components/appLink'
 
 export default function Page(){
 	return(
@@ -24,8 +25,23 @@ export default function Page(){
 
 				<div className='research-message-container'>
 					This year, the CIBS Research group will write research reports on the following sectors: Technology, Media, & Telecom, Consumer & Retail, Industrials, Natural Resources, Healthcare, FIG & FinTech,
-					 Real Estate, and Business Services. Each sector will be covered by a team of 4 to 5 students — 1 Coverage Head and 3-4 Research Analysts. The analysts in the programme will be invited to exclusive 
-					 training sessions conducted by CIBS members with internship experience at investment banking/private equity firms.
+					 Real Estate, and Business Services. Each sector will be covered by a team of 4 to 5 students — 1 Coverage Head and 3-4 Research Analysts.
+				</div>
+
+				<div className='research-message-container'>
+					As part of the programme, analysts will be invited to exclusive training sessions conducted by CIBS members with internship experience at investment banking/private equity firms, with sessions including:
+				</div>
+
+				<div className='research-message-container'>
+					<li>Value companies using a DCF analysis</li>
+					<li>Build a meaningful set of trading and transaction comps, and </li>
+					<li>Analyse M&A transactions with accretion/dilution models</li>
+				</div>
+
+				<ApplyLink />
+
+				<div className='research-message-container'>
+					Deadline: September 15th
 				</div>
 
 				<div className='research-message-container'>

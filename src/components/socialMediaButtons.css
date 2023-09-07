@@ -1,0 +1,17 @@
+.socials-outer-container2{
+	display: flex;
+	flex-direction: row;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 80px;
+}
+
+.socials-button-container2{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 4px;
+	margin-right: 4px;
+	cursor: pointer;
+}

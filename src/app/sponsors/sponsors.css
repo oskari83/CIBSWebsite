@@ -645,8 +645,8 @@
 	width: calc(100% - 80px);
 	margin-left: 40px;
 	margin-right: 40px;
-	height: 300px;
-	margin-bottom: 40px;
+	margin-bottom: 70px;
+	flex-wrap: wrap;
 }
 
 .sponsorspage-why-us-outer-container2{
@@ -681,6 +681,7 @@
 	border: 1px solid rgb(235, 235, 235);
 	height: 250px;
 	flex-direction: column;
+	margin-top: 10px;
 	background-color: white;
 }
 
@@ -840,6 +841,12 @@
 	}
 }
 
+@media (max-width: 920px){
+	.sponsorspage-why-us-box-container{
+		width: 49%;
+	}
+}
+
 @media (max-width: 850px) {
 	.sponsorpage-image-container{
 		width: 190px;
@@ -889,6 +896,10 @@
 
 @media (max-width: 610px) {
 	.sponsorspage-header-container {
+		font-size: 22px;
+	}
+
+	.sponsorspage-header-container2 {
 		font-size: 22px;
 	}
 
@@ -943,6 +954,18 @@
 	.sponsorpage-adcampaign-images-outer {
 		height: 170px;
 	}
+
+	.sponsorpage-why-us-header-text{
+		font-size: 16px;
+	}
+	
+	.sponsorpage-why-us-header-text2{
+		font-size: 14px;
+	}
+
+	.sponsorpage-why-us-content-text{
+		font-size: 12px;
+	}
 }
 
 @media (max-width: 502px) {
@@ -968,5 +991,10 @@
 
 	.email-text-bold{
 		font-size: 17px;
+	}
+
+	.sponsorspage-why-us-box-container{
+		width: 100%;
+		height: 180px;
 	}
 }
