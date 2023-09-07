@@ -707,7 +707,7 @@ select {
 	width: 100%;
 	background-color: rgb(255, 255, 255);
 	z-index: 4;
-	border: 0px solid rgb(225, 225, 225);
+	border: 1px solid rgb(225, 225, 225);
 }
 
 .joining-end-outer {
