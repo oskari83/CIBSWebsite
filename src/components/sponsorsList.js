@@ -10,11 +10,21 @@ import flow_img from '../../public/resources/sponsors/flowtraders.png'
 import houlihan_img from '../../public/resources/sponsors/houlihan.png'
 import jefferies_img from '../../public/resources/sponsors/jefferies.png'
 import nomura_img from '../../public/resources/sponsors/nomura.png'
+import evercore_img from '../../public/resources/sponsors/evercore_logo.png'
+import man_img from '../../public/resources/sponsors/man_logo.png'
 
 import { useRouter } from 'next/navigation'
 
 export default function SponsorsList() {
 	const router = useRouter();
+
+	const clickEvercore = () => {
+		window.open("https://www.evercore.com/", "_blank");
+	}
+
+	const clickMan = () => {
+		window.open("https://www.man.com/", "_blank");
+	}
 
 	const clickDragon = () => {
 		window.open("https://dragonflyassetmgmt.com/", "_blank");
@@ -43,6 +53,34 @@ export default function SponsorsList() {
 	return (
 		<>
 		<div className='sponsor-box'>
+			<div className='sponsor-image' onClick={clickEvercore}>
+				<Image
+					src={evercore_img}
+					style={{objectFit: 'cover'}}
+					fill={true}
+					alt="dragon pic"
+				/>
+			</div>
+			<div className='sponsor-text2'>
+				Evercore is a premier global independent investment banking advisory firm dedicated to helping clients achieve superior results through trusted independent and innovative advice on matters of strategic significance.
+			</div>
+		</div>
+
+		<div className='sponsor-box'>
+			<div className='sponsor-image' onClick={clickMan}>
+				<Image
+					src={man_img}
+					style={{objectFit: 'cover'}}
+					fill={true}
+					alt="dragon pic"
+				/>
+			</div>
+			<div className='sponsor-text2'>
+				Man Group is an active investment management firm focused on delivering attractive performance and client portfolio solutions, deploying the latest technology across business to stay at the forefront of industry.
+			</div>
+		</div>
+
+		<div className='sponsor-box'>
 			<div className='sponsor-image' onClick={clickDragon}>
 				<Image
 					src={dragon_img}
@@ -53,34 +91,6 @@ export default function SponsorsList() {
 			</div>
 			<div className='sponsor-text2'>
 				Dragonfly invests in top blockchain digital assets, combining years of traditional investment experience with blockchain expertise to find attractive investment opportunities in the digital asset market.
-			</div>
-		</div>
-
-		<div className='sponsor-box'>
-			<div className='sponsor-image' onClick={clickHoulihan}>
-				<Image
-					src={houlihan_img}
-					style={{objectFit: 'cover'}}
-					fill={true}
-					alt="houlihan pic"
-				/>
-			</div>
-			<div className='sponsor-text'>
-				Houlihan Lokey is a leading global investment bank with expertise in mergers and acquisitions, capital markets, financial restructuring and valuation.
-			</div>
-		</div>
-
-		<div className='sponsor-box'>
-			<div className='sponsor-image' onClick={clickJefferies}>
-				<Image
-					src={jefferies_img}
-					style={{objectFit: 'cover'}}
-					fill={true}
-					alt="jefferies pic"
-				/>
-			</div>
-			<div className='sponsor-text'>
-				Jefferies is a diversified financial services company, a global leader in investment banking, and the largest independent, global, full-service IB firm in the US.
 			</div>
 		</div>
 
@@ -99,16 +109,16 @@ export default function SponsorsList() {
 		</div>
 
 		<div className='sponsor-box'>
-			<div className='sponsor-image' onClick={clickFlow}>
+			<div className='sponsor-image' onClick={clickJefferies}>
 				<Image
-					src={flow_img}
+					src={jefferies_img}
 					style={{objectFit: 'cover'}}
 					fill={true}
-					alt="flow pic"
+					alt="jefferies pic"
 				/>
 			</div>
 			<div className='sponsor-text'>
-				Since 2004, Flow Traders has been a principal trading firm and one of the world’s largest liquidity providers, specialised in Exchange Traded Products (ETPs).
+				Jefferies is a diversified financial services company, a global leader in investment banking, and the largest independent, global, full-service IB firm in the US.
 			</div>
 		</div>
 
@@ -125,6 +135,35 @@ export default function SponsorsList() {
 				Nomura is a leading global financial services group and investment bank with an integrated network spanning over 30 countries and regions.
 			</div>
 		</div>
+
+		<div className='sponsor-box'>
+			<div className='sponsor-image' onClick={clickHoulihan}>
+				<Image
+					src={houlihan_img}
+					style={{objectFit: 'cover'}}
+					fill={true}
+					alt="houlihan pic"
+				/>
+			</div>
+			<div className='sponsor-text'>
+				Houlihan Lokey is a leading global investment bank with expertise in mergers and acquisitions, capital markets, financial restructuring and valuation.
+			</div>
+		</div>
+
+		<div className='sponsor-box'>
+			<div className='sponsor-image' onClick={clickFlow}>
+				<Image
+					src={flow_img}
+					style={{objectFit: 'cover'}}
+					fill={true}
+					alt="flow pic"
+				/>
+			</div>
+			<div className='sponsor-text'>
+				Since 2004, Flow Traders has been a principal trading firm and one of the world’s largest liquidity providers, specialised in Exchange Traded Products (ETPs).
+			</div>
+		</div>
+
 		</>
 	)
 }

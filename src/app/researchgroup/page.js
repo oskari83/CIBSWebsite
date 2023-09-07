@@ -19,13 +19,18 @@ export default function Page(){
 				</div>
 				<div className='thinLine'></div>
 				<div className='research-message-container'>
-					CIBS Research Group is a subdivision of the Cambridge Investment Banking Society dedicated to [providing multifaceted insights into financial markets to CIBS members.]
+					CIBS Research Group is a subdivision of the Cambridge Investment Banking Society dedicated to running an analyst programme that gives an invaluable opportunity to conduct sector research (in Michaelmas Term) and propose a M&A transaction (in Lent Term).
 				</div>
 
 				<div className='research-message-container'>
-					The activities of CIBS Research Group include [writing about all topics related to commercial awareness, covering categories from M&A transactions to capital market trends to macroeconomic 
-					news and more. Our research analysts collaborate to produce and publish articles on a regular basis. With a strong emphasis on quality and originality, we aim to present unique insights 
-					and create genuine value for our readers.]
+					This year, the CIBS Research group will write research reports on the following sectors: Technology, Media, & Telecom, Consumer & Retail, Industrials, Natural Resources, Healthcare, FIG & FinTech,
+					 Real Estate, and Business Services. Each sector will be covered by a team of 4 to 5 students — 1 Coverage Head and 3-4 Research Analysts. The analysts in the programme will be invited to exclusive 
+					 training sessions conducted by CIBS members with internship experience at investment banking/private equity firms.
+				</div>
+
+				<div className='research-message-container'>
+					In past years, the Research Group has written about all topics related to commercial awareness, covering categories from M&A transactions to capital 
+					 market trends to macroeconomic news and more.
 				</div>
 
 				<div className='research-header-container2'>

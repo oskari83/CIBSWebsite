@@ -101,11 +101,17 @@ select {
 	margin-right: 40px;
 	display: flex;
 	align-items: center;
-	justify-content: flex-start;
+	justify-content: center;
 	color: white;
 	font-size: 55px;
 	font-family: "Garamond";
 	z-index: 10;
+	animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+	0% { opacity: 0; transform: scale(0.7);}
+	100% { opacity: 1; transform: scale(1);}
 }
 
 .first-banner-text-minor {
@@ -115,21 +121,23 @@ select {
 	margin-right: 40px;
 	display: flex;
 	align-items: center;
-	justify-content: flex-start;
+	justify-content: center;
 	color: rgba(255, 255, 255, 0.9);
 	font-size: 22px;
 	font-family: "WorkSansRegular";
 	z-index: 10;
+	animation: fadeIn 2s;
 }
 
 .first-banner-button-outer{
 	display: flex;
 	align-items: center;
-	justify-content: flex-start;
+	justify-content: center;
 	width: calc(100% - 80px);
 	margin-left: 40px;
 	margin-right: 40px;
 	margin-top: 14px;
+	animation: fadeIn 2s;
 }
 
 .first-banner-join-button{
@@ -145,6 +153,7 @@ select {
 	transition: all 0.4s ease-in-out;
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
+	animation: fadeIn 3s;
 }
 
 .first-banner-join-button:hover{
@@ -159,6 +168,7 @@ select {
 	font-size: 14px;
 	font-family: "WorkSansRegular";
 	z-index: 10;
+	animation: fadeIn 3s;
 }
 
 /*

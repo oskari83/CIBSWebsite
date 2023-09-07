@@ -6,7 +6,7 @@ import cibsBackground_img from '../../public/resources/cibsBackground3.png'
 import initiatives_img from '../../public/resources/initiatives1.png'
 import events_img from '../../public/resources/events6.jpg'
 import events2_img from '../../public/resources/events2.jpg'
-import rgroup_img from '../../public/resources/rgroup.jpg'
+import events3_img from '../../public/resources/events3.jpg'
 
 import JoinButton from '@/components/joinbutton'
 import JoinButton2 from '@/components/joinbutton2'
@@ -60,7 +60,7 @@ export default function Home() {
 			</div>
 			<div className='thinLine'></div>
 			<div className='about-minor-container'>
-				<p>The Cambridge Investment Banking Society (CIBS) gives Cambridge students opportunities to learn more about careers in the industry, build long-lasting networks, and ultimately secure highly competitive roles on insight, internship, and graduate programmes at investment banks. We have three core values which our events and initiatives aim to facilitate.</p>
+				<p>The Cambridge Investment Banking Society (CIBS) gives Cambridge students opportunities to learn more about careers in the industry, build long-lasting networks, and ultimately secure highly competitive roles on insight, internship, and graduate programmes in finance. We have three core values which our events and initiatives aim to facilitate.</p>
 			</div>
 			<div className='about-values-container'>
 				<p>OUR VALUES</p>
@@ -79,7 +79,7 @@ export default function Home() {
 				<div className='values-box'>
 				<div className='values-box-banner'></div>
 					<div className='values-box-header'>
-						Finance focus
+						Finance Focus
 					</div>
 					<div className='values-box-detail'>
 						CIBS offers events, workshops, and guidance across all areas, divisions and sectors of finance, attracting the most determined applicants from Cambridge and increasing their competitiveness.
@@ -130,7 +130,7 @@ export default function Home() {
 			<div className='wedo-container'>
 				<div className='initiatives-image-container'>
 					<Image
-						src={events2_img}
+						src={events3_img}
 						style={{objectFit: 'cover'}}
 						fill={true}
 						alt="initiatives pic"
@@ -174,7 +174,7 @@ export default function Home() {
 			<div className='wedo-container'>
 				<div className='initiatives-image-container'>
 					<Image
-						src={rgroup_img}
+						src={events2_img}
 						style={{objectFit: 'cover'}}
 						fill={true}
 						alt="initiatives pic"
@@ -359,7 +359,7 @@ export default function Home() {
 	<div className='joining-end-banner-container'>
 		<div className='joining-end-outer'>
 			<div className='joining-end-text-outer'>
-				<p>Join Cambridge Investment Banking Society</p>
+				<p>Join The Cambridge Investment Banking Society</p>
 			</div>
 			<div className='joining-end-text-minor'>
 				<p>Membership is free and open to everyone from all backgrounds and disciplines at the University of Cambridge</p>

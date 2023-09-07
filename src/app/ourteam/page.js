@@ -18,6 +18,8 @@ import vimal_img from '../../../public/resources/committee/Vimal-min.JPG'
 import anson_img from '../../../public/resources/committee/Anson-min.JPG'
 import alan_img from '../../../public/resources/committee/Alan-min.jpg'
 import richard_img from '../../../public/resources/committee/Shen-min.JPG'
+import mariska_img from '../../../public/resources/committee/mariska.jpeg'
+
 
 //ambassador photos
 import alan2_img from '../../../public/resources/ambassadors/alan2.jpg'
@@ -52,6 +54,7 @@ export default function Page(){
 				</div>
 
 				<div className='committee-boxes-outer'>
+
 					<div className='committee-box'>
 						<div className='committee-box-image-container'>
 							<Image
@@ -65,6 +68,20 @@ export default function Page(){
 							<div className='committee-text-name'>Vanessa Chen</div>
 							<div className='committee-text-role'>President</div>
 							<div className='committee-text-college'>Gonville and Caius College</div>
+						</div>
+					</div>
+
+					<div className='committee-box-t'>
+						<div className='committee-box-text-container-t'>
+							<div className='committee-message-container-t'>
+								<div className='space-10px'></div>
+								<p>A warm welcome from our committee!</p>
+								<div className='space-10px'></div>
+								<p>Welcome to CIBS! We are so excited to lead Cambridge Investment Banking Society this year. We aim to connect Cambridge students with opportunities within the financial services industry and help equip them with the skills necessary to succeed within finance. Make sure to join us and we look forward to seeing you at our events!</p>
+								<div className='space-10px'></div>
+								<p className='committee-text-right-pos'>Vanessa, Matthew and Juhyun</p>
+								<p className='committee-text-right-pos'>CIBS Presidents 2023-24</p>
+							</div>
 						</div>
 					</div>
 
@@ -127,8 +144,24 @@ export default function Page(){
 						</div>
 						<div className='committee-box-text-container'>
 							<div className='committee-text-name'>Olivia Moynihan</div>
-							<div className='committee-text-role'>Events Officer</div>
+							<div className='committee-text-role'>Events Executive Director</div>
 							<div className='committee-text-college'>Christ's College</div>
+						</div>
+					</div>
+
+					<div className='committee-box'>
+						<div className='committee-box-image-container'>
+							<Image
+								src={mariska_img}
+								style={{objectFit: 'cover'}}
+								fill={true}
+								alt="mariska pic"
+							/>
+						</div>
+						<div className='committee-box-text-container'>
+							<div className='committee-text-name'>Mariska Yazbeck</div>
+							<div className='committee-text-role'>Events Officer</div>
+							<div className='committee-text-college'>Trinity College</div>
 						</div>
 					</div>
 

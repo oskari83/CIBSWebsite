@@ -1,0 +1,6 @@
+.email-text-bold{
+	color: var(--dark-purple);
+	font-family: "WorkSansRegular";
+	font-size: 22px;
+	cursor: pointer;
+}

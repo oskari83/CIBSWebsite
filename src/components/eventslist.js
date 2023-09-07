@@ -22,8 +22,46 @@ import cvWorkshop_img from '../../public/resources/events/cvWorkshop.png'
 import howSpring_img from '../../public/resources/events/howSpringPanel.png'
 import freshersDrinks_img from '../../public/resources/events/freshersDrinks.png'
 
+import logo_img from '../../public/resources/Logo_Icon_s.png'
+
 const UpcomingEventsList = () => {
 
+	const clickEvent1 = () => {
+		window.open("https://www.facebook.com/CIBSoc", "_blank");
+	}
+
+
+	return(
+		<>
+			<div className='events-box-container'>
+				<div className='image-events-outer-container'>
+					<Image
+						src={logo_img}
+						style={{objectFit: 'cover'}}
+						fill={true}
+						alt="logo pic"
+					/>
+				</div>
+
+				<div className='events-box-text-outer-container'>
+					<div className='events-box-text-header-container'>
+						Events planning in progress
+					</div>
+					<div className='events-box-text-body-container'>
+						We are planning numerous amazing events for the upcoming year. Keep checking our Instagram and Facebook pages, and the website, to make sure you don't miss any of our events.
+					</div>
+					<div className='events-box-text-button-outer-container'>
+						<div className='events-box-text-button-container' onClick={clickEvent1}>
+							Facebook page
+						</div>
+					</div>
+				</div>
+			</div>
+		</>
+	)
+}
+
+const PastEventsList = () => {
 	const clickEvent1 = () => {
 		window.open("https://www.facebook.com/photo/?fbid=695573089241415&set=a.489461066519286", "_blank");
 	}
@@ -35,6 +73,47 @@ const UpcomingEventsList = () => {
 	const clickEvent3 = () => {
 		window.open("https://www.facebook.com/events/1389111651849680", "_blank");
 	}
+
+	const clickEvent4 = () => {
+		window.open("https://www.facebook.com/photo/?fbid=642405204558204&set=a.489461066519286", "_blank");
+	}
+
+	const clickEvent5 = () => {
+		window.open("https://www.facebook.com/photo?fbid=637015131763878&set=a.489461066519286", "_blank");
+	}
+
+	const clickEvent6 = () => {
+		window.open("https://www.facebook.com/photo/?fbid=625284192936972&set=a.489461066519286", "_blank");
+	}
+
+	const clickEvent7 = () => {
+		window.open("https://www.facebook.com/events/2203154956511991/?ref=newsfeed", "_blank");
+	}
+
+	const clickEvent8 = () => {
+		window.open("https://www.facebook.com/events/3229819827231792/?ref=newsfeed", "_blank");
+	}
+
+	const clickEvent9 = () => {
+		window.open("https://www.facebook.com/events/1287646558478694/?ref=newsfeed", "_blank");
+	}
+
+	const clickEvent10 = () => {
+		window.open("https://www.facebook.com/events/847644773040859/?ref=newsfeed", "_blank");
+	}
+
+	const clickEvent11 = () => {
+		window.open("https://www.facebook.com/events/5253311951463022/?ref=newsfeed", "_blank");
+	}
+
+	const clickEvent12 = () => {
+		window.open("https://www.facebook.com/events/2933264360311305/?ref=newsfeed", "_blank");
+	}
+
+	const clickEvent13 = () => {
+		window.open("https://www.facebook.com/events/560319762530297/?ref=newsfeed", "_blank");
+	}
+
 
 	return(
 		<>
@@ -62,7 +141,7 @@ const UpcomingEventsList = () => {
 					</div>
 					<div className='events-box-text-button-outer-container'>
 						<div className='events-box-text-button-container' onClick={clickEvent1}>
-							Sign up
+							Learn more
 						</div>
 					</div>
 				</div>
@@ -92,7 +171,7 @@ const UpcomingEventsList = () => {
 					</div>
 					<div className='events-box-text-button-outer-container'>
 						<div className='events-box-text-button-container' onClick={clickEvent2}>
-							Sign up
+							Learn more
 						</div>
 					</div>
 				</div>
@@ -122,18 +201,12 @@ const UpcomingEventsList = () => {
 					</div>
 					<div className='events-box-text-button-outer-container'>
 						<div className='events-box-text-button-container' onClick={clickEvent3}>
-							Sign up
+							Learn more
 						</div>
 					</div>
 				</div>
 			</div>
-		</>
-	)
-}
 
-const PastEventsList = () => {
-	return(
-		<>
 			<div className='events-box-container'>
 				<div className='image-events-outer-container'>
 					<Image
@@ -157,7 +230,7 @@ const PastEventsList = () => {
 						On Thursday 2nd March at 7:30pm, CIBS will be hosting our annual “How to Convert your Spring Week” panel. We will be hosting 3 panellists who have converted Spring Weeks across a range of leading banks, including Goldman Sachs, Morgan Stanley, Lazard, Macquarie and Credit Suisse. 
 					</div>
 					<div className='events-box-text-button-outer-container'>
-						<div className='events-box-text-button-container'>
+						<div className='events-box-text-button-container' onClick={clickEvent4}>
 							Learn more
 						</div>
 					</div>
@@ -187,7 +260,7 @@ const PastEventsList = () => {
 						On Tuesday 21st February at 8pm, CIBS will be hosting a “How to Convert Your Summer Internship” panel. The event will last an hour and will include a 40-minute panel discussion and a 20-minute audience Q&A.
 					</div>
 					<div className='events-box-text-button-outer-container'>
-						<div className='events-box-text-button-container'>
+						<div className='events-box-text-button-container' onClick={clickEvent5}>
 							Learn more
 						</div>
 					</div>
@@ -217,7 +290,7 @@ const PastEventsList = () => {
 						Grab some drinks and get to know members of the committee! This should be a great opportunity to find out more about what it's like being on the CIBS committee. We'll be ready to answer questions regarding the roles, investment banking and anything else you want to ask!
 					</div>
 					<div className='events-box-text-button-outer-container'>
-						<div className='events-box-text-button-container'>
+						<div className='events-box-text-button-container' onClick={clickEvent6}>
 							Learn more
 						</div>
 					</div>
@@ -247,7 +320,7 @@ const PastEventsList = () => {
 						Are you excited to learn more about the fast-paced nature of Sales and Trading, and what it takes to succeed in the role? Then come along this Wednesday to our Sales and Trading Division Breakdown, where you can discover the answer to all of these questions!
 					</div>
 					<div className='events-box-text-button-outer-container'>
-						<div className='events-box-text-button-container'>
+						<div className='events-box-text-button-container' onClick={clickEvent7}>
 							Learn more
 						</div>
 					</div>
@@ -277,7 +350,7 @@ const PastEventsList = () => {
 						Have you ever wondered what the Capital Markets Division does and how it differs from other divisions within an investment bank? Following this Wednesday’s first Division Breakdown event, on Wednesday 23rd November at 7:30 pm, CIBS will be hosting our second Division Breakdown this year, with this week’s focus being Capital Markets Division.
 					</div>
 					<div className='events-box-text-button-outer-container'>
-						<div className='events-box-text-button-container'>
+						<div className='events-box-text-button-container' onClick={clickEvent8}>
 							Learn more
 						</div>
 					</div>
@@ -307,7 +380,7 @@ const PastEventsList = () => {
 						We are delighted to announce our first event in our Senior Speaker Series this year. On Thursday 17th November at 2pm, we will be speaking to Managing Director Rajiv Amlani, who holds an MA in Economics from Cambridge!
 					</div>
 					<div className='events-box-text-button-outer-container'>
-						<div className='events-box-text-button-container'>
+						<div className='events-box-text-button-container' onClick={clickEvent9}>
 							Learn more
 						</div>
 					</div>
@@ -337,7 +410,7 @@ const PastEventsList = () => {
 						On Wednesday 9th November at 7:30pm, CIBS will be hosting our first Division Breakdown of this year, with this week’s focus being Investment Banking Division. 
 					</div>
 					<div className='events-box-text-button-outer-container'>
-						<div className='events-box-text-button-container'>
+						<div className='events-box-text-button-container' onClick={clickEvent10}>
 							Learn more
 						</div>
 					</div>
@@ -368,7 +441,7 @@ const PastEventsList = () => {
 						CIBS is pleased to announce that we will be running a CV and Cover Letter Workshop at 5pm on Tuesday 18th October. The workshop will give personalised feedback on CVs submitted by attendees as well as crucial tips on how to improve any CV or cover letter. We will also be looking at examples of successful cover letters and there will be plenty of time for Q&A, so that everybody learns something and can apply it to their applications.
 					</div>
 					<div className='events-box-text-button-outer-container'>
-						<div className='events-box-text-button-container'>
+						<div className='events-box-text-button-container' onClick={clickEvent11}>
 							Learn more
 						</div>
 					</div>
@@ -398,7 +471,7 @@ const PastEventsList = () => {
 						On Monday 10th October at 5.30 pm, CIBS will be hosting a “How to Secure a Spring Week” panel. With deadlines for spring weeks in 2023 fast approaching, this is a fantastic opportunity for students considering applying to get top tips from those who successfully secured a spring week for 2022.
 					</div>
 					<div className='events-box-text-button-outer-container'>
-						<div className='events-box-text-button-container'>
+						<div className='events-box-text-button-container' onClick={clickEvent12}>
 							Learn more
 						</div>
 					</div>
@@ -428,7 +501,7 @@ const PastEventsList = () => {
 					You’re invited to CIBS’ first in-person event of the year: Freshers’ Welcome Drinks! Drop by to enjoy some (free!) drinks and chat to our friendly committee and Research Group, as well as meeting freshers from different colleges. You’ll get to hear more about our exciting line-up of events for this term, learn about our interview and mentorship schemes, ask questions about becoming a CIBS ambassador and just have a good time!
 					</div>
 					<div className='events-box-text-button-outer-container'>
-						<div className='events-box-text-button-container'>
+						<div className='events-box-text-button-container' onClick={clickEvent13}>
 							Learn more
 						</div>
 					</div>
@@ -452,8 +525,8 @@ export default function EventsList() {
 		<>
 			<div className='events-list-outer'>
 				<div className='events-list-header'>
-					<div className={`events-list-upcoming-cont${currentSelection===0 ? 'S' : 'R'}`} onClick={() => selectionChange(0)}>UPCOMING</div>
-					<div className={`events-list-past-cont${currentSelection===0 ? 'R' : 'S'}`} onClick={() => selectionChange(1)}>PAST ARCHIVE</div>
+					<div className={`events-list-upcoming-cont${currentSelection===0 ? 'S' : 'R'}`} onClick={() => selectionChange(0)}>2023-2024</div>
+					<div className={`events-list-past-cont${currentSelection===0 ? 'R' : 'S'}`} onClick={() => selectionChange(1)}>PAST ARCHIVE (2022-2023)</div>
 				</div>
 
 				{currentSelection===0 && <UpcomingEventsList />}

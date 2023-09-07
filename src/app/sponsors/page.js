@@ -12,13 +12,61 @@ import events2_img from '../../../public/resources/events2.jpg'
 import events3_img from '../../../public/resources/events3.jpg'
 
 import SponsorsList from '@/components/sponsorsList'
+import EmailLink from '@/components/emailLink'
 
 export default function Page(){
 	return(
 		<>
-		<div className='sponsorspage-banner-container'>
+		<div className='sponsorspage-why-us-banner'>
 			<div className='sponsorspage-outer'>
 				<div className='sponsorspage-header-container'>
+					<p>WHY SPONSOR US</p>
+				</div>
+				<div className='thinLine'></div>
+				<div className='sponsorspage-why-us-outer-container'>
+					<div className='sponsorspage-why-us-box-container'>
+						<div className='sponsorpage-why-us-header-text'>
+							EFFECTIVE MARKETING
+						</div>
+						<div className='sponsorpage-why-us-content-text'>
+							We run effective email campaigns, have thousands of followers, and manage a network of ambassadors that extend word-of-mouth publicity.
+						</div>
+					</div>
+					<div className='sponsorspage-why-us-box-container'>
+						<div className='sponsorpage-why-us-header-text'>
+							SINGLE POINT OF INFORMATION
+						</div>
+						<div className='sponsorpage-why-us-content-text'>
+							CIBS is often the first place Cambridge students learn about the finance industry with sponsors leaving a lasting impressions among our members
+						</div>
+					</div>
+					<div className='sponsorspage-why-us-box-container'>
+						<div className='sponsorpage-why-us-header-text2'>
+							HIGH ENGAGEMENT & WIDE AUDIENCE
+						</div>
+						<div className='sponsorpage-why-us-content-text'>
+							Consistently oversubscribed events, strong partnerships with other student organisations, and a wide audience across different ethnicities, subjects and degrees
+						</div>
+					</div>
+
+					<div className='sponsorspage-why-us-box-container'>
+						<div className='sponsorpage-why-us-header-text'>
+							EFFECTIVE CAREER GUIDANCE
+						</div>
+						<div className='sponsorpage-why-us-content-text'>
+							By bringing firms to members, CIBS provides the most direct career knowledge in a world of disaggregated information about finance careers
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div className='sponsorspage-banner-container'>
+
+			<div className='sponsorspage-outer'>
+				<div className='sponsorspage-header-container2'>
 					<p>SERVICES WE OFFER</p>
 				</div>
 				<div className='thinLine'></div>
@@ -151,9 +199,7 @@ export default function Page(){
 						<p>
 							To find out more, please contact us at:
 						</p>
-						<p className='email-text-bold'>
-							sponsorship@cibsoc.co.uk
-						</p>
+						<EmailLink />
 					</div>
 				</div>
 			</div>
@@ -174,3 +220,54 @@ export default function Page(){
 		</>
 	)
 }
+
+/*
+
+		<div className='sponsorspage-why-us-banner'>
+			<div className='sponsorspage-outer'>
+				<div className='sponsorspage-header-container2'>
+					<p>WHY SPONSOR US</p>
+				</div>
+				<div className='thinLine'></div>
+				<div className='sponsorspage-why-us-outer-container2'>
+					<div className='sponsorspage-why-us-box-container2'>
+						<div className='sponsorpage-why-us-header-text3'>
+							EFFECTIVE MARKETING
+						</div>
+						<div className='sponsorpage-why-us-content-text2'>
+							We run effective email campaigns, have thousands of followers, and manage a network of ambassadors that extend word-of-mouth publicity.
+						</div>
+					</div>
+					<div className='sponsorspage-why-us-box-container2'>
+						<div className='sponsorpage-why-us-header-text3'>
+							SINGLE POINT OF INFORMATION
+						</div>
+						<div className='sponsorpage-why-us-content-text2'>
+							CIBS is often the first place Cambridge students learn about the finance industry with sponsors leaving a lasting impressions among our members
+						</div>
+					</div>
+				</div>
+
+				<div className='sponsorspage-why-us-outer-container3'>
+					<div className='sponsorspage-why-us-box-container2'>
+						<div className='sponsorpage-why-us-header-text4'>
+							HIGH ENGAGEMENT & WIDE AUDIENCE
+						</div>
+						<div className='sponsorpage-why-us-content-text2'>
+							Consistently oversubscribed events, strong partnerships with other student organisations, and a wide audience across different ethnicities, subjects and degrees
+						</div>
+					</div>
+
+					<div className='sponsorspage-why-us-box-container2'>
+						<div className='sponsorpage-why-us-header-text3'>
+							EFFECTIVE CAREER GUIDANCE
+						</div>
+						<div className='sponsorpage-why-us-content-text2'>
+							By bringing firms to members, CIBS provides the most direct career knowledge in a world of disaggregated information about finance careers
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+*/
