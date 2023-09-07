@@ -8,4 +8,4 @@ First, run the development server:
 npm run dev
 ```
 
-![alt text](https://github.com/oskari83/CIBSWebsite/blob/master/resources/readmePic1.png?raw=true)
+![alt text](https://github.com/oskari83/CIBSWebsite/blob/master/public/resources/readmePic1.png?raw=true)
