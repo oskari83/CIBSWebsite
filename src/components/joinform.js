@@ -7,7 +7,10 @@ import { useState } from 'react'
 
 import PocketBase from 'pocketbase';
 
-const pb = new PocketBase('http://127.0.0.1:8090');
+const url = 'https://cibs-website.pockethost.io'
+const url2 = 'http://127.0.0.1:8090'
+
+const pb = new PocketBase(url);
 
 const joinCall = async (credentials) => {
 	const config = {
