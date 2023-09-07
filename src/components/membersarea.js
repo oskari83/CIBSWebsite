@@ -365,9 +365,10 @@ export default function MembersArea() {
 	const YOUR_REDIRECT_URI = 'https://cibs-website-oskari83.vercel.app/members';
 
 	function trySampleRequest() {
-		var params = JSON.parse(localStorage.getItem('oauth2-test-params'));
-		if (params && params['access_token']) {
+		var params = JSON.parse(localStorage.getItem('oauth2'));
+		if (params && params['access_token'] && params['hd']==="cam.ac.uk") {
 			console.log("user exists")
+			console.log(params)
 
 			setRavenUser(params['access_token']);
 			/*
@@ -440,8 +441,9 @@ export default function MembersArea() {
 			params[decodeURIComponent(m[1])] = decodeURIComponent(m[2]);
 		}
 
+
 		if (Object.keys(params).length > 0) {
-			localStorage.setItem('oauth2-test-params', JSON.stringify(params) );
+			localStorage.setItem('oauth2', JSON.stringify(params) );
 			setRavenUser(params['access_token']);
 			/*
 			if (params['state'] && params['state'] == 'try_sample_request') {

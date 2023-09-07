@@ -742,6 +742,7 @@ select {
 	font-family: "WorkSansRegular";
 	z-index: 10;
 	margin-bottom: 20px;
+	text-align: center;
 }
 
 /*
@@ -959,6 +960,16 @@ select {
 		font-size: 14px;
 	}
 
+	.social-call-text-outer {
+		height: 60px;
+		font-size: 28px;
+	}
+	
+	.social-call-text-minor {
+		height: 30px;
+		font-size: 14px;
+	}
+
 	.alumni-destinations-box-container {
 		width: 110px;
     	height: 110px;
@@ -982,6 +993,16 @@ select {
 	}
 	
 	.joining-end-text-minor {
+		height: 30px;
+		font-size: 13px;
+	}
+
+	.social-call-text-outer {
+		height: 90px;
+		font-size: 26px;
+	}
+	
+	.social-call-text-minor {
 		height: 30px;
 		font-size: 13px;
 	}
@@ -1089,6 +1110,12 @@ select {
 		height: 40px;
 		font-size: 13px;
 		width: 80%;
+	}
+
+	
+	.social-call-text-minor {
+		height: 40px;
+		font-size: 13px;
 	}
 
 	.alumni-destinations-box-container {
@@ -1360,6 +1387,11 @@ select {
 		height: 90px;
 		font-size: 23px;
 	}
+
+	.social-call-text-outer {
+		height: 90px;
+		font-size: 22px;
+	}
 }
 
 @media (max-width: 432px) {
@@ -1409,6 +1441,11 @@ select {
 	}
 
 	.joining-end-text-outer {
+		height: 90px;
+		font-size: 20px;
+	}
+
+	.social-call-text-outer {
 		height: 90px;
 		font-size: 20px;
 	}
