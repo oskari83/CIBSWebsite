@@ -91,6 +91,9 @@ select {
 .first-outer{
 	width: clamp(200px,100%,980px);
 	z-index: 1;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 }
 
 .first-banner-text-outer {
@@ -107,6 +110,7 @@ select {
 	font-family: "Garamond";
 	z-index: 10;
 	animation: fadeIn 2s;
+	text-align: center;
 }
 
 @keyframes fadeIn {
@@ -127,6 +131,7 @@ select {
 	font-family: "WorkSansRegular";
 	z-index: 10;
 	animation: fadeIn 2s;
+	text-align: center;
 }
 
 .first-banner-button-outer{
