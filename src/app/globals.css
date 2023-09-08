@@ -937,6 +937,73 @@ select {
 	margin-right: 40px;
 }
 
+/*
+	-----     CONTACT US BANNER      -----
+*/
+
+.contact-banner-container{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	top: 0px;
+	width: 100%;
+	background-color: rgb(255, 255, 255);
+	z-index: 4;
+	border-top: 1px solid rgb(225, 225, 225);
+}
+
+.contact-banner-outer{
+	width: clamp(200px,100%,980px);
+}
+
+.contact-us-header-container{
+	margin-top: 40px;
+	margin-bottom: 0px;
+	display: flex;
+	font-size: 28px;
+	font-family: "PlayfairBold";
+	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
+	height: 60px;
+	align-items: center;
+	justify-content: center;
+	color: var(--dark-purple);
+}
+
+.contact-minor-container2{
+	display: flex;
+	flex-direction: column;
+	font-size: 16px;
+	font-family: "WorkSansLight";
+	line-height: 1.6;
+	text-align: justify;
+	margin-bottom: 40px;
+	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+.contact-minor-container-highlighted{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 120px;
+	flex-direction: column;
+	font-size: 18px;
+	font-family: "WorkSansLight";
+	line-height: 1.6;
+	background-color: white;
+	margin-bottom: 60px;
+	border: 0px solid var(--dark-purple);
+	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
+
+	border: 1px solid rgb(200, 200, 200);
+}
+
 @media (max-width: 952px) {
 	.joining-end-text-outer {
 		font-size: 30px;
@@ -1258,6 +1325,18 @@ select {
 		margin-bottom: 10px;
 	}
 
+	.contact-us-header-container {
+		font-size: 22px;
+	}
+
+	.contact-minor-container2 {
+		font-size: 14px;
+	}
+
+	.contact-minor-container-highlighted{
+		font-size: 16px;
+	}
+
 	.initiatives-text-container-outer {
 		width: 400px;
 		height: auto;
@@ -1397,6 +1476,10 @@ select {
 		height: 90px;
 		font-size: 22px;
 	}
+
+	.contact-minor-container-highlighted{
+		font-size: 12px;
+	}
 }
 
 @media (max-width: 432px) {
@@ -1453,6 +1536,10 @@ select {
 	.social-call-text-outer {
 		height: 90px;
 		font-size: 20px;
+	}
+
+	.contact-minor-container-highlighted{
+		font-size: 10px;
 	}
 }
 

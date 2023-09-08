@@ -11,7 +11,7 @@ export default function ApplyLink() {
 	return (
 		<>
 			<div className='research-message-container-link' onClick={clickApply}>
-				Click here to apply in application wave 1
+				Click here to apply to wave 1 of applications
 			</div>
 		</>
 	)

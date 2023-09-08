@@ -1,7 +1,8 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-crsids.text
+crsids.txt
 crisidParser.js
+crsidParser.py
 
 # dependencies
 /node_modules

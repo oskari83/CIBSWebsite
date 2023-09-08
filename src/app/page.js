@@ -13,6 +13,7 @@ import JoinButton2 from '@/components/joinbutton2'
 import SeeButton from '@/components/seebutton'
 import SponsorsList from '@/components/sponsorsList'
 import SocialMediaButtons from '@/components/socialMediaButtons'
+import EmailLink from '@/components/emailLink'
 
 //alumni destinations logos
 //import barclays_alumni_img from '../../resources/alumniDestinations/barclaysLogo.png'
@@ -379,6 +380,22 @@ export default function Home() {
 				<p>Membership is free and open to everyone from all backgrounds and disciplines at the University of Cambridge</p>
 			</div>
 			<JoinButton2></JoinButton2>
+		</div>
+	</div>
+
+	<div className='contact-banner-container'>
+		<div className='contact-banner-outer'>
+			<div className='contact-us-header-container'>
+				<p>CONTACT US</p>
+			</div>
+			<div className='thinLine'></div>
+
+			<div className='contact-minor-container-highlighted'>
+				<p>
+					If you have any queries, please feel free to contact us at:
+				</p>
+				<EmailLink emailText={"presidents@cibsoc.co.uk"}/>
+			</div>
 		</div>
 	</div>
 

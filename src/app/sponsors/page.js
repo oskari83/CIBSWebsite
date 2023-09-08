@@ -199,7 +199,7 @@ export default function Page(){
 						<p>
 							To find out more, please contact us at:
 						</p>
-						<EmailLink />
+						<EmailLink emailText={"sponsorship@cibsoc.co.uk"}/>
 					</div>
 				</div>
 			</div>

@@ -2,16 +2,16 @@
 
 import './emailLink.css'
 
-export default function EmailLink() {
+export default function EmailLink({emailText}) {
 
 	const clickEmail = () => {
-		window.open("mailto:sponsorship@cibsoc.co.uk", "_blank");
+		window.open(`mailto:${emailText}`, "_blank");
 	}
 
 	return (
 		<>
 		<p className='email-text-bold' onClick={clickEmail}>
-			sponsorship@cibsoc.co.uk
+			{emailText}
 		</p>
 		</>
 	)
