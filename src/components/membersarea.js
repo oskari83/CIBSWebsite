@@ -364,7 +364,8 @@ export default function MembersArea() {
 	}
 
 	const YOUR_CLIENT_ID = '346406713027-mouebsme7n9lacl8s4bcl9inpdg1489v.apps.googleusercontent.com';
-	const YOUR_REDIRECT_URI = 'https://cibs-website-oskari83.vercel.app/members';
+	//const YOUR_REDIRECT_URI = 'https://cibs-website-oskari83.vercel.app/members';
+	const YOUR_REDIRECT_URI = 'https://www.cibsoc.co.uk/members'
 	//const YOUR_REDIRECT_URI = 'http://localhost:3000/members';
 
 	function trySampleRequest() {
