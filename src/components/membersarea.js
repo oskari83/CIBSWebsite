@@ -365,14 +365,13 @@ export default function MembersArea() {
 
 	const YOUR_CLIENT_ID = '346406713027-mouebsme7n9lacl8s4bcl9inpdg1489v.apps.googleusercontent.com';
 	//const YOUR_REDIRECT_URI = 'https://cibs-website-oskari83.vercel.app/members';
-	const YOUR_REDIRECT_URI = 'https://www.cibsoc.co.uk/members'
+	const YOUR_REDIRECT_URI = 'https://www.cibsoc.co.uk/members';
 	//const YOUR_REDIRECT_URI = 'http://localhost:3000/members';
 
 	function trySampleRequest() {
-		var params = JSON.parse(localStorage.getItem('oauth2'));
+		var params = JSON.parse(localStorage.getItem('oauth'));
 		if (params && params['access_token']) {
 			console.log("some user exists")
-			console.log(params)
 
 			if(params['hd']==="cam.ac.uk"){
 				console.log("cam user exists")
@@ -400,7 +399,9 @@ export default function MembersArea() {
 			*/
 		} else {
 			console.log("user does not exist")
-			oauth2SignIn();
+			setLoadingText('Raven: please login with @cam.ac.uk email');
+			setTimeout(() => setLoadingText('Loading...'), 4500);
+			setTimeout(() => oauth2SignIn(), 6000);
 		}
 	}
 
@@ -455,9 +456,9 @@ export default function MembersArea() {
 
 
 		if (Object.keys(params).length > 0) {
-			localStorage.setItem('oauth2', JSON.stringify(params) );
 			if(params['hd']==="cam.ac.uk"){
 				setRavenUser(params['access_token']);
+				localStorage.setItem('oauth', JSON.stringify(params) );
 			}
 			
 			/*

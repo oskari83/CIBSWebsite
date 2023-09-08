@@ -388,6 +388,7 @@ export default function Home() {
 			<div className='contact-us-header-container'>
 				<p>CONTACT US</p>
 			</div>
+			<div className='thinLine'></div>
 
 			<div className='contact-minor-container-highlighted'>
 				<p>
