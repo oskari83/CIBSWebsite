@@ -417,7 +417,8 @@ export default function MembersArea() {
 		// Parameters to pass to OAuth 2.0 endpoint.
 		var params = {'client_id': YOUR_CLIENT_ID,
 					  'redirect_uri': YOUR_REDIRECT_URI,
-					  'scope': 'email',
+					  'scope': 'profile email openid',
+					  'prompt': 'select_account',
 					  'state': 'try_sample_request',
 					  'include_granted_scopes': 'true',
 					  'response_type': 'token'};
