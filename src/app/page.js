@@ -3,7 +3,7 @@ import './globals.css'
 
 import cibsBackground_img from '../../public/resources/cibsBackground3.png'
 
-import initiatives_img from '../../public/resources/initiatives1.png'
+import initiatives_img from '../../public/resources/events_new.png'
 import events_img from '../../public/resources/events6.jpg'
 import events2_img from '../../public/resources/events2.jpg'
 import events3_img from '../../public/resources/events3.jpg'
@@ -388,7 +388,6 @@ export default function Home() {
 			<div className='contact-us-header-container'>
 				<p>CONTACT US</p>
 			</div>
-			<div className='thinLine'></div>
 
 			<div className='contact-minor-container-highlighted'>
 				<p>
@@ -410,6 +409,7 @@ export default function Home() {
 			</div>
 			<div className='thinLine-white'></div>
 
+			<div className='thinLine'></div>
 
 	<div className='third-banner-container'>
 		<div className='events-outer'>
