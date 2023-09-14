@@ -9,6 +9,7 @@ import r3_img from '../../../public/resources/researchgroup/r3.png'
 
 import ReadButton from '@/components/readbutton'
 import ApplyLink from '@/components/appLink'
+import EmailLink from '@/components/emailLink'
 
 export default function Page(){
 	return(
@@ -49,6 +50,30 @@ export default function Page(){
 					 market trends to macroeconomic news and more.
 				</div>
 
+				<div className='research-message-container'></div>
+				<div className='research-message-container'></div>
+				<div className='research-message-container'></div>
+			</div>
+		</div>
+
+		<div className='packages-banner-container'>
+			<div className='packages-banner-outer'>
+				<div className='sponsorspage-packages-header-container'>
+					<p>CONTACT US</p>
+				</div>
+				<div className='thinLine'></div>
+
+				<div className='sponsorspage-minor-container-highlighted'>
+					<p>
+						If you have any questions, contact us at:
+					</p>
+					<EmailLink emailText={"researchgroup@cibsoc.co.uk"}/>
+				</div>
+			</div>
+		</div>
+
+		<div className='research-banner-container'>
+			<div className='research-outer'>
 				<div className='research-header-container2'>
 					<p>HIGHLIGHTED ARTICLES FROM 2022</p>
 				</div>
@@ -125,9 +150,6 @@ export default function Page(){
 						</div>
 					</div>
 				</div>
-
-				
-
 			</div>
 		</div>
 		</>

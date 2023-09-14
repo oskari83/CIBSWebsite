@@ -53,47 +53,6 @@
 	width: 100%;
 }
 
-.committee-boxes-outer{
-	display: flex;
-	width: 100%;
-	justify-content: space-between;
-	margin-top: 40px;
-	flex-wrap: wrap;
-	margin-bottom: 50px;
-	width: calc(100% - 80px);
-	margin-left: 40px;
-	margin-right: 40px;
-}
-
-.committee-box {
-	display: flex;
-	width: 32%;
-	height: 400px;
-	flex-direction: column;
-	margin-bottom: 50px;
-	background-color: rgb(241, 241, 241);
-	transition: all 0.2s ease-in-out;
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-}
-
-.committee-box:hover{
-	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-	background-color: white;
-}
-
-.committee-box-e {
-	display: flex;
-	width: 32%;
-	height: 400px;
-	flex-direction: column;
-	margin-bottom: 50px;
-	background-color: rgb(255, 255, 255);
-	transition: all 0.2s ease-in-out;
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-}
-
 .committee-box-t {
 	display: flex;
 	width: 66%;
