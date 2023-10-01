@@ -22,6 +22,8 @@ import cvWorkshop_img from '../../public/resources/events/cvWorkshop.png'
 import howSpring_img from '../../public/resources/events/howSpringPanel.png'
 import freshersDrinks_img from '../../public/resources/events/freshersDrinks.png'
 
+import freshers_welcome_img from '../../public/resources/events/freshers_welcome_23.png'
+
 import logo_img from '../../public/resources/Logo_Icon_s.png'
 
 const UpcomingEventsList = () => {
@@ -30,33 +32,43 @@ const UpcomingEventsList = () => {
 		window.open("https://www.facebook.com/CIBSoc", "_blank");
 	}
 
+	const clickEvent2 = () => {
+		window.open("https://www.facebook.com/photo/?fbid=807132448085478&set=a.489461066519286", "_blank");
+	}
+
 
 	return(
 		<>
 			<div className='events-box-container'>
 				<div className='image-events-outer-container'>
 					<Image
-						src={logo_img}
+						src={freshers_welcome_img}
 						style={{objectFit: 'cover'}}
 						fill={true}
-						alt="logo pic"
+						alt="freshers drinks pic"
 					/>
+				</div>
+
+				<div className='date-box-outer'>
+					<div className='date-box-month'>Oct</div>
+					<div className='date-box-day'>5</div>
 				</div>
 
 				<div className='events-box-text-outer-container'>
 					<div className='events-box-text-header-container'>
-						Events planning in progress
+						Freshers' Welcome Drinks
 					</div>
 					<div className='events-box-text-body-container'>
-						We are planning numerous amazing events for the upcoming year. Keep checking our Instagram and Facebook pages, and the website, to make sure you don't miss any of our events.
+						Come and enjoy complimentary drinks, mingle with our friendly committee and Research Group, and meet freshers from various colleges. We'll also share exciting details about our upcoming events, discuss our interview and mentorship programs, answer your questions about becoming a CIBS ambassador, and, most importantly, have a fantastic time! Time: 18:30 - 20:30 BST
 					</div>
 					<div className='events-box-text-button-outer-container'>
-						<div className='events-box-text-button-container' onClick={clickEvent1}>
-							Facebook page
+						<div className='events-box-text-button-container' onClick={clickEvent2}>
+							Learn more
 						</div>
 					</div>
 				</div>
 			</div>
+
 		</>
 	)
 }
