@@ -42,7 +42,7 @@ export default function Page(){
 				<ApplyLink />
 
 				<div className='research-message-container'>
-					Deadline: September 15th
+					Deadline: October 11th
 				</div>
 
 				<div className='research-message-container'>

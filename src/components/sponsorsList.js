@@ -12,6 +12,9 @@ import jefferies_img from '../../public/resources/sponsors/jefferies.png'
 import nomura_img from '../../public/resources/sponsors/nomura.png'
 import evercore_img from '../../public/resources/sponsors/evercore_logo.png'
 import man_img from '../../public/resources/sponsors/man_logo.png'
+import socgen_img from '../../public/resources/sponsors/socgen_logo.png'
+import rothesay_img from '../../public/resources/sponsors/rothesay_logo.png'
+import fe_img from '../../public/resources/sponsors/fe_logo.png'
 
 import { useRouter } from 'next/navigation'
 
@@ -34,20 +37,20 @@ export default function SponsorsList() {
 		window.open("https://www.jefferies.com/", "_blank");
 	}
 
-	const clickFlow = () => {
-		window.open("https://www.flowtraders.com/", "_blank");
+	const clickSocgen = () => {
+		window.open("https://www.societegenerale.com/en", "_blank");
 	}
 
-	const clickCredit = () => {
-		window.open("https://www.credit-suisse.com/ch/en.html", "_blank");
+	const clickFe = () => {
+		window.open("https://www.fe.training/", "_blank");
 	}
 
 	const clickNomura = () => {
 		window.open("https://www.nomura.com/", "_blank");
 	}
 
-	const clickHoulihan = () => {
-		window.open("https://hl.com/", "_blank");
+	const clickRothesay = () => {
+		window.open("https://www.rothesay.com/", "_blank");
 	}
 
 	return (
@@ -95,20 +98,6 @@ export default function SponsorsList() {
 		</div>
 
 		<div className='sponsor-box'>
-			<div className='sponsor-image' onClick={clickCredit}>
-				<Image
-					src={credit_img}
-					style={{objectFit: 'cover'}}
-					fill={true}
-					alt="cs pic"
-				/>
-			</div>
-			<div className='sponsor-text'>
-				Credit Suisse Group is a leading financial services company, advising clients in all aspects of finance, across the globe and around the clock.
-			</div>
-		</div>
-
-		<div className='sponsor-box'>
 			<div className='sponsor-image' onClick={clickJefferies}>
 				<Image
 					src={jefferies_img}
@@ -137,30 +126,44 @@ export default function SponsorsList() {
 		</div>
 
 		<div className='sponsor-box'>
-			<div className='sponsor-image' onClick={clickHoulihan}>
+			<div className='sponsor-image' onClick={clickSocgen}>
 				<Image
-					src={houlihan_img}
+					src={socgen_img}
 					style={{objectFit: 'cover'}}
 					fill={true}
-					alt="houlihan pic"
+					alt="socgen pic"
 				/>
 			</div>
 			<div className='sponsor-text'>
-				Houlihan Lokey is a leading global investment bank with expertise in mergers and acquisitions, capital markets, financial restructuring and valuation.
+				Societe Generale is a European leader in financial services with investment banking expertise across Debt and Equity Financing, Ratings, and Market Risk and Structuring.
 			</div>
 		</div>
 
 		<div className='sponsor-box'>
-			<div className='sponsor-image' onClick={clickFlow}>
+			<div className='sponsor-image' onClick={clickRothesay}>
 				<Image
-					src={flow_img}
+					src={rothesay_img}
 					style={{objectFit: 'cover'}}
 					fill={true}
-					alt="flow pic"
+					alt="rothesay pic"
 				/>
 			</div>
 			<div className='sponsor-text'>
-				Since 2004, Flow Traders has been a principal trading firm and one of the world’s largest liquidity providers, specialised in Exchange Traded Products (ETPs).
+			 Rothesay is a leading UK pensions insurance specialist, purpose-built to protect pension schemes and their members’ pensions with over £48 billion AUM.
+			</div>
+		</div>
+
+		<div className='sponsor-box'>
+			<div className='sponsor-image' onClick={clickFe}>
+				<Image
+					src={fe_img}
+					style={{objectFit: 'cover'}}
+					fill={true}
+					alt="fe pic"
+				/>
+			</div>
+			<div className='sponsor-text'>
+				Financial Edge is Wall Street's #1 training provider offering certified online courses from expert instructors.
 			</div>
 		</div>
 
