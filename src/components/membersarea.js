@@ -14,6 +14,7 @@ import workshop3_img from '../../public/resources/membersArea/workshop3.png'
 import spring_pdf from '../../public/resources/membersArea/spring-week-guide.pdf'
 
 import connect_img from '../../public/resources/membersArea/connect.png'
+import tracker_img from '../../public/resources/membersArea/tracker_pic.png'
 
 import PocketBase from 'pocketbase';
 
@@ -314,6 +315,59 @@ const MembersCibsConnect = () => {
 	)
 }
 
+const MembersCibsTracker = () => {
+
+	const clickTracker = () => {
+		window.open("https://docs.google.com/spreadsheets/d/1uByEmd2_b_JIOX4F7PWketATz6TNBezw/edit?fbclid=IwAR0grTa2UOwvhaswb-rV0YhUxCm8zuqUk5Fnd5EQJroqyvh5MwYE82nnxjk#gid=961671087", "_blank");
+	}
+
+	return(
+		<>
+			<div className='members-banner-container'>
+				<div className='members-outer2'>
+					<div className='members-header-container'>
+						<p>CIBS TRACKER</p>
+					</div>
+					<div className='thinLine'></div>
+					<div className='members-minor-container'>
+						<p>
+							CIBS Opportunities Tracker showcases opportunities available to CIBS members from our sponsor firms.
+						</p>
+					</div>
+
+					<div className='resources-list-outer'>
+						<div className='resources-list-header'>CIBS Opportunities Tracker</div>
+
+						<div className='resources-box-container'>
+							<div className='image-events-outer-container'>
+								<Image
+									src={tracker_img}
+									style={{objectFit: 'cover'}}
+									fill={true}
+									alt="tracker pic"
+								/>
+							</div>
+
+							<div className='events-box-text-outer-container'>
+								<div className='events-box-text-header-container'>
+									CIBS Opportunities Tracker
+								</div>
+
+								<div className='events-box-text-button-outer-container'>
+									<div className='events-box-text-button-container' onClick={clickTracker}>
+										Access now
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</>
+	)
+}
+
 export default function MembersArea() {
 	const [currentSelection, setCurrentSelection] = useState(0);
 	const [ravenUser, setRavenUser] = useState(null);
@@ -542,12 +596,14 @@ export default function MembersArea() {
 						<div className='members-navbar-link' onClick={() => selectionChange(0)}>Overview</div>
 						<div className='members-navbar-link' onClick={() => selectionChange(1)}>Resources</div>
 						<div className='members-navbar-link' onClick={() => selectionChange(2)}>CIBS Connect</div>
+						<div className='members-navbar-link' onClick={() => selectionChange(3)}>CIBS Tracker</div>
 					</div>
 				</div>
 			</div>
 			{currentSelection===0 && <MembersOverview selectionFunc={selectionChange}/>}
 			{currentSelection===1 && <MembersResources />}
 			{currentSelection===2 && <MembersCibsConnect />}
+			{currentSelection===3 && <MembersCibsTracker />}
 
 		</>
 	)
