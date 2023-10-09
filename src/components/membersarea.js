@@ -71,6 +71,22 @@ const MembersOverview = ({selectionFunc}) => {
 						</div>
 					</div>
 
+					<div className='members-area-major-box-container'>
+						<div className='members-area-header-outer-container'>
+							<div className='members-area-header-container'>
+								CIBS Opportunities Tracker
+							</div>
+							<div className='members-area-button-outer-container'>
+								<div className='members-area-button-box' onClick={() => selectionFunc(3)}>
+									Access here
+								</div>
+							</div>
+						</div>
+						<div className='members-area-minor-text-container'>
+							CIBS Opportunities Tracker showcases opportunities available to CIBS members from our sponsor firms.
+						</div>
+					</div>
+
 					<div className='members-area-header-outer-container2'>
 						<div className='members-area-header-container'>
 							Social Media
