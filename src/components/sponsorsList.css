@@ -40,6 +40,94 @@
 	color: rgb(40, 40, 40);
 }
 
+.sponsors-box-outer-gold {
+    display: flex;
+	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+
+.sponsors-box-outer-platinum {
+    display: flex;
+	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.sponsors-box-outer-silver {
+    display: flex;
+	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+
+.sponsors-box-outer-bronze {
+    display: flex;
+	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+
+.platinum-sponsors-name {
+	width: calc(100% - 80px);
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+	font-family: "WorkSansRegular";
+	color: rgb(47, 47, 47);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.gold-sponsors-name {
+	width: calc(100% - 80px);
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+	font-family: "WorkSansRegular";
+	color: rgb(128, 117, 22);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.silver-sponsors-name {
+	width: calc(100% - 80px);
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+	font-family: "WorkSansRegular";
+	color: rgb(157, 157, 157);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.bronze-sponsors-name {
+	width: calc(100% - 80px);
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+	font-family: "WorkSansRegular";
+	color: rgb(149, 104, 22);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 @media (max-width: 770px) {
 	.sponsor-box{
 		width: 100%;
@@ -47,6 +135,22 @@
 
 	.sponsor-image {
 		height: 100px;
+	}
+	
+	.sponsors-box-outer-gold {
+		flex-direction: column;
+	}
+
+	.sponsors-box-outer-platinum {
+		flex-direction: column;
+	}
+
+	.sponsors-box-outer-silver {
+		flex-direction: column;
+	}
+
+	.sponsors-box-outer-bronze {
+		flex-direction: column;
 	}
 }
 

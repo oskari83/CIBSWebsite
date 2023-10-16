@@ -810,16 +810,6 @@
 	color: var(--dark-purple);
 }
 
-.sponsors-box-outer {
-    display: flex;
-	width: calc(100% - 80px);
-	margin-left: 40px;
-	margin-right: 40px;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	margin-bottom: 50px;
-}
-
 @media (max-width: 970px) {
 	.sponsorpage-image-container{
 		width: 230px;
@@ -865,12 +855,6 @@
 
 	.sponsorpage-adcampaign-images-outer {
 		height: 190px;
-	}
-}
-
-@media (max-width: 770px) {
-	.sponsors-box-outer {
-		flex-direction: column;
 	}
 }
 

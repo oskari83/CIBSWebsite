@@ -23,6 +23,10 @@ import howSpring_img from '../../public/resources/events/howSpringPanel.png'
 import freshersDrinks_img from '../../public/resources/events/freshersDrinks.png'
 
 import freshers_welcome_img from '../../public/resources/events/freshers_welcome_23.png'
+import evercore_rx_img from '../../public/resources/events/everciore_rx.png'
+import introspring_img from '../../public/resources/events/intro_spring.png'
+import cvclwork_img from '../../public/resources/events/cvcl_workshop.png'
+import rizzo_img from '../../public/resources/events/rizzo.png'
 
 import logo_img from '../../public/resources/Logo_Icon_s.png'
 
@@ -32,6 +36,22 @@ const UpcomingEventsList = () => {
 		window.open("https://www.facebook.com/CIBSoc", "_blank");
 	}
 
+	const clickRizzo = () => {
+		window.open("https://www.facebook.com/photo/?fbid=817859897012733&set=a.489461066519286", "_blank");
+	}
+
+	const clickCVCL = () => {
+		window.open("https://www.facebook.com/photo?fbid=816516957147027&set=a.489461066519286", "_blank");
+	}
+
+	const clickSpringPanel = () => {
+		window.open("https://www.facebook.com/photo/?fbid=812828360849220&set=a.489461066519286", "_blank");
+	}
+
+	const clickEvercore = () => {
+		window.open("https://www.facebook.com/CIBSoc/posts/pfbid02nUSdyPpn3o5VXS5EZPt3u28xLYGbX4dSKdBRt1nwHXJkik9XozESQnDxfWWjyiWkl", "_blank");
+	}
+
 	const clickEvent2 = () => {
 		window.open("https://www.facebook.com/photo/?fbid=807132448085478&set=a.489461066519286", "_blank");
 	}
@@ -39,6 +59,126 @@ const UpcomingEventsList = () => {
 
 	return(
 		<>
+			<div className='events-box-container'>
+				<div className='image-events-outer-container'>
+					<Image
+						src={rizzo_img}
+						style={{objectFit: 'cover'}}
+						fill={true}
+						alt="rizzo pic"
+					/>
+				</div>
+
+				<div className='date-box-outer'>
+					<div className='date-box-month'>Oct</div>
+					<div className='date-box-day'>19</div>
+				</div>
+
+				<div className='events-box-text-outer-container'>
+					<div className='events-box-text-header-container'>
+						Speaker Event: Luigi Rizzo
+					</div>
+					<div className='events-box-text-body-container'>
+						We are delighted to announce that we will be hosting Luigi Rizzo, Vice Chairman of Investment Banking at Morgan Stanley, for a speaker event. This will take place from 3:30pm at Palmerston Room, St John’s College.
+					</div>
+					<div className='events-box-text-button-outer-container'>
+						<div className='events-box-text-button-container' onClick={clickRizzo}>
+							Learn more
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div className='events-box-container'>
+				<div className='image-events-outer-container'>
+					<Image
+						src={cvclwork_img}
+						style={{objectFit: 'cover'}}
+						fill={true}
+						alt="cvcl workshop pic"
+					/>
+				</div>
+
+				<div className='date-box-outer'>
+					<div className='date-box-month'>Oct</div>
+					<div className='date-box-day'>17</div>
+				</div>
+
+				<div className='events-box-text-outer-container'>
+					<div className='events-box-text-header-container'>
+						CV & Cover Letter Workshop
+					</div>
+					<div className='events-box-text-body-container'>
+						Are you not sure how to write a great CV or Cover Letter? If so, you're not alone. As these documents are a crucial part of most applications, whether for spring weeks or summers, CIBS is pleased to announce that we will be running a CV and Cover Letter Workshop at 6-8pm on 17th October in the Bowett Room, Queens' College.
+					</div>
+					<div className='events-box-text-button-outer-container'>
+						<div className='events-box-text-button-container' onClick={clickCVCL}>
+							Learn more
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div className='events-box-container'>
+				<div className='image-events-outer-container'>
+					<Image
+						src={introspring_img}
+						style={{objectFit: 'cover'}}
+						fill={true}
+						alt="intro spring pic"
+					/>
+				</div>
+
+				<div className='date-box-outer'>
+					<div className='date-box-month'>Oct</div>
+					<div className='date-box-day'>13</div>
+				</div>
+
+				<div className='events-box-text-outer-container'>
+					<div className='events-box-text-header-container'>
+						Intro to Finance & Spring Week Panel
+					</div>
+					<div className='events-box-text-body-container'>
+						Join CIBS on Friday October 13th at 7 pm for an Introduction to Finance, followed by our panel discussion: How to Secure a Spring Week. If you’re not sure about what investment banking actually is, what it’s like working as a trader, come along and we’ll give you a breakdown of how to break into a career in finance, and what you need to do at university.
+					</div>
+					<div className='events-box-text-button-outer-container'>
+						<div className='events-box-text-button-container' onClick={clickSpringPanel}>
+							Learn more
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div className='events-box-container'>
+				<div className='image-events-outer-container'>
+					<Image
+						src={evercore_rx_img}
+						style={{objectFit: 'cover'}}
+						fill={true}
+						alt="freshers drinks pic"
+					/>
+				</div>
+
+				<div className='date-box-outer'>
+					<div className='date-box-month'>Oct</div>
+					<div className='date-box-day'>9</div>
+				</div>
+
+				<div className='events-box-text-outer-container'>
+					<div className='events-box-text-header-container'>
+						Evercore Restructuring Workshop
+					</div>
+					<div className='events-box-text-body-container'>
+						Evercore's restructuring team will be hosting an exclusive workshop with CIBS on Monday, 9th October, from 7 - 9 pm at the Castlereagh Room in St. John's College. The workshop will allow participants to gain an understanding of restructuring and will feature senior bankers from Evercore's restructuring team. The team will provide an overview of Evercore, its restructuring team, and what restructuring is all about, as well as some case studies.
+					</div>
+					<div className='events-box-text-button-outer-container'>
+						<div className='events-box-text-button-container' onClick={clickEvercore}>
+							Learn more
+						</div>
+					</div>
+				</div>
+			</div>
+
 			<div className='events-box-container'>
 				<div className='image-events-outer-container'>
 					<Image

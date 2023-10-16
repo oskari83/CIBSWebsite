@@ -210,9 +210,7 @@ export default function Page(){
 						<p>OUR SPONSORS</p>
 					</div>
 					<div className='thinLine'></div>
-					<div className='sponsors-box-outer'>
-						<SponsorsList />
-					</div>
+					<SponsorsList />
 				</div>
 			</div>
 

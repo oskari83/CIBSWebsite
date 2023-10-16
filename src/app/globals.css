@@ -784,15 +784,6 @@ select {
 	color: var(--dark-purple);
 }
 
-.sponsors-box-outer {
-    display: flex;
-	width: calc(100% - 80px);
-	margin-left: 40px;
-	margin-right: 40px;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	margin-bottom: 50px;
-}
 
 /*
 	-----     ALUMNI-DESTINATIONS BANNER      -----
@@ -1098,10 +1089,6 @@ select {
 	
 	.first-banner-text-minor {
 		font-size: 16px;
-	}
-
-	.sponsors-box-outer {
-		flex-direction: column;
 	}
 
 	.sponsor-box{
