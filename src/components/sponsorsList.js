@@ -52,6 +52,14 @@ export default function SponsorsList() {
 		window.open("https://www.rothesay.com/", "_blank");
 	}
 
+	const clickWq = () => {
+		window.open("https://www.worldquant.com/", "_blank");
+	}
+
+	const clickAppian = () => {
+		window.open("https://appiancapitaladvisory.com/", "_blank");
+	}
+
 	return (
 		<>
 		<div className='platinum-sponsors-name'>Platinum Sponsors</div>
@@ -93,7 +101,7 @@ export default function SponsorsList() {
 			</div>
 
 			<div className='sponsor-box'>
-				<div className='sponsor-image' onClick={clickMan}>
+				<div className='sponsor-image' onClick={clickWq}>
 					<Image
 						src={wq_img}
 						style={{objectFit: 'cover'}}
@@ -107,7 +115,7 @@ export default function SponsorsList() {
 			</div>
 
 			<div className='sponsor-box'>
-				<div className='sponsor-image' onClick={clickMan}>
+				<div className='sponsor-image' onClick={clickAppian}>
 					<Image
 						src={appian_img}
 						style={{objectFit: 'cover'}}
