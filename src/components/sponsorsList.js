@@ -115,7 +115,7 @@ export default function SponsorsList() {
 			</div>
 
 			<div className='sponsor-box'>
-				<div className='sponsor-image' onClick={clickAppian}>
+				<div className='sponsor-image-appian' onClick={clickAppian}>
 					<Image
 						src={appian_img}
 						style={{objectFit: 'cover'}}
@@ -129,7 +129,7 @@ export default function SponsorsList() {
 			</div>
 
 			<div className='sponsor-box'>
-				<div className='sponsor-image' onClick={clickDragon}>
+				<div className='sponsor-image-dragon' onClick={clickDragon}>
 					<Image
 						src={dragon_img}
 						style={{objectFit: 'cover'}}
@@ -157,7 +157,7 @@ export default function SponsorsList() {
 			</div>
 
 			<div className='sponsor-box'>
-				<div className='sponsor-image' onClick={clickFe}>
+				<div className='sponsor-image-fe' onClick={clickFe}>
 					<Image
 						src={fe_img}
 						style={{objectFit: 'cover'}}
@@ -209,7 +209,7 @@ export default function SponsorsList() {
 			</div>
 
 			<div className='sponsor-box'>
-				<div className='sponsor-image' onClick={clickRothesay}>
+				<div className='sponsor-image-rothesay' onClick={clickRothesay}>
 					<Image
 						src={rothesay_img}
 						style={{objectFit: 'cover'}}

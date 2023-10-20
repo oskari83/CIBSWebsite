@@ -7,7 +7,57 @@
 }
 
 .sponsor-image{
+	width: 48%;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	overflow: hidden;
+	object-fit: cover;
+	cursor: pointer;
+}
+
+.sponsor-image-dragon{
 	width: 40%;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	overflow: hidden;
+	object-fit: cover;
+	cursor: pointer;
+	margin-left: 20px;
+}
+
+.sponsor-image-fe{
+	width: 40%;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	overflow: hidden;
+	object-fit: cover;
+	cursor: pointer;
+	margin-left: 20px;
+}
+
+.sponsor-image-appian{
+	width: 52%;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	overflow: hidden;
+	object-fit: cover;
+	cursor: pointer;
+}
+
+.sponsor-image-rothesay{
+	width: 55%;
 	height: 60px;
 	display: flex;
 	align-items: center;
@@ -22,10 +72,11 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 50%;
+	width: 45%;
 	height: 100%;
 	font-family: "WorkSansRegular";
-	font-size: 13px;
+	font-size: 12px;
+	text-align: justify;
 	color: rgb(40, 40, 40);
 }
 
@@ -33,9 +84,10 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 50%;
+	width: 45%;
 	height: 100%;
 	font-family: "WorkSansRegular";
+	text-align: justify;
 	font-size: 12px;
 	color: rgb(40, 40, 40);
 }
