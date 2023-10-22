@@ -27,6 +27,8 @@ import evercore_rx_img from '../../public/resources/events/everciore_rx.png'
 import introspring_img from '../../public/resources/events/intro_spring.png'
 import cvclwork_img from '../../public/resources/events/cvcl_workshop.png'
 import rizzo_img from '../../public/resources/events/rizzo.png'
+import man_img from '../../public/resources/events/man_women.png'
+import socgen_pres_img from '../../public/resources/events/socgen_pres.png'
 
 import logo_img from '../../public/resources/Logo_Icon_s.png'
 
@@ -34,6 +36,14 @@ const UpcomingEventsList = () => {
 
 	const clickEvent1 = () => {
 		window.open("https://www.facebook.com/CIBSoc", "_blank");
+	}
+
+	const clickManWomen = () => {
+		window.open("https://www.facebook.com/CIBSoc/posts/pfbid02n79fokmXjSnXrzT7TQHnbePyB2GrgD694wYoxpn4Mj6A2w79naY5xKAnepEEoWNjl", "_blank");
+	}
+
+	const clickSocgenPres = () => {
+		window.open("https://www.facebook.com/CIBSoc/posts/pfbid02rfmQLpVTAxhR6ukWiwvK42kUsUgQ7yYo665awa7oqfxXrJ8MQCPb4uYTPNYXREaxl", "_blank");
 	}
 
 	const clickRizzo = () => {
@@ -59,6 +69,66 @@ const UpcomingEventsList = () => {
 
 	return(
 		<>
+			<div className='events-box-container'>
+				<div className='image-events-outer-container'>
+					<Image
+						src={man_img}
+						style={{objectFit: 'cover'}}
+						fill={true}
+						alt="man pic"
+					/>
+				</div>
+
+				<div className='date-box-outer'>
+					<div className='date-box-month'>Oct</div>
+					<div className='date-box-day'>31</div>
+				</div>
+
+				<div className='events-box-text-outer-container'>
+					<div className='events-box-text-header-container'>
+						Man AHL Women in Quant
+					</div>
+					<div className='events-box-text-body-container'>
+						Man AHL, the quantitative trading arm of the world’s largest publicly listed hedge fund, is hosting their Women in Quant event on Tuesday 31st October, 7-9 pm.
+					</div>
+					<div className='events-box-text-button-outer-container'>
+						<div className='events-box-text-button-container' onClick={clickManWomen}>
+							Learn more
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div className='events-box-container'>
+				<div className='image-events-outer-container'>
+					<Image
+						src={socgen_pres_img}
+						style={{objectFit: 'cover'}}
+						fill={true}
+						alt="socgen pic"
+					/>
+				</div>
+
+				<div className='date-box-outer'>
+					<div className='date-box-month'>Oct</div>
+					<div className='date-box-day'>24</div>
+				</div>
+
+				<div className='events-box-text-outer-container'>
+					<div className='events-box-text-header-container'>
+						Societe Generale Presentation and Workshop
+					</div>
+					<div className='events-box-text-body-container'>
+						Join us for an enlightening evening with Société Générale Group on Tuesday, Oct 24th, at Queens' College's Bowett Room from 4pm. There will be networking opportunities, along with a chance for Q&A.
+					</div>
+					<div className='events-box-text-button-outer-container'>
+						<div className='events-box-text-button-container' onClick={clickSocgenPres}>
+							Learn more
+						</div>
+					</div>
+				</div>
+			</div>
+
 			<div className='events-box-container'>
 				<div className='image-events-outer-container'>
 					<Image
