@@ -4,19 +4,6 @@ import './ourteam.css'
 import CommitteeBoxes from '@/components/committeeBoxes'
 
 //ambassador photos
-import alan2_img from '../../../public/resources/ambassadors/alan2.jpg'
-import arindam2_img from '../../../public/resources/ambassadors/arindam2.jpg'
-import avneet2_img from '../../../public/resources/ambassadors/avneet2.png'
-import ayushmannath2_img from '../../../public/resources/ambassadors/ayushmannath2.png'
-import cherry2_img from '../../../public/resources/ambassadors/cherry2.JPG'
-import divy2_img from '../../../public/resources/ambassadors/divy2.png'
-import edric2_img from '../../../public/resources/ambassadors/edric2.jpeg'
-import kenneth2_img from '../../../public/resources/ambassadors/kenneth2.jpg'
-import muhammad2_img from '../../../public/resources/ambassadors/muhammad2.jpg'
-import olivia2_img from '../../../public/resources/ambassadors/olivia2.png'
-import tom2_img from '../../../public/resources/ambassadors/tom2.png'
-import vimal2_img from '../../../public/resources/ambassadors/vimal2.jpg'
-
 import AlishaK_img from '../../../public/resources/ambassadors/AlishaK.png'
 import DamsithW_img from '../../../public/resources/ambassadors/DamsithW.png'
 import JihengL_img from '../../../public/resources/ambassadors/JihengL.png'
@@ -52,6 +39,7 @@ import KokiS_img from '../../../public/resources/ambassadors/KokiS.png'
 import JoonC_img from '../../../public/resources/ambassadors/JoonC.png'
 import SiqiY_img from '../../../public/resources/ambassadors/SiqiY.png'
 import YinbangL_img from '../../../public/resources/ambassadors/YinbangL.png'
+import JamesK_img from '../../../public/resources/ambassadors/JamesK.png'
 
 export default function Page(){
 
@@ -117,6 +105,25 @@ export default function Page(){
 							</div>
 							<div className="am-content">
 								<p className="am-text-name">Siqi Yue</p>
+								<p className="am-text-college">Christ's College</p>
+							</div>
+						</div>
+					</div>
+
+					<div className="responsive-am-block">
+						<div className="am-card-empty">
+							<div className="am-card-wrapper">
+								<div className='am-image-outer-container'>
+									<Image
+										src={JamesK_img}
+										style={{objectFit: 'cover'}}
+										fill={true}
+										alt="James Koch pic"
+									/>
+								</div>
+							</div>
+							<div className="am-content">
+								<p className="am-text-name">James Koch</p>
 								<p className="am-text-college">Christ's College</p>
 							</div>
 						</div>
