@@ -17,6 +17,42 @@ import olivia2_img from '../../../public/resources/ambassadors/olivia2.png'
 import tom2_img from '../../../public/resources/ambassadors/tom2.png'
 import vimal2_img from '../../../public/resources/ambassadors/vimal2.jpg'
 
+import AlishaK_img from '../../../public/resources/ambassadors/AlishaK.png'
+import DamsithW_img from '../../../public/resources/ambassadors/DamsithW.png'
+import JihengL_img from '../../../public/resources/ambassadors/JihengL.png'
+import VadimR_img from '../../../public/resources/ambassadors/VadimR.png'
+import AngelaC_img from '../../../public/resources/ambassadors/AngelaC.png'
+
+import NicholasK_img from '../../../public/resources/ambassadors/NicholasK.png'
+import BlakeH_img from '../../../public/resources/ambassadors/BlakeH.png'
+import MontyM_img from '../../../public/resources/ambassadors/MontyM.png'
+import NinaF_img from '../../../public/resources/ambassadors/NinaF.png'
+import CallumO_img from '../../../public/resources/ambassadors/CallumO.png'
+
+import ToksO_img from '../../../public/resources/ambassadors/ToksO.png'
+import tobyL_img from '../../../public/resources/ambassadors/tobyL.png'
+import JessicaL_img from '../../../public/resources/ambassadors/JessicaL.png'
+import ShivanshP_img from '../../../public/resources/ambassadors/ShivanshP.png'
+import AdelynW_img from '../../../public/resources/ambassadors/AdelynW.png'
+
+import FremontP_img from '../../../public/resources/ambassadors/FremontP.png'
+import MaahiP_img from '../../../public/resources/ambassadors/MaahiP.png'
+import YoungokB_img from '../../../public/resources/ambassadors/YoungokB.png'
+import AbirM_img from '../../../public/resources/ambassadors/AbirM.png'
+import YoungL_img from '../../../public/resources/ambassadors/YoungL.png'
+
+import JennyZ_img from '../../../public/resources/ambassadors/JennyZ.png'
+import KaijiaZ_img from '../../../public/resources/ambassadors/KaijiaZ.png'
+import CormacH_img from '../../../public/resources/ambassadors/CormacH.png'
+import RenanD_img from '../../../public/resources/ambassadors/RenanD.png'
+import GeorgeR_img from '../../../public/resources/ambassadors/GeorgeR.png'
+
+import JudyJ_img from '../../../public/resources/ambassadors/JudyJ.png'
+import KokiS_img from '../../../public/resources/ambassadors/KokiS.png'
+import JoonC_img from '../../../public/resources/ambassadors/JoonC.png'
+import SiqiY_img from '../../../public/resources/ambassadors/SiqiY.png'
+import YinbangL_img from '../../../public/resources/ambassadors/YinbangL.png'
+
 export default function Page(){
 
 	return(
@@ -53,16 +89,16 @@ export default function Page(){
 							<div className="am-card-wrapper">
 								<div className='am-image-outer-container'>
 									<Image
-										src={ayushmannath2_img}
+										src={YinbangL_img}
 										style={{objectFit: 'cover'}}
 										fill={true}
-										alt="alan pic"
+										alt="yinbang pic"
 									/>
 								</div>
 							</div>
 							<div className="am-content">
-								<p className="am-text-name">Ayushman Nath</p>
-								<p className="am-text-college">Churchill College</p>
+								<p className="am-text-name">Yinbang Lan</p>
+								<p className="am-text-college">Selwyn College</p>
 							</div>
 						</div>
 					</div>
@@ -72,110 +108,15 @@ export default function Page(){
 							<div className="am-card-wrapper">
 								<div className='am-image-outer-container'>
 									<Image
-										src={vimal2_img}
+										src={SiqiY_img}
 										style={{objectFit: 'cover'}}
 										fill={true}
-										alt="alan pic"
+										alt="Siqi Yue pic"
 									/>
 								</div>
 							</div>
 							<div className="am-content">
-								<p className="am-text-name">Vimal Kamath</p>
-								<p className="am-text-college">Trinity College</p>
-							</div>
-						</div>
-					</div>
-
-					<div className="responsive-am-block">
-						<div className="am-card-empty">
-							<div className="am-card-wrapper">
-								<div className='am-image-outer-container'>
-									<Image
-										src={cherry2_img}
-										style={{objectFit: 'cover'}}
-										fill={true}
-										alt="alan pic"
-									/>
-								</div>
-							</div>
-							<div className="am-content">
-								<p className="am-text-name">Cherry Yang</p>
-								<p className="am-text-college">Girton College</p>
-							</div>
-						</div>
-					</div>
-
-					<div className="responsive-am-block">
-						<div className="am-card-empty">
-							<div className="am-card-wrapper">
-								<div className='am-image-outer-container'>
-									<Image
-										src={avneet2_img}
-										style={{objectFit: 'cover'}}
-										fill={true}
-										alt="alan pic"
-									/>
-								</div>
-							</div>
-							<div className="am-content">
-								<p className="am-text-name">Avneet Sekhon</p>
-								<p className="am-text-college">Corpus Christi College</p>
-							</div>
-						</div>
-					</div>
-
-					<div className="responsive-am-block">
-						<div className="am-card-empty">
-							<div className="am-card-wrapper">
-								<div className='am-image-outer-container'>
-									<Image
-										src={tom2_img}
-										style={{objectFit: 'cover'}}
-										fill={true}
-										alt="alan pic"
-									/>
-								</div>
-							</div>
-							<div className="am-content">
-								<p className="am-text-name">Tom Beales</p>
-								<p className="am-text-college">Magdalene College</p>
-							</div>
-						</div>
-					</div>
-
-					<div className="responsive-am-block">
-						<div className="am-card-empty">
-							<div className="am-card-wrapper">
-								<div className='am-image-outer-container'>
-									<Image
-										src={divy2_img}
-										style={{objectFit: 'cover'}}
-										fill={true}
-										alt="alan pic"
-									/>
-								</div>
-							</div>
-							<div className="am-content">
-								<p className="am-text-name">Divy Dayal</p>
-								<p className="am-text-college">Trinity College</p>
-							</div>
-						</div>
-					</div>
-
-					<div className="responsive-am-block">
-						<div className="am-card-empty">
-							<div className="am-card-wrapper">
-								<div className='am-image-outer-container'>
-									<Image
-										src={kenneth2_img}
-										style={{objectFit: 'cover'}}
-										fill={true}
-										alt="alan pic"
-									/>
-								</div>
-							</div>
-							<div className="am-content">
-								<p className="am-text-name">Kenneth Weng</p>
+								<p className="am-text-name">Siqi Yue</p>
 								<p className="am-text-college">Christ's College</p>
 							</div>
 						</div>
@@ -186,53 +127,15 @@ export default function Page(){
 							<div className="am-card-wrapper">
 								<div className='am-image-outer-container'>
 									<Image
-										src={muhammad2_img}
+										src={JoonC_img}
 										style={{objectFit: 'cover'}}
 										fill={true}
-										alt="alan pic"
+										alt="Hyungjoon Chung pic"
 									/>
 								</div>
 							</div>
 							<div className="am-content">
-								<p className="am-text-name">Muhammad Khalil</p>
-								<p className="am-text-college">Homerton College</p>
-							</div>
-						</div>
-					</div>
-
-					<div className="responsive-am-block">
-						<div className="am-card-empty">
-							<div className="am-card-wrapper">
-								<div className='am-image-outer-container'>
-									<Image
-										src={olivia2_img}
-										style={{objectFit: 'cover'}}
-										fill={true}
-										alt="alan pic"
-									/>
-								</div>
-							</div>
-							<div className="am-content">
-								<p className="am-text-name">Olivia Moynihan</p>
-								<p className="am-text-college">Christ's College</p>
-							</div>
-						</div>
-					</div>
-
-					<div className="responsive-am-block">
-						<div className="am-card-empty">
-							<div className="am-card-wrapper">
-								<div className='am-image-outer-container'>
-									<Image
-										src={alan2_img}
-										style={{objectFit: 'cover'}}
-										fill={true}
-										alt="alan pic"
-									/>
-								</div>
-							</div>
-							<div className="am-content">
-								<p className="am-text-name">Alan Tan</p>
+								<p className="am-text-name">Hyungjoon Chung</p>
 								<p className="am-text-college">St Edmund's College</p>
 							</div>
 						</div>
@@ -243,16 +146,16 @@ export default function Page(){
 							<div className="am-card-wrapper">
 								<div className='am-image-outer-container'>
 									<Image
-										src={edric2_img}
+										src={KokiS_img}
 										style={{objectFit: 'cover'}}
 										fill={true}
-										alt="alan pic"
+										alt="Koki Shimamune pic"
 									/>
 								</div>
 							</div>
 							<div className="am-content">
-								<p className="am-text-name">Edric Wong</p>
-								<p className="am-text-college">Peterhouse College</p>
+								<p className="am-text-name">Koki Shimamune</p>
+								<p className="am-text-college">St John's College</p>
 							</div>
 						</div>
 					</div>
@@ -262,16 +165,491 @@ export default function Page(){
 							<div className="am-card-wrapper">
 								<div className='am-image-outer-container'>
 									<Image
-										src={arindam2_img}
+										src={JudyJ_img}
 										style={{objectFit: 'cover'}}
 										fill={true}
-										alt="alan pic"
+										alt="Judy Jiang pic"
 									/>
 								</div>
 							</div>
 							<div className="am-content">
-								<p className="am-text-name">Arindam Singh</p>
-								<p className="am-text-college">Selwyn College</p>
+								<p className="am-text-name">Judy Jiang</p>
+								<p className="am-text-college">Homerton College</p>
+							</div>
+						</div>
+					</div>
+
+					<div className="responsive-am-block">
+						<div className="am-card-empty">
+							<div className="am-card-wrapper">
+								<div className='am-image-outer-container'>
+									<Image
+										src={GeorgeR_img}
+										style={{objectFit: 'cover'}}
+										fill={true}
+										alt="George Rudman pic"
+									/>
+								</div>
+							</div>
+							<div className="am-content">
+								<p className="am-text-name">George Rudman</p>
+								<p className="am-text-college">Trinity College</p>
+							</div>
+						</div>
+					</div>
+
+					<div className="responsive-am-block">
+						<div className="am-card-empty">
+							<div className="am-card-wrapper">
+								<div className='am-image-outer-container'>
+									<Image
+										src={RenanD_img}
+										style={{objectFit: 'cover'}}
+										fill={true}
+										alt="Renan Dennig pic"
+									/>
+								</div>
+							</div>
+							<div className="am-content">
+								<p className="am-text-name">Renan Dennig</p>
+								<p className="am-text-college">St Edmund's College</p>
+							</div>
+						</div>
+					</div>
+
+					<div className="responsive-am-block">
+						<div className="am-card-empty">
+							<div className="am-card-wrapper">
+								<div className='am-image-outer-container'>
+									<Image
+										src={CormacH_img}
+										style={{objectFit: 'cover'}}
+										fill={true}
+										alt="Cormac Hoare pic"
+									/>
+								</div>
+							</div>
+							<div className="am-content">
+								<p className="am-text-name">Cormac Hoare</p>
+								<p className="am-text-college">Churchill College</p>
+							</div>
+						</div>
+					</div>
+
+					<div className="responsive-am-block">
+						<div className="am-card-empty">
+							<div className="am-card-wrapper">
+								<div className='am-image-outer-container'>
+									<Image
+										src={KaijiaZ_img}
+										style={{objectFit: 'cover'}}
+										fill={true}
+										alt="Kaijia Zhang pic"
+									/>
+								</div>
+							</div>
+							<div className="am-content">
+								<p className="am-text-name">Kaijia Zhang</p>
+								<p className="am-text-college">Girton College</p>
+							</div>
+						</div>
+					</div>
+
+					<div className="responsive-am-block">
+						<div className="am-card-empty">
+							<div className="am-card-wrapper">
+								<div className='am-image-outer-container'>
+									<Image
+										src={JennyZ_img}
+										style={{objectFit: 'cover'}}
+										fill={true}
+										alt="Jenny Zhan pic"
+									/>
+								</div>
+							</div>
+							<div className="am-content">
+								<p className="am-text-name">Jenny Zhan</p>
+								<p className="am-text-college">Trinity Hall</p>
+							</div>
+						</div>
+					</div>
+
+					<div className="responsive-am-block">
+						<div className="am-card-empty">
+							<div className="am-card-wrapper">
+								<div className='am-image-outer-container'>
+									<Image
+										src={YoungL_img}
+										style={{objectFit: 'cover'}}
+										fill={true}
+										alt="Young Kai Lee pic"
+									/>
+								</div>
+							</div>
+							<div className="am-content">
+								<p className="am-text-name">Young Kai Lee</p>
+								<p className="am-text-college">Homerton College</p>
+							</div>
+						</div>
+					</div>
+
+					<div className="responsive-am-block">
+						<div className="am-card-empty">
+							<div className="am-card-wrapper">
+								<div className='am-image-outer-container'>
+									<Image
+										src={AbirM_img}
+										style={{objectFit: 'cover'}}
+										fill={true}
+										alt="Abir Mohammed pic"
+									/>
+								</div>
+							</div>
+							<div className="am-content">
+								<p className="am-text-name">Abir Mohammed</p>
+								<p className="am-text-college">Sidney Sussex College</p>
+							</div>
+						</div>
+					</div>
+
+					<div className="responsive-am-block">
+						<div className="am-card-empty">
+							<div className="am-card-wrapper">
+								<div className='am-image-outer-container'>
+									<Image
+										src={YoungokB_img}
+										style={{objectFit: 'cover'}}
+										fill={true}
+										alt="Baek Youngok pic"
+									/>
+								</div>
+							</div>
+							<div className="am-content">
+								<p className="am-text-name">Baek Youngok</p>
+								<p className="am-text-college">Magdalene College</p>
+							</div>
+						</div>
+					</div>
+
+					<div className="responsive-am-block">
+						<div className="am-card-empty">
+							<div className="am-card-wrapper">
+								<div className='am-image-outer-container'>
+									<Image
+										src={MaahiP_img}
+										style={{objectFit: 'cover'}}
+										fill={true}
+										alt="Maahi Pathak pic"
+									/>
+								</div>
+							</div>
+							<div className="am-content">
+								<p className="am-text-name">Maahi Pathak</p>
+								<p className="am-text-college">Murray Edwards College</p>
+							</div>
+						</div>
+					</div>
+
+					<div className="responsive-am-block">
+						<div className="am-card-empty">
+							<div className="am-card-wrapper">
+								<div className='am-image-outer-container'>
+									<Image
+										src={FremontP_img}
+										style={{objectFit: 'cover'}}
+										fill={true}
+										alt="Fremont Phua pic"
+									/>
+								</div>
+							</div>
+							<div className="am-content">
+								<p className="am-text-name">Fremont Phua</p>
+								<p className="am-text-college">Trinity Hall</p>
+							</div>
+						</div>
+					</div>
+
+					<div className="responsive-am-block">
+						<div className="am-card-empty">
+							<div className="am-card-wrapper">
+								<div className='am-image-outer-container'>
+									<Image
+										src={AdelynW_img}
+										style={{objectFit: 'cover'}}
+										fill={true}
+										alt="Adelyn Wu pic"
+									/>
+								</div>
+							</div>
+							<div className="am-content">
+								<p className="am-text-name">Adelyn Wu</p>
+								<p className="am-text-college">Hughes Hall</p>
+							</div>
+						</div>
+					</div>
+
+					<div className="responsive-am-block">
+						<div className="am-card-empty">
+							<div className="am-card-wrapper">
+								<div className='am-image-outer-container'>
+									<Image
+										src={ShivanshP_img}
+										style={{objectFit: 'cover'}}
+										fill={true}
+										alt="Shivansh Pandey pic"
+									/>
+								</div>
+							</div>
+							<div className="am-content">
+								<p className="am-text-name">Shivansh Pandey</p>
+								<p className="am-text-college">Gonville and Caius College</p>
+							</div>
+						</div>
+					</div>
+
+					<div className="responsive-am-block">
+						<div className="am-card-empty">
+							<div className="am-card-wrapper">
+								<div className='am-image-outer-container'>
+									<Image
+										src={JessicaL_img}
+										style={{objectFit: 'cover'}}
+										fill={true}
+										alt="Xuan Jia (Jessica) Liu pic"
+									/>
+								</div>
+							</div>
+							<div className="am-content">
+								<p className="am-text-name">Xuan Jia (Jessica) Liu</p>
+								<p className="am-text-college">Clare College</p>
+							</div>
+						</div>
+					</div>
+
+					<div className="responsive-am-block">
+						<div className="am-card-empty">
+							<div className="am-card-wrapper">
+								<div className='am-image-outer-container'>
+									<Image
+										src={tobyL_img}
+										style={{objectFit: 'cover'}}
+										fill={true}
+										alt="Toby Linsell pic"
+									/>
+								</div>
+							</div>
+							<div className="am-content">
+								<p className="am-text-name">Toby Linsell</p>
+								<p className="am-text-college">Homerton College</p>
+							</div>
+						</div>
+					</div>
+
+					<div className="responsive-am-block">
+						<div className="am-card-empty">
+							<div className="am-card-wrapper">
+								<div className='am-image-outer-container'>
+									<Image
+										src={ToksO_img}
+										style={{objectFit: 'cover'}}
+										fill={true}
+										alt="Olatokunbo Oyewole pic"
+									/>
+								</div>
+							</div>
+							<div className="am-content">
+								<p className="am-text-name">Olatokunbo Oyewole</p>
+								<p className="am-text-college">Sidney Sussex College</p>
+							</div>
+						</div>
+					</div>
+
+					<div className="responsive-am-block">
+						<div className="am-card-empty">
+							<div className="am-card-wrapper">
+								<div className='am-image-outer-container'>
+									<Image
+										src={CallumO_img}
+										style={{objectFit: 'cover'}}
+										fill={true}
+										alt="Callum O’Kane pic"
+									/>
+								</div>
+							</div>
+							<div className="am-content">
+								<p className="am-text-name">Callum O'Kane</p>
+								<p className="am-text-college">Girton College</p>
+							</div>
+						</div>
+					</div>
+
+					<div className="responsive-am-block">
+						<div className="am-card-empty">
+							<div className="am-card-wrapper">
+								<div className='am-image-outer-container'>
+									<Image
+										src={NinaF_img}
+										style={{objectFit: 'cover'}}
+										fill={true}
+										alt="Nina Fortikova pic"
+									/>
+								</div>
+							</div>
+							<div className="am-content">
+								<p className="am-text-name">Nina Fortikova</p>
+								<p className="am-text-college">Newnham College</p>
+							</div>
+						</div>
+					</div>
+
+					<div className="responsive-am-block">
+						<div className="am-card-empty">
+							<div className="am-card-wrapper">
+								<div className='am-image-outer-container'>
+									<Image
+										src={MontyM_img}
+										style={{objectFit: 'cover'}}
+										fill={true}
+										alt="Monty Marsh pic"
+									/>
+								</div>
+							</div>
+							<div className="am-content">
+								<p className="am-text-name">Monty Marsh</p>
+								<p className="am-text-college">Lucy Cavendish College</p>
+							</div>
+						</div>
+					</div>
+
+					<div className="responsive-am-block">
+						<div className="am-card-empty">
+							<div className="am-card-wrapper">
+								<div className='am-image-outer-container'>
+									<Image
+										src={BlakeH_img}
+										style={{objectFit: 'cover'}}
+										fill={true}
+										alt="Blake Hanson pic"
+									/>
+								</div>
+							</div>
+							<div className="am-content">
+								<p className="am-text-name">Blake Hanson</p>
+								<p className="am-text-college">Clare College</p>
+							</div>
+						</div>
+					</div>
+
+					<div className="responsive-am-block">
+						<div className="am-card-empty">
+							<div className="am-card-wrapper">
+								<div className='am-image-outer-container'>
+									<Image
+										src={NicholasK_img}
+										style={{objectFit: 'cover'}}
+										fill={true}
+										alt="Nicholas Koh pic"
+									/>
+								</div>
+							</div>
+							<div className="am-content">
+								<p className="am-text-name">Nicholas Koh</p>
+								<p className="am-text-college">Trinity College</p>
+							</div>
+						</div>
+					</div>
+
+					<div className="responsive-am-block">
+						<div className="am-card-empty">
+							<div className="am-card-wrapper">
+								<div className='am-image-outer-container'>
+									<Image
+										src={AngelaC_img}
+										style={{objectFit: 'cover'}}
+										fill={true}
+										alt="Angela Chen pic"
+									/>
+								</div>
+							</div>
+							<div className="am-content">
+								<p className="am-text-name">Angela Chen</p>
+								<p className="am-text-college">Trinity College</p>
+							</div>
+						</div>
+					</div>
+
+					<div className="responsive-am-block">
+						<div className="am-card-empty">
+							<div className="am-card-wrapper">
+								<div className='am-image-outer-container'>
+									<Image
+										src={VadimR_img}
+										style={{objectFit: 'cover'}}
+										fill={true}
+										alt="Vadim Rikunov pic"
+									/>
+								</div>
+							</div>
+							<div className="am-content">
+								<p className="am-text-name">Vadim Rikunov</p>
+								<p className="am-text-college">Girton College</p>
+							</div>
+						</div>
+					</div>
+
+					<div className="responsive-am-block">
+						<div className="am-card-empty">
+							<div className="am-card-wrapper">
+								<div className='am-image-outer-container'>
+									<Image
+										src={JihengL_img}
+										style={{objectFit: 'cover'}}
+										fill={true}
+										alt="JiHeng Li pic"
+									/>
+								</div>
+							</div>
+							<div className="am-content">
+								<p className="am-text-name">JiHeng Li</p>
+								<p className="am-text-college">Magdalene College</p>
+							</div>
+						</div>
+					</div>
+
+					<div className="responsive-am-block">
+						<div className="am-card-empty">
+							<div className="am-card-wrapper">
+								<div className='am-image-outer-container'>
+									<Image
+										src={DamsithW_img}
+										style={{objectFit: 'cover'}}
+										fill={true}
+										alt="Damsith Wimalasena pic"
+									/>
+								</div>
+							</div>
+							<div className="am-content">
+								<p className="am-text-name">Damsith Wimalasena</p>
+								<p className="am-text-college">Lucy Cavendish College</p>
+							</div>
+						</div>
+					</div>
+
+					<div className="responsive-am-block">
+						<div className="am-card-empty">
+							<div className="am-card-wrapper">
+								<div className='am-image-outer-container'>
+									<Image
+										src={AlishaK_img}
+										style={{objectFit: 'cover'}}
+										fill={true}
+										alt="Alisha Kinvig pic"
+									/>
+								</div>
+							</div>
+							<div className="am-content">
+								<p className="am-text-name">Alisha Kinvig</p>
+								<p className="am-text-college">Homerton College</p>
 							</div>
 						</div>
 					</div>
