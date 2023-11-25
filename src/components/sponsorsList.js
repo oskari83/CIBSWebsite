@@ -5,7 +5,7 @@ import './sponsorsList.css'
 
 //sponsors photos
 import dragon_img from '../../public/resources/sponsors/dragonfly.png'
-import wq_img from '../../public/resources/sponsors/worldquant_logo.png'
+import brain_img from '../../public/resources/sponsors/brain.png'
 import appian_img from '../../public/resources/sponsors/appian_logo.png'
 import jefferies_img from '../../public/resources/sponsors/jefferies.png'
 import nomura_img from '../../public/resources/sponsors/nomura.png'
@@ -101,16 +101,16 @@ export default function SponsorsList() {
 			</div>
 
 			<div className='sponsor-box'>
-				<div className='sponsor-image' onClick={clickWq}>
+				<div className='sponsor-image-brain' onClick={clickWq}>
 					<Image
-						src={wq_img}
+						src={brain_img}
 						style={{objectFit: 'cover'}}
 						fill={true}
 						alt="wq pic"
 					/>
 				</div>
 				<div className='sponsor-text2'>
-					WorldQuant is a global quantitative asset management firm with over $7 billion in assets under management.
+					WorldQuant BRAIN is a diverse group of data scientists, engineers and other intellectually curious individuals with an interest in quantitative finance.
 				</div>
 			</div>
 

@@ -18,6 +18,19 @@
 	cursor: pointer;
 }
 
+.sponsor-image-brain{
+	width: 45%;
+	height: 100px;
+	display: flex;
+	margin-left: 10px;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	overflow: hidden;
+	object-fit: cover;
+	cursor: pointer;
+}
+
 .sponsor-image-dragon{
 	width: 40%;
 	height: 60px;

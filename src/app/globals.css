@@ -333,6 +333,7 @@ select {
 	-----     WHAT WE DO BANNER      -----
 */
 
+
 .wedo-banner-container{
 	position: relative;
 	display: flex;
@@ -344,8 +345,10 @@ select {
 	z-index: 4;
 }
 
+
 .wedo-outer {
     width: clamp(200px,100%,980px);
+	opacity: 1.0 !important;
 }
 
 .wedo-header-container {
@@ -754,6 +757,7 @@ select {
 	-----     SPONSORS BANNER      -----
 */
 
+/*
 .sixth-banner-container{
 	position: relative;
 	display: flex;
@@ -763,6 +767,18 @@ select {
 	width: 100%;
 	background-color: rgb(255, 255, 255);
 	z-index: 4;
+}
+*/
+
+.sixth-banner-container{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	top: 0px;
+	width: 100%;
+	z-index: 4;
+	background-color: rgb(255, 255, 255);
 }
 
 .sponsors-outer {
@@ -788,7 +804,7 @@ select {
 /*
 	-----     ALUMNI-DESTINATIONS BANNER      -----
 */
-
+/*
 .alumni-destinations-banner-container{
 	position: relative;
 	display: flex;
@@ -797,6 +813,19 @@ select {
 	top: 0px;
 	width: 100%;
 	background-color: var(--light-gray);
+	z-index: 4;
+}
+*/
+.alumni-destinations-banner-container{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	top: 0px;
+	width: 100%;
+	background-color: #ffffff;
+	opacity: 1.0;
+	background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #ffffff6f 40px ), repeating-linear-gradient( #dedede23, #dedede40 );
 	z-index: 4;
 }
 
