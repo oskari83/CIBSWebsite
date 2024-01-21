@@ -4,7 +4,6 @@ import Image from 'next/image'
 import './sponsorsList.css'
 
 //sponsors photos
-import dragon_img from '../../public/resources/sponsors/dragonfly.png'
 import brain_img from '../../public/resources/sponsors/brain.png'
 import appian_img from '../../public/resources/sponsors/appian_logo.png'
 import jefferies_img from '../../public/resources/sponsors/jefferies.png'
@@ -125,20 +124,6 @@ export default function SponsorsList() {
 				</div>
 				<div className='sponsor-text2'>
 					Appian Capital Advisory is a long-term value investor focused on mining assets and management teams across select geographies and commodities.
-				</div>
-			</div>
-
-			<div className='sponsor-box'>
-				<div className='sponsor-image-dragon' onClick={clickDragon}>
-					<Image
-						src={dragon_img}
-						style={{objectFit: 'cover'}}
-						fill={true}
-						alt="dragon pic"
-					/>
-				</div>
-				<div className='sponsor-text2'>
-					Dragonfly invests in top blockchain digital assets, combining years of traditional investment experience with blockchain expertise to find attractive investment opportunities in the digital asset market.
 				</div>
 			</div>
 
