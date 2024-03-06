@@ -30,6 +30,15 @@ import rizzo_img from '../../public/resources/events/rizzo.png'
 import man_img from '../../public/resources/events/man_women.png'
 import socgen_pres_img from '../../public/resources/events/socgen_pres.png'
 
+import evercoreadv_img from '../../public/resources/events/evercore_adv.png'
+import goldmanfireside_img from '../../public/resources/events/goldman_fireside.png'
+import apollowork_img from '../../public/resources/events/apollo_work.png'
+import appianpres_img from '../../public/resources/events/appian_pres.png'
+
+import cbfc_img from '../../public/resources/events/cbfc.png'
+import mcomsoc_img from '../../public/resources/events/mcomsoc.png'
+import convspring_img from '../../public/resources/events/convspring.png'
+
 import logo_img from '../../public/resources/Logo_Icon_s.png'
 
 const UpcomingEventsList = () => {
@@ -66,9 +75,214 @@ const UpcomingEventsList = () => {
 		window.open("https://www.facebook.com/photo/?fbid=807132448085478&set=a.489461066519286", "_blank");
 	}
 
+	const clickCBFC = () => {
+		window.open("https://www.facebook.com/CIBSoc/posts/pfbid0cYmVf8Nw7eUBKB9TtB9F9gALfsZj3V2Kv3rFZh6Eu2jBzUvdUHJi8AE8AjXqb8fDl", "_blank");
+	}
+
+	const clickComSoc = () => {
+		window.open("https://www.facebook.com/photo/?fbid=892816502850405&set=a.489461066519286", "_blank");
+	}
+
+	const clickConvSpring = () => {
+		window.open("https://www.facebook.com/photo?fbid=886984913433564&set=a.489461066519286", "_blank");
+	}
+
+	const clickApolloInsurance = () => {
+		window.open("https://www.facebook.com/CIBSoc/posts/pfbid0gUFc3HVUub9CyMKWWznh6aMzyc8Bj7f476aJanU169XpMXL85P1nLe3nnzAJsRchl", "_blank");
+	}
+	const clickGSFireside = () => {
+		window.open("https://www.facebook.com/photo/?fbid=839620621503327&set=a.489461066519286", "_blank");
+	}
+	const clickAppianCap = () => {
+		window.open("https://www.facebook.com/CIBSoc/posts/pfbid02RsKvvNd5y9WkixshsEmoFhxsgjgbjYpFqLsMRr2uWNXvW7DnrDrSDj5qyuMV6jJfl", "_blank");
+	}
+	const clickEvercoreAdv = () => {
+		window.open("https://www.facebook.com/CIBSoc/posts/pfbid0EFwQ1wpu5CgrHpu46snms7cRwCQxuPTVPAoTt6omD8xwc3MpTSr7dAgrQwzJFqsPl", "_blank");
+	}
+
 
 	return(
-		<>
+		<>	
+			<div className='events-box-container'>
+				<div className='image-events-outer-container'>
+					<Image
+						src={cbfc_img}
+						style={{objectFit: 'cover'}}
+						fill={true}
+						alt="cbfc pic"
+					/>
+				</div>
+
+				<div className='date-box-outer'>
+					<div className='date-box-month'>Feb</div>
+					<div className='date-box-day'>28</div>
+				</div>
+
+				<div className='events-box-text-outer-container'>
+					<div className='events-box-text-header-container'>
+						Cambridge Banking and Finance Conference
+					</div>
+					<div className='events-box-text-body-container'>
+						CIBS' largest event yet: the Cambridge Banking and Finance Conference is coming on the 28th of February! Hosted by CIBS and powered by FELIX, the conference features a slew of events including panel discussions with industry professionals, fireside chats with keynote speakers, and technical workshops conducted by professional trainers, all topped off with a 3-course buffet dinner!					
+					</div>
+					<div className='events-box-text-button-outer-container'>
+						<div className='events-box-text-button-container' onClick={clickCBFC}>
+							Learn more
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div className='events-box-container'>
+				<div className='image-events-outer-container'>
+					<Image
+						src={mcomsoc_img}
+						style={{objectFit: 'cover'}}
+						fill={true}
+						alt="mcomsoc pic"
+					/>
+				</div>
+
+				<div className='date-box-outer'>
+					<div className='date-box-month'>Feb</div>
+					<div className='date-box-day'>1</div>
+				</div>
+
+				<div className='events-box-text-outer-container'>
+					<div className='events-box-text-header-container'>
+						Meet the Committee Evening
+					</div>
+					<div className='events-box-text-body-container'>
+						Get to know members of the committee - this should be a great opportunity to find out more about what it's like being on the CIBS committee, and make an impression beyond your written application. Join us on Thursday, 1st of February from 7.30pm-9pm at Newnham Bar, Newnham College.
+					</div>
+					<div className='events-box-text-button-outer-container'>
+						<div className='events-box-text-button-container' onClick={clickComSoc}>
+							Learn more
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div className='events-box-container'>
+				<div className='image-events-outer-container'>
+					<Image
+						src={convspring_img}
+						style={{objectFit: 'cover'}}
+						fill={true}
+						alt="convspring pic"
+					/>
+				</div>
+
+				<div className='date-box-outer'>
+					<div className='date-box-month'>Jan</div>
+					<div className='date-box-day'>25</div>
+				</div>
+
+				<div className='events-box-text-outer-container'>
+					<div className='events-box-text-header-container'>
+						How to Convert Your Spring Week
+					</div>
+					<div className='events-box-text-body-container'>
+						On Thursday, 25th January, at 7:00 PM, CIBS will be hosting our annual 'How to Convert Your Spring Week' panel. We will host five panellists who have converted Spring Weeks across a range of leading banks, including Morgan Stanley, Bank of America, Barclays, Standard Chartered, and Lazard.
+					</div>
+					<div className='events-box-text-button-outer-container'>
+						<div className='events-box-text-button-container' onClick={clickConvSpring}>
+							Learn more
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div className='events-box-container'>
+				<div className='image-events-outer-container'>
+					<Image
+						src={apollowork_img}
+						style={{objectFit: 'cover'}}
+						fill={true}
+						alt="apollo pic"
+					/>
+				</div>
+
+				<div className='date-box-outer'>
+					<div className='date-box-month'>Dec</div>
+					<div className='date-box-day'>14</div>
+				</div>
+
+				<div className='events-box-text-outer-container'>
+					<div className='events-box-text-header-container'>
+						Apollo Insurance AM Workshop
+					</div>
+					<div className='events-box-text-body-container'>
+						Apollo Global Management, one of the largest alternatives asset managers in the world with over $500bn in AUM, is holding an exclusive workshop for all CIBS and CUFIS members. The workshop will be held on Zoom, on Tuesday 14th December, from 1-2 pm.
+					</div>
+					<div className='events-box-text-button-outer-container'>
+						<div className='events-box-text-button-container' onClick={clickApolloInsurance}>
+							Learn more
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div className='events-box-container'>
+				<div className='image-events-outer-container'>
+					<Image
+						src={goldmanfireside_img}
+						style={{objectFit: 'cover'}}
+						fill={true}
+						alt="goldman pic"
+					/>
+				</div>
+
+				<div className='date-box-outer'>
+					<div className='date-box-month'>Nov</div>
+					<div className='date-box-day'>20</div>
+				</div>
+
+				<div className='events-box-text-outer-container'>
+					<div className='events-box-text-header-container'>
+						Fireside Chat w/ Goldman Sachs LevFin
+					</div>
+					<div className='events-box-text-body-container'>
+						The perfect opportunity to hear both from one of the most senior bankers in the industry, as well as a recent graduate who will be able to offer the most relevant early careers advice! This event will take place from 5:30 pm on Monday, November 20th in Seminar Room 2 at Christ’s College.
+					</div>
+					<div className='events-box-text-button-outer-container'>
+						<div className='events-box-text-button-container' onClick={clickGSFireside}>
+							Learn more
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div className='events-box-container'>
+				<div className='image-events-outer-container'>
+					<Image
+						src={appianpres_img}
+						style={{objectFit: 'cover'}}
+						fill={true}
+						alt="appian pic"
+					/>
+				</div>
+
+				<div className='date-box-outer'>
+					<div className='date-box-month'>Nov</div>
+					<div className='date-box-day'>2</div>
+				</div>
+
+				<div className='events-box-text-outer-container'>
+					<div className='events-box-text-header-container'>
+						Appian Capital Workshop
+					</div>
+					<div className='events-box-text-body-container'>
+						Join us for an exclusive workshop hosted by Appian Capital Advisory x CIBS on Thursday, November 2nd, from 6-8 pm, and discover more about Appian, a private equity firm uniquely focused on metals, mining, and infrastructure.
+					</div>
+					<div className='events-box-text-button-outer-container'>
+						<div className='events-box-text-button-container' onClick={clickAppianCap}>
+							Learn more
+						</div>
+					</div>
+				</div>
+			</div>
+
 			<div className='events-box-container'>
 				<div className='image-events-outer-container'>
 					<Image
@@ -93,6 +307,36 @@ const UpcomingEventsList = () => {
 					</div>
 					<div className='events-box-text-button-outer-container'>
 						<div className='events-box-text-button-container' onClick={clickManWomen}>
+							Learn more
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div className='events-box-container'>
+				<div className='image-events-outer-container'>
+					<Image
+						src={evercoreadv_img}
+						style={{objectFit: 'cover'}}
+						fill={true}
+						alt="evercore pic"
+					/>
+				</div>
+
+				<div className='date-box-outer'>
+					<div className='date-box-month'>Oct</div>
+					<div className='date-box-day'>26</div>
+				</div>
+
+				<div className='events-box-text-outer-container'>
+					<div className='events-box-text-header-container'>
+						Evercore Advisory Workshop
+					</div>
+					<div className='events-box-text-body-container'>
+						Evercore's Advisory team will be hosting an exclusive workshop with CIBS on Thursday, 26th October, from 7 - 9 pm at the Bateman Auditorium in Gonville and Caius College. The workshop will provide participants an insight into Evercore's Advisory team, featuring bankers from the team. 
+					</div>
+					<div className='events-box-text-button-outer-container'>
+						<div className='events-box-text-button-container' onClick={clickEvercoreAdv}>
 							Learn more
 						</div>
 					</div>

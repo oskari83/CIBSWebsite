@@ -230,7 +230,7 @@ export default function JoinForm() {
 						<option value="Emmanuel">Emmanuel</option>
 						<option value="Fitzwilliam">Fitzwilliam</option>
 						<option value="Girton">Girton</option>
-						<option value="Gonville and Caius">Gonville and Caius</option>
+						<option value="Gonville and Caius">Gonville & Caius</option>
 						<option value="Homerton">Homerton</option>
 						<option value="Hughes Hall">Hughes Hall</option>
 						<option value="Jesus">Jesus</option>
@@ -275,10 +275,10 @@ export default function JoinForm() {
 					<select id="dtype" name="dtype" className='dtypeInput' onChange={handleDegreeTypeChange}>
 						<option value=""></option>
 						<option value="Undergraduate">Undergraduate</option>
-						<option value="Undergraduate with integrated masters">Undergraduate with integrated masters</option>
+						<option value="Undergraduate with integrated masters">Undergraduate with Integrated Masters</option>
 						<option value="Postgraduate">Postgraduate</option>
 						<option value="MBA">MBA</option>
-						<option value="Visiting student">Visiting student</option>
+						<option value="Visiting student">Visiting Student</option>
 						<option value="Other">Other</option>
 					</select>
 				</div>
