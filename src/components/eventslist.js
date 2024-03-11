@@ -38,6 +38,7 @@ import appianpres_img from '../../public/resources/events/appian_pres.png'
 import cbfc_img from '../../public/resources/events/cbfc.png'
 import mcomsoc_img from '../../public/resources/events/mcomsoc.png'
 import convspring_img from '../../public/resources/events/convspring.png'
+import convsum24_img from '../../public/resources/events/convsum24.png'
 
 import logo_img from '../../public/resources/Logo_Icon_s.png'
 
@@ -100,9 +101,43 @@ const UpcomingEventsList = () => {
 		window.open("https://www.facebook.com/CIBSoc/posts/pfbid0EFwQ1wpu5CgrHpu46snms7cRwCQxuPTVPAoTt6omD8xwc3MpTSr7dAgrQwzJFqsPl", "_blank");
 	}
 
+	const clickConvSum = () => {
+		window.open("https://www.facebook.com/photo/?fbid=923302913135097&set=a.489461066519286", "_blank");
+	}
+
 
 	return(
 		<>	
+			<div className='events-box-container'>
+				<div className='image-events-outer-container'>
+					<Image
+						src={convsum24_img}
+						style={{objectFit: 'cover'}}
+						fill={true}
+						alt="convsum pic"
+					/>
+				</div>
+
+				<div className='date-box-outer'>
+					<div className='date-box-month'>Mar</div>
+					<div className='date-box-day'>11</div>
+				</div>
+
+				<div className='events-box-text-outer-container'>
+					<div className='events-box-text-header-container'>
+						How to Convert Your Summer
+					</div>
+					<div className='events-box-text-body-container'>
+						On Monday, 11th March, at 7:30pm, CIBS will be hosting a “How to Convert Your Summer Internship” panel in the Castlereagh Room, St John’s College. The event will include a panel discussion, audience Q&A and a networking social!
+					</div>
+					<div className='events-box-text-button-outer-container'>
+						<div className='events-box-text-button-container' onClick={clickConvSum}>
+							Learn more
+						</div>
+					</div>
+				</div>
+			</div>
+
 			<div className='events-box-container'>
 				<div className='image-events-outer-container'>
 					<Image
