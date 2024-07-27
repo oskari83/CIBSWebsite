@@ -1090,7 +1090,7 @@ export default function EventsList() {
 			<div className='events-list-outer'>
 				<div className='events-list-header'>
 					<div className={`events-list-upcoming-cont${currentSelection===0 ? 'S' : 'R'}`} onClick={() => selectionChange(0)}>2023-2024</div>
-					<div className={`events-list-past-cont${currentSelection===0 ? 'R' : 'S'}`} onClick={() => selectionChange(1)}>PAST ARCHIVE (2022-2023)</div>
+					<div className={`events-list-past-cont${currentSelection===0 ? 'R' : 'S'}`} onClick={() => selectionChange(1)}>2022-2023</div>
 				</div>
 
 				{currentSelection===0 && <UpcomingEventsList />}

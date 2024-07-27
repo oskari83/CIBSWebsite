@@ -77,6 +77,43 @@ select {
 	appearance:inherit;
 }
 
+.small-top-banner-container{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	top: 70px;
+	width: 100%;
+	background-color: var(--gray);
+	height: 200px;
+	z-index: 4;
+}
+
+.small-top-outer{
+	width: clamp(200px,100%,980px);
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.small-top-banner-text-outer {
+	margin-top: 30px;
+	height: 80px;
+	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	font-size: 34px;
+	font-family: "WorkSansSB";
+	z-index: 10;
+	animation: fadeIn 2s;
+	text-align: center;
+}
+
 /*
 	-----     FIRST BANNER      -----
 */
@@ -111,8 +148,8 @@ select {
 	align-items: center;
 	justify-content: center;
 	color: white;
-	font-size: 44px;
-	font-family: "WorkSansSB";
+	font-size: 48px;
+	font-family: "Garamond";
 	z-index: 10;
 	animation: fadeIn 2s;
 	text-align: center;
@@ -1124,6 +1161,10 @@ select {
 }
 
 @media (max-width: 770px) {
+	.small-top-banner-text-outer{
+		font-size: 28px;
+	}
+
 	.first-banner-text-outer {
 		font-size: 34px;
 	}
@@ -1240,6 +1281,10 @@ select {
 }
 
 @media (max-width: 610px) {
+	.small-top-banner-text-outer{
+		font-size: 25px;
+	}
+
 	.buffer{
 		height: 10px;
 	}
@@ -1247,7 +1292,7 @@ select {
 	.first-banner-text-outer {
 		height: 120px;
 		width: 60%;
-		font-size: 29px;
+		font-size: 35px;
 		margin-top: 100px;
 	}
 	
@@ -1408,7 +1453,7 @@ select {
 	.first-banner-text-outer {
 		height: 120px;
 		width: calc(90% - 80px);
-		font-size: 29px;
+		font-size: 33px;
 		margin-top: 100px;
 	}
 
@@ -1510,10 +1555,14 @@ select {
 }
 
 @media (max-width: 432px) {
+	.small-top-banner-text-outer{
+		font-size: 23px;
+	}
+
 	.first-banner-text-outer {
 		height: 100px;
 		width: calc(90% - 80px);
-		font-size: 22px;
+		font-size: 32px;
 		margin-top: 110px;
 	}
 	
@@ -1571,6 +1620,13 @@ select {
 }
 
 @media (max-width: 404px) {
+	.first-banner-text-outer {
+		height: 100px;
+		width: calc(90% - 80px);
+		font-size: 28px;
+		margin-top: 110px;
+	}
+
 	.responsive-am-block {
 		width: 112px;
 	}

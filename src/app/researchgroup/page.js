@@ -11,13 +11,30 @@ import ReadButton from '@/components/readbutton'
 import ApplyLink from '@/components/appLink'
 import EmailLink from '@/components/emailLink'
 
+import cibsBackground_img from '../../../public/resources/kingscollege3.jpg'
+
 export default function Page(){
 	return(
 		<>
+		<div className='small-top-banner-container'>
+			<Image
+				src={cibsBackground_img}
+				style={{objectFit: 'cover'}}
+				fill={true}
+				alt="background image"
+				priority
+			/>
+			<div className='small-top-outer'>
+				<div className='small-top-banner-text-outer'>
+					<p>Research Group</p>
+				</div>
+			</div>
+		</div>
+
 		<div className='research-banner-container'>
 			<div className='research-outer'>
 				<div className='research-header-container'>
-					<p>RESEARCH GROUP</p>
+					<p>Analyst Programme</p>
 				</div>
 				<div className='thinLine'></div>
 				<div className='research-message-container'>

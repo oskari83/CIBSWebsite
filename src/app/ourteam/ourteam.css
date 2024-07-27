@@ -2,6 +2,43 @@
 	-----     COMMITTEE BANNER      -----
 */
 
+.small-top-banner-container{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	top: 70px;
+	width: 100%;
+	background-color: var(--gray);
+	height: 200px;
+	z-index: 4;
+}
+
+.small-top-outer{
+	width: clamp(200px,100%,980px);
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.small-top-banner-text-outer {
+	margin-top: 30px;
+	height: 80px;
+	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	font-size: 34px;
+	font-family: "WorkSansSB";
+	z-index: 10;
+	animation: fadeIn 2s;
+	text-align: center;
+}
+
 .fifth-banner-container{
 	position: relative;
 	display: flex;
@@ -18,7 +55,7 @@
 }
 
 .committee-header-container{
-	margin-top: 100px;
+	margin-top: 30px;
 	margin-bottom: 0px;
 	display: flex;
 	font-size: 26px;
@@ -219,6 +256,10 @@
 
 
 @media (max-width: 770px) {
+	.small-top-banner-text-outer{
+		font-size: 28px;
+	}
+
 	.responsive-am-block {
 		width: 142px;
 	}
@@ -278,6 +319,10 @@
 	.committee-text-role{
 		font-size: 12px;
 	}
+
+	.small-top-banner-text-outer{
+		font-size: 25px;
+	}
 }
 
 @media (max-width: 514px) {
@@ -298,6 +343,10 @@
 
 	.am-text-name {
 		font-size: 14px !important;
+	}
+	
+	.small-top-banner-text-outer{
+		font-size: 23px;
 	}
 }
 

@@ -14,9 +14,26 @@ import events3_img from '../../../public/resources/events3.jpg'
 import SponsorsList from '@/components/sponsorsList'
 import EmailLink from '@/components/emailLink'
 
+import cibsBackground_img from '../../../public/resources/kingscollege3.jpg'
+
 export default function Page(){
 	return(
 		<>
+		<div className='small-top-banner-container'>
+			<Image
+				src={cibsBackground_img}
+				style={{objectFit: 'cover'}}
+				fill={true}
+				alt="background image"
+				priority
+			/>
+			<div className='small-top-outer'>
+				<div className='small-top-banner-text-outer'>
+					<p>Sponsorship</p>
+				</div>
+			</div>
+		</div>
+
 		<div className='sponsorspage-why-us-banner'>
 			<div className='sponsorspage-outer'>
 				<div className='sponsorspage-header-container'>

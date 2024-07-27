@@ -3,10 +3,27 @@ import Link from 'next/link'
 import './join.css'
 import JoinForm from '@/components/joinform'
 
+import cibsBackground_img from '../../../public/resources/kingscollege3.jpg'
+
 export default function Page(){
 
 	return(
 		<>
+		<div className='small-top-banner-container'>
+			<Image
+				src={cibsBackground_img}
+				style={{objectFit: 'cover'}}
+				fill={true}
+				alt="background image"
+				priority
+			/>
+			<div className='small-top-outer'>
+				<div className='small-top-banner-text-outer'>
+					<p>Sign Up to CIBS</p>
+				</div>
+			</div>
+		</div>
+
 		<div className='join-banner-container'>
 			<div className='join-outer'>
 				<div className='join-header-container'>

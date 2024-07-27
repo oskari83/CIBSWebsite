@@ -3,6 +3,8 @@ import './ourteam.css'
 
 import CommitteeBoxes from '@/components/committeeBoxes'
 
+import cibsBackground_img from '../../../public/resources/kingscollege3.jpg'
+
 //ambassador photos
 import AlishaK_img from '../../../public/resources/ambassadors/AlishaK.png'
 import DamsithW_img from '../../../public/resources/ambassadors/DamsithW.png'
@@ -45,6 +47,21 @@ export default function Page(){
 
 	return(
 		<>
+		<div className='small-top-banner-container'>
+			<Image
+				src={cibsBackground_img}
+				style={{objectFit: 'cover'}}
+				fill={true}
+				alt="background image"
+				priority
+			/>
+			<div className='small-top-outer'>
+				<div className='small-top-banner-text-outer'>
+					<p>Committee & Ambassadors</p>
+				</div>
+			</div>
+		</div>
+
 		<div className='fifth-banner-container'>
 			<div className='committee-outer'>
 				<div className='committee-header-container'>
