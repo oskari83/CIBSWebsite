@@ -51,6 +51,14 @@ const UpcomingEventsList = () => {
 		window.open("https://www.facebook.com/CIBSoc", "_blank");
 	}
 
+	const clickSummer24 = () => {
+		window.open("https://www.facebook.com/photo/?fbid=956485869816801&set=a.489461066519286", "_blank");
+	}
+
+	const clickOnyx = () => {
+		window.open("https://www.facebook.com/CIBSoc/posts/pfbid02SP7Ur32UXWoLgUQVZJn7T3RCARKCjTRcypj53MT9MexxCajpSdrDwqeeFgDpL1j1l", "_blank");
+	}
+
 	const clickManWomen = () => {
 		window.open("https://www.facebook.com/CIBSoc/posts/pfbid02n79fokmXjSnXrzT7TQHnbePyB2GrgD694wYoxpn4Mj6A2w79naY5xKAnepEEoWNjl", "_blank");
 	}
@@ -134,7 +142,7 @@ const UpcomingEventsList = () => {
 						Join us at CIBS for a ‘How to Secure a Summer Internship’ panel, followed by a networking social, on Wednesday, May 1st, from 5:00-7:00 pm in the Castlereagh Room, St. John’s College.
 					</div>
 					<div className='events-box-text-button-outer-container'>
-						<div className='events-box-text-button-container' onClick={clickConvSum}>
+						<div className='events-box-text-button-container' onClick={clickSummer24}>
 							Learn more
 						</div>
 					</div>
@@ -164,7 +172,7 @@ const UpcomingEventsList = () => {
 						We are delighted to host Onyx Capital Group, an oil derivatives trading house, for a workshop on commodity derivatives from 5-6.30pm at Christ's College Seminar Room 2.
 					</div>
 					<div className='events-box-text-button-outer-container'>
-						<div className='events-box-text-button-container' onClick={clickConvSum}>
+						<div className='events-box-text-button-container' onClick={clickOnyx}>
 							Learn more
 						</div>
 					</div>
