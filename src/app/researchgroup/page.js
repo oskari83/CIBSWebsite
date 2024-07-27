@@ -39,11 +39,7 @@ export default function Page(){
 					<li>Analyse M&A transactions with accretion/dilution models</li>
 				</div>
 
-				<ApplyLink />
-
-				<div className='research-message-container'>
-					Deadline: October 11th
-				</div>
+				
 
 				<div className='research-message-container'>
 					In past years, the Research Group has written about all topics related to commercial awareness, covering categories from M&A transactions to capital 

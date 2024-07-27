@@ -204,7 +204,7 @@ export default function Home() {
 	<div className='social-media-call-banner-container'>
 		<div className='joining-end-outer'>
 			<div className='social-call-text-outer'>
-				<p>Follow us on social media</p>
+				<p>FOLLOW US ON SOCIAL MEDIA</p>
 			</div>
 			<div className='social-call-text-minor'>
 				<p>Follow us to stay up to date on the latest events, opportunities, and socials</p>

@@ -52,7 +52,7 @@ export default function Page(){
 				</div>
 				<div className='thinLine'></div>
 				<div className='committee-message-container'>
-					<p>A warm welcome from our committee!</p>
+					<div className='committee-message-container-header'>A warm welcome from our committee!</div>
 					<div className='space-10px'></div>
 					<p>Welcome to CIBS! We are so excited to lead Cambridge Investment Banking Society this year. We aim to connect Cambridge students with opportunities within the financial services industry and help equip them with the skills necessary to succeed within finance. Make sure to join us and we look forward to seeing you at our events!</p>
 					<div className='space-10px'></div>

@@ -9,6 +9,9 @@ import securingSummer_img from '../../public/resources/events/securingSummer.png
 import eloiseSpeaker_img from '../../public/resources/events/eloiseSpeaker.png'
 import endDrinks_img from '../../public/resources/events/endDrinks.png'
 
+import onyx_img from '../../public/resources/events/OnyxWorkshop.png'
+import securesummer24_img from '../../public/resources/events/SecureSummer24.png'
+
 import convertSpring_img from '../../public/resources/events/convertSpringPanel.png'
 import convertSummer_img from '../../public/resources/events/convertSummerPanel.png'
 import meetCommittee_img from '../../public/resources/events/meetCommitteeDrinks.png'
@@ -108,6 +111,66 @@ const UpcomingEventsList = () => {
 
 	return(
 		<>	
+			<div className='events-box-container'>
+				<div className='image-events-outer-container'>
+					<Image
+						src={securesummer24_img}
+						style={{objectFit: 'cover'}}
+						fill={true}
+						alt="convsum pic"
+					/>
+				</div>
+
+				<div className='date-box-outer'>
+					<div className='date-box-month'>May</div>
+					<div className='date-box-day'>1</div>
+				</div>
+
+				<div className='events-box-text-outer-container'>
+					<div className='events-box-text-header-container'>
+						How to Secure a Summer Internship
+					</div>
+					<div className='events-box-text-body-container'>
+						Join us at CIBS for a ‘How to Secure a Summer Internship’ panel, followed by a networking social, on Wednesday, May 1st, from 5:00-7:00 pm in the Castlereagh Room, St. John’s College.
+					</div>
+					<div className='events-box-text-button-outer-container'>
+						<div className='events-box-text-button-container' onClick={clickConvSum}>
+							Learn more
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div className='events-box-container'>
+				<div className='image-events-outer-container'>
+					<Image
+						src={onyx_img}
+						style={{objectFit: 'cover'}}
+						fill={true}
+						alt="convsum pic"
+					/>
+				</div>
+
+				<div className='date-box-outer'>
+					<div className='date-box-month'>Apr</div>
+					<div className='date-box-day'>24</div>
+				</div>
+
+				<div className='events-box-text-outer-container'>
+					<div className='events-box-text-header-container'>
+						Onyx Commodity Derivatives Workshop
+					</div>
+					<div className='events-box-text-body-container'>
+						We are delighted to host Onyx Capital Group, an oil derivatives trading house, for a workshop on commodity derivatives from 5-6.30pm at Christ's College Seminar Room 2.
+					</div>
+					<div className='events-box-text-button-outer-container'>
+						<div className='events-box-text-button-container' onClick={clickConvSum}>
+							Learn more
+						</div>
+					</div>
+				</div>
+			</div>
+
 			<div className='events-box-container'>
 				<div className='image-events-outer-container'>
 					<Image

@@ -69,7 +69,7 @@ export default function Footer() {
 				<div className='footer-line'></div>
 				<div className='footer-copyright-outer'>
 				<div className='footer-privacy-text'>Privacy Policy</div>
-					<div className='footer-copyright-text'>Copyright © 2023 Cambridge Investment Banking Society. All rights reserved.</div>
+					<div className='footer-copyright-text'>Copyright © 2024 Cambridge Investment Banking Society. All rights reserved.</div>
 				</div>
 			</div>
 		</div>

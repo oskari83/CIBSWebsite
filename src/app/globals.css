@@ -14,6 +14,11 @@
 }	
 
 @font-face {
+	font-family: 'WorkSansSB';
+	src: local('WorkSans-Regular'), url(../../public/fonts/WorkSans-SemiBold.woff) format('woff');
+}	
+
+@font-face {
 	font-family: 'Garamond';
 	src: local('EBGaramond-Regular'), url(../../public/fonts/EBGaramond-Regular.woff) format('woff');
 }
@@ -113,6 +118,26 @@ select {
 	text-align: center;
 }
 
+/*
+.first-banner-text-outer {
+	margin-top: 210px;
+	height: 80px;
+	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	font-size: 40px;
+	font-family: "WorkSansRegular";
+	font-weight: bold;
+	z-index: 10;
+	animation: fadeIn 2s;
+	text-align: center;
+}
+*/
+
 @keyframes fadeIn {
 	0% { opacity: 0; transform: scale(0.7);}
 	100% { opacity: 1; transform: scale(1);}
@@ -151,7 +176,7 @@ select {
 	justify-content: center;
 	height: 37px;
 	width: 150px;
-	color: rgba(255, 255, 255, 1);
+	color: rgba(255, 255, 255, 0.9);
 	border: 1px solid rgba(255, 255, 255, 1);
 	z-index: 10;
 	cursor: pointer;
@@ -171,7 +196,7 @@ select {
 	align-items: center;
 	justify-content: center;
 	font-size: 14px;
-	font-family: "WorkSansRegular";
+	font-family: "WorkSansSB";
 	z-index: 10;
 	animation: fadeIn 3s;
 }
@@ -199,7 +224,7 @@ select {
 	margin-top: 60px;
 	margin-bottom: 0px;
 	display: flex;
-	font-size: 28px;
+	font-size: 26px;
 	font-family: "PlayfairBold";
 	width: calc(100% - 80px);
 	margin-left: 40px;
@@ -234,7 +259,7 @@ select {
 .about-values-container {
 	margin-top: 35px;
 	display: flex;
-	font-size: 28px;
+	font-size: 26px;
 	font-family: "PlayfairBold";
 	width: calc(100% - 80px);
 	margin-left: 40px;
@@ -283,10 +308,10 @@ select {
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
-	color: black;
-	font-family: "WorkSansRegular";
+	color: rgb(60, 60, 60);
+	font-family: "WorkSansSB";
 	margin-top: 25px;
-	font-size: 20px;
+	font-size: 18px;
 }
 
 .values-box-header2{
@@ -295,10 +320,10 @@ select {
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
-	color: black;
-	font-family: "WorkSansRegular";
+	color: rgb(60, 60, 60);
+	font-family: "WorkSansSB";
 	margin-top: 25px;
-	font-size: 20px;
+	font-size: 18px;
 }
 
 .values-box-detail{
@@ -354,7 +379,7 @@ select {
 .wedo-header-container {
 	margin-top: 50px;
 	display: flex;
-	font-size: 28px;
+	font-size: 26px;
 	font-family: "PlayfairBold";
 	width: calc(100% - 80px);
 	margin-left: 40px;
@@ -390,9 +415,9 @@ select {
 	width: calc(100% - 40px);
 	align-items: center;
 	justify-content: flex-start;
-	height: 60px;
-	font-size: 24px;
-	font-family: "PlayfairBold";
+	height: 50px;
+	font-size: 22px;
+	font-family: "WorkSansSB";
 	color: rgb(0, 0, 0);
 	margin-top: 30px;
 }
@@ -402,9 +427,9 @@ select {
 	width: calc(100% - 40px);
 	align-items: center;
 	justify-content: flex-start;
-	height: 60px;
-	font-size: 24px;
-	font-family: "PlayfairBold";
+	height: 50px;
+	font-size: 22px;
+	font-family: "WorkSansSB";
 	color: rgb(0, 0, 0);
 	margin-top: 30px;
 }
@@ -426,9 +451,9 @@ select {
 	align-items: center;
 	justify-content: flex-start;
 	margin-left: 80px;
-	height: 60px;
-	font-size: 24px;
-	font-family: "PlayfairBold";
+	height: 50px;
+	font-size: 22px;
+	font-family: "WorkSansSB";
 	color: rgb(0, 0, 0);
 	margin-top: 30px;
 }
@@ -503,7 +528,7 @@ select {
 	margin-top: 60px;
 	margin-bottom: 0px;
 	display: flex;
-	font-size: 28px;
+	font-size: 26px;
 	font-family: "PlayfairBold";
 	width: 100%;
 	height: 60px;
@@ -558,7 +583,7 @@ select {
 	align-items: center;
 	justify-content: flex-start;
 	height: 60px;
-	font-size: 28px;
+	font-size: 26px;
 	font-family: "PlayfairBold";
 	color: white;
 }
@@ -656,7 +681,7 @@ select {
 	align-items: center;
 	justify-content: flex-end;
 	height: 60px;
-	font-size: 28px;
+	font-size: 26px;
 	font-family: "PlayfairBold";
 	color: rgb(0, 0, 0);
 }
@@ -724,7 +749,7 @@ select {
 
 .social-call-text-outer {
 	margin-top: 60px;
-	height: 80px;
+	height: 70px;
 	width: calc(100% - 80px);
 	margin-left: 40px;
 	margin-right: 40px;
@@ -732,8 +757,8 @@ select {
 	align-items: center;
 	justify-content: center;
 	color: black;
-	font-size: 32px;
-	font-family: "PlayfairBold";
+	font-size: 26px;
+	font-family: "WorkSansSB";
 	z-index: 10;
 }
 
@@ -789,7 +814,7 @@ select {
 	margin-top: 60px;
 	margin-bottom: 0px;
 	display: flex;
-	font-size: 28px;
+	font-size: 26px;
 	font-family: "PlayfairBold";
 	width: calc(100% - 80px);
 	margin-left: 40px;
@@ -804,7 +829,7 @@ select {
 /*
 	-----     ALUMNI-DESTINATIONS BANNER      -----
 */
-/*
+
 .alumni-destinations-banner-container{
 	position: relative;
 	display: flex;
@@ -813,19 +838,6 @@ select {
 	top: 0px;
 	width: 100%;
 	background-color: var(--light-gray);
-	z-index: 4;
-}
-*/
-.alumni-destinations-banner-container{
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	top: 0px;
-	width: 100%;
-	background-color: #ffffff;
-	opacity: 1.0;
-	background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #ffffff6f 40px ), repeating-linear-gradient( #dedede23, #dedede40 );
 	z-index: 4;
 }
 
@@ -861,7 +873,7 @@ select {
 	margin-top: 60px;
 	margin-bottom: 0px;
 	display: flex;
-	font-size: 28px;
+	font-size: 26px;
 	font-family: "PlayfairBold";
 	width: calc(100% - 80px);
 	margin-left: 40px;
@@ -893,16 +905,16 @@ select {
 
 .joining-end-text-outer {
 	margin-top: 80px;
-	height: 80px;
+	height: 70px;
 	width: calc(100% - 80px);
 	margin-left: 40px;
 	margin-right: 40px;
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
-	color: black;
-	font-size: 32px;
-	font-family: "PlayfairBold";
+	color: rgba(0, 0, 0, 0.828);
+	font-size: 30px;
+	font-family: "WorkSansSB";
 	z-index: 10;
 }
 
@@ -981,7 +993,7 @@ select {
 	margin-top: 40px;
 	margin-bottom: 0px;
 	display: flex;
-	font-size: 28px;
+	font-size: 26px;
 	font-family: "PlayfairBold";
 	width: calc(100% - 80px);
 	margin-left: 40px;
@@ -1313,11 +1325,11 @@ select {
 	}
 
 	.values-box-header{
-		font-size: 17px;
+		font-size: 15px;
 	}
 
 	.values-box-header2{
-		font-size: 17px;
+		font-size: 15px;
 	}
 
 	.values-box-detail{
@@ -1466,12 +1478,12 @@ select {
 	}
 
 	.values-box-header{
-		font-size: 20px;
+		font-size: 18px;
 		height: 30px;
 	}
 
 	.values-box-header2{
-		font-size: 20px;
+		font-size: 18px;
 	}
 
 	.values-box-detail{
