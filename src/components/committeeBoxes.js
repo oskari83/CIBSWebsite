@@ -23,7 +23,7 @@ import monty from '../../public/resources/committee/Monty.jpg'
 import elena from '../../public/resources/committee/Elena.jpg'
 import shirley from '../../public/resources/committee/Shirley.jpg'
 import youngkai from '../../public/resources/committee/YoungKai.jpg'
-import youngok from '../../public/resources/committee/YoungOk.jpg'
+import youngok from '../../public/resources/committee/Youngok.jpg'
 import jessica from '../../public/resources/committee/Jessica.jpg'
 
 export default function CommitteeBoxes() {
