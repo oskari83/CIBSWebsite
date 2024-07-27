@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import './globals.css'
 
-import cibsBackground_img from '../../public/resources/cibsBackground3.png'
+import cibsBackground_img from '../../public/resources/kingscollege3.jpg'
 
 import initiatives_img from '../../public/resources/events_new.png'
 import events_img from '../../public/resources/events6.jpg'

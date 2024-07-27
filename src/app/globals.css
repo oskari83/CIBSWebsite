@@ -111,8 +111,8 @@ select {
 	align-items: center;
 	justify-content: center;
 	color: white;
-	font-size: 55px;
-	font-family: "Garamond";
+	font-size: 44px;
+	font-family: "WorkSansSB";
 	z-index: 10;
 	animation: fadeIn 2s;
 	text-align: center;
@@ -366,7 +366,7 @@ select {
 	align-items: center;
 	top: 0px;
 	width: 100%;
-	background-color: rgb(244, 242, 250);
+	background-color: rgb(242, 244, 250);
 	z-index: 4;
 }
 
@@ -1043,7 +1043,7 @@ select {
 
 @media (max-width: 915px) {
 	.first-banner-text-outer {
-		font-size: 48px;
+		font-size: 40px;
 	}
 	
 	.first-banner-text-minor {
@@ -1082,7 +1082,7 @@ select {
 @media (max-width: 850px) {
 	.first-banner-text-outer {
 		height: 60px;
-		font-size: 44px;
+		font-size: 38px;
 	}
 	
 	.first-banner-text-minor {
@@ -1125,7 +1125,7 @@ select {
 
 @media (max-width: 770px) {
 	.first-banner-text-outer {
-		font-size: 40px;
+		font-size: 34px;
 	}
 	
 	.first-banner-text-minor {
@@ -1247,7 +1247,7 @@ select {
 	.first-banner-text-outer {
 		height: 120px;
 		width: 60%;
-		font-size: 35px;
+		font-size: 29px;
 		margin-top: 100px;
 	}
 	
@@ -1408,7 +1408,7 @@ select {
 	.first-banner-text-outer {
 		height: 120px;
 		width: calc(90% - 80px);
-		font-size: 35px;
+		font-size: 29px;
 		margin-top: 100px;
 	}
 
@@ -1513,7 +1513,7 @@ select {
 	.first-banner-text-outer {
 		height: 100px;
 		width: calc(90% - 80px);
-		font-size: 28px;
+		font-size: 22px;
 		margin-top: 110px;
 	}
 	
