@@ -107,7 +107,7 @@ select {
 	align-items: center;
 	justify-content: center;
 	color: white;
-	font-size: 34px;
+	font-size: 28px;
 	font-family: "WorkSansSB";
 	z-index: 10;
 	animation: fadeIn 2s;
@@ -341,7 +341,7 @@ select {
 
 .values-box-header{
 	width: 70%;
-	height: 30px;
+	height: 44px;
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
