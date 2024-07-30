@@ -92,7 +92,7 @@
 
 .committee-box-t {
 	display: flex;
-	width: 74.8%;
+	width: 74.2%;
 	height: 360px;
 	flex-direction: column;
 	margin-bottom: 50px;
@@ -344,7 +344,7 @@
 	.am-text-name {
 		font-size: 14px !important;
 	}
-	
+
 	.small-top-banner-text-outer{
 		font-size: 23px;
 	}
