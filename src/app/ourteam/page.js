@@ -73,8 +73,8 @@ export default function Page(){
 					<div className='space-10px'></div>
 					<p>Welcome to CIBS! We are so excited to lead Cambridge Investment Banking Society this year. We aim to connect Cambridge students with opportunities within the financial services industry and help equip them with the skills necessary to succeed within finance. Make sure to join us and we look forward to seeing you at our events!</p>
 					<div className='space-10px'></div>
-					<p className='committee-text-right-pos'>Vanessa, Matthew and Juhyun</p>
-					<p className='committee-text-right-pos'>CIBS Presidents 2023-24</p>
+					<p className='committee-text-right-pos'>Kenneth, Rahul and Nicholas</p>
+					<p className='committee-text-right-pos'>CIBS Presidents 2024-25</p>
 				</div>
 
 				<CommitteeBoxes />
