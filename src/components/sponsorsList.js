@@ -13,6 +13,8 @@ import man_img from '../../public/resources/sponsors/man_logo.png'
 import socgen_img from '../../public/resources/sponsors/socgen_logo.png'
 import rothesay_img from '../../public/resources/sponsors/rothesay_logo.png'
 import fe_img from '../../public/resources/sponsors/fe_logo.png'
+import ubs_img from '../../public/resources/sponsors/UBS_logo.png'
+import apollo_img from '../../public/resources/sponsors/Apollo_logo.png'
 
 import { useRouter } from 'next/navigation'
 
@@ -57,6 +59,14 @@ export default function SponsorsList() {
 
 	const clickAppian = () => {
 		window.open("https://appiancapitaladvisory.com/", "_blank");
+	}
+
+	const clickUBS = () => {
+		window.open("https://www.ubs.com/uk/en.html", "_blank");
+	}
+
+	const clickApollo = () => {
+		window.open("https://www.apollo.com/", "_blank");
 	}
 
 	return (
@@ -194,7 +204,7 @@ export default function SponsorsList() {
 			</div>
 
 			<div className='sponsor-box'>
-				<div className='sponsor-image-rothesay' onClick={clickRothesay}>
+				<div className='sponsor-image' onClick={clickRothesay}>
 					<Image
 						src={rothesay_img}
 						style={{objectFit: 'cover'}}
@@ -204,6 +214,34 @@ export default function SponsorsList() {
 				</div>
 				<div className='sponsor-text'>
 					Rothesay is a leading UK pensions insurance specialist, purpose-built to protect pension schemes and their members’ pensions with over £48 billion AUM.
+				</div>
+			</div>
+
+			<div className='sponsor-box'>
+				<div className='sponsor-image' onClick={clickApollo}>
+					<Image
+						src={apollo_img}
+						style={{objectFit: 'cover'}}
+						fill={true}
+						alt="apollo pic"
+					/>
+				</div>
+				<div className='sponsor-text'>
+					Apollo is a leading provider of alternative asset management and retirement solutions. Apollo helps build and finance stronger businesses through innovative capital solutions that can generate excess risk-adjusted returns and retirement income.
+				</div>
+			</div>
+
+			<div className='sponsor-box'>
+				<div className='sponsor-image' onClick={clickUBS}>
+					<Image
+						src={ubs_img}
+						style={{objectFit: 'cover'}}
+						fill={true}
+						alt="UBS pic"
+					/>
+				</div>
+				<div className='sponsor-text'>
+					UBS is a multinational investment bank and financial services company with a presence in all the major financial centers and over 50 countries worldwide.
 				</div>
 			</div>
 
