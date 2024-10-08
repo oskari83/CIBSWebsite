@@ -18,6 +18,7 @@ import EmailLink from '@/components/emailLink'
 //alumni destinations logos
 //import barclays_alumni_img from '../../resources/alumniDestinations/barclaysLogo.png'
 import blackrock_alumni_img from '../../public/resources/alumniDestinations/blackrockLogo.png'
+import moelis_alumni_img from '../../public/resources/alumniDestinations/alumni_moelis.png'
 import blackstone_alumni_img from '../../public/resources/alumniDestinations/blackstoneLogo.png'
 import bofa_alumni_img from '../../public/resources/alumniDestinations/bofaLogo.png'
 import citadel_alumni_img from '../../public/resources/alumniDestinations/citadelLogo.jpeg'
@@ -350,7 +351,7 @@ export default function Home() {
 
 				<div className='alumni-destinations-box-container'>
 					<Image
-						src={houlihan_alumni_img}
+						src={moelis_alumni_img}
 						style={{objectFit: 'cover'}}
 						fill={true}
 						alt="alumni destination logo"

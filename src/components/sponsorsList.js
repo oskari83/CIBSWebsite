@@ -4,12 +4,11 @@ import Image from 'next/image'
 import './sponsorsList.css'
 
 //sponsors photos
-import brain_img from '../../public/resources/sponsors/brain.png'
+import houlihan_img from '../../public/resources/sponsors/Houlihan_logo.png'
 import appian_img from '../../public/resources/sponsors/appian_logo.png'
 import jefferies_img from '../../public/resources/sponsors/jefferies.png'
 import nomura_img from '../../public/resources/sponsors/nomura.png'
 import evercore_img from '../../public/resources/sponsors/evercore_logo.png'
-import man_img from '../../public/resources/sponsors/man_logo.png'
 import socgen_img from '../../public/resources/sponsors/socgen_logo.png'
 import rothesay_img from '../../public/resources/sponsors/rothesay_logo.png'
 import fe_img from '../../public/resources/sponsors/fe_logo.png'
@@ -62,6 +61,10 @@ export default function SponsorsList() {
 		window.open("https://www.pjtpartners.com/", "_blank");
 	}
 
+	const clickHoulihan = () => {
+		window.open("https://hl.com/", "_blank");
+	}
+
 	return (
 		<>
 
@@ -80,6 +83,20 @@ export default function SponsorsList() {
 				</div>
 				<div className='sponsor-text2'>
 					Evercore is a premier global independent investment banking advisory firm dedicated to helping clients achieve superior results through trusted independent and innovative advice on matters of strategic significance.
+				</div>
+			</div>
+
+			<div className='sponsor-box'>
+				<div className='sponsor-image-appian' onClick={clickHoulihan}>
+					<Image
+						src={houlihan_img}
+						style={{objectFit: 'cover'}}
+						fill={true}
+						alt="houlihan pic"
+					/>
+				</div>
+				<div className='sponsor-text2'>
+					Houlihan Lokey is a leading global investment bank with expertise in mergers and acquisitions, capital markets, financial restructuring, and financial and valuation advisory.
 				</div>
 			</div>
 
@@ -149,47 +166,6 @@ export default function SponsorsList() {
 		<div className='thinLine'></div>
 
 		<div className='sponsors-box-outer-bronze'>
-			<div className='sponsor-box'>
-				<div className='sponsor-image' onClick={clickNomura}>
-					<Image
-						src={nomura_img}
-						style={{objectFit: 'cover'}}
-						fill={true}
-						alt="flow pic"
-					/>
-				</div>
-				<div className='sponsor-text'>
-					Nomura is a leading global financial services group and investment bank with an integrated network spanning over 30 countries and regions.
-				</div>
-			</div>
-
-			<div className='sponsor-box'>
-				<div className='sponsor-image' onClick={clickRothesay}>
-					<Image
-						src={rothesay_img}
-						style={{objectFit: 'cover'}}
-						fill={true}
-						alt="rothesay pic"
-					/>
-				</div>
-				<div className='sponsor-text'>
-					Rothesay is a leading UK pensions insurance specialist, purpose-built to protect pension schemes and their members’ pensions with over £48 billion AUM.
-				</div>
-			</div>
-
-			<div className='sponsor-box'>
-				<div className='sponsor-image' onClick={clickApollo}>
-					<Image
-						src={apollo_img}
-						style={{objectFit: 'cover'}}
-						fill={true}
-						alt="apollo pic"
-					/>
-				</div>
-				<div className='sponsor-text'>
-					Apollo is a leading provider of alternative asset management and retirement solutions. Apollo helps build and finance stronger businesses through innovative capital solutions that can generate excess risk-adjusted returns and retirement income.
-				</div>
-			</div>
 
 			<div className='sponsor-box'>
 				<div className='sponsor-image' onClick={clickUBS}>
