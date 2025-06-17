@@ -4,27 +4,22 @@ import Image from 'next/image'
 import { EmailIcon } from 'next-share'
 
 //committee photos
-import blake from '../../public/resources/committee/Blake.jpg'
-import oskari from '../../public/resources/committee/Oskari.jpg'
-import kenneth from '../../public/resources/committee/Kenneth.jpg'
-import siqi from '../../public/resources/committee/Siqi.jpg'
-import ranvitha from '../../public/resources/committee/Raanvitha.jpg'
-import edric from '../../public/resources/committee/Edric.jpg'
-import simon from '../../public/resources/committee/polish.jpg'
-import nicholas from '../../public/resources/committee/Vincent.jpg'
-import jihoon from '../../public/resources/committee/Jihoon.jpg'
+import oskari from '../../public/resources/newCommittee/Oskari.jpeg'
+import eidyn from '../../public/resources/newCommittee/Eidyn.jpeg'
+import fremont from '../../public/resources/newCommittee/Fremont.jpeg'
+import daniel from '../../public/resources/newCommittee/Daniel.jpeg'
 
-import amanda from '../../public/resources/committee/Amanda.jpg'
-import ahmed from '../../public/resources/committee/Ahmed.jpg'
-import eidyn from '../../public/resources/committee/Eidyn.jpg'
-import rahul from '../../public/resources/committee/Rahul.jpg'
-import rohan from '../../public/resources/committee/Rohan.jpg'
-import monty from '../../public/resources/committee/Monty.jpg'
-import elena from '../../public/resources/committee/Elena.jpg'
-import shirley from '../../public/resources/committee/Shirley.jpg'
-import youngkai from '../../public/resources/committee/YoungKai.jpg'
-import youngok from '../../public/resources/committee/Youngok.jpg'
-import jessica from '../../public/resources/committee/Jessica.jpg'
+import iroo from '../../public/resources/newCommittee/Iroo.jpeg'
+import zhen from '../../public/resources/newCommittee/Zhen.jpeg'
+import prarthana from '../../public/resources/newCommittee/Prarthana.jpeg'
+
+import abby from '../../public/resources/newCommittee/Abby.jpeg'
+import blank from '../../public/resources/newCommittee/blank.jpg'
+import lillie from '../../public/resources/newCommittee/Lillie.jpeg'
+import joseph from '../../public/resources/newCommittee/Joseph.jpeg'
+import isaac from '../../public/resources/newCommittee/Isaac.jpeg'
+import alex from '../../public/resources/newCommittee/Alex.jpeg'
+import mulan from '../../public/resources/newCommittee/Mulan.jpeg'
 
 export default function CommitteeBoxes() {
 
@@ -76,10 +71,10 @@ export default function CommitteeBoxes() {
 					
 					<div className='committee-box-image-container'>
 						<Image
-							src={kenneth}
+							src={eidyn}
 							style={{objectFit: 'cover'}}
 							fill={true}
-							alt="kenneth pic"
+							alt="eidyn pic"
 						/>
 					</div>
 
@@ -90,9 +85,9 @@ export default function CommitteeBoxes() {
 					</div>
 
 					<div className='committee-box-text-container'>
-						<div className='committee-text-name'>Kenneth Weng</div>
+						<div className='committee-text-name'>Eidyn Pottinga</div>
 						<div className='committee-text-role'>President</div>
-						<div className='committee-text-college'>Christ's College</div>
+						<div className='committee-text-college'>Robinson College</div>
 					</div>
 				</div>
 
@@ -104,8 +99,8 @@ export default function CommitteeBoxes() {
 							<div className='space-10px'></div>
 							<p>Welcome to CIBS! We are so excited to lead Cambridge Investment Banking Society this year. We aim to connect Cambridge students with opportunities within the financial services industry and help equip them with the skills necessary to succeed within finance. Make sure to join us and we look forward to seeing you at our events!</p>
 							<div className='space-10px'></div>
-							<p className='committee-text-right-pos'>Kenneth, Rahul and Nicholas</p>
-							<p className='committee-text-right-pos'>CIBS Presidents 2024-25</p>
+							<p className='committee-text-right-pos'>Eidyn, Fremont and Daniel</p>
+							<p className='committee-text-right-pos'>CIBS Presidents 2025-26</p>
 						</div>
 					</div>
 				</div>
@@ -113,10 +108,10 @@ export default function CommitteeBoxes() {
 				<div className='committee-box'>
 					<div className='committee-box-image-container'>
 						<Image
-							src={rahul}
+							src={fremont}
 							style={{objectFit: 'cover'}}
 							fill={true}
-							alt="rahul pic"
+							alt="fremont pic"
 						/>
 					</div>
 
@@ -127,19 +122,19 @@ export default function CommitteeBoxes() {
 					</div>
 
 					<div className='committee-box-text-container'>
-						<div className='committee-text-name'>Rahul Doshi</div>
+						<div className='committee-text-name'>Fremont Phua</div>
 						<div className='committee-text-role'>Vice President</div>
-						<div className='committee-text-college'>Clare College</div>
+						<div className='committee-text-college'>Trinity Hall</div>
 					</div>
 				</div>
 
 				<div className='committee-box'>
 					<div className='committee-box-image-container'>
 						<Image
-							src={nicholas}
+							src={daniel}
 							style={{objectFit: 'cover'}}
 							fill={true}
-							alt="nicholas pic"
+							alt="daniel pic"
 						/>
 					</div>
 
@@ -150,19 +145,19 @@ export default function CommitteeBoxes() {
 					</div>
 
 					<div className='committee-box-text-container'>
-						<div className='committee-text-name'>Nicholas Koh</div>
+						<div className='committee-text-name'>Daniel Kim</div>
 						<div className='committee-text-role'>Vice President</div>
-						<div className='committee-text-college'>Trinity College</div>
+						<div className='committee-text-college'>Homerton College</div>
 					</div>
 				</div>
 
 				<div className='committee-box'>
 					<div className='committee-box-image-container'>
 						<Image
-							src={eidyn}
+							src={iroo}
 							style={{objectFit: 'cover'}}
 							fill={true}
-							alt="eidyn pic"
+							alt="iroo pic"
 						/>
 					</div>
 
@@ -173,19 +168,19 @@ export default function CommitteeBoxes() {
 					</div>
 
 					<div className='committee-box-text-container'>
-						<div className='committee-text-name'>Eidyn Pottinga</div>
+						<div className='committee-text-name'>Iroo Hong</div>
 						<div className='committee-text-role'>Treasurer</div>
-						<div className='committee-text-college'>Robinson College</div>
+						<div className='committee-text-college'>Selwyn College</div>
 					</div>
 				</div>
 
 				<div className='committee-box'>
 					<div className='committee-box-image-container'>
 						<Image
-							src={youngok}
+							src={zhen}
 							style={{objectFit: 'cover'}}
 							fill={true}
-							alt="youngok pic"
+							alt="zhen pic"
 						/>
 					</div>
 
@@ -196,16 +191,16 @@ export default function CommitteeBoxes() {
 					</div>
 
 					<div className='committee-box-text-container'>
-						<div className='committee-text-name'>Youngok Baek</div>
+						<div className='committee-text-name'>Zhen Yang Shen</div>
 						<div className='committee-text-role'>Secretary</div>
-						<div className='committee-text-college'>Magdalene College</div>
+						<div className='committee-text-college'>Christ's College</div>
 					</div>
 				</div>
 
 				<div className='committee-box'>
 					<div className='committee-box-image-container'>
 						<Image
-							src={ranvitha}
+							src={prarthana}
 							style={{objectFit: 'cover'}}
 							fill={true}
 							alt="ranvitha pic"
@@ -219,19 +214,19 @@ export default function CommitteeBoxes() {
 					</div>
 
 					<div className='committee-box-text-container'>
-						<div className='committee-text-name'>Ranvitha Chaparala</div>
-						<div className='committee-text-role'>Events Officer</div>
-						<div className='committee-text-college'>Churchill College</div>
+						<div className='committee-text-name'>Prarthana Arora</div>
+						<div className='committee-text-role'>Executive Events Director</div>
+						<div className='committee-text-college'>Robinson College</div>
 					</div>
 				</div>
 
 				<div className='committee-box'>
 					<div className='committee-box-image-container'>
 						<Image
-							src={ahmed}
+							src={mulan}
 							style={{objectFit: 'cover'}}
 							fill={true}
-							alt="ahmed pic"
+							alt="mulan pic"
 						/>
 					</div>
 
@@ -242,19 +237,19 @@ export default function CommitteeBoxes() {
 					</div>
 
 					<div className='committee-box-text-container'>
-						<div className='committee-text-name'>Ahmed Ibrahim</div>
-						<div className='committee-text-role'>Events Officer</div>
-						<div className='committee-text-college'>Sidney Sussex College</div>
+						<div className='committee-text-name'>Mulan Li</div>
+						<div className='committee-text-role'>Publicity Officer</div>
+						<div className='committee-text-college'>Gonville and Caius College</div>
 					</div>
 				</div>
 
 				<div className='committee-box'>
 					<div className='committee-box-image-container'>
 						<Image
-							src={monty}
+							src={abby}
 							style={{objectFit: 'cover'}}
 							fill={true}
-							alt="monty pic"
+							alt="abby pic"
 						/>
 					</div>
 
@@ -265,16 +260,16 @@ export default function CommitteeBoxes() {
 					</div>
 
 					<div className='committee-box-text-container'>
-						<div className='committee-text-name'>Monty Marsh</div>
-						<div className='committee-text-role'>Events Officer</div>
-						<div className='committee-text-college'>Lucy Cavendish College</div>
+						<div className='committee-text-name'>Abby So</div>
+						<div className='committee-text-role'>Sponsorship Officer</div>
+						<div className='committee-text-college'>Magdalene College</div>
 					</div>
 				</div>
 
 				<div className='committee-box'>
 					<div className='committee-box-image-container'>
 						<Image
-							src={jessica}
+							src={blank}
 							style={{objectFit: 'cover'}}
 							fill={true}
 							alt="jessica pic"
@@ -288,31 +283,8 @@ export default function CommitteeBoxes() {
 					</div>
 
 					<div className='committee-box-text-container'>
-						<div className='committee-text-name'>Jessica Liu</div>
-						<div className='committee-text-role'>Publicity Officer</div>
-						<div className='committee-text-college'>Clare College</div>
-					</div>
-				</div>
-
-				<div className='committee-box'>
-					<div className='committee-box-image-container'>
-						<Image
-							src={siqi}
-							style={{objectFit: 'cover'}}
-							fill={true}
-							alt="siqi pic"
-						/>
-					</div>
-
-					<div className='hide hover-email'>
-						<div onClick={clickPublicityEmail} className='email-button-container'>
-							<EmailIcon size={48} round />
-						</div>
-					</div>
-
-					<div className='committee-box-text-container'>
-						<div className='committee-text-name'>Siqi Yue</div>
-						<div className='committee-text-role'>Publicity Officer</div>
+						<div className='committee-text-name'>Ashwin Hathiramani</div>
+						<div className='committee-text-role'>Sponsorship Officer</div>
 						<div className='committee-text-college'>Christ's College</div>
 					</div>
 				</div>
@@ -320,10 +292,10 @@ export default function CommitteeBoxes() {
 				<div className='committee-box'>
 					<div className='committee-box-image-container'>
 						<Image
-							src={jihoon}
+							src={lillie}
 							style={{objectFit: 'cover'}}
 							fill={true}
-							alt="jihoon pic"
+							alt="lillie pic"
 						/>
 					</div>
 
@@ -334,9 +306,32 @@ export default function CommitteeBoxes() {
 					</div>
 
 					<div className='committee-box-text-container'>
-						<div className='committee-text-name'>Jihoon Lee</div>
-						<div className='committee-text-role'>Publicity Officer</div>
-						<div className='committee-text-college'>Hughes Hall</div>
+						<div className='committee-text-name'>Lillie Hu</div>
+						<div className='committee-text-role'>Network Officer</div>
+						<div className='committee-text-college'>Emmanuel College</div>
+					</div>
+				</div>
+
+				<div className='committee-box'>
+					<div className='committee-box-image-container'>
+						<Image
+							src={joseph}
+							style={{objectFit: 'cover'}}
+							fill={true}
+							alt="joseph pic"
+						/>
+					</div>
+
+					<div className='hide hover-email'>
+						<div onClick={clickPublicityEmail} className='email-button-container'>
+							<EmailIcon size={48} round />
+						</div>
+					</div>
+
+					<div className='committee-box-text-container'>
+						<div className='committee-text-name'>Joseph Preddy</div>
+						<div className='committee-text-role'>Network Officer</div>
+						<div className='committee-text-college'>St John's College</div>
 					</div>
 				</div>
 
@@ -366,10 +361,10 @@ export default function CommitteeBoxes() {
 				<div className='committee-box'>
 					<div className='committee-box-image-container'>
 						<Image
-							src={blake}
+							src={isaac}
 							style={{objectFit: 'cover'}}
 							fill={true}
-							alt="blake pic"
+							alt="isaac pic"
 						/>
 					</div>
 
@@ -380,19 +375,19 @@ export default function CommitteeBoxes() {
 					</div>
 
 					<div className='committee-box-text-container'>
-						<div className='committee-text-name'>Blake Hanson</div>
-						<div className='committee-text-role'>Network Officer</div>
-						<div className='committee-text-college'>Clare College</div>
+						<div className='committee-text-name'>Isaac Yang</div>
+						<div className='committee-text-role'>Research Group Director</div>
+						<div className='committee-text-college'>Corpus Christi College</div>
 					</div>
 				</div>
 
 				<div className='committee-box'>
 					<div className='committee-box-image-container'>
 						<Image
-							src={amanda}
+							src={alex}
 							style={{objectFit: 'cover'}}
 							fill={true}
-							alt="amanda pic"
+							alt="alex pic"
 						/>
 					</div>
 
@@ -403,149 +398,30 @@ export default function CommitteeBoxes() {
 					</div>
 
 					<div className='committee-box-text-container'>
-						<div className='committee-text-name'>Amanda Lai</div>
-						<div className='committee-text-role'>Network Officer</div>
-						<div className='committee-text-college'>St John's College</div>
-					</div>
-				</div>
-
-				<div className='committee-box'>
-					<div className='committee-box-image-container'>
-						<Image
-							src={elena}
-							style={{objectFit: 'cover'}}
-							fill={true}
-							alt="elena pic"
-						/>
-					</div>
-
-					<div className='hide hover-email'>
-						<div onClick={clickSponsorshipEmail} className='email-button-container'>
-							<EmailIcon size={48} round />
-						</div>
-					</div>
-
-					<div className='committee-box-text-container'>
-						<div className='committee-text-name'>Elena Zheng</div>
-						<div className='committee-text-role'>Sponsorship Officer</div>
-						<div className='committee-text-college'>Trinity College</div>
-					</div>
-				</div>
-
-				<div className='committee-box'>
-					<div className='committee-box-image-container'>
-						<Image
-							src={rohan}
-							style={{objectFit: 'cover'}}
-							fill={true}
-							alt="rohan pic"
-						/>
-					</div>
-
-					<div className='hide hover-email'>
-						<div onClick={clickSponsorshipEmail} className='email-button-container'>
-							<EmailIcon size={48} round />
-						</div>
-					</div>
-
-					<div className='committee-box-text-container'>
-						<div className='committee-text-name'>Rohan Kumar</div>
-						<div className='committee-text-role'>Sponsorship Officer</div>
-						<div className='committee-text-college'>Magdalene College</div>
-					</div>
-				</div>
-
-				<div className='committee-box'>
-					<div className='committee-box-image-container'>
-						<Image
-							src={shirley}
-							style={{objectFit: 'cover'}}
-							fill={true}
-							alt="shirley pic"
-						/>
-					</div>
-
-					<div className='hide hover-email'>
-						<div onClick={clickSponsorshipEmail} className='email-button-container'>
-							<EmailIcon size={48} round />
-						</div>
-					</div>
-
-					<div className='committee-box-text-container'>
-						<div className='committee-text-name'>Shirley Sun</div>
-						<div className='committee-text-role'>Sponsorship Officer</div>
-						<div className='committee-text-college'>Murray Edwards College</div>
-					</div>
-				</div>
-
-				
-
-				<div className='committee-box'>
-					<div className='committee-box-image-container'>
-						<Image
-							src={youngkai}
-							style={{objectFit: 'cover'}}
-							fill={true}
-							alt="young pic"
-						/>
-					</div>
-
-					<div className='hide hover-email'>
-						<div onClick={clickResearchGroup} className='email-button-container'>
-							<EmailIcon size={48} round />
-						</div>
-					</div>
-
-					<div className='committee-box-text-container'>
-						<div className='committee-text-name'>Young Kai Lee</div>
+						<div className='committee-text-name'>Alex Barnard</div>
 						<div className='committee-text-role'>Research Group Director</div>
 						<div className='committee-text-college'>Homerton College</div>
 					</div>
 				</div>
 
-				<div className='committee-box'>
-					<div className='committee-box-image-container'>
-						<Image
-							src={edric}
-							style={{objectFit: 'cover'}}
-							fill={true}
-							alt="edric pic"
-						/>
+
+				<div className='committee-box-e'>
+					<div className='committee-box-image-container-e'>
+						
 					</div>
 
-					<div className='hide hover-email'>
-						<div onClick={clickResearchGroup} className='email-button-container'>
-							<EmailIcon size={48} round />
-						</div>
-					</div>
-
-					<div className='committee-box-text-container'>
-						<div className='committee-text-name'>Edric Wong</div>
-						<div className='committee-text-role'>Research Group Director</div>
-						<div className='committee-text-college'>Selwyn College</div>
+					<div className='committee-box-text-container-e'>
+						
 					</div>
 				</div>
 
-				<div className='committee-box'>
-					<div className='committee-box-image-container'>
-						<Image
-							src={simon}
-							style={{objectFit: 'cover'}}
-							fill={true}
-							alt="simon pic"
-						/>
+				<div className='committee-box-e'>
+					<div className='committee-box-image-container-e'>
+						
 					</div>
 
-					<div className='hide hover-email'>
-						<div onClick={clickResearchGroup} className='email-button-container'>
-							<EmailIcon size={48} round />
-						</div>
-					</div>
-
-					<div className='committee-box-text-container'>
-						<div className='committee-text-name'>Szymon Florek</div>
-						<div className='committee-text-role'>Research Group Director</div>
-						<div className='committee-text-college'>Trinity College</div>
+					<div className='committee-box-text-container-e'>
+						
 					</div>
 				</div>
 
