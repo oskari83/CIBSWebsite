@@ -74,7 +74,7 @@ const MembersOverview = ({selectionFunc}) => {
 					<div className='members-area-major-box-container'>
 						<div className='members-area-header-outer-container'>
 							<div className='members-area-header-container'>
-								CIBS Opportunities Tracker
+								Discount Codes
 							</div>
 							<div className='members-area-button-outer-container'>
 								<div className='members-area-button-box' onClick={() => selectionFunc(3)}>
@@ -83,7 +83,7 @@ const MembersOverview = ({selectionFunc}) => {
 							</div>
 						</div>
 						<div className='members-area-minor-text-container'>
-							CIBS Opportunities Tracker showcases opportunities available to CIBS members from our sponsor firms.
+							The Discount Codes section showcases discount codes available to CIBS members from our partner firms.
 						</div>
 					</div>
 
