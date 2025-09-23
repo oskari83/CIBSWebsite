@@ -283,9 +283,9 @@ export default function CommitteeBoxes() {
 					</div>
 
 					<div className='committee-box-text-container'>
-						<div className='committee-text-name'>Ashwin Hathiramani</div>
+						<div className='committee-text-name'>Daryl Tang</div>
 						<div className='committee-text-role'>Sponsorship Officer</div>
-						<div className='committee-text-college'>Christ's College</div>
+						<div className='committee-text-college'>Hughes Hall</div>
 					</div>
 				</div>
 

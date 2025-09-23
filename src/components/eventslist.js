@@ -45,6 +45,35 @@ import convsum24_img from '../../public/resources/events/convsum24.png'
 
 import logo_img from '../../public/resources/Logo_Icon_s.png'
 
+const ThisYearEventsList = () => {
+
+	
+
+	return(
+		<>	
+			<div className='events-box-container'>
+				
+
+				<div className='date-box-outer'>
+					<div className='date-box-month'>Oct</div>
+					<div className='date-box-day'>1</div>
+				</div>
+
+				<div className='events-box-text-outer-container'>
+					<div className='events-box-text-header-container'>
+						Events for 2024-2025 will be announced soon
+					</div>
+					<div className='events-box-text-body-container'>
+						Keep an eye out for this year's upcoming events by following us on Instagram, Facebook, and LinkedIn!
+					</div>
+					
+				</div>
+			</div>
+
+		</>
+	)
+}
+
 const UpcomingEventsList = () => {
 
 	const clickEvent1 = () => {
@@ -1097,12 +1126,13 @@ export default function EventsList() {
 		<>
 			<div className='events-list-outer'>
 				<div className='events-list-header'>
-					<div className={`events-list-upcoming-cont${currentSelection===0 ? 'S' : 'R'}`} onClick={() => selectionChange(0)}>2023-2024</div>
-					<div className={`events-list-past-cont${currentSelection===0 ? 'R' : 'S'}`} onClick={() => selectionChange(1)}>2022-2023</div>
+					<div className={`events-list-upcoming-cont${currentSelection===0 ? 'S' : 'R'}`} onClick={() => selectionChange(0)}>2024-2025</div>
+					<div className={`events-list-upcoming-cont${currentSelection===1 ? 'S' : 'R'}`} onClick={() => selectionChange(1)}>2023-2024</div>
+					<div className={`events-list-past-cont${currentSelection===2 ? 'S' : 'R'}`} onClick={() => selectionChange(2)}>2022-2023</div>
 				</div>
-
-				{currentSelection===0 && <UpcomingEventsList />}
-				{currentSelection===1 && <PastEventsList />}
+				{currentSelection===0 && <ThisYearEventsList />}
+				{currentSelection===1 && <UpcomingEventsList />}
+				{currentSelection===2 && <PastEventsList />}
 
 			</div>
 		</>

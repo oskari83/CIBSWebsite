@@ -384,6 +384,53 @@ const MembersCibsTracker = () => {
 	)
 }
 
+
+const MembersCibsDiscountCodes = () => {
+
+	const clickTracker = () => {
+		window.open("https://docs.google.com/spreadsheets/d/1uByEmd2_b_JIOX4F7PWketATz6TNBezw/edit?fbclid=IwAR0grTa2UOwvhaswb-rV0YhUxCm8zuqUk5Fnd5EQJroqyvh5MwYE82nnxjk#gid=961671087", "_blank");
+	}
+
+	return(
+		<>
+			<div className='members-banner-container'>
+				<div className='members-outer2'>
+					<div className='members-header-container'>
+						<p>DISCOUNT CODES</p>
+					</div>
+					<div className='thinLine'></div>
+					<div className='members-minor-container'>
+						<p>
+							This page shows the discount codes available to CIBS members from our partner firms.
+						</p>
+					</div>
+
+					<div className='resources-list-outer'>
+						<div className='resources-list-header'>Discount Codes</div>
+
+						<div className='resources-box-container'>
+							
+
+							<div className='events-box-text-outer-container'>
+								<div className='events-box-text-header-container'>
+									Discount Codes
+								</div>
+
+								<div className='events-box-text-button-outer-container'>
+									<div className='events-box-text-button-container'>
+										Access TBD
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</>
+	)
+}
+
 export default function MembersArea() {
 	const [currentSelection, setCurrentSelection] = useState(0);
 	const [ravenUser, setRavenUser] = useState(null);
@@ -612,14 +659,14 @@ export default function MembersArea() {
 						<div className='members-navbar-link' onClick={() => selectionChange(0)}>Overview</div>
 						<div className='members-navbar-link' onClick={() => selectionChange(1)}>Resources</div>
 						<div className='members-navbar-link' onClick={() => selectionChange(2)}>CIBS Connect</div>
-						<div className='members-navbar-link' onClick={() => selectionChange(3)}>CIBS Tracker</div>
+						<div className='members-navbar-link' onClick={() => selectionChange(3)}>Discount Codes</div>
 					</div>
 				</div>
 			</div>
 			{currentSelection===0 && <MembersOverview selectionFunc={selectionChange}/>}
 			{currentSelection===1 && <MembersResources />}
 			{currentSelection===2 && <MembersCibsConnect />}
-			{currentSelection===3 && <MembersCibsTracker />}
+			{currentSelection===3 && <MembersCibsDiscountCodes />}
 
 		</>
 	)
