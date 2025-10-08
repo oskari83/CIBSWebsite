@@ -11,10 +11,13 @@ import springGuide_img from '../../public/resources/membersArea/springGuide.png'
 import workshop1_img from '../../public/resources/membersArea/workshop1.png'
 import workshop2_img from '../../public/resources/membersArea/workshop2.png'
 import workshop3_img from '../../public/resources/membersArea/workshop3.png'
-import spring_pdf from '../../public/resources/membersArea/spring-week-guide.pdf'
+
+import spring_pdf from '../../public/resources/membersArea/new_spring_guide.pdf'
 
 import connect_img from '../../public/resources/membersArea/connect.png'
-import tracker_img from '../../public/resources/membersArea/tracker_pic.png'
+import tracker_img from '../../public/resources/membersArea/wso2.jpeg'
+import discountcode1_img from '../../public/resources/membersArea/wso1.jpeg'
+import discountcode2_img from '../../public/resources/membersArea/jtp.jpeg'
 
 import PocketBase from 'pocketbase';
 
@@ -84,6 +87,22 @@ const MembersOverview = ({selectionFunc}) => {
 						</div>
 						<div className='members-area-minor-text-container'>
 							The Discount Codes section showcases discount codes available to CIBS members from our partner firms.
+						</div>
+					</div>
+
+					<div className='members-area-major-box-container'>
+						<div className='members-area-header-outer-container'>
+							<div className='members-area-header-container'>
+								WSO Application Tracker
+							</div>
+							<div className='members-area-button-outer-container'>
+								<div className='members-area-button-box' onClick={() => selectionFunc(4)}>
+									Access here
+								</div>
+							</div>
+						</div>
+						<div className='members-area-minor-text-container'>
+							Through our partnership with WSO, CIBS members have exclusive access to the largest finance application tracker in the world!
 						</div>
 					</div>
 
@@ -334,7 +353,7 @@ const MembersCibsConnect = () => {
 const MembersCibsTracker = () => {
 
 	const clickTracker = () => {
-		window.open("https://docs.google.com/spreadsheets/d/1uByEmd2_b_JIOX4F7PWketATz6TNBezw/edit?fbclid=IwAR0grTa2UOwvhaswb-rV0YhUxCm8zuqUk5Fnd5EQJroqyvh5MwYE82nnxjk#gid=961671087", "_blank");
+		window.open("https://wallstreetoasis.acemlna.com/lt.php?x=41Zy~GDJJ6Of7537y_M6ghahAq3VjdAjw-Y1YnTLVnCZD5Grz0y.0eRr2XzzitP2kvY0ZIHHIXWf6.4tNt1IW.Jx13GUuxInwlwwXHnDJFaZT9Lqya", "_blank");
 	}
 
 	return(
@@ -342,17 +361,17 @@ const MembersCibsTracker = () => {
 			<div className='members-banner-container'>
 				<div className='members-outer2'>
 					<div className='members-header-container'>
-						<p>CIBS TRACKER</p>
+						<p>WSO APPLICATION TRACKER</p>
 					</div>
 					<div className='thinLine'></div>
 					<div className='members-minor-container'>
 						<p>
-							CIBS Opportunities Tracker showcases opportunities available to CIBS members from our sponsor firms.
+							The WSO Application Tracker showcases opportunities opportunities by firm type, division, geography and much more!
 						</p>
 					</div>
 
 					<div className='resources-list-outer'>
-						<div className='resources-list-header'>CIBS Opportunities Tracker</div>
+						<div className='resources-list-header'>WSO Application Tracker</div>
 
 						<div className='resources-box-container'>
 							<div className='image-events-outer-container'>
@@ -366,9 +385,11 @@ const MembersCibsTracker = () => {
 
 							<div className='events-box-text-outer-container'>
 								<div className='events-box-text-header-container'>
-									CIBS Opportunities Tracker
+									WSO Application Tracker
 								</div>
-
+								<div className='events-box-text-body-container'>
+									Through our partnership with WSO, CIBS is pleased to announce that our members have exclusive access to the largest finance application tracker in the world, even bigger than Trackr and LSE. Filter opportunities by firm type, division, geography and much more to structure your internship recruitment season to land your dream role!
+								</div>
 								<div className='events-box-text-button-outer-container'>
 									<div className='events-box-text-button-container' onClick={clickTracker}>
 										Access now
@@ -409,20 +430,59 @@ const MembersCibsDiscountCodes = () => {
 						<div className='resources-list-header'>Discount Codes</div>
 
 						<div className='resources-box-container'>
-							
+							<div className='image-events-outer-container'>
+								<Image
+									src={discountcode1_img}
+									style={{objectFit: 'cover'}}
+									fill={true}
+									alt="discount1 pic"
+								/>
+							</div>
 
 							<div className='events-box-text-outer-container'>
 								<div className='events-box-text-header-container'>
-									Discount Codes
+									Wall Street Oasis (WSO)
+								</div>
+								<div className='events-box-text-body-container'>
+									Wall Street Oasis offers a host of online educational content, ranging from  general financial modelling, interview preparation, networking guides and sector specific review packs. Whether you are just starting your journey in finance, wanting to learn more about another sector, or looking for more advanced M&A, LBO and other financial modelling, there is a course for you taught by seasoned industry professionals.
+									Get 40% off all courses using the link below!
 								</div>
 
 								<div className='events-box-text-button-outer-container'>
 									<div className='events-box-text-button-container'>
-										Access TBD
+										Click here
 									</div>
 								</div>
 							</div>
 						</div>
+
+						<div className='resources-box-container'>
+							<div className='image-events-outer-container'>
+								<Image
+									src={discountcode2_img}
+									style={{objectFit: 'cover'}}
+									fill={true}
+									alt="discount2 pic"
+								/>
+							</div>
+
+							<div className='events-box-text-outer-container'>
+								<div className='events-box-text-header-container'>
+									JobTestPrep
+								</div>
+								<div className='events-box-text-body-container'>
+									From online assessments, Hirevue preparation courses and assessment centre practice, JobTestPrep has been helping people prepare for internships and graduate roles. With recruitment season in full swing, it is the perfect time to sharpen up your skills!
+									Use code CIBS35  at checkout to receive 30% off.
+								</div>
+
+								<div className='events-box-text-button-outer-container'>
+									<div className='events-box-text-button-container'>
+										CIBS35
+									</div>
+								</div>
+							</div>
+						</div>
+
 					</div>
 
 				</div>
@@ -667,7 +727,7 @@ export default function MembersArea() {
 			{currentSelection===1 && <MembersResources />}
 			{currentSelection===2 && <MembersCibsConnect />}
 			{currentSelection===3 && <MembersCibsDiscountCodes />}
-
+			{currentSelection===4 && <MembersCibsTracker />}
 		</>
 	)
 }
