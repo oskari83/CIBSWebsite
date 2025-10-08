@@ -408,8 +408,8 @@ const MembersCibsTracker = () => {
 
 const MembersCibsDiscountCodes = () => {
 
-	const clickTracker = () => {
-		window.open("https://docs.google.com/spreadsheets/d/1uByEmd2_b_JIOX4F7PWketATz6TNBezw/edit?fbclid=IwAR0grTa2UOwvhaswb-rV0YhUxCm8zuqUk5Fnd5EQJroqyvh5MwYE82nnxjk#gid=961671087", "_blank");
+	const clickDiscount = () => {
+		window.open("https://www.wallstreetoasis.com/courses?affiliate=ac_791510&utm_source=affiliate&utm_medium=ac_791510&utm_campaign=affiliate", "_blank");
 	}
 
 	return(
@@ -449,7 +449,7 @@ const MembersCibsDiscountCodes = () => {
 								</div>
 
 								<div className='events-box-text-button-outer-container'>
-									<div className='events-box-text-button-container'>
+									<div className='events-box-text-button-container' onClick={clickDiscount}>
 										Click here
 									</div>
 								</div>
@@ -720,6 +720,7 @@ export default function MembersArea() {
 						<div className='members-navbar-link' onClick={() => selectionChange(1)}>Resources</div>
 						<div className='members-navbar-link' onClick={() => selectionChange(2)}>CIBS Connect</div>
 						<div className='members-navbar-link' onClick={() => selectionChange(3)}>Discount Codes</div>
+						<div className='members-navbar-link' onClick={() => selectionChange(4)}>Application Tracker</div>
 					</div>
 				</div>
 			</div>
