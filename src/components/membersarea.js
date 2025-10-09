@@ -7,7 +7,7 @@ import { useEffect } from 'react';
 
 import JoinButton3 from './joinbutton3';
 
-import springGuide_img from '../../public/resources/membersArea/springGuide.png'
+import springGuide_img from '../../public/resources/membersArea/spring_image.png'
 import workshop1_img from '../../public/resources/membersArea/workshop1.png'
 import workshop2_img from '../../public/resources/membersArea/workshop2.png'
 import workshop3_img from '../../public/resources/membersArea/workshop3.png'
@@ -174,7 +174,7 @@ const MembersResources = () => {
 								</div>
 								<div className='events-box-text-button-outer-container'>
 									<div className='events-box-text-button-container'>
-										<a href='/resources/membersArea/spring-week-guide.pdf' download="spring-week-guide.pdf">Access</a>
+										<a href='/resources/membersArea/new_spring_guide.pdf' download="new_spring_guide.pdf">Access</a>
 										
 									</div>
 								</div>
