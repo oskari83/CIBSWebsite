@@ -15,9 +15,9 @@ import workshop3_img from '../../public/resources/membersArea/workshop3.png'
 import spring_pdf from '../../public/resources/membersArea/new_spring_guide.pdf'
 
 import connect_img from '../../public/resources/membersArea/connect.png'
-import tracker_img from '../../public/resources/membersArea/wso2.jpeg'
-import discountcode1_img from '../../public/resources/membersArea/wso1.jpeg'
-import discountcode2_img from '../../public/resources/membersArea/jtp.jpeg'
+import tracker_img from '../../public/resources/membersArea/wso_pic.png'
+import discountcode1_img from '../../public/resources/membersArea/wso_pic.png'
+import discountcode2_img from '../../public/resources/membersArea/jtp_pic.png'
 
 import PocketBase from 'pocketbase';
 
