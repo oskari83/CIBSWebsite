@@ -720,7 +720,7 @@ export default function MembersArea() {
 						<div className='members-navbar-link' onClick={() => selectionChange(1)}>Resources</div>
 						<div className='members-navbar-link' onClick={() => selectionChange(2)}>CIBS Connect</div>
 						<div className='members-navbar-link' onClick={() => selectionChange(3)}>Discount Codes</div>
-						<div className='members-navbar-link' onClick={() => selectionChange(4)}>Application Tracker</div>
+						<div className='members-navbar-link' onClick={() => selectionChange(4)}>App Tracker</div>
 					</div>
 				</div>
 			</div>
