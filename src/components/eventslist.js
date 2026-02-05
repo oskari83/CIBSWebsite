@@ -43,16 +43,36 @@ import mcomsoc_img from '../../public/resources/events/mcomsoc.png'
 import convspring_img from '../../public/resources/events/convspring.png'
 import convsum24_img from '../../public/resources/events/convsum24.png'
 
-import logo_img from '../../public/resources/Logo_Icon_s.png'
+import cibs_square_img from '../../public/resources/cibs_square.png'
+
+import { FacebookIcon, LinkedinIcon, EmailIcon, InstagramIcon } from 'next-share'
 
 const ThisYearEventsList = () => {
 
-	
+	const clickFacebook = () => {
+		window.open("https://www.facebook.com/CIBSoc/", "_blank");
+	}
+
+	const clickInstagram = () => {
+		window.open("https://www.instagram.com/cibsoc/", "_blank");
+	}
+
+	const clickLinkedin = () => {
+		window.open("https://www.linkedin.com/company/cibsoc/mycompany/", "_blank");
+	}
 
 	return(
 		<>	
 			<div className='events-box-container'>
 				
+				<div className='image-events-outer-container'>
+					<Image
+						src={cibs_square_img}
+						style={{objectFit: 'cover'}}
+						fill={true}
+						alt="cibs pic"
+					/>
+				</div>
 
 				<div className='date-box-outer'>
 					<div className='date-box-month'>Oct</div>
@@ -61,12 +81,24 @@ const ThisYearEventsList = () => {
 
 				<div className='events-box-text-outer-container'>
 					<div className='events-box-text-header-container'>
-						Events for 2024-2025 will be announced soon
+						Events during the 2025-2026 academic year
 					</div>
 					<div className='events-box-text-body-container'>
-						Keep an eye out for this year's upcoming events by following us on Instagram, Facebook, and LinkedIn!
+						Find this year's upcoming events by following us on Instagram, Facebook, and LinkedIn!
 					</div>
-					
+					<div className='events-box-text-button-outer-container'>
+						<div className='socials-outer-container'>
+						<div onClick={clickFacebook} className='socials-button-container'>
+							<FacebookIcon size={48} round />
+						</div>
+						<div onClick={clickInstagram} className='socials-button-container'>
+							<InstagramIcon size={48} round />
+						</div>
+						<div onClick={clickLinkedin} className='socials-button-container'>
+							<LinkedinIcon size={48} round />
+						</div>
+					</div>
+					</div>
 				</div>
 			</div>
 
@@ -1126,7 +1158,7 @@ export default function EventsList() {
 		<>
 			<div className='events-list-outer'>
 				<div className='events-list-header'>
-					<div className={`events-list-upcoming-cont${currentSelection===0 ? 'S' : 'R'}`} onClick={() => selectionChange(0)}>2024-2025</div>
+					<div className={`events-list-upcoming-cont${currentSelection===0 ? 'S' : 'R'}`} onClick={() => selectionChange(0)}>2024-current</div>
 					<div className={`events-list-upcoming-cont${currentSelection===1 ? 'S' : 'R'}`} onClick={() => selectionChange(1)}>2023-2024</div>
 					<div className={`events-list-past-cont${currentSelection===2 ? 'S' : 'R'}`} onClick={() => selectionChange(2)}>2022-2023</div>
 				</div>

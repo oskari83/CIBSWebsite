@@ -18,6 +18,7 @@ import connect_img from '../../public/resources/membersArea/connect.png'
 import tracker_img from '../../public/resources/membersArea/wso_pic.png'
 import discountcode1_img from '../../public/resources/membersArea/wso_pic.png'
 import discountcode2_img from '../../public/resources/membersArea/jtp_pic.png'
+import discountcode3_img from '../../public/resources/membersArea/cook.png'
 
 import PocketBase from 'pocketbase';
 
@@ -408,8 +409,16 @@ const MembersCibsTracker = () => {
 
 const MembersCibsDiscountCodes = () => {
 
+	const clickDiscount2 = () => {
+		window.open("https://www.cookd.ai/home", "_blank");
+	}
+
 	const clickDiscount = () => {
 		window.open("https://www.wallstreetoasis.com/courses?affiliate=ac_791510&utm_source=affiliate&utm_medium=ac_791510&utm_campaign=affiliate", "_blank");
+	}
+
+	const clickDiscount3 = () => {
+		window.open("https://www.jobtestprep.co.uk/", "_blank");
 	}
 
 	return(
@@ -428,6 +437,33 @@ const MembersCibsDiscountCodes = () => {
 
 					<div className='resources-list-outer'>
 						<div className='resources-list-header'>Discount Codes</div>
+
+						<div className='resources-box-container'>
+							<div className='image-events-outer-container'>
+								<Image
+									src={discountcode3_img}
+									style={{objectFit: 'cover'}}
+									fill={true}
+									alt="discount3 pic"
+								/>
+							</div>
+
+							<div className='events-box-text-outer-container'>
+								<div className='events-box-text-header-container'>
+									Cook'd AI
+								</div>
+								<div className='events-box-text-body-container'>
+									The best AI mock interview tool for finance recruiting with a 3-step roadmap and 350,000+ verified, firm-specific interview questions
+									Use code CambridgeCIBS to receive 50% off.
+								</div>
+
+								<div className='events-box-text-button-outer-container'>
+									<div className='events-box-text-button-container' onClick={clickDiscount2}>
+										CambridgeCIBS
+									</div>
+								</div>
+							</div>
+						</div>
 
 						<div className='resources-box-container'>
 							<div className='image-events-outer-container'>
@@ -476,7 +512,7 @@ const MembersCibsDiscountCodes = () => {
 								</div>
 
 								<div className='events-box-text-button-outer-container'>
-									<div className='events-box-text-button-container'>
+									<div className='events-box-text-button-container' onClick={clickDiscount3}>
 										CIBS35
 									</div>
 								</div>

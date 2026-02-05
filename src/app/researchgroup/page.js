@@ -51,11 +51,16 @@ export default function Page(){
 				</div>
 
 				<div className='research-message-container'>
-					<li>Value companies using a DCF analysis</li>
-					<li>Build a meaningful set of trading and transaction comps, and </li>
-					<li>Analyse M&A transactions with accretion/dilution models</li>
+					- Value companies using a DCF analysis
 				</div>
 
+				<div className='research-message-container'>
+					- Build a meaningful set of trading and transaction comps, and
+				</div>
+
+				<div className='research-message-container'>
+					- Analyse M&A transactions with accretion/dilution models
+				</div>
 				
 
 				<div className='research-message-container'>

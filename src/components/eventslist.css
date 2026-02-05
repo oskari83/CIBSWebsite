@@ -60,6 +60,15 @@
 	width: calc(100% - 300px);
 }
 
+.events-box-text-outer-container-current{
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;
+}
+
 .events-box-text-header-container{
 	display: flex;
 	align-items: center;

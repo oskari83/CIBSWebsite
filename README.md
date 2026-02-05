@@ -10,6 +10,6 @@ npm run dev
 
 Then, run npm run build.
 
-Automatically pushes to vercel upon git push! test
+Automatically pushes to vercel upon git push!
 
 ![alt text](https://github.com/oskari83/CIBSWebsite/blob/master/public/resources/readmePic1.png?raw=true)
