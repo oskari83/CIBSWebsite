@@ -17,7 +17,7 @@
 .navbar-inner{
 	min-height: 70px;
     display: flex;
-    width: clamp(200px,1020px,1020px);
+    width: clamp(200px,1020px,calc(100% - 24px));
     justify-content: space-between;
     align-items: stretch;
     padding: 0 12px;
