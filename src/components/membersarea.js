@@ -453,8 +453,8 @@ const MembersCibsDiscountCodes = () => {
 									Cook'd AI
 								</div>
 								<div className='events-box-text-body-container'>
-									The best AI mock interview tool for finance recruiting with a 3-step roadmap and 350,000+ verified, firm-specific interview questions
-									Use code CambridgeCIBS to receive 50% off.
+									The best AI mock interview tool for finance recruiting with a 3-step roadmap and 350,000+ verified, firm-specific interview questions.
+									Use code CambridgeCIBS to receive 50% off!
 								</div>
 
 								<div className='events-box-text-button-outer-container'>
