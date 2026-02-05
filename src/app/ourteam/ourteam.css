@@ -217,6 +217,13 @@
 	height: 100px;
 }
 
+@media (max-width: 850px) {
+
+	.committee-box {
+		width: 31% !important;
+	}
+
+}
 
 @media (max-width: 770px) {
 	.small-top-banner-text-outer{
@@ -241,7 +248,7 @@
 	}
 
 	.committee-box {
-		width: 49%;
+		width: 49% !important;
 	}
 
 	.committee-box-e{
@@ -290,7 +297,7 @@
 
 @media (max-width: 514px) {
 	.committee-box {
-		width: 100%;
+		width: 100% !important;;
 	}
 }
 
