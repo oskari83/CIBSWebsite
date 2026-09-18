@@ -22,6 +22,11 @@ const joinCall = async (credentials) => {
 	return response.data;
 }
 
+// includes("cam.ac.uk") let through bob@gmail.com/cam.ac.uk and cam.ac.uk@gmail.com
+const isCambridgeEmail = (address) => {
+	return /^[^@\s]+@([a-z0-9-]+\.)*cam\.ac\.uk$/i.test(address);
+}
+
 export default function JoinForm() {
 	const router = useRouter()
 
@@ -36,8 +41,9 @@ export default function JoinForm() {
 	const [gender, setGender] = useState(''); 
 	const [ethnicity, setEthnicity] = useState(''); 
 
-	const [success, setSuccess] = useState(false); 
+	const [success, setSuccess] = useState(false);
 	const [buttonText, setButtonText] = useState('Join');
+	const [errorText, setErrorText] = useState('');
 
 	const ResetButton = () => {
 		setButtonText('Join');
@@ -95,19 +101,23 @@ export default function JoinForm() {
 
 	const handleJoin = async (event) => {
 		event.preventDefault();
-		console.log('joining with', firstname, lastname, cambridgeEmail);
 		setButtonText('Loading...');
+		setErrorText('');
 
 		//const emailCheck = CheckEmail(email);
 		//const usrnmCheck = CheckUsername(username);
 		//const passwordCheck = CheckPassword(password);
 
+		const cambridgeAddress = cambridgeEmail.trim();
+
 		try {
 
 			if(firstname != "" && lastname != "" && college != "" && gyear != "" && nonCambridgeEmail != "" && degreeType != "" && degreeSubject != "" && gender != "" && ethnicity != ""){
-				if(cambridgeEmail.includes("cam.ac.uk")) { 
+				if(isCambridgeEmail(cambridgeAddress)) {
+					// the endpoint wants the whole address here: it mails it to mailchimp and
+					// does crsid[:-10] itself to get the bare crsid for members/.htaccess
 					const my_obj = JSON.stringify({
-						crsid: cambridgeEmail,
+						crsid: cambridgeAddress,
 						first_name: firstname,
 						last_name: lastname,
 						college: college,
@@ -127,19 +137,17 @@ export default function JoinForm() {
 					console.log(resp);
 	
 				} else {
-					useEffect(() => {
-						window.alert("Please enter a valid Cambridge email");
-					});
+					setErrorText("Please enter a valid Cambridge email address.");
+					ResetButton();
 					return;
 				}
 			} else {
-				useEffect(() => {
-					window.alert("Please enter valid information in all boxes");
-				});
+				setErrorText("Please fill in every box before joining.");
+				ResetButton();
 				return;
 			}
 
-			const crsid = cambridgeEmail.substring(0, cambridgeEmail.indexOf("@"));
+			const crsid = cambridgeAddress.substring(0, cambridgeAddress.indexOf("@"));
 
 			const data = {
 				"crsid": crsid,
@@ -163,7 +171,9 @@ export default function JoinForm() {
 			router.push('/success');
 
 		} catch (exception) {
-			console.log(exception);
+			// Never fail silently here: a dead backend used to look identical to success.
+			console.error('join failed', exception);
+			setErrorText("Sorry, we could not sign you up just now. Your details have not been saved. Please try again later, or email presidents@cibsoc.co.uk and we will add you by hand.");
 			ResetButton();
 		}
 	}
@@ -230,7 +240,7 @@ export default function JoinForm() {
 						<option value="Emmanuel">Emmanuel</option>
 						<option value="Fitzwilliam">Fitzwilliam</option>
 						<option value="Girton">Girton</option>
-						<option value="Gonville and Caius">Gonville & Caius</option>
+						<option value="Gonville & Caius">Gonville & Caius</option>
 						<option value="Homerton">Homerton</option>
 						<option value="Hughes Hall">Hughes Hall</option>
 						<option value="Jesus">Jesus</option>
@@ -326,6 +336,10 @@ export default function JoinForm() {
 						<option value="Prefer not to say">Prefer not to say</option>
 					</select>
 				</div>
+
+				{errorText !== '' &&
+					<div className='join-error-container'>{errorText}</div>
+				}
 
 				<button className='join-button' type='submit'>{buttonText}</button>
 			</form>
