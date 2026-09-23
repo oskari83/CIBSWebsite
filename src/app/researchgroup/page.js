@@ -85,7 +85,7 @@ export default function Page(){
 					<p>
 						If you have any questions, contact us at:
 					</p>
-					<EmailLink emailText={"researchgroup@cibsoc.co.uk"}/>
+					<EmailLink emailText={"presidents@cibsoc.co.uk"}/>
 				</div>
 			</div>
 		</div>
