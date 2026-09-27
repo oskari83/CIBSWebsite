@@ -61,23 +61,31 @@
 
 .committee-text-name{
 	font-family: "WorkSansSB";
-	font-size: 17px;
+	font-size: 16px;
 	color: var(--dark-purple);
-	margin-top: 16px;
+	margin-top: 12px;
+	text-align: center;
+	padding-left: 6px;
+	padding-right: 6px;
+	line-height: 1.25;
 }
 
 .committee-text-role{
 	font-family: "WorkSansRegular";
 	font-size: 14px;
 	color: black;
+	text-align: center;
+	padding-left: 4px;
+	padding-right: 4px;
 }
 
 .committee-text-role2{
 	font-family: "WorkSansRegular";
-	font-size: 13px;
-	width: 80%;
+	font-size: 12.5px;
+	width: 92%;
 	text-align: center;
 	color: black;
+	line-height: 1.25;
 }
 
 .committee-text-college{
@@ -85,6 +93,7 @@
 	font-size: 12px;
 	color: black;
 	margin-top: 2px;
+	text-align: center;
 }
 
 .hover-email{
