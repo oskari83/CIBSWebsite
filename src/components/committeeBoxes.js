@@ -78,6 +78,8 @@ export default function CommitteeBoxes() {
 							src={prarthana_img}
 							style={{objectFit: 'cover'}}
 							fill={true}
+							sizes="(max-width: 610px) 100vw, (max-width: 850px) 50vw, 300px"
+							quality={95}
 							alt="Prarthana Arora"
 						/>
 					</div>
@@ -104,7 +106,7 @@ export default function CommitteeBoxes() {
 							<p>Welcome to CIBS! We are so excited to lead Cambridge Investment Banking Society this year. We aim to connect Cambridge students with opportunities within the financial services industry and help equip them with the skills necessary to succeed within finance. Make sure to join us and we look forward to seeing you at our events!</p>
 							<div className='space-10px'></div>
 							<p className='committee-text-right-pos'>Prarthana Arora</p>
-							<p className='committee-text-right-pos'>CIBS Presidents 2026-27</p>
+							<p className='committee-text-right-pos'>CIBS President 2026-27</p>
 						</div>
 					</div>
 				</div>
@@ -116,6 +118,8 @@ export default function CommitteeBoxes() {
 							src={archie_img}
 							style={{objectFit: 'cover'}}
 							fill={true}
+							sizes="(max-width: 610px) 100vw, (max-width: 850px) 50vw, 300px"
+							quality={95}
 							alt="Archie Rowland"
 						/>
 					</div>
@@ -139,6 +143,8 @@ export default function CommitteeBoxes() {
 							src={chomitha_img}
 							style={{objectFit: 'cover'}}
 							fill={true}
+							sizes="(max-width: 610px) 100vw, (max-width: 850px) 50vw, 300px"
+							quality={95}
 							alt="Chomitha Aluthge"
 						/>
 					</div>
@@ -162,6 +168,8 @@ export default function CommitteeBoxes() {
 							src={arnav_img}
 							style={{objectFit: 'cover'}}
 							fill={true}
+							sizes="(max-width: 610px) 100vw, (max-width: 850px) 50vw, 300px"
+							quality={95}
 							alt="Arnav Asthana"
 						/>
 					</div>
@@ -185,6 +193,8 @@ export default function CommitteeBoxes() {
 							src={bonnie_img}
 							style={{objectFit: 'cover'}}
 							fill={true}
+							sizes="(max-width: 610px) 100vw, (max-width: 850px) 50vw, 300px"
+							quality={95}
 							alt="Bonnie Tan"
 						/>
 					</div>
@@ -209,6 +219,8 @@ export default function CommitteeBoxes() {
 							src={jack_img}
 							style={{objectFit: 'cover'}}
 							fill={true}
+							sizes="(max-width: 610px) 100vw, (max-width: 850px) 50vw, 300px"
+							quality={95}
 							alt="Jack Edmondson-Jones"
 						/>
 					</div>
@@ -232,6 +244,8 @@ export default function CommitteeBoxes() {
 							src={benedict_img}
 							style={{objectFit: 'cover'}}
 							fill={true}
+							sizes="(max-width: 610px) 100vw, (max-width: 850px) 50vw, 300px"
+							quality={95}
 							alt="Benedict Murphy"
 						/>
 					</div>
@@ -255,6 +269,8 @@ export default function CommitteeBoxes() {
 							src={aleksander_img}
 							style={{objectFit: 'cover'}}
 							fill={true}
+							sizes="(max-width: 610px) 100vw, (max-width: 850px) 50vw, 300px"
+							quality={95}
 							alt="Aleksander Volponi"
 						/>
 					</div>
@@ -278,6 +294,8 @@ export default function CommitteeBoxes() {
 							src={daniel_img}
 							style={{objectFit: 'cover'}}
 							fill={true}
+							sizes="(max-width: 610px) 100vw, (max-width: 850px) 50vw, 300px"
+							quality={95}
 							alt="Daniel Djakiodine"
 						/>
 					</div>
@@ -302,6 +320,8 @@ export default function CommitteeBoxes() {
 							src={dheepti_img}
 							style={{objectFit: 'cover'}}
 							fill={true}
+							sizes="(max-width: 610px) 100vw, (max-width: 850px) 50vw, 300px"
+							quality={95}
 							alt="Dheepti Devasenapathy"
 						/>
 					</div>
@@ -325,6 +345,8 @@ export default function CommitteeBoxes() {
 							src={austin_img}
 							style={{objectFit: 'cover'}}
 							fill={true}
+							sizes="(max-width: 610px) 100vw, (max-width: 850px) 50vw, 300px"
+							quality={95}
 							alt="Austin Chen"
 						/>
 					</div>
@@ -348,6 +370,8 @@ export default function CommitteeBoxes() {
 							src={lakshicca_img}
 							style={{objectFit: 'cover'}}
 							fill={true}
+							sizes="(max-width: 610px) 100vw, (max-width: 850px) 50vw, 300px"
+							quality={95}
 							alt="Lakshicca Balakrishnan"
 						/>
 					</div>
@@ -371,6 +395,8 @@ export default function CommitteeBoxes() {
 							src={frank_img}
 							style={{objectFit: 'cover'}}
 							fill={true}
+							sizes="(max-width: 610px) 100vw, (max-width: 850px) 50vw, 300px"
+							quality={95}
 							alt="Frank Lin"
 						/>
 					</div>
@@ -395,6 +421,8 @@ export default function CommitteeBoxes() {
 							src={shan_img}
 							style={{objectFit: 'cover'}}
 							fill={true}
+							sizes="(max-width: 610px) 100vw, (max-width: 850px) 50vw, 300px"
+							quality={95}
 							alt="Shan Nachammai Shanmuhanathan"
 						/>
 					</div>
@@ -418,6 +446,8 @@ export default function CommitteeBoxes() {
 							src={ilia_img}
 							style={{objectFit: 'cover'}}
 							fill={true}
+							sizes="(max-width: 610px) 100vw, (max-width: 850px) 50vw, 300px"
+							quality={95}
 							alt="Ilia Persiani"
 						/>
 					</div>
@@ -441,6 +471,8 @@ export default function CommitteeBoxes() {
 							src={nithil_img}
 							style={{objectFit: 'cover'}}
 							fill={true}
+							sizes="(max-width: 610px) 100vw, (max-width: 850px) 50vw, 300px"
+							quality={95}
 							alt="Nithil Murugan"
 						/>
 					</div>
@@ -464,6 +496,8 @@ export default function CommitteeBoxes() {
 							src={veronika_img}
 							style={{objectFit: 'cover'}}
 							fill={true}
+							sizes="(max-width: 610px) 100vw, (max-width: 850px) 50vw, 300px"
+							quality={95}
 							alt="Veronika Koch"
 						/>
 					</div>
@@ -488,6 +522,8 @@ export default function CommitteeBoxes() {
 							src={mikhail_img}
 							style={{objectFit: 'cover'}}
 							fill={true}
+							sizes="(max-width: 610px) 100vw, (max-width: 850px) 50vw, 300px"
+							quality={95}
 							alt="Mikhail Firas Abdul Jabbar"
 						/>
 					</div>
@@ -511,6 +547,8 @@ export default function CommitteeBoxes() {
 							src={lorenzo_img}
 							style={{objectFit: 'cover'}}
 							fill={true}
+							sizes="(max-width: 610px) 100vw, (max-width: 850px) 50vw, 300px"
+							quality={95}
 							alt="Lorenzo Nogales"
 						/>
 					</div>
@@ -534,6 +572,8 @@ export default function CommitteeBoxes() {
 							src={lucas_img}
 							style={{objectFit: 'cover'}}
 							fill={true}
+							sizes="(max-width: 610px) 100vw, (max-width: 850px) 50vw, 300px"
+							quality={95}
 							alt="Lucas Goh"
 						/>
 					</div>

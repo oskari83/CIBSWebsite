@@ -41,6 +41,11 @@
 	object-fit: cover;
 }
 
+.committee-box-image-container img {
+	transform: translateZ(0);
+	backface-visibility: hidden;
+}
+
 .committee-box-text-container{
 	display: flex;
 	align-items: center;
