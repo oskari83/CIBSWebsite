@@ -5,49 +5,66 @@ import './eventslist.css'
 import { useState } from 'react'
 
 //pics 
-import securingSummer_img from '../../public/resources/events/securingSummer.png'
-import eloiseSpeaker_img from '../../public/resources/events/eloiseSpeaker.png'
-import endDrinks_img from '../../public/resources/events/endDrinks.png'
+import securingSummer_img from '../../public/resources/events/past/securingSummer.png'
+import eloiseSpeaker_img from '../../public/resources/events/past/eloiseSpeaker.png'
+import endDrinks_img from '../../public/resources/events/past/endDrinks.png'
 
-import onyx_img from '../../public/resources/events/OnyxWorkshop.png'
-import securesummer24_img from '../../public/resources/events/SecureSummer24.png'
+import onyx_img from '../../public/resources/events/past/OnyxWorkshop.png'
+import securesummer24_img from '../../public/resources/events/past/SecureSummer24.png'
 
-import convertSpring_img from '../../public/resources/events/convertSpringPanel.png'
-import convertSummer_img from '../../public/resources/events/convertSummerPanel.png'
-import meetCommittee_img from '../../public/resources/events/meetCommitteeDrinks.png'
+import convertSpring_img from '../../public/resources/events/past/convertSpringPanel.png'
+import convertSummer_img from '../../public/resources/events/past/convertSummerPanel.png'
+import meetCommittee_img from '../../public/resources/events/past/meetCommitteeDrinks.png'
 
-import division1_img from '../../public/resources/events/divisionBreakdown1.png'
-import division2_img from '../../public/resources/events/divisionBreakdown2.png'
-import division3_img from '../../public/resources/events/divisionBreakdown3.png'
-import rajivSpeaker_img from '../../public/resources/events/speakerRajiv.png'
+import division1_img from '../../public/resources/events/past/divisionBreakdown1.png'
+import division2_img from '../../public/resources/events/past/divisionBreakdown2.png'
+import division3_img from '../../public/resources/events/past/divisionBreakdown3.png'
+import rajivSpeaker_img from '../../public/resources/events/past/speakerRajiv.png'
 
-import cvWorkshop_img from '../../public/resources/events/cvWorkshop.png'
-import howSpring_img from '../../public/resources/events/howSpringPanel.png'
-import freshersDrinks_img from '../../public/resources/events/freshersDrinks.png'
+import cvWorkshop_img from '../../public/resources/events/past/cvWorkshop.png'
+import howSpring_img from '../../public/resources/events/past/howSpringPanel.png'
+import freshersDrinks_img from '../../public/resources/events/past/freshersDrinks.png'
 
-import freshers_welcome_img from '../../public/resources/events/freshers_welcome_23.png'
-import evercore_rx_img from '../../public/resources/events/everciore_rx.png'
-import introspring_img from '../../public/resources/events/intro_spring.png'
-import cvclwork_img from '../../public/resources/events/cvcl_workshop.png'
-import rizzo_img from '../../public/resources/events/rizzo.png'
-import man_img from '../../public/resources/events/man_women.png'
-import socgen_pres_img from '../../public/resources/events/socgen_pres.png'
+import freshers_welcome_img from '../../public/resources/events/past/freshers_welcome_23.png'
+import evercore_rx_img from '../../public/resources/events/past/everciore_rx.png'
+import introspring_img from '../../public/resources/events/past/intro_spring.png'
+import cvclwork_img from '../../public/resources/events/past/cvcl_workshop.png'
+import rizzo_img from '../../public/resources/events/past/rizzo.png'
+import man_img from '../../public/resources/events/past/man_women.png'
+import socgen_pres_img from '../../public/resources/events/past/socgen_pres.png'
 
-import evercoreadv_img from '../../public/resources/events/evercore_adv.png'
-import goldmanfireside_img from '../../public/resources/events/goldman_fireside.png'
-import apollowork_img from '../../public/resources/events/apollo_work.png'
-import appianpres_img from '../../public/resources/events/appian_pres.png'
+import evercoreadv_img from '../../public/resources/events/past/evercore_adv.png'
+import goldmanfireside_img from '../../public/resources/events/past/goldman_fireside.png'
+import apollowork_img from '../../public/resources/events/past/apollo_work.png'
+import appianpres_img from '../../public/resources/events/past/appian_pres.png'
 
-import cbfc_img from '../../public/resources/events/cbfc.png'
-import mcomsoc_img from '../../public/resources/events/mcomsoc.png'
-import convspring_img from '../../public/resources/events/convspring.png'
-import convsum24_img from '../../public/resources/events/convsum24.png'
+import cbfc_img from '../../public/resources/events/past/cbfc.png'
+import mcomsoc_img from '../../public/resources/events/past/mcomsoc.png'
+import convspring_img from '../../public/resources/events/past/convspring.png'
+import convsum24_img from '../../public/resources/events/past/convsum24.png'
 
 import cibs_square_img from '../../public/resources/cibs_square.png'
+
+// 2026-27 pics
+import pjt_img from '../../public/resources/events/2026-27/PJT-Partners-Exclusive-Networking-Dinner.png'
+import houlihan_img from '../../public/resources/events/2026-27/Houlihan-Lokey-Company-Presentation.png'
+import howToBreak_img from '../../public/resources/events/2026-27/How-To-Break-Into-Investment-Banking.png'
 
 import { FacebookIcon, LinkedinIcon, EmailIcon, InstagramIcon } from 'next-share'
 
 const ThisYearEventsList = () => {
+
+	const clickPJT = () => {
+		window.open("https://www.instagram.com/p/DdZxYdyiC3d/?img_index=1", "_blank");
+	}
+
+	const clickHoulihan = () => {
+		window.open("https://www.instagram.com/p/Dds5Wm2G9L9/?img_index=1", "_blank");
+	}
+
+	const clickHowToBreak = () => {
+		window.open("https://www.instagram.com/p/DdR8s5tiNZR/?img_index=1", "_blank");
+	}
 
 	const clickFacebook = () => {
 		window.open("https://www.facebook.com/CIBSoc/", "_blank");
@@ -64,7 +81,6 @@ const ThisYearEventsList = () => {
 	return(
 		<>	
 			<div className='events-box-container'>
-				
 				<div className='image-events-outer-container'>
 					<Image
 						src={cibs_square_img}
@@ -74,30 +90,115 @@ const ThisYearEventsList = () => {
 					/>
 				</div>
 
-				<div className='date-box-outer'>
-					<div className='date-box-month'>Oct</div>
-					<div className='date-box-day'>1</div>
-				</div>
-
 				<div className='events-box-text-outer-container'>
 					<div className='events-box-text-header-container'>
-						Events during the 2025-2026 academic year
+						Events during the 2026-2027 academic year
 					</div>
 					<div className='events-box-text-body-container'>
 						Find this year's upcoming events by following us on Instagram, Facebook, and LinkedIn!
 					</div>
 					<div className='events-box-text-button-outer-container'>
 						<div className='socials-outer-container'>
-						<div onClick={clickFacebook} className='socials-button-container'>
-							<FacebookIcon size={48} round />
-						</div>
-						<div onClick={clickInstagram} className='socials-button-container'>
-							<InstagramIcon size={48} round />
-						</div>
-						<div onClick={clickLinkedin} className='socials-button-container'>
-							<LinkedinIcon size={48} round />
+							<div onClick={clickFacebook} className='socials-button-container'>
+								<FacebookIcon size={48} round />
+							</div>
+							<div onClick={clickInstagram} className='socials-button-container'>
+								<InstagramIcon size={48} round />
+							</div>
+							<div onClick={clickLinkedin} className='socials-button-container'>
+								<LinkedinIcon size={48} round />
+							</div>
 						</div>
 					</div>
+				</div>
+			</div>
+
+			<div className='events-box-container'>
+				<div className='image-events-outer-container'>
+					<Image
+						src={pjt_img}
+						style={{objectFit: 'cover'}}
+						fill={true}
+						alt="PJT Partners Exclusive Networking Dinner"
+					/>
+				</div>
+
+				<div className='date-box-outer'>
+					<div className='date-box-month'>Oct</div>
+					<div className='date-box-day'>15</div>
+				</div>
+
+				<div className='events-box-text-outer-container'>
+					<div className='events-box-text-header-container'>
+						PJT Partners Exclusive Networking Dinner
+					</div>
+					<div className='events-box-text-body-container'>
+						PJT Partners will be organising an exclusive invite-only dinner in Cambridge on October 15th. 
+					</div>
+					<div className='events-box-text-button-outer-container'>
+						<div className='events-box-text-button-container' onClick={clickPJT}>
+							Learn more
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div className='events-box-container'>
+				<div className='image-events-outer-container'>
+					<Image
+						src={houlihan_img}
+						style={{objectFit: 'cover'}}
+						fill={true}
+						alt="Houlihan Lokey Company Presentation"
+					/>
+				</div>
+
+				<div className='date-box-outer'>
+					<div className='date-box-month'>Oct</div>
+					<div className='date-box-day'>12</div>
+				</div>
+
+				<div className='events-box-text-outer-container'>
+					<div className='events-box-text-header-container'>
+						Houlihan Lokey Company Presentation.
+					</div>
+					<div className='events-box-text-body-container'>
+						Meet the speakers representing Houlihan Lokey to learn about a career in investment banking!
+					</div>
+					<div className='events-box-text-button-outer-container'>
+						<div className='events-box-text-button-container' onClick={clickHoulihan}>
+							Learn more
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div className='events-box-container'>
+				<div className='image-events-outer-container'>
+					<Image
+						src={howToBreak_img}
+						style={{objectFit: 'cover'}}
+						fill={true}
+						alt="How To Break Into Investment Banking"
+					/>
+				</div>
+
+				<div className='date-box-outer'>
+					<div className='date-box-month'>Sept</div>
+					<div className='date-box-day'>20</div>
+				</div>
+
+				<div className='events-box-text-outer-container'>
+					<div className='events-box-text-header-container'>
+						How To Break Into Investment Banking
+					</div>
+					<div className='events-box-text-body-container'>
+						Internship applications are open right now, so we&apos;ve lined up a free session on what separates the students who convert interviews into offers from the ones who don&apos;t.
+					</div>
+					<div className='events-box-text-button-outer-container'>
+						<div className='events-box-text-button-container' onClick={clickHowToBreak}>
+							Learn more
+						</div>
 					</div>
 				</div>
 			</div>
@@ -1158,13 +1259,16 @@ export default function EventsList() {
 		<>
 			<div className='events-list-outer'>
 				<div className='events-list-header'>
-					<div className={`events-list-upcoming-cont${currentSelection===0 ? 'S' : 'R'}`} onClick={() => selectionChange(0)}>2024-current</div>
-					<div className={`events-list-upcoming-cont${currentSelection===1 ? 'S' : 'R'}`} onClick={() => selectionChange(1)}>2023-2024</div>
-					<div className={`events-list-past-cont${currentSelection===2 ? 'S' : 'R'}`} onClick={() => selectionChange(2)}>2022-2023</div>
+					<div className={`events-list-upcoming-cont${currentSelection===0 ? 'S' : 'R'}`} onClick={() => selectionChange(0)}>2026-Current</div>
+					<div className={`events-list-past-cont${currentSelection===1 ? 'S' : 'R'}`} onClick={() => selectionChange(1)}>Past Events</div>
 				</div>
 				{currentSelection===0 && <ThisYearEventsList />}
-				{currentSelection===1 && <UpcomingEventsList />}
-				{currentSelection===2 && <PastEventsList />}
+				{currentSelection===1 && (
+					<>
+						<UpcomingEventsList />
+						<PastEventsList />
+					</>
+				)}
 
 			</div>
 		</>

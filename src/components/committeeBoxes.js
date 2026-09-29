@@ -6,7 +6,7 @@ import { EmailIcon } from 'next-share'
 //committee photos
 import prarthana_img from '../../public/resources/Comittee2026/Prarthana Arora Robinson President.jpg'
 import archie_img from '../../public/resources/Comittee2026/Archie Rowland Sidney VP.jpg'
-import chomitha_img from '../../public/resources/Comittee2026/Chomitha Aluthge Trinity VP.png'
+import chomitha_img from '../../public/resources/Comittee2026/Chomitha Aluthge Trinity VP.jpg'
 import arnav_img from '../../public/resources/Comittee2026/Arnav Asthana - Kings - Treasurer.jpg'
 import bonnie_img from '../../public/resources/Comittee2026/Bonnie Tan Selwyn Secretary_.jpg'
 
