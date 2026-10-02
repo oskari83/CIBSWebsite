@@ -11,13 +11,18 @@ import arnav_img from '../../public/resources/Comittee2026/Arnav Asthana - Kings
 import bonnie_img from '../../public/resources/Comittee2026/Bonnie Tan Selwyn Secretary_.jpg'
 
 import jack_img from '../../public/resources/Comittee2026/Jack Edmondson-Jones - John_s - Executive Events Director.jpg'
+import dev_img from '../../public/resources/Comittee2026/Dev Parekh - Lucy Cavendish - Events Officer.jpeg'
+import sarvesh_img from '../../public/resources/Comittee2026/Sarvesh Kilariaar - Sidney Sussex - Events Officer.jpeg'
+import shaina_img from '../../public/resources/Comittee2026/Shaina Shah - St Johns - Events Officer.jpeg'
+
 import benedict_img from '../../public/resources/Comittee2026/Benedict Murphy - Fitz - Sponsorship Executive Director.jpg'
 import aleksander_img from '../../public/resources/Comittee2026/Aleksander Volponi - Queens - Sponsorship.jpg'
 import daniel_img from '../../public/resources/Comittee2026/Daniel Djakiodine - Selwyn.jpg'
-
 import dheepti_img from '../../public/resources/Comittee2026/Dheepti Devasenapathy - Medwards.jpg'
+
 import austin_img from '../../public/resources/Comittee2026/Austin Chen - Robinson - Publicity.jpg'
 import lakshicca_img from '../../public/resources/Comittee2026/Lakshicca Balakrishnan - Lucy Cav - Publicity.jpg'
+import zinnia_img from '../../public/resources/Comittee2026/Zinnia Zhu - Robinson - Publicity Officer.jpeg'
 import frank_img from '../../public/resources/Comittee2026/Frank Lin - Robinson - Tech.jpg'
 
 import shan_img from '../../public/resources/Comittee2026/Shan NS - Clare - Tech.jpg'
@@ -212,7 +217,7 @@ export default function CommitteeBoxes() {
 					</div>
 				</div>
 
-				{/* Row 3: Events & Sponsorship */}
+				{/* Row 3: Events Team */}
 				<div className='committee-box'>
 					<div className='committee-box-image-container'>
 						<Image
@@ -238,6 +243,82 @@ export default function CommitteeBoxes() {
 					</div>
 				</div>
 
+				<div className='committee-box'>
+					<div className='committee-box-image-container'>
+						<Image
+							src={dev_img}
+							style={{objectFit: 'cover'}}
+							fill={true}
+							sizes="(max-width: 610px) 100vw, (max-width: 850px) 50vw, 300px"
+							quality={95}
+							alt="Dev Parekh"
+						/>
+					</div>
+
+					<div className='hide hover-email'>
+						<div onClick={clickEventsEmail} className='email-button-container'>
+							<EmailIcon size={48} round />
+						</div>
+					</div>
+
+					<div className='committee-box-text-container'>
+						<div className='committee-text-name'>Dev Parekh</div>
+						<div className='committee-text-role'>Events Officer</div>
+						<div className='committee-text-college'>Lucy Cavendish College</div>
+					</div>
+				</div>
+
+				<div className='committee-box'>
+					<div className='committee-box-image-container'>
+						<Image
+							src={sarvesh_img}
+							style={{objectFit: 'cover'}}
+							fill={true}
+							sizes="(max-width: 610px) 100vw, (max-width: 850px) 50vw, 300px"
+							quality={95}
+							alt="Sarvesh Kilariaar"
+						/>
+					</div>
+
+					<div className='hide hover-email'>
+						<div onClick={clickEventsEmail} className='email-button-container'>
+							<EmailIcon size={48} round />
+						</div>
+					</div>
+
+					<div className='committee-box-text-container'>
+						<div className='committee-text-name'>Sarvesh Kilariaar</div>
+						<div className='committee-text-role'>Events Officer</div>
+						<div className='committee-text-college'>Sidney Sussex College</div>
+					</div>
+				</div>
+
+				<div className='committee-box'>
+					<div className='committee-box-image-container'>
+						<Image
+							src={shaina_img}
+							style={{objectFit: 'cover'}}
+							fill={true}
+							sizes="(max-width: 610px) 100vw, (max-width: 850px) 50vw, 300px"
+							quality={95}
+							alt="Shaina Shah"
+						/>
+					</div>
+
+					<div className='hide hover-email'>
+						<div onClick={clickEventsEmail} className='email-button-container'>
+							<EmailIcon size={48} round />
+						</div>
+					</div>
+
+					<div className='committee-box-text-container'>
+						<div className='committee-text-name'>Shaina Shah</div>
+						<div className='committee-text-role'>Events Officer</div>
+						<div className='committee-text-college'>St John's College</div>
+					</div>
+				</div>
+
+				{/* Row 4: Sponsorship Team */}
 				<div className='committee-box'>
 					<div className='committee-box-image-container'>
 						<Image
@@ -313,7 +394,6 @@ export default function CommitteeBoxes() {
 					</div>
 				</div>
 
-				{/* Row 4: Sponsorship, Publicity, Tech */}
 				<div className='committee-box'>
 					<div className='committee-box-image-container'>
 						<Image
@@ -339,6 +419,7 @@ export default function CommitteeBoxes() {
 					</div>
 				</div>
 
+				{/* Row 5: Publicity Team & Technology */}
 				<div className='committee-box'>
 					<div className='committee-box-image-container'>
 						<Image
@@ -386,6 +467,31 @@ export default function CommitteeBoxes() {
 						<div className='committee-text-name'>Lakshicca Balakrishnan</div>
 						<div className='committee-text-role'>Publicity Officer</div>
 						<div className='committee-text-college'>Lucy Cavendish College</div>
+					</div>
+				</div>
+
+				<div className='committee-box'>
+					<div className='committee-box-image-container'>
+						<Image
+							src={zinnia_img}
+							style={{objectFit: 'cover'}}
+							fill={true}
+							sizes="(max-width: 610px) 100vw, (max-width: 850px) 50vw, 300px"
+							quality={95}
+							alt="Zinnia Zhu"
+						/>
+					</div>
+
+					<div className='hide hover-email'>
+						<div onClick={clickPublicityEmail} className='email-button-container'>
+							<EmailIcon size={48} round />
+						</div>
+					</div>
+
+					<div className='committee-box-text-container'>
+						<div className='committee-text-name'>Zinnia Zhu</div>
+						<div className='committee-text-role'>Publicity Officer</div>
+						<div className='committee-text-college'>Robinson College</div>
 					</div>
 				</div>
 

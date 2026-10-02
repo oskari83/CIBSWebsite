@@ -207,7 +207,7 @@ const ThisYearEventsList = () => {
 	)
 }
 
-const UpcomingEventsList = () => {
+export const UpcomingEventsList = () => {
 
 	const clickEvent1 = () => {
 		window.open("https://www.facebook.com/CIBSoc", "_blank");
@@ -795,7 +795,7 @@ const UpcomingEventsList = () => {
 	)
 }
 
-const PastEventsList = () => {
+export const PastEventsList = () => {
 	const clickEvent1 = () => {
 		window.open("https://www.facebook.com/photo/?fbid=695573089241415&set=a.489461066519286", "_blank");
 	}
