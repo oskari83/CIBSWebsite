@@ -239,7 +239,7 @@ export default function CommitteeBoxes() {
 					<div className='committee-box-text-container'>
 						<div className='committee-text-name'>Jack Edmondson-Jones</div>
 						<div className='committee-text-role2'>Executive Events Director</div>
-						<div className='committee-text-college'>St John's College</div>
+						<div className='committee-text-college'>St John&apos;s College</div>
 					</div>
 				</div>
 
@@ -314,7 +314,7 @@ export default function CommitteeBoxes() {
 					<div className='committee-box-text-container'>
 						<div className='committee-text-name'>Shaina Shah</div>
 						<div className='committee-text-role'>Events Officer</div>
-						<div className='committee-text-college'>St John's College</div>
+						<div className='committee-text-college'>St John&apos;s College</div>
 					</div>
 				</div>
 
@@ -668,7 +668,7 @@ export default function CommitteeBoxes() {
 					<div className='committee-box-text-container'>
 						<div className='committee-text-name'>Lorenzo Nogales</div>
 						<div className='committee-text-role'>Research Group Director</div>
-						<div className='committee-text-college'>St John's College</div>
+						<div className='committee-text-college'>St John&apos;s College</div>
 					</div>
 				</div>
 
